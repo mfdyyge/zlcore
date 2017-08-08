@@ -1,6 +1,85 @@
 
+
+
+---------------------------------------------------------------MVN
 #更改模块版本号
->mvn versions:set -DnewVersion=0.0.2-SNAPSHOT
-versions:set -DnewVersion=1.0.20170808
-到这里已经完成了子模块的版本号更新.什么?还有?那就再加一个命令吧
->mvn versions:update-child-modules
+>mvn    versions:set -DnewVersion=0.0.2-SNAPSHOT
+        versions:set -DnewVersion=1.0.20170808
+
+到这里已经完成了子模块的版本号更新.什么?还有?
+那就再加一个命令吧
+
+>mvn    versions:update-child-modules
+
+---------------------------------------------------------------GIT http://blog.csdn.net/arkblue/article/details/9568249/
+GIT
+-------------------------------分支操作--------------------------------
+$ git add .                  // 注意别少了后面这个点["."]
+$ git commit -m "备注描述"    //[到Local-Repository]->
+$ git push                   //推送到远程仓库
+
+$ git status                 //查看状态
+$ git log
+$ git clone
+-------------------------------分支操作--------------------------------
+$ git branch            //查看分支(本地分支)
+$ git branch -a         //查看分支(本地分支+远程分支)
+
+$ git branch test       //分支-创建
+$ git push origin test  //分支-推到远程
+$ git checkout test     //分支-切换
+-------------------------------删除本地分支|远程分支 --------------------------------
+
+$ git branch -d xxxxx                   //删除本地分支
+$ git branch -r -d origin/branch-name   //删除远程分支
+$ git push origin :branch-name
+
+-------------------------------查看远程的git地址别名--------------------------------
+$ git remote -v         //查看远程的git地址个别名
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+GIT-提交与推送(没有涉及到分支版本)
+
+    $ git add .
+    $ git commit -m "备注描述"
+    $ git push
+    ---------------------------------------------------------------
+    这三大步，而实际上，你只需要两条命令就够了，除非有新的文件要被添加进去。
+
+    $ git commit -am "备注描述"
+    $ git push
+---------------------------------------------------------------
+字面解释的话，
+git commit -m用于提交暂存区的文件；
+git commit -am用于提交跟踪过的文件
+
+要理解它们的区别，
+首先要明白git的文件状态变化周期，如下图所示
+
+工作目录下面的所有文件都不外乎这两种状态：
+已跟踪或未跟踪。已跟踪的文件是指本来就被纳入版本控制管理的文件，
+在上次快照中有它们的记录，工作一段时间后，
+它们的状态可能是未更新，已修改或者已放入暂存区
+-----------------------------------------------------------------
+GIT-查看远程分支
+            $ git branch -a
+ 创建分支
+            $ git branch test
+返回特定版本
+            $ git reset id    id为返回的特定版本
+
+    删除远程分支
+    git branch -r -d origin/branch-name
+    git push origin :branch-name
