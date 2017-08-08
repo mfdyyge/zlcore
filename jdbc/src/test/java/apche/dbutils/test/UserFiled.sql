@@ -1,0 +1,1 @@
+ mc_user_field set "+"name = ?,type = ?,sort_order = ?,"+"required = ?,visible = ?"+"where id
