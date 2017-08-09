@@ -1,13 +1,7 @@
 package com.zl.jdbc.DataSource.spring;
 
 
-import com.alibaba.druid.pool.DruidDataSource;
-
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.Map;
-import java.util.ResourceBundle;
 
 /**
  * @ClassName:   Druid_Factory
@@ -15,12 +9,13 @@ import java.util.ResourceBundle;
  * @author: 钢背猪☣
  * @date: 2017-06-01 下午2:04:36
  */
-public class Druid_Spring_Factory {
+public class DsSpring_Factory
+{
 
 	public  static final String DS_NAME = "druid";
 
-	private static DruidDataSource dataSource;// druid数据库连接池
-    public void setDataSource(DruidDataSource ds)
+	private static DataSource dataSource;// druid数据库连接池
+    public void setDataSource(DataSource ds)
 	{
 		this. dataSource=ds;
 	}
@@ -37,12 +32,4 @@ public class Druid_Spring_Factory {
 		return dataSource;
 	}
 
-
-	public static void test(){};
-
-	public static void main(String[] args) throws SQLException
-    {
-		Connection conn = getDataSource().getConnection();
-		System.out.println("\nconn="+conn);
-	}
 }
