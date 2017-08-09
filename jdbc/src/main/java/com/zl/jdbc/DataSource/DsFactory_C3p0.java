@@ -17,7 +17,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
  * @author: 钢背猪☣
  * @date: 2017-07-01 下午1:04:36
  */
-public class DataSouceFactory_C3p0
+public class DsFactory_C3p0
 {
 
 	public  static final String DS_NAME = "c3p0";
@@ -31,7 +31,7 @@ public class DataSouceFactory_C3p0
 
 	//static ResourceBundle rbundle = ResourceBundle.getBundle("conf/db/db");
 	private static ResourceBundle rbundle=null; //读取配置文件
-	public DataSouceFactory_C3p0(ResourceBundle rsb )
+	public DsFactory_C3p0(ResourceBundle rsb )
 	{
 		rbundle=rsb;
 	}

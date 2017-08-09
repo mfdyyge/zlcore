@@ -1,6 +1,6 @@
 package queryrunner;
 
-import com.zl.jdbc.DataSource.DataSouceFactory;
+import com.zl.jdbc.DataSource.DsFactory;
 import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
 
 import com.zl.jdbc.page.OfferType;
@@ -31,8 +31,8 @@ public class Test_DataSourceFactory
         Object [] params = new Object[]{"%4%"};
 
 
-        //System.out.println("getDataSource = " + DataSouceFactory.getDataSource());
-        Connection connection=DataSouceFactory.getConnection();
+        //System.out.println("getDataSource = " + DsFactory.getDataSource());
+        Connection connection= DsFactory.getConnection();
         System.out.println("getConnection = " + connection);
 
         Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql,params);

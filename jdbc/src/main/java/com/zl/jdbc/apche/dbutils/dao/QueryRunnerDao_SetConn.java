@@ -1,24 +1,15 @@
 package com.zl.jdbc.apche.dbutils.dao;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Map;
-
 import com.zl.jdbc.apche.dbutils.util.MapUtil;
 import org.apache.commons.dbutils.BasicRowProcessor;
 import org.apache.commons.dbutils.BeanProcessor;
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.ArrayHandler;
-import org.apache.commons.dbutils.handlers.ArrayListHandler;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.ColumnListHandler;
-import org.apache.commons.dbutils.handlers.KeyedHandler;
-import org.apache.commons.dbutils.handlers.MapHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
+import org.apache.commons.dbutils.handlers.*;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author	钢背猪☣
@@ -169,7 +160,7 @@ public class QueryRunnerDao_SetConn {
 	 * @param <T>
 	 * @return
 	 */
-	public static <T> T queryColumn(Connection conn,String column,   String sql, Object... params)
+	public static <T> T queryColumn(Connection conn,   String sql,String column, Object... params)
 	{
 		T result = null;
 		try {

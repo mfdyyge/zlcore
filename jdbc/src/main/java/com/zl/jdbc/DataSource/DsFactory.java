@@ -9,12 +9,12 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 /**
- * @ClassName:   DataSouceFactory
- * @Description: DataSouceFactory-数据库连接池 创建类:
+ * @ClassName:   DsFactory
+ * @Description: DsFactory-数据库连接池 创建类:
  * @author: 钢背猪☣
  * @date: 2017-06-01 下午2:04:36
  */
-public class DataSouceFactory
+public class DsFactory
 {
 	// conf/db/db.properties  里面的DataSourceName=?
 	public  static final String HikariCp_NAME 	= "HikariCp";
@@ -34,24 +34,24 @@ public class DataSouceFactory
 		{
 			case HikariCp_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DataSouceFactory__HikariCp(rbundle).getDataSource();
+				dataSource = new DsFactory_HikariCp(rbundle).getDataSource();
 				break;
 			case druid_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DataSouceFactory__Druid(rbundle).getDataSource();
+				dataSource = new DsFactory_Druid(rbundle).getDataSource();
 				break;
 			case TomcatJdbc_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DataSouceFactory_TomcatJdbc(rbundle).getDataSource();
+				dataSource = new DsFactory_TomcatJdbc(rbundle).getDataSource();
 				break;
 			case c3p0_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DataSouceFactory_C3p0(rbundle).getDataSource();
+				dataSource = new DsFactory_C3p0(rbundle).getDataSource();
 				break;
 			default:
 				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
 				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DataSouceFactory__Druid(rbundle).getDataSource();
+				dataSource = new DsFactory_Druid(rbundle).getDataSource();
 		}
 	}
 

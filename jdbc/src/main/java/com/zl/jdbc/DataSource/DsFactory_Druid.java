@@ -16,7 +16,7 @@ import com.alibaba.druid.pool.DruidDataSource;
  * @author: 钢背猪☣
  * @date: 2017-06-01 下午2:04:36
  */
-public class DsFactory__Druid
+public class DsFactory_Druid
 {
 
 	public  static final String DS_NAME = "druid";
@@ -30,7 +30,7 @@ public class DsFactory__Druid
 	//static ResourceBundle rbundle = ResourceBundle.getBundle("conf/db/db");
 	private static ResourceBundle rbundle=null; //读取配置文件
 
-	public DsFactory__Druid(ResourceBundle rsb )
+	public DsFactory_Druid(ResourceBundle rsb )
 	{
 		rbundle=rsb;
 	}
@@ -50,7 +50,7 @@ public class DsFactory__Druid
 		{
 			if(null==rbundle)
 			{
-				System.out.println("静态代码块中创建数据库连接池>com.zl.jdbc.DataSource.DsFactory__Druid>rbundle = " + rbundle);
+				System.out.println("静态代码块中创建数据库连接池>com.zl.jdbc.DataSource.DsFactory_Druid>rbundle = " + rbundle);
 				rbundle = ResourceBundle.getBundle("conf/db/db");// 为空时读取配置文件
 			}
 

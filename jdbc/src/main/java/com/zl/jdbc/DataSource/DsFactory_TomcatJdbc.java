@@ -10,12 +10,13 @@ import java.util.ResourceBundle;
 
 
 /**
- * @ClassName:   DataSouceFactory__HikariCp 光连接池
+ * @ClassName:   DsFactory_HikariCp 光连接池
  * @Description: HikariCp-光连接池 \n 采用线程安全\n为了单例模式不出现并发错误的一种每个线程
  * @author: 钢背猪☣
  * @date: 2017-07-04 下午4:04:36
  */
-public class DataSouceFactory_TomcatJdbc {
+public class DsFactory_TomcatJdbc
+{
 
 	public static final String DS_NAME = "TomcatJdbc";
 
@@ -24,7 +25,7 @@ public class DataSouceFactory_TomcatJdbc {
 
     //private static final ResourceBundle rbundle = ResourceBundle.getBundle("conf/db/db");// 静态私有不可继承-只属于自己
 	private static ResourceBundle rbundle=null; //读取配置文件
-	public DataSouceFactory_TomcatJdbc(ResourceBundle rsb )
+	public DsFactory_TomcatJdbc(ResourceBundle rsb )
 	{
 		rbundle=rsb;
 	}

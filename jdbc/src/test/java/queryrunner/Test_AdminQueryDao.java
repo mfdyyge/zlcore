@@ -1,20 +1,16 @@
 package queryrunner;
 
+import com.zl.jdbc.DataSource.DsFactory_Druid;
+import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.*;
+import org.junit.Test;
+
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
-import com.zl.jdbc.DataSource.DataSouceFactory__Druid;
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.ArrayHandler;
-import org.apache.commons.dbutils.handlers.ArrayListHandler;
-import org.apache.commons.dbutils.handlers.ColumnListHandler;
-import org.apache.commons.dbutils.handlers.KeyedHandler;
-import org.apache.commons.dbutils.handlers.MapHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
-import org.junit.Test;
 
 /**
  * @ClassName: Test_AdminQueryDao
@@ -56,7 +52,7 @@ public class Test_AdminQueryDao {
 	public void testArrayHandler() throws SQLException
 	{
 		//QueryRunner query_apc = new QueryRunner(JdbcUtils.getDataSource());
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner(DsFactory_Druid.getDataSource());
 		String sql = "select * from jpa_persons";
 		Object result[] = (Object[]) query_apc.query(sql, new ArrayHandler());
 		System.out.println(Arrays.asList(result)); // list toString()
@@ -66,7 +62,7 @@ public class Test_AdminQueryDao {
 	public void testArrayListHandler() throws SQLException
 	{
 		//
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner(DsFactory_Druid.getDataSource());
 
 		//顺序读取数据表的内容
 		String sql = "select * from jpa_persons";
@@ -80,7 +76,7 @@ public class Test_AdminQueryDao {
 	public void testColumnListHandler() throws SQLException
 	{
 		//查询指定列|或者说表中的某个"单列"
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner(DsFactory_Druid.getDataSource());
 
 		String sql = "select * from jpa_persons";
 		List list_id = (List) query_apc.query(sql, new ColumnListHandler("id"));
@@ -92,7 +88,7 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testKeyedHandler() throws Exception
 	{
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner(DsFactory_Druid.getDataSource());
 		String sql = "select * from jpa_persons";
 
 		Map<Integer, Map> map = (Map) query_apc.query(sql, new KeyedHandler("add_id"));
@@ -111,7 +107,7 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testMapHandler() throws SQLException {
 
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner(DsFactory_Druid.getDataSource());
 		String sql = "select * from jpa_persons";
 
 		Map<String, Object> map = (Map) query_apc.query(sql, new MapHandler());
@@ -123,7 +119,7 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testMapListHandler() throws SQLException
 	{
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner(DsFactory_Druid.getDataSource());
 
 		String sql = "select * from jpa_persons";
 		List<Map> list = (List) query_apc.query(sql, new MapListHandler());
@@ -139,10 +135,12 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testScalarHandler() throws SQLException
 	{
-		QueryRunner query_apc = new QueryRunner(DataSouceFactory__Druid.getDataSource());
+		QueryRunner query_apc = new QueryRunner();
+		Connection connection=DsFactory_Druid.getConnection();
 
-		String sql = "select count(*) from jpa_persons"; // [13] list[13]
-		int count = ((Long) query_apc.query(sql, new ScalarHandler(1))).intValue();
+		String sql = "select count(id) from jpa_persons"; // [13] list[13]
+		//int count = ((Long) query_apc.query(connection,sql, new ScalarHandler(1))).intValue();
+		int count= QueryRunnerDao.getCount(connection,sql);
 		System.out.println(count);
 	}
 }
