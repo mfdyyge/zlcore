@@ -11,12 +11,12 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 /**
- * @ClassName:   DataSouceFactory__HikariCp 光连接池
+ * @ClassName:   DsFactory__HikariCp 光连接池
  * @Description: HikariCp-光连接池 \n 采用线程安全\n为了单例模式不出现并发错误的一种每个线程
  * @author: 钢背猪☣
  * @date: 2017-07-04 下午4:04:36
  */
-public class DataSouceFactory__HikariCp
+public class DsFactory__HikariCp
 {
 
 
@@ -28,7 +28,7 @@ public class DataSouceFactory__HikariCp
 
     //static ResourceBundle rbundle = ResourceBundle.getBundle("conf/db/db");
 	private static ResourceBundle rbundle=null; //读取配置文件
-	public DataSouceFactory__HikariCp(ResourceBundle rsb )
+	public DsFactory__HikariCp(ResourceBundle rsb )
 	{
 		rbundle=rsb;
 	}
