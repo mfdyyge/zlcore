@@ -5,21 +5,20 @@ package com.zl.jdbc.page;
  * 定义分页查询方法
  */
 
-import java.beans.PropertyVetoException;
-import java.math.BigDecimal;
-import java.sql.SQLException;
-import java.util.List;
-
+import com.zl.jdbc.DataSource.DsFactory;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
+import javax.sql.DataSource;
+import java.math.BigDecimal;
+import java.sql.SQLException;
+import java.util.List;
 
 public class QueryRemote {
 
     // 获得c3p0连接池对象
-    private static ComboPooledDataSource ds;
+    private static DataSource ds;
 
     @SuppressWarnings({
             "unchecked", "rawtypes"
@@ -69,20 +68,9 @@ public class QueryRemote {
         return list;
     }
 
-    private static ComboPooledDataSource getResource() {
-        if (null == ds) {
-            try {
-                ds = new ComboPooledDataSource();
-                ds.setUser("ccv80burundi");
-                ds.setPassword("bd2016");
-                ds.setJdbcUrl("jdbc:oracle:thin:@10.45.58.34:1521:cc");
-                ds.setDriverClass("oracle.jdbc.driver.OracleDriver");
-            }
-            catch (PropertyVetoException e) {
-                // 获取数据库连接是失败
-                e.printStackTrace();
-            }
-        }
+    private static DataSource getResource()
+    {
+        ds= DsFactory.getDataSource();
         return ds;
     }
 }

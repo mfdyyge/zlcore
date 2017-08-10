@@ -1,5 +1,13 @@
 package queryrunner;
 
+import com.google.common.collect.Lists;
+import com.zl.jdbc.DataSource.DsFactory_Druid;
+import com.zl.jdbc.apche.dbutils.domain.T_user;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.ResultSetHandler;
+import org.junit.Test;
+
+import javax.sql.rowset.serial.SerialClob;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,16 +15,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
-
-import javax.sql.rowset.serial.SerialClob;
-
-import com.zl.jdbc.DataSource.DsFactory_Druid;
-import com.zl.jdbc.apche.dbutils.domain.User;
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.ResultSetHandler;
-import org.junit.Test;
-
-import com.google.common.collect.Lists;
 
 /**
  * @ClassName: DBUtilsCRUDTest
@@ -57,13 +55,13 @@ public class QueryRunnerCRUDTest {
 	public void findUserById() throws SQLException {
 		QueryRunner qr = new QueryRunner(DsFactory_Druid.getDataSource());
 		String sql = "select * from t_user u where u.user_id=?";
-		User user = qr.query(sql, new ResultSetHandler<User>() {
-			public User handle(ResultSet rs) throws SQLException {
+		T_user user = qr.query(sql, new ResultSetHandler<T_user>() {
+			public T_user handle(ResultSet rs) throws SQLException {
 				if (rs.next()) {
-					User user = new User();
-					user.setUserId(rs.getInt(1));
-					user.setUserName(rs.getString("user_name"));
-					user.setDesc(rs.getString("desc"));
+					T_user user = new T_user();
+					user.setUser_id(rs.getInt(1));
+					user.setUser_name(rs.getString("user_name"));
+					user.setRemarke(rs.getString("desc"));
 					return user;
 				}
 				return null;
@@ -76,15 +74,15 @@ public class QueryRunnerCRUDTest {
 	public void findAllUser() throws SQLException {
 		QueryRunner queryRunner = new QueryRunner(DsFactory_Druid.getDataSource());
 		String sql = "select * from t_user";
-		List<User> userList = queryRunner.query(sql,
-				new ResultSetHandler<List<User>>() {
-					public List<User> handle(ResultSet rs) throws SQLException {
-						List<User> userList = Lists.newArrayList();
+		List<T_user> userList = queryRunner.query(sql,
+				new ResultSetHandler<List<T_user>>() {
+					public List<T_user> handle(ResultSet rs) throws SQLException {
+						List<T_user> userList = Lists.newArrayList();
 						while (rs.next()) {
-							User user = new User();
-							user.setUserId(rs.getInt(1));
-							user.setUserName(rs.getString("user_name"));
-							user.setDesc(rs.getString("desc"));
+							T_user user = new T_user();
+							user.setUser_id(rs.getInt(1));
+							user.setUser_name(rs.getString("user_name"));
+							user.setRemarke(rs.getString("desc"));
 							userList.add(user);
 						}
 						return userList;

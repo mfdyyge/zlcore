@@ -2,7 +2,7 @@ package queryrunner;
 
 import com.zl.jdbc.DataSource.DsFactory;
 import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
-import com.zl.jdbc.page.OfferType;
+import com.zl.jdbc.apche.dbutils.domain.Jpa_persons;
 import com.zl.jdbc.page.Page;
 import com.zl.jdbc.page.QueryRemote;
 import org.junit.Test;
@@ -47,16 +47,16 @@ public class Test_DataSourceFactory
             page.setPageSize(4);
             Object[] params = new Object[]{1} ;
 
-            List<OfferType> offerTypes = new ArrayList<OfferType>();
-            String sql = "select * from offer_type where offer_type > ?";
-            List<Object> list = QueryRemote.query(sql, page, params, OfferType.class);
+            List<Jpa_persons> offerTypes = new ArrayList<Jpa_persons>();
+            String sql = "select * from jpa_persons where id > ?";
+            List<Object> list = QueryRemote.query(sql, page, params, Jpa_persons.class);
 
-            OfferType offerType = null;
+
             for (int i = 0; i < list.size(); i++) {
-                offerType = new OfferType();
-                offerType = (OfferType) list.get(i);
-                System.out.println(offerType.toString());
-                offerTypes.add(offerType);
+                Jpa_persons jpa_persons = new Jpa_persons();
+                jpa_persons = (Jpa_persons) list.get(i);
+
+                System.out.println(" | "+jpa_persons.getId()+" | "+jpa_persons.getAdd_id()+" | "+jpa_persons.getEmail()+" | "+jpa_persons.getLast_name());
             }
 
             System.out.println();
