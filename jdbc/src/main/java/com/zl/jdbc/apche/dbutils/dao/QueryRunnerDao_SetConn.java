@@ -1,6 +1,6 @@
 package com.zl.jdbc.apche.dbutils.dao;
 
-import com.zl.jdbc.apche.dbutils.util.MapUtil;
+import com.zl.base.map.MapUtil;
 import org.apache.commons.dbutils.BasicRowProcessor;
 import org.apache.commons.dbutils.BeanProcessor;
 import org.apache.commons.dbutils.QueryRunner;
