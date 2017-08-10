@@ -63,7 +63,8 @@ public class Test_DataSourceFactory
             System.out.println("共"+page.getTotalSize()+"条记录，每页大小"+page.getPageSize()+"，当前第"+page.getPageNum()+"页，查询到 "+list.size()+" 条记录。。。");
 
     }
-    
+
+    /*测试DsFactory*/
     @Test
     public  void  DsFactory()
     {

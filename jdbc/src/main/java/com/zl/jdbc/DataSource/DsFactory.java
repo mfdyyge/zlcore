@@ -3,6 +3,8 @@ package com.zl.jdbc.DataSource;
 
 
 
+import com.zl.jdbc.DataSource.spring.DsSpring_Factory;
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -12,7 +14,7 @@ import static com.zl.jdbc.DataSource.DsProperties.*;
 
 /**
  * @ClassName:   DsFactory
- * @Description: DsFactory-数据库连接池 创建类:
+ * @Description: DsFactory-数据库连接池>获取>默认Druid连接池<br>//目前支持四种[ HikariCp |druid |TomcatJdbc |c3p0 ]
  * @author: 钢背猪☣
  * @date: 2017-06-01 下午2:04:36
  */
@@ -22,7 +24,7 @@ public class DsFactory
 
 	public	static final DataSource 		dataSource;// 数据库连接池
 
-	/**********************************************************************///目前支持四种[ HikariCp |druid |TomcatJdbc |c3p0 ]
+	/**********************************************************************/
 	private static 	String 					DataSourceName;	//链接池名字
 
 	public static 	String 					DriverClassName;
@@ -91,7 +93,13 @@ public class DsFactory
 	 */
 	public static DataSource getDataSource()
 	{
-		return dataSource;
+		DataSource dataSource_=DsSpring_Factory.getDataSource();
+		if( null != dataSource_)
+		{
+			System.out.println("当前使用Spring配置的dataSource_.getClass() = " + dataSource_.getClass());
+			return dataSource_;
+		}
+		return DsFactory.dataSource;
 
 	}
 

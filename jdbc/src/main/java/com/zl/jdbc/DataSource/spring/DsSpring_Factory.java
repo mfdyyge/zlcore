@@ -12,8 +12,6 @@ import javax.sql.DataSource;
 public class DsSpring_Factory
 {
 
-	public  static final String DS_NAME = "druid";
-
 	private static DataSource dataSource;// druid数据库连接池
     public void setDataSource(DataSource ds)
 	{

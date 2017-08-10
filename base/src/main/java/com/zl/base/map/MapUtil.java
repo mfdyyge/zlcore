@@ -1,8 +1,10 @@
 package com.zl.base.map;
 
+import org.apache.commons.collections4.MapUtils;
+
 import java.util.Map;
 
-import org.apache.commons.collections4.MapUtils;
+
 
 public class MapUtil {
 
