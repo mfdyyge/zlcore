@@ -1,5 +1,6 @@
-package com.zl.jdbc.DataSource;
+package queryrunner;
 
+import com.zl.jdbc.DataSource.DsFactory;
 import org.junit.Test;
 
 import java.sql.SQLException;
