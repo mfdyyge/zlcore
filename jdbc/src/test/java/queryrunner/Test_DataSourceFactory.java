@@ -68,6 +68,19 @@ public class Test_DataSourceFactory
     public  void  DsFactory()
     {
         System.out.println("DsFactory.getDataSource = " + DsFactory.getDataSource());
-        System.out.println("DsFactory.getDataSource = " + DsFactory.getConnection());
+
+        Connection connection=DsFactory.getConnection();
+
+        System.out.println("DsFactory.Connection = " + connection);
+
+        System.out.println("Connection = " + DsFactory.isValid());
+        System.out.println("connection = " + DsFactory.isValid(connection));
+
+        System.out.println("connection = " + connection.hashCode());
+        System.out.println("DsFactory.getConnection().hashCode() = " + DsFactory.getConnection().hashCode());
+
+
+        //判断两个Connection 是否相等
+        System.out.println("connection =threadLocal.get(Connection) " + connection.equals(DsFactory.getConnection()));
     }
 }

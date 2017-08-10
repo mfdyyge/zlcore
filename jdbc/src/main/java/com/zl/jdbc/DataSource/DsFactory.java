@@ -108,7 +108,7 @@ public class DsFactory
 	{
 		// 从当前线程中获取Connection
 		Connection conn = threadLocal.get();
-		if (conn == null)
+		if ( null==conn)
 		{
 			try
 			{
@@ -135,7 +135,7 @@ public class DsFactory
 		try
 		{
 			Connection conn = threadLocal.get();//有获取当前线程的Conn | 没有就从链接池中取
-			if (conn == null)
+			if ( null==conn)
 			{
 				conn = getConnection();
 				threadLocal.set(conn);
@@ -152,11 +152,12 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 *
 	 */
-	public static void rollback() {
+	public static void rollback()
+	{
 		try {
 			// 从当前线程中获取Connection
 			Connection conn = threadLocal.get();
-			if (conn != null)
+			if ( null!=conn)
 			{
 				conn.rollback();
 
@@ -172,11 +173,14 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 *
 	 */
-	public static void commit() {
-		try {
+	public static void commit()
+	{
+		try
+		{
 			// 从当前线程中获取Connection
 			Connection conn = threadLocal.get();
-			if (conn != null) {
+			if ( null!=conn)
+			{
 				conn.commit();
 			}
 		} catch (Exception e) {
@@ -184,13 +188,43 @@ public class DsFactory
 		}
 	}
 
-	// 判断连接是否可用
-	private boolean isValid(Connection conn) {
-		try {
-			if (conn == null || conn.isClosed()) {
+	/**
+	 * 判断是否可用<br/>
+	 * @return
+	 */
+	public static boolean isValid(Connection conn)
+	{
+		try
+		{
+			if (null==conn || conn.isClosed())
+			{
 				return false;
 			}
-		} catch (SQLException e) {
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		return true;
+	}
+
+	/**
+	 * Connection conn = threadLocal.get();〈br/〉
+	 * 判断当前线程[conn]是否可用<br/>
+	 * @return
+	 */
+	public static boolean isValid()
+	{
+		Connection conn = threadLocal.get();
+		try
+		{
+			if (null==conn || conn.isClosed())
+			{
+				return false;
+			}
+		}
+		catch (SQLException e)
+		{
 			e.printStackTrace();
 		}
 		return true;
@@ -203,10 +237,12 @@ public class DsFactory
 	 */
 	public static void close()
 	{
-		try {
+		try
+		{
 			// 从当前线程中获取Connection
 			Connection conn = threadLocal.get();
-			if (conn != null) {
+			if ( null!=conn)
+			{
 				conn.close();
 				threadLocal.remove();
 			}
