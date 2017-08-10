@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+import static com.zl.jdbc.DataSource.DsProperties.*;
+
 /**
  * @ClassName:   DsFactory
  * @Description: DsFactory-数据库连接池 创建类:
@@ -16,44 +18,66 @@ import java.util.ResourceBundle;
  */
 public class DsFactory
 {
-	// conf/db/db.properties  里面的DataSourceName=?
-	public  static final String HikariCp_NAME 	= "HikariCp";
-	public  static final String druid_NAME 		= "druid";
-	public 	static final String TomcatJdbc_NAME = "TomcatJdbc";
-	public  static final String c3p0_NAME 		= "c3p0";
 
-	private static final DataSource dataSource;// druid数据库连接池
-	private static ThreadLocal<Connection> threadLocal = new ThreadLocal<Connection>();	// 使用ThreadLocal存储当前线程中的Connection对象
 
-	private static ResourceBundle rbundle = ResourceBundle.getBundle("conf/db/db");
-	private static final String DataSourceName = rbundle.getString("DataSourceName");//  设置要使用的链接池关键字-目前支持四种[ HikariCp |druid |TomcatJdbc |c3p0 ]
+	public	static final DataSource 		dataSource;// 数据库连接池
+
+	/**********************************************************************///目前支持四种[ HikariCp |druid |TomcatJdbc |c3p0 ]
+	private static 	String 					DataSourceName;	//链接池名字
+
+	public static 	String 					DriverClassName;
+	public static 	String 					JdbcUrl;
+	public static 	String 					UserName;
+	public static 	String 					pwd;
+
+	/**********************************************************************///公共对象直接引用-[直接通过类来调用>而不需要新建对象]
+	private static	ResourceBundle			rbundle;//配置文件读取类
+	private static	ThreadLocal<Connection>	threadLocal = new ThreadLocal<Connection>();	// 使用ThreadLocal存储当前线程中的Connection对象
+
+
 
 	static
 	{
+		if(null==rbundle)
+		{
+			rbundle = ResourceBundle.getBundle("conf/db/db");//配置文件读取类
+		}
+
+		if (null==DataSourceName)
+		{
+			DataSourceName  = rbundle.getString("DataSourceName");//读取配置文件中的链接池名字
+		}
+
+		DriverClassName = rbundle.getString("DriverClassName");//数据库驱动类型
+		JdbcUrl 		= rbundle.getString("JdbcUrl");		//数据库链接地址
+		UserName 		= rbundle.getString("UserName");
+		pwd 			= rbundle.getString("pwd");
+
 		switch (DataSourceName)
 		{
 			case HikariCp_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DsFactory_HikariCp(rbundle).getDataSource();
+				dataSource =  DsFactory_HikariCp.getDataSource();
 				break;
 			case druid_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DsFactory_Druid(rbundle).getDataSource();
+				dataSource =  DsFactory_Druid.getDataSource();
 				break;
 			case TomcatJdbc_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DsFactory_TomcatJdbc(rbundle).getDataSource();
+				dataSource =  DsFactory_TomcatJdbc.getDataSource();
 				break;
 			case c3p0_NAME:
 				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DsFactory_C3p0(rbundle).getDataSource();
+				dataSource =  DsFactory_C3p0.getDataSource();
 				break;
 			default:
 				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
 				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource = new DsFactory_Druid(rbundle).getDataSource();
+				dataSource =  DsFactory_Druid.getDataSource();
 		}
 	}
+
 
 
 
@@ -66,7 +90,6 @@ public class DsFactory
 	public static DataSource getDataSource()
 	{
 		return dataSource;
-
 
 	}
 

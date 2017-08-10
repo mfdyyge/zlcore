@@ -12,7 +12,7 @@ public class Test_properties
     @Test
     public void testCustomRepositoryMethod() throws SQLException {
         //System.out.println("ConnectionFactory.class.getClassLoader().toString() = " + ConnectionFactory.class.getClassLoader());
-        System.out.println("test= " + DsFactory_Druid.getConnection());
+        System.out.println("test= " + DsFactory.getConnection());
 
     }
 

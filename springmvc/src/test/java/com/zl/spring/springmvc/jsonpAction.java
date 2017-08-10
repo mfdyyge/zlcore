@@ -1,9 +1,5 @@
 package com.zl.spring.springmvc;
 
-import com.sun.deploy.net.HttpResponse;
-import com.zl.base.json.SessionJson;
-
-import javax.servlet.http.HttpServletResponse;
 
 public class jsonpAction {
 	/**
@@ -11,12 +7,14 @@ public class jsonpAction {
 	 */
 	private static final long serialVersionUID = 1L;
 
+/*
 	public  void Jsonp()
 	{
 		User user=new User();
 		HttpResponse httprp =null;
 		SessionJson.JsonpWrite(user, (HttpServletResponse) httprp);//这里只是测试用,正式环境要给httpRespones 赋值才能用
 	}
+*/
 
 	/*
 	private Hyfp hyfp;//基本信息

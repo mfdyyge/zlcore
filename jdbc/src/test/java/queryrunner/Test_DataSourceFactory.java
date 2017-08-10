@@ -2,7 +2,6 @@ package queryrunner;
 
 import com.zl.jdbc.DataSource.DsFactory;
 import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
-
 import com.zl.jdbc.page.OfferType;
 import com.zl.jdbc.page.Page;
 import com.zl.jdbc.page.QueryRemote;
@@ -63,5 +62,11 @@ public class Test_DataSourceFactory
             System.out.println();
             System.out.println("共"+page.getTotalSize()+"条记录，每页大小"+page.getPageSize()+"，当前第"+page.getPageNum()+"页，查询到 "+list.size()+" 条记录。。。");
 
+    }
+    
+    @Test
+    public  void  DsFactory()
+    {
+        System.out.println("DsFactory.getDataSource = " + DsFactory.getDataSource());
     }
 }
