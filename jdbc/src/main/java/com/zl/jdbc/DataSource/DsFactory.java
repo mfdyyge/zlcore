@@ -40,7 +40,9 @@ public class DsFactory
 	{
 		if(null==rbundle)
 		{
+			System.out.println("  配置文件读取〉conf/db/db");
 			rbundle = ResourceBundle.getBundle("conf/db/db");//配置文件读取类
+
 		}
 
 		if (null==DataSourceName)

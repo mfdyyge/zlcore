@@ -68,5 +68,6 @@ public class Test_DataSourceFactory
     public  void  DsFactory()
     {
         System.out.println("DsFactory.getDataSource = " + DsFactory.getDataSource());
+        System.out.println("DsFactory.getDataSource = " + DsFactory.getConnection());
     }
 }
