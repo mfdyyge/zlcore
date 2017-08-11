@@ -22,24 +22,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="activity" />
         <module name="base" />
         <module name="hibernate" />
         <module name="jdbc" />
         <module name="shiro" />
         <module name="springdata" />
         <module name="springmvc" />
-        <module name="springweb" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel>
+      <module name="activity" target="1.7" />
       <module name="base" target="1.7" />
       <module name="hibernate" target="1.7" />
       <module name="jdbc" target="1.8" />
       <module name="shiro" target="1.7" />
-      <module name="springCore" target="1.5" />
       <module name="springdata" target="1.7" />
       <module name="springmvc" target="1.7" />
-      <module name="springweb" target="1.5" />
       <module name="zlcore" target="1.7" />
     </bytecodeTargetLevel>
   </component>

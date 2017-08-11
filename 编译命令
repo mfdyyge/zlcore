@@ -2,7 +2,7 @@
 ---------------------------------------------------------------MVN
 #更改模块版本号
 >mvn    versions:set -DnewVersion=0.0.2-SNAPSHOT
-        versions:set -DnewVersion=1.0.20170808
+        versions:set -DnewVersion=1.0.20170811
 
 到这里已经完成了子模块的版本号更新.什么?还有?
 那就再加一个命令吧
