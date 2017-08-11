@@ -23,6 +23,7 @@
     <module>springmvc</module>
     <module>springdata</module>
     <module>shiro</module>
+    <module>activity</module>
 </modules>
 
 
