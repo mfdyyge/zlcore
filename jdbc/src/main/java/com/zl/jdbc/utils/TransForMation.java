@@ -10,7 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Administrator on 2017/8/12.
+ * Created by cuidiwhere on 2017/8/12.
+ * http://blog.csdn.net/cuidiwhere/article/details/8130434
  * @author 实现javaBean与Map<String,Object>相互转换 <br/>
  * MapToBean1 <br/>
  * BeanToMap <br/><br/>
