@@ -60,7 +60,7 @@ public class DsFactory_Druid
 	 * @Method: getDataSource
 	 * @Description: 获取数据源
 	 * @author: 钢背猪☣
-	 * @return DataSource 返回:javax.sql.DataSource
+	 * @return DataSource 返回:javax.utils.DataSource
 	 */
 	public static DataSource getDataSource()
 	{

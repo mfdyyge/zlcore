@@ -27,20 +27,18 @@ public class Test_AdminQueryDao {
 	@Test
 	public void test_AdminDao()
 	{
-/*		String sql = "select * from jpa_persons where id=? and add_id=?";
+/*		String utils = "select * from jpa_persons where id=? and add_id=?";
 		Object [] params = new Object[]{"43","98"};
 
-		Object result[] = (Object[]) AdminQueryDao.queryArray(sql,params);
+		Object result[] = (Object[]) AdminQueryDao.queryArray(utils,params);
 		System.out.println(Arrays.asList(result));
 		*/
 
 		String sql = "select * from jpa_persons where id like ? ";
-		Object [] params = new Object[]{"%4%"};
+		Object [] params = new Object[]{"%4%","名字",100};
 
-		/*
-		Object result[] = (Object[]) AdminQueryDao.queryArray(sql,params);
-		System.out.println(Arrays.asList(result));
-		*/
+		//Object result[] = (Object[]) AdminQueryDao.queryArray(utils,params);
+		System.out.println(Arrays.asList(params));
 	}
 
 	/**
@@ -139,7 +137,7 @@ public class Test_AdminQueryDao {
 		Connection connection=DsFactory.getConnection();
 
 		String sql = "select count(id) from jpa_persons"; // [13] list[13]
-		//int count = ((Long) query_apc.query(connection,sql, new ScalarHandler(1))).intValue();
+		//int count = ((Long) query_apc.query(connection,utils, new ScalarHandler(1))).intValue();
 		int count= QueryRunnerDao.getCount(connection,sql);
 		System.out.println(count);
 	}

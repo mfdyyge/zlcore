@@ -133,13 +133,13 @@ public class BeanProcessor {
 		try {
 			if (value instanceof java.util.Date) {
 				final String dateType = params[0].getName();
-				if ("java.sql.Date".equals(dateType)) {
+				if ("java.utils.Date".equals(dateType)) {
 					value = new java.sql.Date(
 							((java.util.Date) value).getTime());
-				} else if ("java.sql.Time".equals(dateType)) {
+				} else if ("java.utils.Time".equals(dateType)) {
 					value = new java.sql.Time(
 							((java.util.Date) value).getTime());
-				} else if ("java.sql.Timestamp".equals(dateType)) {
+				} else if ("java.utils.Timestamp".equals(dateType)) {
 					value = new java.sql.Timestamp(
 							((java.util.Date) value).getTime());
 				}

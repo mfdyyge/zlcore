@@ -142,13 +142,21 @@
 
 
         <!-- mirrored from git://git.apache.org/commons-dbutils.git        -->
-        <!-- ****************************************************apache/commons-dbutils*******************************************************8  -->
+        <!-- ****************************************************apache/commons*******************************************************8  -->
+        <!--JDBC-ORM-->
         <dependency>
             <groupId>commons-dbutils</groupId>
             <artifactId>commons-dbutils</artifactId>
             <version>1.7</version>
         </dependency>
 
+        <!---->
+        <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
 
         <!-- **************************************************com.google.guava*********************************************************8  -->
         <dependency>
