@@ -1,6 +1,6 @@
 package utils;
 
-import com.zl.jdbc.pojo.table;
+import com.zl.jdbc.pojo.FormParams;
 
 import java.util.*;
 
@@ -85,7 +85,7 @@ public class GetSql
 
     public static void getTableFromMap(Map<String, String> map)
     {
-        table tb=new table();
+        FormParams tb=new FormParams();
         Set<String> set = map.keySet();
 
         int size=map.size();

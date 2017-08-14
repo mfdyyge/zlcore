@@ -1,9 +1,12 @@
 package com.zl.jdbc.apche.dbutils.dao;
 
+import com.zl.jdbc.page.Page;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.*;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
@@ -87,12 +90,63 @@ public class QueryRunnerDao {
 	 * @return
 	 */
 	public static <T> List<T> getListBean(Connection connection, String sql, Class<T> type, Object... params) {
-		try {
+		try
+		{
 			return new QueryRunner().query(connection, sql, new BeanListHandler<T>(type), params);
-		} catch (Exception ex) {
-			ex.printStackTrace();
 		}
+		catch (Exception ex){			ex.printStackTrace();		}
 		return null;
+	}
+
+	public static List<Object> getListBean_Page(String sql, Page page, Object[] params, Class<?> clss)
+	{
+
+
+		List<Object> list = null;
+		try
+		{
+			sql = sql.toUpperCase();
+			if (null == page)
+			{
+				list = (List<Object>) new QueryRunner().query(sql, new BeanListHandler(clss.newInstance().getClass()), params);
+			}
+			else
+			{
+				if (null == params)
+				{
+					params = new Object[]{};
+				}
+
+				// 查询总数
+				String totalSql = "SELECT COUNT(*) FROM (" + sql + ")";
+				BigDecimal count = new QueryRunner().query(totalSql,new ScalarHandler<BigDecimal>(),params);
+				page.setTotalSize(count.intValue());
+				page.init();
+
+				Object[] pageParams = new Object[params.length + 2];
+				System.arraycopy(params, 0, pageParams, 0, params.length);
+
+				pageParams[params.length] = page.getPageEnd();
+				pageParams[params.length + 1] = page.getPageBegin();
+
+
+				String pageSql = "SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
+				list = (List<Object>) new QueryRunner().query(pageSql, new BeanListHandler(clss.newInstance().getClass()), pageParams);
+			}
+		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return list;
 	}
 
 	/**

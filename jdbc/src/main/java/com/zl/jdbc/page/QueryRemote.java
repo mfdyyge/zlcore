@@ -37,8 +37,7 @@ public class QueryRemote {
                 if (null == params) {
                     params = new Object[]{};
                 }
-                String pageSql = "SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=?"
-                        + ") " + "WHERE RN >=?";
+                String pageSql = "SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
 
                 // 查询总数
                 String totalSql = "SELECT COUNT(*) FROM (" + sql + ")";

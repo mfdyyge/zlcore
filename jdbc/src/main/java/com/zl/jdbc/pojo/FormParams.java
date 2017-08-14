@@ -3,7 +3,8 @@ package com.zl.jdbc.pojo;
 /**
  * Created by Administrator on 2017/8/12.
  */
-public class table {
+public class FormParams
+{
 
     private static String sql;
     private static String tablename;
@@ -16,7 +17,7 @@ public class table {
     }
 
     public static void setSql(String sql) {
-        table.sql = sql;
+        FormParams.sql = sql;
     }
 
     public static String getTablename() {
@@ -24,7 +25,7 @@ public class table {
     }
 
     public static void setTablename(String tablename) {
-        table.tablename = tablename;
+        FormParams.tablename = tablename;
     }
 
     public static Object[] getParamsKey() {
@@ -32,7 +33,7 @@ public class table {
     }
 
     public static void setParamsKey(Object[] paramsKey) {
-        table.paramsKey = paramsKey;
+        FormParams.paramsKey = paramsKey;
     }
 
     public static Object[] getParamsVal() {
@@ -40,7 +41,7 @@ public class table {
     }
 
     public static void setParamsVal(Object[] paramsVal) {
-        table.paramsVal = paramsVal;
+        FormParams.paramsVal = paramsVal;
     }
 
     public static Object[] getPage() {
@@ -48,6 +49,6 @@ public class table {
     }
 
     public static void setPage(Object[] page) {
-        table.page = page;
+        FormParams.page = page;
     }
 }

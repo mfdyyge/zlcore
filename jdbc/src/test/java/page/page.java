@@ -20,7 +20,8 @@ public class page
 {
 
     @Test
-    public void page_test(){
+    public void page_test()
+    {
 
         Page page = new Page();
         page.setPageNum(1);
@@ -32,7 +33,8 @@ public class page
         List<Object> list = QueryRemote.query(sql, page, params, Jpa_persons.class);
 
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++)
+        {
             Jpa_persons jpa_persons = new Jpa_persons();
             jpa_persons = (Jpa_persons) list.get(i);
 
