@@ -11,12 +11,12 @@ import java.util.List;
 /**
  * Created by 钢背猪☣ on 2017-8-14 0014.
  *
- * @ClassName: page
+ * @ClassName: page_test
  * @Description: 描述:474752515@qq.com
  * @author: 钢背猪☣
  * @date: 2017-8-14 0014
  */
-public class page
+public class page_test
 {
 
     @Test
@@ -27,6 +27,9 @@ public class page
         page.setPageNum(1);
         page.setPageSize(4);
         Object[] params = new Object[]{1} ;
+
+        System.out.println("page.getPageEnd() = " + page.getPageEnd());
+        System.out.println("page.getPageBegin() = " + page.getPageBegin());
 
         List<Jpa_persons> offerTypes = new ArrayList<Jpa_persons>();
         String sql = "select * from jpa_persons where id > ?";

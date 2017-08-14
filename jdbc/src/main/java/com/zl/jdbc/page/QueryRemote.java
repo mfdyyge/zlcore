@@ -23,7 +23,8 @@ public class QueryRemote {
     @SuppressWarnings({
             "unchecked", "rawtypes"
     })
-    public static List<Object> query(String sql, Page page, Object[] params, Class<?> clss) {
+    public static List<Object> query(String sql, Page page, Object[] params, Class<?> clss)
+    {
         ds = getResource();
         QueryRunner runner = new QueryRunner(ds);
 
@@ -47,8 +48,13 @@ public class QueryRemote {
 
                 Object[] pageParams = new Object[params.length + 2];
                 System.arraycopy(params, 0, pageParams, 0, params.length);
+
                 pageParams[params.length] = page.getPageEnd();
                 pageParams[params.length + 1] = page.getPageBegin();
+
+
+
+
                 list = (List<Object>) runner.query(pageSql, new BeanListHandler(clss.newInstance().getClass()), pageParams);
             }
         }

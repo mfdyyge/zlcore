@@ -1,5 +1,6 @@
 package com.zl.jdbc.utils;
 
+import com.zl.jdbc.page.Page;
 import com.zl.jdbc.pojo.FormParams;
 
 import java.util.*;
@@ -78,23 +79,33 @@ public class GetSql
         //分页参数-map 中分离出来
         /*************************************************************************************************************/
         Object[] array_page_val=new Object[2];    //表单 分页值
-        if(null != pageNumber_filed && !("".equals(pageNumber_filed)))//当前页码
+        Page page = new Page();
+
+/*        page.setPageNum(1);
+        page.setPageSize(4);*/
+        if(null != pageNumber_filed && null != pageSize__filed )//分页参数
         {
-            array_page_val[0]=map.get(pageNumber_filed);
-            map.remove(pageNumber_filed);//提取后删除分页参数
-            System.out.println("map.size() = " + map.size());
+            int page_num    =Integer.parseInt(map.get(pageNumber_filed));map.remove(pageNumber_filed);//提取后删除分页参数
+            int page_size   =Integer.parseInt(map.get(pageSize__filed));map.remove(pageSize__filed);//提取后删除分页参数
+            /************************************************************/
+            page.setPageEnd((page_num - 1) * page_size + 1);// 每页结束条数
+            array_page_val[0]=(page_num - 1) * page_size + 1;
+
+            /************************************************************/
+            page.setPageBegin((page_num) * page_size);      // 每页开始条数
+            array_page_val[1]=(page_num) * page_size;
+
+            /************************************************************/
+
+
+            System.out.println("array_page_val[0] = " + array_page_val[0]);
+            System.out.println("array_page_val[1] = " + array_page_val[1]);
         }
 
-        if(null != pageSize__filed && !("".equals(pageSize__filed)))  //每页显示记录数
-        {
-            array_page_val[1]=map.get(pageSize__filed);
-            map.remove(pageSize__filed);//提取后删除分页参数
-            System.out.println("map.size() = " + map.size());
-        }
 
         //
         /*************************************************************************************************************/
-        Set<String> set = map.keySet();
+        Set<String> set = map.keySet();//删除分页参数--提取表单参数
 
         int size=map.size();
 
