@@ -65,12 +65,13 @@ public class GetSql
     }
 
     /**
-     * 把分页参数[pageNumber_filed,pageSize__filed]从表单参数Map中分离出来
+     * 获取表单参数对象map=>FormParams  \n
+     * 把分页参数[pageNumber_filed,pageSize__filed]从表单参数Map中分离出来 \n
      * @param map   例子:{tablename:"user",params1:"valxx",params2:"val2xx",params3:"val3xx",pageNumber:1,pageSize:20}
      * @param pageNumber //当前页码
      * @param pageSize   //每页显示记录数
      */
-    public static void getTableFromMap(Map<String, String> map,String pageNumber_filed,String pageSize__filed)
+    public static void getFormParams_FromMap(Map<String, String> map,String pageNumber_filed,String pageSize__filed)
     {
         //"SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
 
