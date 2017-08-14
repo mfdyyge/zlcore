@@ -1,6 +1,5 @@
 package com.zl.jdbc.utils;
 
-import com.zl.jdbc.page.Page;
 import com.zl.jdbc.pojo.FormParams;
 
 import java.util.*;
@@ -72,38 +71,46 @@ public class GetSql
      * @param pageNumber //当前页码
      * @param pageSize   //每页显示记录数
      */
-    public static void getFormParams_FromMap(Map<String, String> map,String pageNumber_filed,String pageSize__filed)
+    public static void getFormParams_FromMap(Map<String, String> map,String tableName_form,String pageNumber_form,String pageSize_form)
     {
         //"SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
 
-        //分页参数-map 中分离出来
+        //1. 表名 - [tableName] -> map 中分离出来
         /*************************************************************************************************************/
         Object[] array_page_val=new Object[2];    //表单 分页值
-        Page page = new Page();
+        FormParams formParams=new FormParams();
 
-/*        page.setPageNum(1);
-        page.setPageSize(4);*/
-        if(null != pageNumber_filed && null != pageSize__filed )//分页参数
+
+        if(null !=tableName_form && !("".equals(tableName_form)))
         {
-            int page_num    =Integer.parseInt(map.get(pageNumber_filed));map.remove(pageNumber_filed);//提取后删除分页参数
-            int page_size   =Integer.parseInt(map.get(pageSize__filed));map.remove(pageSize__filed);//提取后删除分页参数
+            String tableName=map.get(tableName_form);
+            formParams.setTablename(tableName);
+            map.remove("tableName");
+        }
+
+        //2.分页参数 - [page_num | page_size]  -> map 中分离出来
+        /*************************************************************************************************************/
+        if(null != pageNumber_form && null != pageSize_form )//分页参数
+        {
+            int page_num    =Integer.parseInt(map.get(pageNumber_form));map.remove(pageNumber_form);//提取后删除分页参数
+            int page_size   =Integer.parseInt(map.get(pageSize_form));  map.remove(pageSize_form);  //提取后删除分页参数
             /************************************************************/
-            page.setPageEnd((page_num - 1) * page_size + 1);// 每页结束条数
-            array_page_val[0]=(page_num - 1) * page_size + 1;
+            //page.setPageEnd((page_num - 1) * page_size + 1);  // 每页结束条数
+            array_page_val[0]=(page_num - 1) * page_size + 1;   // 每页结束条数
 
             /************************************************************/
-            page.setPageBegin((page_num) * page_size);      // 每页开始条数
-            array_page_val[1]=(page_num) * page_size;
+            //page.setPageBegin((page_num) * page_size);      // 每页开始条数
+            array_page_val[1]=(page_num) * page_size;           // 每页开始条数
 
             /************************************************************/
-
+            formParams.setPage(array_page_val);
 
             System.out.println("array_page_val[0] = " + array_page_val[0]);
             System.out.println("array_page_val[1] = " + array_page_val[1]);
         }
 
 
-        //
+        //3.表单字段 - [array_form_params_key | array_form_params_val]
         /*************************************************************************************************************/
         Set<String> set = map.keySet();//删除分页参数--提取表单参数
 
@@ -123,9 +130,8 @@ public class GetSql
             }
 
         }
-        System.out.println("params_key = " + array_form_params_key);
-        System.out.println("params_val = " + array_form_params_val);
-
+        formParams.setParamsKey(array_form_params_key.toArray());
+        formParams.setParamsVal(array_form_params_val.toArray());
 
     }
 

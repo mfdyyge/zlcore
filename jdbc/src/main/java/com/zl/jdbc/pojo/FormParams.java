@@ -6,49 +6,49 @@ package com.zl.jdbc.pojo;
 public class FormParams
 {
 
-    private static String sql;
-    private static String tablename;
-    private static Object[] paramsKey;//TG.INST_ADDR = ?<有序存储>
-    private static Object[] paramsVal; //TG.INST_ADDR = ?普通参数数组<有序存储>
-    private static Object[] page;   //分页参数<有序存储>
+    private  String sql;
+    private  String tablename;
+    private  Object[] paramsKey;//TG.INST_ADDR = ?<有序存储>
+    private  Object[] paramsVal; //TG.INST_ADDR = ?普通参数数组<有序存储>
+    private  Object[] page;   //分页参数<有序存储>
 
-    public static String getSql() {
+    public  String getSql() {
         return sql;
     }
 
-    public static void setSql(String sql) {
-        FormParams.sql = sql;
+    public  void setSql(String sql) {
+        this.sql = sql;
     }
 
-    public static String getTablename() {
+    public  String getTablename() {
         return tablename;
     }
 
-    public static void setTablename(String tablename) {
-        FormParams.tablename = tablename;
+    public  void setTablename(String tablename) {
+        this.tablename = tablename;
     }
 
-    public static Object[] getParamsKey() {
+    public  Object[] getParamsKey() {
         return paramsKey;
     }
 
-    public static void setParamsKey(Object[] paramsKey) {
-        FormParams.paramsKey = paramsKey;
+    public  void setParamsKey(Object[] paramsKey) {
+        this.paramsKey = paramsKey;
     }
 
-    public static Object[] getParamsVal() {
+    public  Object[] getParamsVal() {
         return paramsVal;
     }
 
-    public static void setParamsVal(Object[] paramsVal) {
-        FormParams.paramsVal = paramsVal;
+    public  void setParamsVal(Object[] paramsVal) {
+        this.paramsVal = paramsVal;
     }
 
-    public static Object[] getPage() {
+    public  Object[] getPage() {
         return page;
     }
 
-    public static void setPage(Object[] page) {
-        FormParams.page = page;
+    public  void setPage(Object[] page) {
+        this.page = page;
     }
 }
