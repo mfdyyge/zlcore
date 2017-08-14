@@ -39,30 +39,6 @@ public class Test_DataSourceFactory
 
     }
 
-    @Test
-    public void page_test(){
-
-            Page page = new Page();
-            page.setPageNum(1);
-            page.setPageSize(4);
-            Object[] params = new Object[]{1} ;
-
-            List<Jpa_persons> offerTypes = new ArrayList<Jpa_persons>();
-            String sql = "select * from jpa_persons where id > ?";
-            List<Object> list = QueryRemote.query(sql, page, params, Jpa_persons.class);
-
-
-            for (int i = 0; i < list.size(); i++) {
-                Jpa_persons jpa_persons = new Jpa_persons();
-                jpa_persons = (Jpa_persons) list.get(i);
-
-                System.out.println(" | "+jpa_persons.getId()+" | "+jpa_persons.getAdd_id()+" | "+jpa_persons.getEmail()+" | "+jpa_persons.getLast_name());
-            }
-
-            System.out.println();
-            System.out.println("共"+page.getTotalSize()+"条记录，每页大小"+page.getPageSize()+"，当前第"+page.getPageNum()+"页，查询到 "+list.size()+" 条记录。。。");
-
-    }
 
     /*测试DsFactory*/
     @Test
