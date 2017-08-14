@@ -31,8 +31,9 @@ public class GetSql
 
         initMap();
 
-        String sql = getSqlFromMap(map);
-
+        String sql;
+        //sql = getSqlFromMap(map);
+        sql=GetSql.getSqlFromMap(map);
         System.out.println("utils: " + sql);
         System.out.println("paramers = " + Arrays.asList(getArryFromMap(map)));
         getTableFromMap(map);
