@@ -37,6 +37,34 @@ $ git add .                  // 注意别少了后面这个点["."]
 $ git status                 //查看状态
 $ git log
 $ git clone
+
+
+
+
+------------------------------项目操作 [提交| 下载\合并\推送]-----------------------------------------------------------------------------------
+GIT-[提交|下载|合并|推送](没有涉及到分支版本)
+
+    Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/SVN/spring_2017/zlcore (master)
+
+    $ git commit -am"新增:Activity"
+    $ git fetch zlcore master:temp  --输入用户名密码
+    $ git rebase temp
+    $ git push ---输入用户名密码
+-------------------------------------------------------------------------------------------------------------------------
+字面解释的话，
+git commit -m用于提交暂存区的文件；
+git commit -am用于提交跟踪过的文件
+
+要理解它们的区别，
+首先要明白git的文件状态变化周期，如下图所示
+
+工作目录下面的所有文件都不外乎这两种状态：
+已跟踪或未跟踪。已跟踪的文件是指本来就被纳入版本控制管理的文件，
+在上次快照中有它们的记录，工作一段时间后，
+它们的状态可能是未更新，已修改或者已放入暂存区
+------------------------------------------------------------------------------------------------------------------------
+
+
 -------------------------------分支操作--------------------------------
 $ git branch            //查看(本地分支)
 $ git branch -a         //查看(本地分支+远程分支)
@@ -61,6 +89,43 @@ $ git push origin :branch-name
 $ git remote -v         //查看远程的git地址个别名
 
 
+------------------------------项目操作[]-----------------------------------------------------------------------------------
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool ((c147a44...))
+$ git remote -v
+origin  https://git.oschina.net/loolly/hutool.git (fetch)
+origin  https://git.oschina.net/loolly/hutool.git (push)
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool ((c147a44...))
+$ git branch -a
+* (HEAD detached at origin/master)
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/dev
+  remotes/origin/master
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool ((c147a44...))
+$ git checkout master
+Previous HEAD position was c147a44... Merge branch 'dev'
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 89 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool (master)
+$ git branch
+* master
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool (master)
+$ git fetch origin master:temp
+From https://git.oschina.net/loolly/hutool
+ * [new branch]      master     -> temp
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool (master)
+$ git rebase temp
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to temp.
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/Java工具/hutool2017-74/hutool (master)
+$
 
 
 
@@ -72,28 +137,3 @@ $ git remote -v         //查看远程的git地址个别名
 
 
 
-
-
-
-------------------------------项目操作-----------------------------------------------------------------------------------
-GIT-[提交|下载|合并|推送](没有涉及到分支版本)
-
-    Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/SVN/spring_2017/zlcore (master)
-
-    $ git commit -am"新增:Activity"
-    $ git fetch zlcore master:temp  --输入用户名密码
-    $ git rebase temp
-    $ git push ---输入用户名密码
--------------------------------------------------------------------------------------------------------------------------
-字面解释的话，
-git commit -m用于提交暂存区的文件；
-git commit -am用于提交跟踪过的文件
-
-要理解它们的区别，
-首先要明白git的文件状态变化周期，如下图所示
-
-工作目录下面的所有文件都不外乎这两种状态：
-已跟踪或未跟踪。已跟踪的文件是指本来就被纳入版本控制管理的文件，
-在上次快照中有它们的记录，工作一段时间后，
-它们的状态可能是未更新，已修改或者已放入暂存区
-------------------------------------------------------------------------------------------------------------------------
