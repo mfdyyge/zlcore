@@ -38,7 +38,6 @@ public class DsFactory_HikariCp
 		dataSource.setAutoCommit(true);//设置事务[默认=>自动提交]
 		/****************************************************************/
 
-
 		/*
 		* 连接只读数据库时配置为true， 保证安全
 		* */
@@ -49,13 +48,13 @@ public class DsFactory_HikariCp
 		* 超过这个时长还没可用的连接则发生SQLException
 		* 缺省:30秒
 		* */
-		dataSource.setConnectionTimeout(3000);//3秒
+		dataSource.setConnectionTimeout(3000);//3000毫秒
 		/*
 		* 一个连接idle状态的最大时长（毫秒）
 		* 超时则被释放（retired）
 		* 缺省:10分钟
 		* */
-		dataSource.setIdleTimeout(6000);//6秒
+		dataSource.setIdleTimeout(5000);//5000毫秒
 
 		/*
 		* 一个连接的生命时长（毫秒）
@@ -66,7 +65,7 @@ public class DsFactory_HikariCp
 		* 1000毫秒=1秒
 		* 60000毫秒=1分
 		* */
-		dataSource.setMaxLifetime(600000);//6分钟-[链接池中->保持数据库链接->时间]
+		dataSource.setMaxLifetime(600000);//10分钟-[链接池中->保持数据库链接->时间]
 		/*
 		* 连接池中允许的最大连接数
 		* 缺省值：10；
@@ -75,9 +74,13 @@ public class DsFactory_HikariCp
 		dataSource.setMaximumPoolSize(40);
 
 
+
 		/**
-		* 其中，很多配置都使用缺省值就行了，除了MaxLifetime和MaximumPoolSize要注意自己计算一下。
-		其他的配置（sqlSessionFactory、MyBatis MapperScannerConfigurer、transactionManager等）统统不用变。
+		* 其中，很多配置都使用缺省值就行了，除了[MaxLifetime]和[MaximumPoolSize]要注意自己计算一下。
+		其他的配置
+		 [sqlSessionFactory、
+		 MyBatis MapperScannerConfigurer、
+		 transactionManager等]统统不用变。
 
 		其他关于Datasource配置参数的建议：
 		Configure your HikariCP idleTimeout and maxLifeTime settings to be one minute less than the wait_timeout of MySQL.

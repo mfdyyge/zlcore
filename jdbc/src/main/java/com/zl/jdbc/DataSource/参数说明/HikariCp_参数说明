@@ -1,0 +1,975 @@
+/*
+http://git.oschina.net/mirrors/hikaricp
+
+ * Copyright (C) 2013, 2014 Brett Wooldridge
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.zaxxer.hikari;
+
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.health.HealthCheckRegistry;
+import com.zaxxer.hikari.metrics.MetricsTrackerFactory;
+import com.zaxxer.hikari.util.PropertyElf;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.Properties;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadFactory;
+
+import static com.zaxxer.hikari.util.UtilityElf.getNullIfEmpty;
+import static java.util.concurrent.TimeUnit.MINUTES;
+import static java.util.concurrent.TimeUnit.SECONDS;
+
+public class HikariConfig implements HikariConfigMXBean
+{
+   // logger
+   private static final Logger LOGGER = LoggerFactory.getLogger(HikariConfig.class);
+
+   // 连接超时
+   private static final long CONNECTION_TIMEOUT = SECONDS.toMillis(30);
+   // 验证超时
+   private static final long VALIDATION_TIMEOUT = SECONDS.toMillis(5);
+   // 闲置超时
+   private static final long IDLE_TIMEOUT = MINUTES.toMillis(10);
+   // 最大生命周期
+   private static final long MAX_LIFETIME = MINUTES.toMillis(30);
+   // 默认最大缓冲池的大小
+   private static final int DEFAULT_POOL_SIZE = 10;
+   // 单元测试
+   private static boolean unitTest;
+
+   // Properties changeable at runtime through the MBean
+   // 在运行时通过管理构建可以改变的属性
+   // 连接超时
+   private volatile long connectionTimeout;
+   // 生效超时
+   private volatile long validationTimeout;
+   // 闲置超时
+   private volatile long idleTimeout;
+   // 内存泄漏侦测入口
+   private volatile long leakDetectionThreshold;
+   // 最大的生命时间
+   private volatile long maxLifetime;
+   // 最大的缓冲池大小
+   private volatile int maxPoolSize;
+   // 最小闲置线程
+   private volatile int minIdle;
+
+   // Properties NOT changeable at runtime
+   // 在运行时不能改变的属性
+   // 目录
+   private String catalog;
+   // 连接初始化SQL
+   private String connectionInitSql;
+   // 连接测试语句
+   private String connectionTestQuery;
+   // 数据源类名
+   private String dataSourceClassName;
+   // 数据源目录接口名
+   private String dataSourceJndiName;
+   // 驱动类名
+   private String driverClassName;
+   // jdbc地址
+   private String jdbcUrl;
+   // 密码
+   private String password;
+   // 缓冲池名称
+   private String poolName;
+   // 事务隔离名称
+   private String transactionIsolationName;
+   // 用户名称
+   private String username;
+   // 是否自动提交
+   private boolean isAutoCommit;
+   // 是否只读
+   private boolean isReadOnly;
+   // 是否快速初始化失败
+   private boolean isInitializationFailFast;
+   // 是否是隔离内部的语句
+   private boolean isIsolateInternalQueries;
+   // 是否注册管理构建工具
+   private boolean isRegisterMbeans;
+   // 是否允许缓冲池暂停
+   private boolean isAllowPoolSuspension;
+   // 数据源
+   private DataSource dataSource;
+   // 数据源属性
+   private Properties dataSourceProperties;
+   // 线程工厂
+   private ThreadFactory threadFactory;
+   // 计划线程池执行者
+   private ScheduledThreadPoolExecutor scheduledExecutor;
+   // 指标追踪工厂
+   private MetricsTrackerFactory metricsTrackerFactory;
+   // 指标注册处
+   private Object metricRegistry;
+   // 健康监测注册处
+   private Object healthCheckRegistry;
+   // 健康监测属性
+   private Properties healthCheckProperties;
+
+   /**
+    * 默认构造函数
+    * Default constructor
+    */
+   public HikariConfig()
+   {
+      dataSourceProperties = new Properties();
+      healthCheckProperties = new Properties();
+
+      minIdle = -1;
+      maxPoolSize = -1;
+      maxLifetime = MAX_LIFETIME;
+      connectionTimeout = CONNECTION_TIMEOUT;
+      validationTimeout = VALIDATION_TIMEOUT;
+      idleTimeout = IDLE_TIMEOUT;
+
+      isAutoCommit = true;
+      isInitializationFailFast = true;
+
+      String systemProp = System.getProperty("hikaricp.configurationFile");
+      if (systemProp != null) {
+         loadProperties(systemProp);
+      }
+   }
+
+   /**
+    * 使用构造函数创建一个HikariConfig, 传入properties对象
+    * Construct a HikariConfig from the specified properties object.
+    *
+    * @param properties the name of the property file
+    */
+   public HikariConfig(Properties properties)
+   {
+      this();
+      PropertyElf.setTargetFromProperties(this, properties);
+   }
+
+   /**
+    * 使用构造函数创建一个HikariConfig, 传入properties文件对象名称
+    * Construct a HikariConfig from the specified property file name.  <code>propertyFileName</code>
+    * will first be treated as a path in the file-system, and if that fails the
+    * Class.getResourceAsStream(propertyFileName) will be tried.
+    *
+    * @param propertyFileName the name of the property file
+    */
+   public HikariConfig(String propertyFileName)
+   {
+      this();
+
+      loadProperties(propertyFileName);
+   }
+
+   /**
+    * 获取设置在连接上的默认目录
+    * Get the default catalog name to be set on connections.
+    *
+    * @return the default catalog name
+    */
+   public String getCatalog()
+   {
+      return catalog;
+   }
+
+   /**
+    * 获取设置在连接上的默认目录
+    * Set the default catalog name to be set on connections.
+    *
+    * @param catalog the catalog name, or null
+    */
+   public void setCatalog(String catalog)
+   {
+      this.catalog = catalog;
+   }
+
+   /**
+    * 获取要被执行的SQL语句用来测试连接的有效性
+    * Get the SQL query to be executed to test the validity of connections.
+    *
+    * @return the SQL query string, or null
+    */
+   public String getConnectionTestQuery()
+   {
+      return connectionTestQuery;
+   }
+
+   /**
+    * 设置要被执行的SQL语句用来测试连接的有效性
+    * Set the SQL query to be executed to test the validity of connections. Using
+    * the JDBC4 <code>Connection.isValid()</code> method to test connection validity can
+    * be more efficient on some databases and is recommended.  See
+    * {@link HikariConfig#setJdbc4ConnectionTest(boolean)}.
+    *
+    * @param connectionTestQuery a SQL query string
+    */
+   public void setConnectionTestQuery(String connectionTestQuery)
+   {
+      this.connectionTestQuery = connectionTestQuery;
+   }
+
+   /**
+    * 在连接被创建的时候并且在连接加入到缓冲池之前,获取即将要被执行的SQL字符串
+    * Get the SQL string that will be executed on all new connections when they are
+    * created, before they are added to the pool.
+    *
+    * @return the SQL to execute on new connections, or null
+    */
+   public String getConnectionInitSql()
+   {
+      return connectionInitSql;
+   }
+
+   /**
+    * 在连接被创建的时候并且在连接加入到缓冲池之前,设置将要被执行的SQL字符串
+    * Set the SQL string that will be executed on all new connections when they are
+    * created, before they are added to the pool.  If this query fails, it will be
+    * treated as a failed connection attempt.
+    *
+    * @param connectionInitSql the SQL to execute on new connections
+    */
+   public void setConnectionInitSql(String connectionInitSql)
+   {
+      this.connectionInitSql = connectionInitSql;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public long getConnectionTimeout()
+   {
+      return connectionTimeout;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setConnectionTimeout(long connectionTimeoutMs)
+   {
+      if (connectionTimeoutMs == 0) {
+         this.connectionTimeout = Integer.MAX_VALUE;
+      }
+      else if (connectionTimeoutMs < 250) {
+         throw new IllegalArgumentException("connectionTimeout cannot be less than 250ms");
+      }
+      else {
+         this.connectionTimeout = connectionTimeoutMs;
+      }
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public long getValidationTimeout()
+   {
+      return validationTimeout;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setValidationTimeout(long validationTimeoutMs)
+   {
+      if (validationTimeoutMs < 250) {
+         throw new IllegalArgumentException("validationTimeout cannot be less than 250ms");
+      }
+
+      this.validationTimeout = validationTimeoutMs;
+   }
+
+   /**
+    * 获取被明确指定被缓冲池包裹的数据源
+    * Get the {@link DataSource} that has been explicitly specified to be wrapped by the
+    * pool.
+    *
+    * @return the {@link DataSource} instance, or null
+    */
+   public DataSource getDataSource()
+   {
+      return dataSource;
+   }
+
+   /**
+    * 明确指定用缓冲池包裹数据源,已经通过属性文件初始化后,此setter方法不可以使用的
+    * Set a {@link DataSource} for the pool to explicitly wrap.  This setter is not
+    * available through property file based initialization.
+    *
+    * @param dataSource a specific {@link DataSource} to be wrapped by the pool
+    */
+   public void setDataSource(DataSource dataSource)
+   {
+      this.dataSource = dataSource;
+   }
+
+   public String getDataSourceClassName()
+   {
+      return dataSourceClassName;
+   }
+
+   public void setDataSourceClassName(String className)
+   {
+      this.dataSourceClassName = className;
+   }
+
+   public void addDataSourceProperty(String propertyName, Object value)
+   {
+      dataSourceProperties.put(propertyName, value);
+   }
+
+   public String getDataSourceJNDI()
+   {
+      return this.dataSourceJndiName;
+   }
+
+   public void setDataSourceJNDI(String jndiDataSource)
+   {
+      this.dataSourceJndiName = jndiDataSource;
+   }
+
+   public Properties getDataSourceProperties()
+   {
+      return dataSourceProperties;
+   }
+
+   public void setDataSourceProperties(Properties dsProperties)
+   {
+      dataSourceProperties.putAll(dsProperties);
+   }
+
+   public String getDriverClassName()
+   {
+      return driverClassName;
+   }
+
+   public void setDriverClassName(String driverClassName)
+   {
+      try {
+         Class<?> driverClass = this.getClass().getClassLoader().loadClass(driverClassName);
+         driverClass.newInstance();
+         this.driverClassName = driverClassName;
+      }
+      catch (Exception e) {
+         throw new RuntimeException("Failed to load class of driverClassName " + driverClassName, e);
+      }
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public long getIdleTimeout()
+   {
+      return idleTimeout;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setIdleTimeout(long idleTimeoutMs)
+   {
+      if (idleTimeoutMs < 0) {
+         throw new IllegalArgumentException("idleTimeout cannot be negative");
+      }
+      this.idleTimeout = idleTimeoutMs;
+   }
+
+   public String getJdbcUrl()
+   {
+      return jdbcUrl;
+   }
+
+   public void setJdbcUrl(String jdbcUrl)
+   {
+      this.jdbcUrl = jdbcUrl;
+   }
+
+   /**
+    * 获取缓冲池中连接默认自动提交行为的是否开启
+    * Get the default auto-commit behavior of connections in the pool.
+    *
+    * @return the default auto-commit behavior of connections
+    */
+   public boolean isAutoCommit()
+   {
+      return isAutoCommit;
+   }
+
+   /**
+    * 设置缓冲池中连接默认自动提交行为是否启用
+    * Set the default auto-commit behavior of connections in the pool.
+    *
+    * @param isAutoCommit the desired auto-commit default for connections
+    */
+   public void setAutoCommit(boolean isAutoCommit)
+   {
+      this.isAutoCommit = isAutoCommit;
+   }
+
+   /**
+    * 获取缓冲池允许暂停功能是否启用
+    * Get the pool suspension behavior (allowed or disallowed).
+    *
+    * @return the pool suspension behavior
+    */
+   public boolean isAllowPoolSuspension()
+   {
+      return isAllowPoolSuspension;
+   }
+
+   /**
+    * 设置缓冲池允许暂停功能是否启用
+    * Set whether or not pool suspension is allowed.  There is a performance
+    * impact when pool suspension is enabled.  Unless you need it (for a
+    * redundancy system for example) do not enable it.
+    *
+    * @param isAllowPoolSuspension the desired pool suspension allowance
+    */
+   public void setAllowPoolSuspension(boolean isAllowPoolSuspension)
+   {
+      this.isAllowPoolSuspension = isAllowPoolSuspension;
+   }
+
+   /**
+    * 获取缓冲池创建的时候如果最小的连接数不能被创建,是否会扔出异常
+    * Get whether or not the construction of the pool should throw an exception
+    * if the minimum number of connections cannot be created.
+    *
+    * @return whether or not initialization should fail on error immediately
+    */
+   public boolean isInitializationFailFast()
+   {
+      return isInitializationFailFast;
+   }
+
+   /**
+    * 设置缓冲池创建的时候如果最小的连接数不能被创建,是否会扔出异常
+    * Set whether or not the construction of the pool should throw an exception
+    * if the minimum number of connections cannot be created.
+    *
+    * @param failFast true if the pool should fail if the minimum connections cannot be created
+    */
+   public void setInitializationFailFast(boolean failFast)
+   {
+      isInitializationFailFast = failFast;
+   }
+
+   public boolean isIsolateInternalQueries()
+   {
+      return isIsolateInternalQueries;
+   }
+
+   public void setIsolateInternalQueries(boolean isolate)
+   {
+      this.isIsolateInternalQueries = isolate;
+   }
+
+   @Deprecated
+   public boolean isJdbc4ConnectionTest()
+   {
+      return false;
+   }
+
+   @Deprecated
+   public void setJdbc4ConnectionTest(boolean useIsValid)
+   {
+      LOGGER.warn("The jdbcConnectionTest property is now deprecated, see the documentation for connectionTestQuery");
+   }
+
+   public MetricsTrackerFactory getMetricsTrackerFactory()
+   {
+      return metricsTrackerFactory;
+   }
+
+   public void setMetricsTrackerFactory(MetricsTrackerFactory metricsTrackerFactory)
+   {
+      if (metricRegistry != null) {
+         throw new IllegalStateException("cannot use setMetricsTrackerFactory() and setMetricRegistry() together");
+      }
+
+      this.metricsTrackerFactory = metricsTrackerFactory;
+   }
+
+   /**
+    * 获取指标注册器,可以为空
+    * Get the Codahale MetricRegistry, could be null.
+    *
+    * @return the codahale MetricRegistry instance
+    */
+   public Object getMetricRegistry()
+   {
+      return metricRegistry;
+   }
+
+   /**
+    * 设置用于HikariCP的指标注册器
+    * Set a Codahale MetricRegistry to use for HikariCP.
+    *
+    * @param metricRegistry the Codahale MetricRegistry to set
+    */
+   public void setMetricRegistry(Object metricRegistry)
+   {
+      if (metricsTrackerFactory != null) {
+         throw new IllegalStateException("cannot use setMetricRegistry() and setMetricsTrackerFactory() together");
+      }
+
+      if (metricRegistry != null) {
+         if (metricRegistry instanceof String) {
+            try {
+               InitialContext initCtx = new InitialContext();
+               metricRegistry = initCtx.lookup((String) metricRegistry);
+            }
+            catch (NamingException e) {
+               throw new IllegalArgumentException(e);
+            }
+         }
+
+         if (!(metricRegistry instanceof MetricRegistry)) {
+            throw new IllegalArgumentException("Class must be an instance of com.codahale.metrics.MetricRegistry");
+         }
+      }
+
+      this.metricRegistry = metricRegistry;
+   }
+
+   /**
+    * 获取健康检车指标注册器,可以为空
+    * Get the Codahale HealthCheckRegistry, could be null.
+    *
+    * @return the Codahale HealthCheckRegistry instance
+    */
+   public Object getHealthCheckRegistry()
+   {
+      return healthCheckRegistry;
+   }
+
+   /**
+    * 设置健康检车指标注册器,可以为空
+    * Set a Codahale HealthCheckRegistry to use for HikariCP.
+    *
+    * @param healthCheckRegistry the Codahale HealthCheckRegistry to set
+    */
+   public void setHealthCheckRegistry(Object healthCheckRegistry)
+   {
+      if (healthCheckRegistry != null) {
+         if (healthCheckRegistry instanceof String) {
+            try {
+               InitialContext initCtx = new InitialContext();
+               healthCheckRegistry = initCtx.lookup((String) healthCheckRegistry);
+            }
+            catch (NamingException e) {
+               throw new IllegalArgumentException(e);
+            }
+         }
+
+         if (!(healthCheckRegistry instanceof HealthCheckRegistry)) {
+            throw new IllegalArgumentException("Class must be an instance of com.codahale.metrics.health.HealthCheckRegistry");
+         }
+      }
+
+      this.healthCheckRegistry = healthCheckRegistry;
+   }
+
+   public Properties getHealthCheckProperties()
+   {
+      return healthCheckProperties;
+   }
+
+   public void setHealthCheckProperties(Properties healthCheckProperties)
+   {
+      this.healthCheckProperties.putAll(healthCheckProperties);
+   }
+
+   public void addHealthCheckProperty(String key, String value)
+   {
+      healthCheckProperties.setProperty(key, value);
+   }
+
+   public boolean isReadOnly()
+   {
+      return isReadOnly;
+   }
+
+   public void setReadOnly(boolean readOnly)
+   {
+      this.isReadOnly = readOnly;
+   }
+
+   public boolean isRegisterMbeans()
+   {
+      return isRegisterMbeans;
+   }
+
+   public void setRegisterMbeans(boolean register)
+   {
+      this.isRegisterMbeans = register;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public long getLeakDetectionThreshold()
+   {
+      return leakDetectionThreshold;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setLeakDetectionThreshold(long leakDetectionThresholdMs)
+   {
+      this.leakDetectionThreshold = leakDetectionThresholdMs;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public long getMaxLifetime()
+   {
+      return maxLifetime;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setMaxLifetime(long maxLifetimeMs)
+   {
+      this.maxLifetime = maxLifetimeMs;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public int getMaximumPoolSize()
+   {
+      return maxPoolSize;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setMaximumPoolSize(int maxPoolSize)
+   {
+      if (maxPoolSize < 1) {
+         throw new IllegalArgumentException("maxPoolSize cannot be less than 1");
+      }
+      this.maxPoolSize = maxPoolSize;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public int getMinimumIdle()
+   {
+      return minIdle;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public void setMinimumIdle(int minIdle)
+   {
+      if (minIdle < 0) {
+         throw new IllegalArgumentException("minimumIdle cannot be negative");
+      }
+      this.minIdle = minIdle;
+   }
+
+   /**
+    * 获取默认密码用于DataSource.getConnection(username, password)调用
+    * Get the default password to use for DataSource.getConnection(username, password) calls.
+    * @return the password
+    */
+   public String getPassword()
+   {
+      return password;
+   }
+
+   /**
+    * 设置默认密码用于DataSource.getConnection(username, password)调用
+    * Set the default password to use for DataSource.getConnection(username, password) calls.
+    * @param password the password
+    */
+   @Override
+   public void setPassword(String password)
+   {
+      this.password = password;
+   }
+
+   /** {@inheritDoc} */
+   @Override
+   public String getPoolName()
+   {
+      return poolName;
+   }
+
+   /**
+    * 设置缓冲池的名称。主要用于管理构建区分缓冲池的配置
+    * Set the name of the connection pool.  This is primarily used for the MBean
+    * to uniquely identify the pool configuration.
+    *
+    * @param poolName the name of the connection pool to use
+    */
+   public void setPoolName(String poolName)
+   {
+      this.poolName = poolName;
+   }
+
+   /**
+    * 获取为了方便管理计划执行者服务
+    * Get the ScheduledExecutorService used for housekeeping.
+    *
+    * @return the executor
+    */
+   public ScheduledThreadPoolExecutor getScheduledExecutorService()
+   {
+      return scheduledExecutor;
+   }
+
+   /**
+    * 设置为了方便管理计划执行者服务
+    * Set the ScheduledExecutorService used for housekeeping.
+    *
+    * @param executor the ScheduledExecutorService
+    */
+   public void setScheduledExecutorService(ScheduledThreadPoolExecutor executor)
+   {
+      this.scheduledExecutor = executor;
+   }
+
+   public String getTransactionIsolation()
+   {
+      return transactionIsolationName;
+   }
+
+   /**
+    * 设置默认的事务隔离等级。指定的值是常量名称在<code>Connection</code>类中,例如<code>TRANSACTION_REPEATABLE_READ</code>
+    * Set the default transaction isolation level.  The specified value is the
+    * constant name from the <code>Connection</code> class, eg.
+    * <code>TRANSACTION_REPEATABLE_READ</code>.
+    *
+    * @param isolationLevel the name of the isolation level
+    */
+   public void setTransactionIsolation(String isolationLevel)
+   {
+      this.transactionIsolationName = isolationLevel;
+   }
+
+   /**
+    * 获取默认用户名称用于DataSource.getConnection(username, password)调用
+    * Get the default username used for DataSource.getConnection(username, password) calls.
+    *
+    * @return the username
+    */
+   public String getUsername()
+   {
+      return username;
+   }
+
+   /**
+    * 设置默认用户名称用于DataSource.getConnection(username, password)调用
+    * Set the default username used for DataSource.getConnection(username, password) calls.
+    *
+    * @param username the username
+    */
+   @Override
+   public void setUsername(String username)
+   {
+      this.username = username;
+   }
+
+   /**
+    * 获取线程工程用来创建线程
+    * Get the thread factory used to create threads.
+    *
+    * @return the thread factory (may be null, in which case the default thread factory is used)
+    */
+   public ThreadFactory getThreadFactory()
+   {
+      return threadFactory;
+   }
+
+   /**
+    * 设置线程工程用来创建线程
+    * Set the thread factory to be used to create threads.
+    *
+    * @param threadFactory the thread factory (setting to null causes the default thread factory to be used)
+    */
+   public void setThreadFactory(ThreadFactory threadFactory)
+   {
+      this.threadFactory = threadFactory;
+   }
+
+   public void validate()
+   {
+      if (poolName == null) {
+         poolName = "HikariPool-" + generatePoolNumber();
+      }
+      else if (isRegisterMbeans && poolName.contains(":")) {
+         throw new IllegalArgumentException("poolName cannot contain ':' when used with JMX");
+      }
+
+      // treat empty property as null
+      // 针对空属性作为空
+      catalog = getNullIfEmpty(catalog);
+      connectionInitSql = getNullIfEmpty(connectionInitSql);
+      connectionTestQuery = getNullIfEmpty(connectionTestQuery);
+      transactionIsolationName = getNullIfEmpty(transactionIsolationName);
+      dataSourceClassName = getNullIfEmpty(dataSourceClassName);
+      dataSourceJndiName = getNullIfEmpty(dataSourceJndiName);
+      driverClassName = getNullIfEmpty(driverClassName);
+      jdbcUrl = getNullIfEmpty(jdbcUrl);
+
+      // Check Data Source Options
+      // 监测数据源选项
+      if (dataSource != null) {
+         if (dataSourceClassName != null) {
+            LOGGER.warn("{} - using dataSource and ignoring dataSourceClassName.", poolName);
+         }
+      }
+      else if (dataSourceClassName != null) {
+         if (driverClassName != null) {
+            LOGGER.error("{} - cannot use driverClassName and dataSourceClassName together.", poolName);
+            throw new IllegalArgumentException("cannot use driverClassName and dataSourceClassName together.");
+         }
+         else if (jdbcUrl != null) {
+            LOGGER.warn("{} - using dataSourceClassName and ignoring jdbcUrl.", poolName);
+         }
+      }
+      else if (jdbcUrl != null) {
+      }
+      else if (driverClassName != null) {
+         LOGGER.error("{} - jdbcUrl is required with driverClassName.", poolName);
+         throw new IllegalArgumentException("jdbcUrl is required with driverClassName.");
+      }
+      else {
+         LOGGER.error("{} - dataSource or dataSourceClassName or jdbcUrl is required.", poolName);
+         throw new IllegalArgumentException("dataSource or dataSourceClassName or jdbcUrl is required.");
+      }
+
+      validateNumerics();
+
+      if (LOGGER.isDebugEnabled() || unitTest) {
+         logConfiguration();
+      }
+   }
+
+   private void validateNumerics()
+   {
+      if (maxLifetime != 0 && maxLifetime < SECONDS.toMillis(30)) {
+         LOGGER.warn("{} - maxLifetime is less than 30000ms, setting to default {}ms.", poolName, MAX_LIFETIME);
+         maxLifetime = MAX_LIFETIME;
+      }
+
+      if (idleTimeout + SECONDS.toMillis(1) > maxLifetime && maxLifetime > 0) {
+         LOGGER.warn("{} - idleTimeout is close to or more than maxLifetime, disabling it.", poolName);
+         idleTimeout = 0;
+      }
+
+      if (idleTimeout != 0 && idleTimeout < SECONDS.toMillis(10)) {
+         LOGGER.warn("{} - idleTimeout is less than 10000ms, setting to default {}ms.", poolName, IDLE_TIMEOUT);
+         idleTimeout = IDLE_TIMEOUT;
+      }
+
+      if (leakDetectionThreshold > 0 && !unitTest) {
+         if (leakDetectionThreshold < SECONDS.toMillis(2) || (leakDetectionThreshold > maxLifetime && maxLifetime > 0)) {
+            LOGGER.warn("{} - leakDetectionThreshold is less than 2000ms or more than maxLifetime, disabling it.", poolName);
+            leakDetectionThreshold = 0;
+         }
+      }
+
+      if (connectionTimeout < 250) {
+         LOGGER.warn("{} - connectionTimeout is less than 250ms, setting to {}ms.", poolName, CONNECTION_TIMEOUT);
+         connectionTimeout = CONNECTION_TIMEOUT;
+      }
+
+      if (validationTimeout < 250) {
+         LOGGER.warn("{} - validationTimeout is less than 250ms, setting to {}ms.", poolName, VALIDATION_TIMEOUT);
+         validationTimeout = VALIDATION_TIMEOUT;
+      }
+
+      if (maxPoolSize < 1) {
+         maxPoolSize = (minIdle <= 0) ? DEFAULT_POOL_SIZE : minIdle;
+      }
+
+      if (minIdle < 0 || minIdle > maxPoolSize) {
+         minIdle = maxPoolSize;
+      }
+   }
+
+   private void logConfiguration()
+   {
+      LOGGER.debug("{} - configuration:", poolName);
+      final Set<String> propertyNames = new TreeSet<>(PropertyElf.getPropertyNames(HikariConfig.class));
+      for (String prop : propertyNames) {
+         try {
+            Object value = PropertyElf.getProperty(prop, this);
+            if ("dataSourceProperties".equals(prop)) {
+               Properties dsProps = PropertyElf.copyProperties(dataSourceProperties);
+               dsProps.setProperty("password", "<masked>");
+               value = dsProps;
+            }
+            if (prop.contains("password")) {
+               value = "<masked>";
+            }
+            else if (value instanceof String) {
+               value = "\"" + value + "\""; // quote to see lead/trailing spaces is any
+            }
+            LOGGER.debug((prop + "................................................").substring(0, 32) + value);
+         }
+         catch (Exception e) {
+            continue;
+         }
+      }
+   }
+
+   protected void loadProperties(String propertyFileName)
+   {
+      final File propFile = new File(propertyFileName);
+      try (final InputStream is = propFile.isFile() ? new FileInputStream(propFile) : this.getClass().getResourceAsStream(propertyFileName)) {
+         if (is != null) {
+            Properties props = new Properties();
+            props.load(is);
+            PropertyElf.setTargetFromProperties(this, props);
+         }
+         else {
+            throw new IllegalArgumentException("Cannot find property file: " + propertyFileName);
+         }
+      }
+      catch (IOException io) {
+         throw new RuntimeException("Failed to read property file", io);
+      }
+   }
+
+   private int generatePoolNumber()
+   {
+      // Pool number is global to the VM to avoid overlapping pool numbers in classloader scoped environments
+      synchronized (System.getProperties()) {
+         final int next = Integer.getInteger("com.zaxxer.hikari.pool_number", 0) + 1;
+         System.setProperty("com.zaxxer.hikari.pool_number", String.valueOf(next));
+         return next;
+      }
+   }
+
+   public void copyState(HikariConfig other)
+   {
+      for (Field field : HikariConfig.class.getDeclaredFields()) {
+         if (!Modifier.isFinal(field.getModifiers())) {
+            field.setAccessible(true);
+            try {
+               field.set(other, field.get(this));
+            }
+            catch (Exception e) {
+               throw new RuntimeException("Failed to copy HikariConfig state: " + e.getMessage(), e);
+            }
+         }
+      }
+   }
+}

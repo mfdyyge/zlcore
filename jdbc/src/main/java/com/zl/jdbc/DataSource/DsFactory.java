@@ -93,11 +93,11 @@ public class DsFactory
 	 */
 	public static DataSource getDataSource()
 	{
-		DataSource dataSource_=DsSpring_Factory.getDataSource();
-		if( null != dataSource_)
+		DataSource dataSource_DsSpring=DsSpring_Factory.getDataSource();
+		if( null != dataSource_DsSpring)
 		{
-			System.out.println("当前使用Spring配置的dataSource_.getClass() = " + dataSource_.getClass());
-			return dataSource_;
+			System.out.println("当前使用Spring配置的dataSource_dataSource_DsSpring.getClass() = " + dataSource_DsSpring.getClass());
+			return dataSource_DsSpring;
 		}
 		return DsFactory.dataSource;
 
