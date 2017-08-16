@@ -27,8 +27,10 @@ public class GetSql
     public  static String getQueryPageSql_oracle()
     {
         TableFormParams tableformParams;
-        String sql = "select * from emp where 1=1 ";
-
+        String sql_add="insert into "+"tableName";    //添加SQL -//"insert into users(name,password,email,birthday) values(?,?,?,?)"
+        String sql_del;    //删除SQL
+        String sql_up;     //更新SQL
+        String sql_query;  //查询SQL
         return "";
     }
 
@@ -101,10 +103,7 @@ public class GetSql
 
         Object[]        tableformParams_page =new Object[2];                  //分页值
 
-        String sql_add="insert into "+tableName;    //添加SQL -//"insert into users(name,password,email,birthday) values(?,?,?,?)"
-        String sql_del;    //删除SQL
-        String sql_up;     //更新SQL
-        String sql_query;  //查询SQL
+
 
         /**
          * 1.分页参数
