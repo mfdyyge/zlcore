@@ -1,5 +1,6 @@
 package utils;
 
+import com.zl.jdbc.pojo.TableFormParams;
 import com.zl.jdbc.utils.GetSql;
 
 import java.util.Arrays;
@@ -26,12 +27,13 @@ public class GetSql_test
         map.put("TG.TG_CAP", "555");
 
         map.put("TG.INST_ADDR", "大钟寺1号");
-        map.put("pageNum","2");
-        map.put("pageSize","4");
+        map.put("pageNum","3");
+        map.put("pageSize","5");
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         initMap();
 
@@ -41,8 +43,8 @@ public class GetSql_test
         System.out.println("utils: " + sql);
         System.out.println("paramers = " + Arrays.asList(GetSql.getArryFromMap(map)));
         //getTableFromMap(map);
-        GetSql.getFormParams_FromMap(map,"pageNum","pageSize");
-
+        TableFormParams tableFormParams=GetSql.getTableFormParams_FromMap_oracle(map,"USERS","pageNum","pageSize");
+        System.out.println("tableFormParams.getSql_add() = " + tableFormParams.getSql_add());
     }
 
 

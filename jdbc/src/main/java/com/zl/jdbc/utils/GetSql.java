@@ -1,6 +1,6 @@
 package com.zl.jdbc.utils;
 
-import com.zl.jdbc.pojo.FormParams;
+import com.zl.jdbc.pojo.TableFormParams;
 
 import java.util.*;
 /**
@@ -10,32 +10,49 @@ import java.util.*;
  */
 public class GetSql
 {
+    private  static  ThreadLocal<TableFormParams> tb=new ThreadLocal<TableFormParams>();
 
-    private  static FormParams tb=new FormParams();;
-
-    public  static String getPageSql(String querySql,String pageNumber,String pageSize)
+    static
     {
+        ;
+    }
 
+    /**
+     *  获取sql
+     * @param querySql
+     * @param pageNumber
+     * @param pageSize
+     * @return
+     */
+    public  static String getQueryPageSql_oracle()
+    {
+        TableFormParams tableformParams;
+        String sql = "select * from emp where 1=1 ";
 
         return "";
     }
+
+
 
     /**
      * 通过map取得sql语句
      * @param map
      * @return
      */
-    public static String getSqlFromMap(Map<String, String> map) {
+    public static String getSqlFromMap(Map<String, String> map)
+    {
 
         String sql = "select * from emp where 1=1 ";
 
         Set<String> set = map.keySet();
 
-        for (String keyName : set) {
+        for (String keyName : set)
+        {
 
             String value = map.get(keyName);
 
-            if (value != null) {
+            if (value != null)
+            {
 
                 //utils = utils + " and " + keyName + " = " + value;
                 sql = sql + " and " + keyName + " = ? ";
@@ -50,8 +67,8 @@ public class GetSql
 
     /**
      * 通过map取得sql语句对应的参数:Object params[] = { "钢背猪☣", "123", "gacl@sina.com", new Date() };
-     * @param map
-     * @return
+     * @param   map
+     * @return  Object[]=>
      */
     public static Object[] getArryFromMap(Map<String, String> map)
     {
@@ -64,75 +81,75 @@ public class GetSql
 
     }
 
+
     /**
-     * 获取表单参数对象map=>FormParams  \n
-     * 把分页参数[pageNumber_filed,pageSize__filed]从表单参数Map中分离出来 \n
-     * @param map   例子:{tablename:"user",params1:"valxx",params2:"val2xx",params3:"val3xx",pageNumber:1,pageSize:20}
-     * @param pageNumber //当前页码
-     * @param pageSize   //每页显示记录数
+     * 获取表单参数对象map =>                       <br/>
+     * 保存到对象  [ TableFormParams ]             <br/>
+     * 表名       [ TableFormParams.tablename ]   <br/>
+     * 分页参数    [ TableFormParams.page ]        <br/>
+     * 表单字段    [ TableFormParams.paramsKey[] | TableFormParams.paramsVal[] ] <br/>
+     *
+     * @param map           //例子:{tablename:"user",params1:"valxx",params2:"val2xx",params3:"val3xx",pageNumber:1,pageSize:20}
+     * @param tableName     //表名
+     * @param pageNumber    //当前页码
+     * @param pageSize      //每页显示记录数
      */
-    public static void getFormParams_FromMap(Map<String, String> map,String tableName_form,String pageNumber_form,String pageSize_form)
+    public static TableFormParams getTableFormParams_FromMap_oracle(Map<String, String> map, String tableName, String pageNumber, String pageSize)
     {
         //"SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
+        TableFormParams tableformParams      =new TableFormParams(tableName); //设置表名
 
-        //1. 表名 - [tableName] -> map 中分离出来
-        /*************************************************************************************************************/
-        Object[] array_page_val=new Object[2];    //表单 分页值
-        FormParams formParams=new FormParams();
+        Object[]        tableformParams_page =new Object[2];                  //分页值
 
+        String sql_add="insert into "+tableName;    //添加SQL -//"insert into users(name,password,email,birthday) values(?,?,?,?)"
+        String sql_del;    //删除SQL
+        String sql_up;     //更新SQL
+        String sql_query;  //查询SQL
 
-        if(null !=tableName_form && !("".equals(tableName_form)))
+        /**
+         * 1.分页参数
+         * ***********************************************************************************************************/
+        if(null != pageNumber && null != pageSize )
         {
-            String tableName=map.get(tableName_form);
-            formParams.setTablename(tableName);
-            map.remove("tableName");
-        }
-
-        //2.分页参数 - [page_num | page_size]  -> map 中分离出来
-        /*************************************************************************************************************/
-        if(null != pageNumber_form && null != pageSize_form )//分页参数
-        {
-            int page_num    =Integer.parseInt(map.get(pageNumber_form));map.remove(pageNumber_form);//提取后删除分页参数
-            int page_size   =Integer.parseInt(map.get(pageSize_form));  map.remove(pageSize_form);  //提取后删除分页参数
+            int page_num    =Integer.parseInt(map.get(pageNumber));map.remove(pageNumber);//提取后删除分页参数
+            int page_size   =Integer.parseInt(map.get(pageSize));  map.remove(pageSize);  //提取后删除分页参数
             /************************************************************/
             //page.setPageEnd((page_num - 1) * page_size + 1);  // 每页结束条数
-            array_page_val[0]=(page_num - 1) * page_size + 1;   // 每页结束条数
-
+            //page.setPageBegin((page_num) * page_size);        // 每页开始条数
             /************************************************************/
-            //page.setPageBegin((page_num) * page_size);      // 每页开始条数
-            array_page_val[1]=(page_num) * page_size;           // 每页开始条数
-
+            tableformParams_page[0]=(page_num - 1) * page_size + 1;   // 结束条数
+            tableformParams_page[1]=(page_num) * page_size;           // 开始条数
+            tableformParams.setPage(tableformParams_page);
             /************************************************************/
-            formParams.setPage(array_page_val);
 
-            System.out.println("array_page_val[0] = " + array_page_val[0]);
-            System.out.println("array_page_val[1] = " + array_page_val[1]);
+            System.out.println("tableformParams_page[0] = " + tableformParams_page[0]);
+            System.out.println("tableformParams_page[1] = " + tableformParams_page[1]);
         }
 
 
-        //3.表单字段 - [array_form_params_key | array_form_params_val]
-        /*************************************************************************************************************/
-        Set<String> set = map.keySet();//删除分页参数--提取表单参数
-
-        int size=map.size();
-
-        List array_form_params_key=new ArrayList();//表单参数
-        List array_form_params_val=new ArrayList();//表单参数值
-
+        /**
+         * 2.表单字段[ ParamsKey | ParamsVal ]
+         * ***********************************************************************************************************/
+        Set<String> set = map.keySet();           //表单参数
+        List tableformParams_key=new ArrayList(); //表单参数:Key
+        List tableformParams_val=new ArrayList(); //表单参数:Val
 
         for (String keyName : set)
         {
             String value = map.get(keyName);
-            if (value != null)
+            if (null != value)
             {
-                array_form_params_key.add(keyName);
-                array_form_params_val.add(value);
+                tableformParams_key.add(keyName);
+                tableformParams_val.add(value);
             }
 
         }
-        formParams.setParamsKey(array_form_params_key.toArray());
-        formParams.setParamsVal(array_form_params_val.toArray());
+        /**
+         * ***********************************************************************************************************/
+        tableformParams.setParamsKey(tableformParams_key.toArray());
+        tableformParams.setParamsVal(tableformParams_val.toArray());
 
+        return tableformParams;
     }
 
 
