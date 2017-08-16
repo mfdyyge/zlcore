@@ -34,6 +34,7 @@ public class DsFactory_Druid
 		dataSource.setUrl(DsFactory.JdbcUrl);
 		dataSource.setUsername(DsFactory.UserName);
 		dataSource.setPassword(DsFactory.pwd);
+		dataSource.setDefaultAutoCommit(true);//设置事务[默认=>自动提交]
 		/****************************************************************/
 
 		dataSource.setLogAbandoned(true);   //关闭连接是否记录日志, 默认为false,改为true.

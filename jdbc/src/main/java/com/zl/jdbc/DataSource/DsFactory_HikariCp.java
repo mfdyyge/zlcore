@@ -35,7 +35,9 @@ public class DsFactory_HikariCp
 		dataSource.setJdbcUrl(DsFactory.JdbcUrl);
 		dataSource.setUsername(DsFactory.UserName);
 		dataSource.setPassword(DsFactory.pwd);
+		dataSource.setAutoCommit(true);//设置事务[默认=>自动提交]
 		/****************************************************************/
+
 
 		/*
 		* 连接只读数据库时配置为true， 保证安全

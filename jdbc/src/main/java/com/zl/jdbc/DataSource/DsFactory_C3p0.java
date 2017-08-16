@@ -36,6 +36,8 @@ public class DsFactory_C3p0
 			dataSource.setJdbcUrl(DsFactory.JdbcUrl);
 			dataSource.setUser(DsFactory.UserName);
 			dataSource.setPassword(DsFactory.pwd);
+			dataSource.setAutoCommitOnClose(true);//设置事务[默认=>自动提交]
+			/****************************************************************/
 
 			dataSource.setInitialPoolSize(10);
 			dataSource.setMinPoolSize(5);

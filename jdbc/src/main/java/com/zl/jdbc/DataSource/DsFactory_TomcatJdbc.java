@@ -34,6 +34,7 @@ public class DsFactory_TomcatJdbc
 			dataSource.setUrl(DsFactory.JdbcUrl);
 			dataSource.setUsername(DsFactory.UserName);
 			dataSource.setPassword(DsFactory.pwd);
+			dataSource.setDefaultAutoCommit(true);//设置事务[默认=>自动提交]
 			/****************************************************************/
 
 
