@@ -24,6 +24,7 @@
     <module>springdata</module>
     <module>shiro</module>
     <module>activity</module>
+    <module>redis</module>
 </modules>
 
 
