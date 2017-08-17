@@ -25,6 +25,7 @@
     <module>shiro</module>
     <module>activity</module>
     <module>redis</module>
+    <module>ActiveMQ</module>
 </modules>
 
 
