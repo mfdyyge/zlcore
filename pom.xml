@@ -26,6 +26,7 @@
     <module>activity</module>
     <module>redis</module>
     <module>ActiveMQ</module>
+    <module>Freemarker</module>
 </modules>
 
 
