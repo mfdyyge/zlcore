@@ -10,7 +10,7 @@
 	<!-- 自定义Json解析器 -->
 	<mvc:annotation-driven>
 		<mvc:argument-resolvers>
-			<bean class="com.smart.mvc.resovler.MethodArgumentResovler" />
+			<bean class="mvc.resovler.MethodArgumentResovler" />
 		</mvc:argument-resolvers>
 		<mvc:message-converters>
 			<bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter" />
@@ -18,7 +18,7 @@
 	</mvc:annotation-driven>
 
 	<!-- 自定义异常处理 -->
-	<bean id="exceptionResolver" class="com.smart.mvc.exception.ExceptionResolver" />
+	<bean id="exceptionResolver" class="mvc.exception.ExceptionResolver" />
 
 	<!-- 视图解析器 -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
