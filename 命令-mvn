@@ -1,0 +1,70 @@
+
+
+---------------------------------------------------------------MVN------------------------------------------------------
+#更改模块版本号
+>mvn    versions:set -DnewVersion=0.0.2-SNAPSHOT
+        versions:set -DnewVersion=1.0.20170811
+
+>mvn    versions:update-child-modules //到这里已经完成了子模块的版本号更新.什么?还有?那就再加一个命令吧
+
+---------------------------------------------------------------MVN------------------------------------------------------
+1:命令行
+
+$mvn install -Dmaven.test.skip = true
+
+2：配置文件--跳过Tests,直接Install
+
+<project>
+  [...]
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  [...]
+</project>
+---------------------------------------------------------------MVN------------------------------------------------------
+
+--父模块和子模块的verion---完成了子模块的版本号更新
+>mvn versions:set -DnewVersion=1.0.0.20170720-SNAPSHOT
+
+--更新所有依赖版本号
+>mvn versions:update-child-modules
+
+
+maven管理项目版本升级
+maven 升级项目版本号 maven管理项目版本升级
+
+maven管理项目版本升级：当前项目有许多模块并且存在父子关系，如下：
+
+com.boot        boot-facede        1.0.0-SNAPSHOT        boot-facede-flat    jar
+
+执行以下命令，升级父项目以及所有子项目的版本：
+
+>mvn versions:set -DnewVersion=2.0.0-SNAPSHOT
+
+得到以下结果            com.boot        boot-facede        2.0.0-SNAPSHOT        boot-facede-flat    jar
+
+接下来修改所有被依赖的版本：
+>mvn versions:update-child-modules
+
+当项目开发到一定阶段要切换为正式版本时，则执行以下命令：
+>mvn release:prepare     com.boot        boot-facede        2.0.0-RELEASE        boot-facede-flat    jar
+
+要发布正式版本时则执行以下命令：
+>mvn release:perform
+
+
+ ---------------------------------------------------------------MVN------------------------------------------------------
+
+ 建立项目-web
+ mvn archetype:generate -DartifactId=maven-demo-web        -DgroupId=com.trinea.maven.web.test -DarchetypeArtifactId=maven-archetype-webapp    -DinteractiveMode=false
+
+ 建立项目-quickstart
+ mvn archetype:generate -DartifactId=maven-demo-quickstart -DgroupId=org.flyne.demo            -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
