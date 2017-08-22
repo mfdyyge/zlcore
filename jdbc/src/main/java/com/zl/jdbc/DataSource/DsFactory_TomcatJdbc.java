@@ -3,6 +3,7 @@ package com.zl.jdbc.DataSource;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
+import static com.zl.jdbc.DataSource.DsProperties.*;
 
 /**
  * @ClassName:   DsFactory_HikariCp 光连接池
@@ -30,10 +31,10 @@ public class DsFactory_TomcatJdbc
 			poolProps = new PoolProperties();
 			dataSource=new org.apache.tomcat.jdbc.pool.DataSource();
 
-			dataSource.setDriverClassName(DsFactory.DriverClassName);
-			dataSource.setUrl(DsFactory.JdbcUrl);
-			dataSource.setUsername(DsFactory.UserName);
-			dataSource.setPassword(DsFactory.pwd);
+			dataSource.setDriverClassName(DriverClassName);
+			dataSource.setUrl(JdbcUrl);
+			dataSource.setUsername(UserName);
+			dataSource.setPassword(pwd);
 			dataSource.setDefaultAutoCommit(true);//设置事务[默认=>自动提交]
 			/****************************************************************/
 

@@ -6,6 +6,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 import javax.sql.DataSource;
 
+import static com.zl.jdbc.DataSource.DsProperties.*;
 /**
  * @ClassName:   DataSouceFactory_InterFace
  * @Description: druid-数据库连接池 \n 采用线程安全\n为了单例模式不出现并发错误的一种每个线程
@@ -30,10 +31,10 @@ public class DsFactory_Druid
 
 		dataSource= new DruidDataSource();// druid数据库连接池
 
-		dataSource.setDriverClassName(DsFactory.DriverClassName);
-		dataSource.setUrl(DsFactory.JdbcUrl);
-		dataSource.setUsername(DsFactory.UserName);
-		dataSource.setPassword(DsFactory.pwd);
+		dataSource.setDriverClassName(DriverClassName);
+		dataSource.setUrl(JdbcUrl);
+		dataSource.setUsername(UserName);
+		dataSource.setPassword(pwd);
 		dataSource.setDefaultAutoCommit(true);   //设置事务[默认=>自动提交]
 		/****************************************************************/
 

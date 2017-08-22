@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 
 
+import static com.zl.jdbc.DataSource.DsProperties.*;
 
 
 /**
@@ -32,10 +33,10 @@ public class DsFactory_C3p0
 		dataSource = new ComboPooledDataSource();// C3P0数据库连接池
 		try
 		{
-			dataSource.setDriverClass(DsFactory.DriverClassName);//这里会抛出异常
-			dataSource.setJdbcUrl(DsFactory.JdbcUrl);
-			dataSource.setUser(DsFactory.UserName);
-			dataSource.setPassword(DsFactory.pwd);
+			dataSource.setDriverClass(DriverClassName);//这里会抛出异常
+			dataSource.setJdbcUrl(JdbcUrl);
+			dataSource.setUser(UserName);
+			dataSource.setPassword(pwd);
 			dataSource.setAutoCommitOnClose(true);//设置事务[默认=>自动提交]
 			/****************************************************************/
 

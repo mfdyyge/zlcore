@@ -1,16 +1,11 @@
-package queryrunner;
+package DataSource;
 
 import com.zl.jdbc.DataSource.DsFactory;
 import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
-import com.zl.jdbc.apche.dbutils.domain.Jpa_persons;
-import com.zl.jdbc.page.Page;
-import com.zl.jdbc.page.QueryRemote;
 import org.junit.Test;
 
 import java.sql.Connection;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by 钢背猪☣ on 2017-8-7 0007.

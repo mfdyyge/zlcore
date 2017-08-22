@@ -2,7 +2,6 @@ package com.zl.jdbc.DataSource;
 
 
 
-
 import com.zl.jdbc.DataSource.spring.DsSpring_Factory;
 
 import javax.sql.DataSource;
@@ -11,6 +10,8 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import static com.zl.jdbc.DataSource.DsProperties.*;
+
+
 
 /**
  * @ClassName:   DsFactory
@@ -25,12 +26,12 @@ public class DsFactory
 	public	static final DataSource 		dataSource;// 数据库连接池
 
 	/**********************************************************************/
-	private static 	String 					DataSourceName;	//链接池名字
+/*	private static 	String 					DataSourceName;	//链接池名字
 
 	public static 	String 					DriverClassName;
 	public static 	String 					JdbcUrl;
 	public static 	String 					UserName;
-	public static 	String 					pwd;
+	public static 	String 					pwd;*/
 
 	/**********************************************************************///公共对象直接引用-[直接通过类来调用>而不需要新建对象]
 	private static	ResourceBundle			rbundle;//配置文件读取类

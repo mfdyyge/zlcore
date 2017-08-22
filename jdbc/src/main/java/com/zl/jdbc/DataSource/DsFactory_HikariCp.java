@@ -6,6 +6,7 @@ import com.zaxxer.hikari.HikariDataSource;
 
 import javax.sql.DataSource;
 
+import static com.zl.jdbc.DataSource.DsProperties.*;
 /**
  * @ClassName:   DsFactory_HikariCp 光连接池
  * @Description: HikariCp-光连接池 \n 采用线程安全\n为了单例模式不出现并发错误的一种每个线程
@@ -31,10 +32,10 @@ public class DsFactory_HikariCp
 		config 		= new HikariConfig();//暂时没用
 		dataSource	= new HikariDataSource();
 
-		dataSource.setDriverClassName(DsFactory.DriverClassName);
-		dataSource.setJdbcUrl(DsFactory.JdbcUrl);
-		dataSource.setUsername(DsFactory.UserName);
-		dataSource.setPassword(DsFactory.pwd);
+		dataSource.setDriverClassName(DriverClassName);
+		dataSource.setJdbcUrl(JdbcUrl);
+		dataSource.setUsername(UserName);
+		dataSource.setPassword(pwd);
 		dataSource.setAutoCommit(true);//设置事务[默认=>自动提交]
 		/****************************************************************/
 
