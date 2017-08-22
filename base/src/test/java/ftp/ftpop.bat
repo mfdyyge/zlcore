@@ -13,4 +13,4 @@ set cnt=0
 :loop
 if "%1"=="" (echo params ok ) else	(set  params=%params% %1&shift /1&goto :loop)
 
-java -cp %CPP%  com.dc.ftp.manager.client.CommandClient %params%
+java -cp %CPP%  com.zl.base.ftp.manager.client.CommandClient %params%

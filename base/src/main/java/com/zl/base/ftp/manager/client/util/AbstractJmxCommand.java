@@ -1,4 +1,4 @@
-package com.dc.ftp.manager.client.util;
+package com.zl.base.ftp.manager.client.util;
 import java.io.File;  
 import java.io.IOException;  
 import java.lang.reflect.Method;  

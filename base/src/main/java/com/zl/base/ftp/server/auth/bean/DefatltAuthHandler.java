@@ -1,4 +1,4 @@
-package com.dc.ftp.server.auth.bean;
+package com.zl.base.ftp.server.auth.bean;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
@@ -6,9 +6,9 @@ import java.security.NoSuchAlgorithmException;
 
 import org.apache.mina.util.Base64;
 
-import com.dc.ftp.manager.message.MessageBean;
-import com.dc.ftp.server.auth.UserRegistry;
-import com.dc.ftp.server.utils.ConfigUtil;
+import com.zl.base.ftp.manager.message.MessageBean;
+import com.zl.base.ftp.server.auth.UserRegistry;
+import com.zl.base.ftp.server.utils.ConfigUtil;
 /**
  * 只有admin认证成功才可以 但操作对象不可以是admin
  * @author Administrator

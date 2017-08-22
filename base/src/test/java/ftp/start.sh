@@ -8,4 +8,4 @@ do
 	CPP=$CPP:$temp
 done
 echo $CPP
- java -cp $CPP  -Dbase.path=$ROOT com.dc.ftp.server.Main
+ java -cp $CPP  -Dbase.path=$ROOT com.zl.base.ftp.server.Main

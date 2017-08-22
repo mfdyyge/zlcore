@@ -1,15 +1,10 @@
-package com.dc.ftp.server;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.lang.management.ManagementFactory;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-
+package com.zl.base.ftp.server;
+import com.zl.base.ftp.manager.ManageServer;
+import com.zl.base.ftp.manager.command.CommandHandler;
+import com.zl.base.ftp.manager.message.MessageHandler;
+import com.zl.base.ftp.server.auth.UserRegistry;
+import com.zl.base.ftp.server.auth.bean.JUser;
+import com.zl.base.ftp.server.utils.ConfigUtil;
 import org.apache.ftpserver.FtpServer;
 import org.apache.ftpserver.FtpServerFactory;
 import org.apache.ftpserver.ftplet.FtpException;
@@ -17,12 +12,15 @@ import org.apache.ftpserver.listener.ListenerFactory;
 import org.apache.ftpserver.usermanager.impl.BaseUser;
 import org.apache.log4j.Logger;
 
-import com.dc.ftp.manager.ManageServer;
-import com.dc.ftp.manager.command.CommandHandler;
-import com.dc.ftp.manager.message.MessageHandler;
-import com.dc.ftp.server.auth.UserRegistry;
-import com.dc.ftp.server.auth.bean.JUser;
-import com.dc.ftp.server.utils.ConfigUtil;
+import javax.management.MBeanServer;
+import javax.management.ObjectName;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.lang.management.ManagementFactory;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicBoolean;
 public class Main {
 	private static Logger log=Logger.getLogger(Main.class);
 	public static AtomicBoolean startready= new AtomicBoolean(false);
@@ -87,7 +85,7 @@ public class Main {
 		//创建mbean对象 等待被管理
 		CommandHandler commandInstance=CommandHandler.getInstance();
 		try {
-			ObjectName name = new ObjectName("com.dc.ftp.manager.command:type=CommandHandler");
+			ObjectName name = new ObjectName("com.zl.base.ftp.manager.command:type=CommandHandler");
 			log.info("command listener created success!");
 			mbs.registerMBean(commandInstance, name);
 		} catch (Exception e1) {

@@ -1,4 +1,4 @@
-package com.dc.ftp.manager.command;
+package com.zl.base.ftp.manager.command;
 
 public interface CommandService {
 	public String doExec(String command);

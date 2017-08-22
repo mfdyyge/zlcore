@@ -1,4 +1,4 @@
-package com.dc.ftp.server.auth;
+package com.zl.base.ftp.server.auth;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -31,9 +31,9 @@ import org.apache.log4j.Logger;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.dc.ftp.server.Main;
-import com.dc.ftp.server.auth.bean.JUser;
-import com.dc.ftp.server.utils.ConfigUtil;
+import com.zl.base.ftp.server.Main;
+import com.zl.base.ftp.server.auth.bean.JUser;
+import com.zl.base.ftp.server.utils.ConfigUtil;
 
 public class UserRegistry {
 	private Map<String,JUser> userMap=Collections.synchronizedMap(new HashMap<String,JUser>());

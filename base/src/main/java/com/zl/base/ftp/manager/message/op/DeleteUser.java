@@ -1,12 +1,12 @@
-package com.dc.ftp.manager.message.op;
+package com.zl.base.ftp.manager.message.op;
+
+import com.alibaba.fastjson.JSON;
+import com.zl.base.ftp.manager.message.MessageBean;
+import com.zl.base.ftp.manager.message.OperationService;
+import com.zl.base.ftp.server.auth.UserRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import com.alibaba.fastjson.JSON;
-import com.dc.ftp.manager.message.MessageBean;
-import com.dc.ftp.manager.message.OperationService;
-import com.dc.ftp.server.auth.UserRegistry;
 
 public class DeleteUser implements OperationService {
 

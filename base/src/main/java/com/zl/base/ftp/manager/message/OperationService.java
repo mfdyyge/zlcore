@@ -1,4 +1,4 @@
-package com.dc.ftp.manager.message;
+package com.zl.base.ftp.manager.message;
 
 public interface OperationService {
 	public String operate(MessageBean message);

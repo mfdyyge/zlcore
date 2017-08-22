@@ -1,14 +1,13 @@
-package com.dc.ftp.server.utils;
+package com.zl.base.ftp.server.utils;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Properties;
-
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 public class ConfigUtil {
 	private static ConfigUtil instance;

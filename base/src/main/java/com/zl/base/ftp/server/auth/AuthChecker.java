@@ -1,8 +1,8 @@
-package com.dc.ftp.server.auth;
+package com.zl.base.ftp.server.auth;
 
-import com.dc.ftp.manager.message.MessageBean;
-import com.dc.ftp.server.auth.bean.DefatltAuthHandler;
-import com.dc.ftp.server.utils.ConfigUtil;
+import com.zl.base.ftp.manager.message.MessageBean;
+import com.zl.base.ftp.server.auth.bean.DefatltAuthHandler;
+import com.zl.base.ftp.server.utils.ConfigUtil;
 /**
  * 调度如何鉴权  默认只有DefatltAuthHandler
  * @author Administrator

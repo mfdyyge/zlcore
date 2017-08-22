@@ -1,4 +1,4 @@
-package com.dc.ftp.server.auth.bean;
+package com.zl.base.ftp.server.auth.bean;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import org.apache.ftpserver.ftplet.Authority;
 import org.apache.ftpserver.usermanager.impl.BaseUser;
 import org.apache.ftpserver.usermanager.impl.WritePermission;
 
-import com.dc.ftp.server.utils.ConfigUtil;
+import com.zl.base.ftp.server.utils.ConfigUtil;
 @XmlType(propOrder={"name","password","homeDir","writeable","isEnabled","maxIdleTimeSec"})
 @XmlAccessorType(XmlAccessType.FIELD)
 public class JUser {

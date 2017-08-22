@@ -159,6 +159,22 @@
             <version>3.2.2</version>
         </dependency>
 
+        <!--Ftp-->
+        <!--****************************************************************************************************************8  -->
+        <!-- https://mvnrepository.com/artifact/org.apache.ftpserver/ftpserver-core -->
+        <dependency>
+            <groupId>org.apache.ftpserver</groupId>
+            <artifactId>ftpserver-core</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.ftpserver/ftplet-api -->
+        <dependency>
+            <groupId>org.apache.ftpserver</groupId>
+            <artifactId>ftplet-api</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
     </dependencies>
 
 

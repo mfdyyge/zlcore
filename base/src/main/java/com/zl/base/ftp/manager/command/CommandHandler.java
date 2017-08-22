@@ -1,19 +1,17 @@
-package com.dc.ftp.manager.command;
+package com.zl.base.ftp.manager.command;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
+import com.zl.base.ftp.server.utils.ConfigUtil;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.dc.ftp.server.utils.ConfigUtil;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 命令执行者分发器 默认加载config/dispatcher.xml <CommandHandlers> 中的分发信息

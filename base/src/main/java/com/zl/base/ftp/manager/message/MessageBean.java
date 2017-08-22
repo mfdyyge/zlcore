@@ -1,4 +1,4 @@
-package com.dc.ftp.manager.message;
+package com.zl.base.ftp.manager.message;
 
 import java.util.Map;
 

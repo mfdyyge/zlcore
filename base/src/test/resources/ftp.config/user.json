@@ -1,0 +1,1 @@
+{"anonymous":{"enabled":true,"homeDir":"/","maxIdleTimeSec":0,"name":"anonymous","writeable":false},"admin":{"enabled":true,"homeDir":"/","maxIdleTimeSec":0,"name":"admin","password":"admin","writeable":true},"paas":{"enabled":true,"homeDir":"/paas","maxIdleTimeSec":0,"name":"paas","password":"paas","writeable":true}}

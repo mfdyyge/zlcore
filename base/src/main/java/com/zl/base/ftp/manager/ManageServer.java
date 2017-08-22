@@ -1,4 +1,8 @@
-package com.dc.ftp.manager;
+package com.zl.base.ftp.manager;
+
+import com.zl.base.ftp.manager.message.MessageHandler;
+import com.zl.base.ftp.server.utils.ConfigUtil;
+import org.apache.log4j.Logger;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,11 +13,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-
-import org.apache.log4j.Logger;
-
-import com.dc.ftp.manager.message.MessageHandler;
-import com.dc.ftp.server.utils.ConfigUtil;
 
 public class ManageServer {
 	private static ManageServer instance;

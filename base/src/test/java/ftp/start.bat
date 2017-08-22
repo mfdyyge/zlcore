@@ -9,5 +9,5 @@ for %%i in ("lib\*.jar") do (
 )
 REM echo %CPP%
 
-java -cp %CPP% -Dbase.path=%ROOT% com.dc.ftp.server.Main
+java -cp %CPP% -Dbase.path=%ROOT% com.zl.base.ftp.server.Main
  

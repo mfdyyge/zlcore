@@ -1,24 +1,13 @@
-package com.dc.ftp.manager.client;
+package com.zl.base.ftp.manager.client;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Scanner;
+import com.zl.base.ftp.manager.client.util.AbstractJmxCommand;
 
-import javax.management.InstanceNotFoundException;
-import javax.management.MBeanException;
-import javax.management.MBeanServerConnection;
-import javax.management.MalformedObjectNameException;
-import javax.management.ObjectName;
-import javax.management.ReflectionException;
+import javax.management.*;
 import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
 import javax.management.remote.JMXServiceURL;
-
-import com.dc.ftp.manager.client.util.AbstractJmxCommand;
+import java.io.*;
+import java.util.Scanner;
 
 public class CommandClient {
 	/**
@@ -66,7 +55,7 @@ public class CommandClient {
 		}
 		
 
-		ObjectName name = new ObjectName("com.dc.ftp.manager.command:type=CommandHandler");
+		ObjectName name = new ObjectName("com.zl.base.ftp.manager.command:type=CommandHandler");
 		if(interactiveModel){
 			while(true){
 				InputStream in=System.in;

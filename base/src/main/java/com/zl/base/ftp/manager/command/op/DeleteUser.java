@@ -1,7 +1,7 @@
-package com.dc.ftp.manager.command.op;
+package com.zl.base.ftp.manager.command.op;
 
-import com.dc.ftp.manager.command.CommandService ;
-import com.dc.ftp.server.auth.UserRegistry;
+import com.zl.base.ftp.manager.command.CommandService ;
+import com.zl.base.ftp.server.auth.UserRegistry;
 
 public class DeleteUser implements CommandService  {
 

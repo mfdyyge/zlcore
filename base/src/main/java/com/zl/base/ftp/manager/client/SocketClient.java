@@ -1,4 +1,6 @@
-package com.dc.ftp.manager.client;
+package com.zl.base.ftp.manager.client;
+
+import com.alibaba.fastjson.JSON;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,8 +11,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.alibaba.fastjson.JSON;
 
 public class SocketClient {
 	public static String send(String ip,int port,String message) {

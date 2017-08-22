@@ -1,4 +1,4 @@
-package com.dc.ftp.manager.message;
+package com.zl.base.ftp.manager.message;
 
 import java.io.File;
 import java.util.HashMap;
@@ -16,8 +16,8 @@ import org.w3c.dom.NodeList;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.dc.ftp.server.auth.AuthChecker;
-import com.dc.ftp.server.utils.ConfigUtil;
+import com.zl.base.ftp.server.auth.AuthChecker;
+import com.zl.base.ftp.server.utils.ConfigUtil;
 /**
  *  命令执行者分发器   默认加载config/dispatcher.xml <MessageHandlers> 中的分发信息
  *  单例
