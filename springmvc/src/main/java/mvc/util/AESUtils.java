@@ -1,5 +1,6 @@
 package mvc.util;
 
+import org.junit.Test;
 import org.springframework.util.Base64Utils;
 
 import javax.crypto.Cipher;
@@ -60,8 +61,13 @@ public class AESUtils {
 		}
 		return null;
 	}
-
 	public static void main(String[] args) {
+		String key = "``11qqaazzxxccvv"; // 128 bit key
+		System.out.println(encrypt(key, "123"));
+		System.out.println(decrypt(key, encrypt(key, "123")));
+	}
+	@Test
+	public  void t() {
 		String key = "``11qqaazzxxccvv"; // 128 bit key
 		System.out.println(encrypt(key, "123"));
 		System.out.println(decrypt(key, encrypt(key, "123")));
