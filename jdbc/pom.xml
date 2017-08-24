@@ -158,18 +158,10 @@
             <version>1.9.3</version>
         </dependency>
 
-        <!-- **************************************************com.google.guava*********************************************************8  -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>19.0</version>
-        </dependency>
-    </dependencies>
 
 
-
-
-    <build>
+</dependencies>
+<build>
         <plugins>
             <!--
                         <plugin>&lt;!&ndash;  依赖的JAR包一起打包 >mvn assembly:assembly &ndash;&gt;

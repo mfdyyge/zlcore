@@ -2,6 +2,7 @@ package utils;
 
 import com.zl.jdbc.pojo.TableFormParams;
 import com.zl.jdbc.utils.GetSql;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -32,7 +33,8 @@ public class GetSql_test
 
     }
 
-    public static void main(String[] args)
+    @Test
+    public  void getsql()
     {
 
         initMap();

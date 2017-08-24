@@ -1,6 +1,5 @@
 package queryrunner;
 
-import com.google.common.collect.Lists;
 import com.zl.jdbc.DataSource.DsFactory_Druid;
 import com.zl.jdbc.apche.dbutils.domain.T_user;
 import org.apache.commons.dbutils.QueryRunner;
@@ -13,6 +12,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -77,7 +77,7 @@ public class QueryRunnerCRUDTest {
 		List<T_user> userList = queryRunner.query(sql,
 				new ResultSetHandler<List<T_user>>() {
 					public List<T_user> handle(ResultSet rs) throws SQLException {
-						List<T_user> userList = Lists.newArrayList();
+						List<T_user> userList = new ArrayList<>();
 						while (rs.next()) {
 							T_user user = new T_user();
 							user.setUser_id(rs.getInt(1));
