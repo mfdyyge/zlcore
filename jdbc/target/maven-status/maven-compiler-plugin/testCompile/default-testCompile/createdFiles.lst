@@ -1,11 +1,11 @@
 queryrunner\QueryRunnerCRUDTest.class
 queryrunner\QueryRunnerCRUDTest$2.class
 queryrunner\QueryRunnerCRUDTest$1.class
-queryrunner\Test_DataSourceFactory.class
-apche\dbutils\test\Random.class
+pojo\Personbean.class
+page\page_test.class
 apche\dbutils\test\McUserField.class
-apche\dbutils\test\Random$Data.class
 queryrunner\Test_AdminQueryDao.class
-com\zl\jdbc\DataSource\Test_properties.class
-apche\dbutils\test\time.class
+queryrunner\Test_properties.class
+DataSource\Test_DataSourceFactory.class
 apche\dbutils\test\test.class
+utils\GetSql_test.class
