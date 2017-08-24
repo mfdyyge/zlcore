@@ -35,7 +35,7 @@ public class DsFactory_C3p0
 		{
 			dataSource.setDriverClass(DriverClassName);//这里会抛出异常
 			dataSource.setJdbcUrl(JdbcUrl);
-			dataSource.setUser(UserName);
+			dataSource.setUser(DbName);
 			dataSource.setPassword(pwd);
 			dataSource.setAutoCommitOnClose(true);//设置事务[默认=>自动提交]
 			/****************************************************************/

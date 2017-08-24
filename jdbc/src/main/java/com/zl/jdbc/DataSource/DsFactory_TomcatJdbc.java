@@ -33,7 +33,7 @@ public class DsFactory_TomcatJdbc
 
 			dataSource.setDriverClassName(DriverClassName);
 			dataSource.setUrl(JdbcUrl);
-			dataSource.setUsername(UserName);
+			dataSource.setUsername(DbName);
 			dataSource.setPassword(pwd);
 			dataSource.setDefaultAutoCommit(true);//设置事务[默认=>自动提交]
 			/****************************************************************/

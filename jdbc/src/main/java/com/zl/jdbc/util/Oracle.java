@@ -2,8 +2,8 @@ package com.zl.jdbc.util;
 
 
 import com.zl.jdbc.DataSource.DsFactory;
+import com.zl.jdbc.DataSource.DsProperties;
 import com.zl.jdbc.vo.Column;
-import com.zl.jdbc.vo.Resources;
 import com.zl.jdbc.vo.Table;
 
 import java.sql.DatabaseMetaData;
@@ -17,46 +17,7 @@ import java.util.List;
  */
 public class Oracle
 {
-    
-    public Table getTable(String tableName)
-        throws SQLException
-    {
-        Table t = new Table(tableName);
-        ResultSet rs = null;
-        t.setColumns(new ArrayList<Column>());
-        try
-        {
-            //DatabaseMetaData dmd = getConnection().getMetaData();// 获取数据库的MataData信息
 
-            DatabaseMetaData dbmd= DsFactory.getConnection().getMetaData();
-
-            rs = dbmd.getColumns(null, Resources.JDBC_USERNAME.toUpperCase(), tableName.toUpperCase(), null);
-
-            // 打印信息自己加的
-            System.out.println("\n\n\n com.keta.generate.db.Oracle.getTable()-35-tableName = " + tableName.toUpperCase());
-            //getDataBaseInfo();
-
-            getColumns(rs, t);
-
-            System.out.println("完成- getColumns(rs, t); " );
-
-            rs = dbmd.getPrimaryKeys(null, null, tableName);
-
-            System.out.println("完成- rs = dbmd.getPrimaryKeys(null, null, tableName);" );
-
-            t.setPk(getPk(rs));
-            System.out.println("完成- t.setPk(getPk(rs));" );
-        }
-        catch (SQLException e)
-        {
-            throw e;
-        }
-        finally
-        {
-            DsFactory.close();
-        }
-        return t;
-    }
     
     /**
      * 获取所有列
@@ -143,19 +104,27 @@ public class Oracle
         }
         return pk;
     }
-    
-    public List<Table> getTables()
-        throws SQLException
+
+    /**
+     *  获取Oracle 用户下面的所有表
+     * http://blog.sina.com.cn/s/blog_707a9f0601014y1a.html
+     * @return
+     * @throws SQLException
+     */
+    public List<Table> getTables()    throws SQLException
     {
         List<Table> tables = new ArrayList<Table>();
         ResultSet rs = null;
         try
         {
             DatabaseMetaData dmd = DsFactory.getConnection().getMetaData();
-            rs = dmd.getTables("", "", "%", null);
+            rs = dmd.getTables("", "JPA", "%", null);
             while (rs.next())
             {
                 Table t = new Table();
+                System.out.println("rs.getString(\"TABLE_NAME\") = " + rs.getString("TABLE_NAME"));
+
+
                 t.setTableName(rs.getString("TABLE_NAME"));
                 tables.add(t);
             }
@@ -169,6 +138,51 @@ public class Oracle
             DsFactory.close();
         }
         return tables;
+    }
+
+    /**
+     *
+     * @param tableName
+     * @return
+     * @throws SQLException
+     */
+    public Table getTable(String tableName)     throws SQLException
+    {
+        Table t = new Table(tableName);
+        ResultSet rs = null;
+        t.setColumns(new ArrayList<Column>());
+        try
+        {
+            //DatabaseMetaData dmd = getConnection().getMetaData();// 获取数据库的MataData信息
+
+            DatabaseMetaData dbmd= DsFactory.getConnection().getMetaData();
+
+            rs = dbmd.getColumns(null, DsProperties.DbName, tableName.toUpperCase(), null);
+
+            // 打印信息自己加的
+            System.out.println("\n\n\n com.keta.generate.db.Oracle.getTable()-35-tableName = " + tableName.toUpperCase());
+            //getDataBaseInfo();
+
+            getColumns(rs, t);
+
+            System.out.println("完成- getColumns(rs, t); " );
+
+            rs = dbmd.getPrimaryKeys(null, null, tableName);
+
+            System.out.println("完成- rs = dbmd.getPrimaryKeys(null, null, tableName);" );
+
+            t.setPk(getPk(rs));
+            System.out.println("完成- t.setPk(getPk(rs));" );
+        }
+        catch (SQLException e)
+        {
+            throw e;
+        }
+        finally
+        {
+            DsFactory.close();
+        }
+        return t;
     }
     
 }

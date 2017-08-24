@@ -1,7 +1,10 @@
 package utils;
 
 import com.zl.jdbc.util.Oracle;
+import com.zl.jdbc.vo.Table;
 import org.junit.Test;
+
+import java.util.List;
 
 /**
  * Created by 钢背猪☣ on 2017-8-24 0024.
@@ -18,6 +21,15 @@ public class oracle_test
     {
         //Oracle.getDataBaseInfo();
         Oracle oracle=new Oracle();
-        oracle.getTables();
+
+        List<Table> tables = oracle.getTables();
+/*
+        List<String> tableToSelect = new ArrayList<String>();
+
+                for (Table table : tables)
+                {
+                    //tableToSelect.add(table.getTableName());
+                    System.out.println("table = " + table.toString());
+                }*/
     }
 }

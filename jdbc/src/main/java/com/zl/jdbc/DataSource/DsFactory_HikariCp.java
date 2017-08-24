@@ -34,7 +34,7 @@ public class DsFactory_HikariCp
 
 		dataSource.setDriverClassName(DriverClassName);
 		dataSource.setJdbcUrl(JdbcUrl);
-		dataSource.setUsername(UserName);
+		dataSource.setUsername(DbName);
 		dataSource.setPassword(pwd);
 		dataSource.setAutoCommit(true);//设置事务[默认=>自动提交]
 		/****************************************************************/

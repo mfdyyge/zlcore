@@ -25,7 +25,7 @@ public class DsProperties
 
     public static 	String 					DriverClassName;
     public static 	String 					JdbcUrl;
-    public static 	String 					UserName;
+    public static 	String 					DbName;
     public static 	String 					pwd;
 
 }

@@ -30,7 +30,7 @@ public class DsFactory
 
 	public static 	String 					DriverClassName;
 	public static 	String 					JdbcUrl;
-	public static 	String 					UserName;
+	public static 	String 					DbName;
 	public static 	String 					pwd;*/
 
 	/**********************************************************************///公共对象直接引用-[直接通过类来调用>而不需要新建对象]
@@ -55,7 +55,7 @@ public class DsFactory
 
 		DriverClassName = rbundle.getString("DriverClassName");//数据库驱动类型
 		JdbcUrl 		= rbundle.getString("JdbcUrl");		//数据库链接地址
-		UserName 		= rbundle.getString("UserName");
+		DbName 		= rbundle.getString("DbName");
 		pwd 			= rbundle.getString("pwd");
 
 		switch (DataSourceName)
