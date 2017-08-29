@@ -118,7 +118,8 @@ public class Oracle
         try
         {
             DatabaseMetaData dmd = DsFactory.getConnection().getMetaData();
-            rs = dmd.getTables("", "JPA", "%", null);
+            String dbname=DsProperties.DbName.toUpperCase();
+            rs = dmd.getTables("", dbname, "%", null);
             while (rs.next())
             {
                 Table t = new Table();
@@ -157,7 +158,7 @@ public class Oracle
 
             DatabaseMetaData dbmd= DsFactory.getConnection().getMetaData();
 
-            rs = dbmd.getColumns(null, DsProperties.DbName, tableName.toUpperCase(), null);
+            rs = dbmd.getColumns(null, DsProperties.DbName.toUpperCase(), tableName.toUpperCase(), null);
 
             // 打印信息自己加的
             System.out.println("\n\n\n com.keta.generate.db.Oracle.getTable()-35-tableName = " + tableName.toUpperCase());
