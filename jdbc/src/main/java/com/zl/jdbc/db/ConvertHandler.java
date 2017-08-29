@@ -1,4 +1,4 @@
-package com.zl.jdbc.util;
+package com.zl.jdbc.db;
 
 
 import com.zl.jdbc.vo.Column;

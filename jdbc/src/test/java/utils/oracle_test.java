@@ -1,6 +1,6 @@
 package utils;
 
-import com.zl.jdbc.util.Oracle;
+import com.zl.jdbc.db.Oracle;
 import org.junit.Test;
 
 /**

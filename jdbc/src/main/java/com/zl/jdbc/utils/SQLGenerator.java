@@ -1,14 +1,17 @@
 package com.zl.jdbc.utils;
 
+
 import com.zl.jdbc.pojo.TableFormParams;
 
 import java.util.*;
+import java.util.Collection;
+
 /**
  * Created by Administrator on 2017/8/12. 通过map取得sql语句
  * @author   刚背猪
  *
  */
-public class GetSql
+public class SQLGenerator
 {
     private  static  ThreadLocal<TableFormParams> tb=new ThreadLocal<TableFormParams>();
 

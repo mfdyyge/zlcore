@@ -1,0 +1,374 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.zl.jdbc;
+
+import com.zl.jdbc.db.*;
+import com.zl.jdbc.db.impl.ColumnImpl;
+import com.zl.jdbc.db.impl.RelationshipImpl;
+
+import java.beans.PropertyChangeListener;
+import java.sql.*;
+import java.util.Locale;
+import java.util.Vector;
+
+public class JDBCTable extends Table implements DataDescriptorProvider {
+    private static final int _COLUMN_NAME = 4;
+    private static final int _DATA_TYPE = 5;
+    private static final int _COLUMN_SIZE = 7;
+    private static final int _DECIMAL_DIGITS = 9;
+    private static final int _NULLABLE = 11;
+    private static final int _ORDINAL = 17;
+    private static final int _DEFAULT = 13;
+    private static final int _PK_COLUMN_NAME = 4;
+    private static final int _FK_COLUMN_NAME = 4;
+    private static final int _FK_TABLE_NAME = 3;
+    private static final int _FK_FK_COLUMN_NAME = 8;
+    private static final int _FK_NAME = 12;
+    private static final int _EK_COLUMN_NAME = 4;
+    private static final int _EK_TABLE_NAME = 7;
+    private static final int _EK_FK_COLUMN_NAME = 8;
+    private static final int _EK_NAME = 12;
+
+    private Connection          _connection;
+    private String              _tableName;
+    private Schema              _schema;
+    private Column[]            _columns;
+    private Column[]            _primaryKey;
+    private Relationship[]      _foreignKey;
+    private Relationship[]      _exportedKey;
+    private final Object        _RESULTS_OBJECT = new Object();
+
+    public JDBCTable(Connection connection, Schema schema, String tableName) {
+        this._tableName = tableName;
+        this._connection = connection;
+        this._schema = schema;
+    }
+
+    public Schema getSchema() {
+        return this._schema;
+    }
+
+    public String getName() {
+        return this._tableName;
+    }
+
+    public String getDisplayName(Locale locale) {
+        return this.getName();
+    }
+
+    public int getColumnCount() {
+        Column[] columns = this._getColumns();
+        return columns == null?0:columns.length;
+    }
+
+    public Column getColumn(int index) {
+        Column[] columns = this._getColumns();
+        return columns == null?null:columns[index];
+    }
+
+    public Column getColumn(String columnName) {
+        Column[] columns = this._getColumns();
+
+        for(int i = 0; i < this.getColumnCount(); ++i) {
+            if(columns[i].getName().equals(columnName)) {
+                return columns[i];
+            }
+        }
+
+        return null;
+    }
+
+    public String getColumnDisplayName(int index, Locale locale) {
+        return this.getColumnName(index);
+    }
+
+    public String getColumnName(int index) {
+        Column[] columns = this._getColumns();
+        return columns == null?null:columns[index].getName();
+    }
+
+    public synchronized Column[] getColumns() {
+        if(this._columns == null) {
+            this._columns = this.createColumns();
+        }
+
+        return this._columns;
+    }
+
+    public int getDescriptorCount() {
+        return this.getColumnCount();
+    }
+
+    public DataDescriptor getDescriptor(int index) {
+        return this.getColumn(index);
+    }
+
+    public void addPropertyChangeListener(PropertyChangeListener listener) {
+    }
+
+    public void removePropertyChangeListener(PropertyChangeListener listener) {
+    }
+
+    public int getPrimaryKeyCount() {
+        if(this._primaryKey == null) {
+            this._primaryKey = this._createPrimaryKey();
+        }
+
+        return this._primaryKey == null?0:this._primaryKey.length;
+    }
+
+    public Column getPrimaryKey(int index) {
+        if(this._primaryKey == null) {
+            this._primaryKey = this._createPrimaryKey();
+        }
+
+        return this._primaryKey == null?null:this._primaryKey[index];
+    }
+
+    public int getForeignKeyCount() {
+        if(this._foreignKey == null) {
+            this._foreignKey = this.createForeignKey();
+        }
+
+        return this._foreignKey == null?0:this._foreignKey.length;
+    }
+
+    public Relationship getForeignKey(int index) {
+        if(this._foreignKey == null) {
+            this._foreignKey = this.createForeignKey();
+        }
+
+        return this._foreignKey == null?null:this._foreignKey[index];
+    }
+
+    public int getUniqueKeyCount() {
+        return 0;
+    }
+
+    public Column getUniqueKey(int index) {
+        return null;
+    }
+
+    public int getExportedKeyCount() {
+        if(this._exportedKey == null) {
+            this._exportedKey = this.createExportedKey();
+        }
+
+        return this._exportedKey == null?0:this._exportedKey.length;
+    }
+
+    public Relationship getExportedKey(int index) {
+        if(this._exportedKey == null) {
+            this._exportedKey = this.createExportedKey();
+        }
+
+        return this._exportedKey == null?null:this._exportedKey[index];
+    }
+
+    public Connection getConnection() {
+        return this._connection;
+    }
+
+    public String toString() {
+        return this.getName();
+    }
+
+    protected Column[] createColumns() {
+        Column[] columns = null;
+
+        try {
+            ResultSet e = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);
+            Vector temp = new Vector();
+            boolean dataType = false;
+            Object var13 = this._RESULTS_OBJECT;
+            synchronized(this._RESULTS_OBJECT) {
+                while(e.next()) {
+                    String name = e.getString(4);
+                    int dataType1 = e.getInt(5);
+                    int decimalDigits = e.getInt(9);
+                    Class type = this._getClass(dataType1, decimalDigits);
+                    int nullable = e.getInt(11);
+                    boolean allowsNull = nullable == 1;
+                    String defaultValue = e.getString(13);
+                    ColumnImpl column = new ColumnImpl(name, name, type, allowsNull, defaultValue, this);
+                    temp.addElement(column);
+                }
+            }
+
+            columns = new Column[temp.size()];
+            if(temp.size() != 0) {
+                temp.copyInto(columns);
+            }
+
+            e.close();
+        } catch (SQLException var16) {
+            System.err.println("A SQLException occured " + var16);
+        }
+
+        return columns;
+    }
+
+    Relationship[] createForeignKey() {
+        Relationship[] key = null;
+
+        try {
+            int e = 0;
+            DatabaseMetaData data = this._connection.getMetaData();
+            Relationship[] temp = new Relationship[data.getMaxColumnsInTable()];
+            ResultSet results = data.getImportedKeys((String)null, this._getSchemaName(), this.getName());
+            Object var13 = this._RESULTS_OBJECT;
+            synchronized(this._RESULTS_OBJECT) {
+                while(results.next()) {
+                    String refColumnName = results.getString(4);
+                    String refTableName = results.getString(3);
+                    String childColumnName = results.getString(8);
+                    String keyName = results.getString(12);
+                    JDBCTable refTable = new JDBCTable(this._connection, this.getSchema(), refTableName);
+                    Column refColumn = refTable.getColumn(refColumnName);
+                    Column childColumn = this.getColumn(childColumnName);
+                    temp[e] = new RelationshipImpl(childColumn, refColumn, keyName);
+                    ++e;
+                }
+            }
+
+            key = new Relationship[e];
+            System.arraycopy(temp, 0, key, 0, e);
+            results.close();
+        } catch (SQLException var16) {
+            System.err.println("A SQLException has occured: " + var16);
+        }
+
+        return key;
+    }
+
+    Relationship[] createExportedKey() {
+        Relationship[] key = null;
+
+        try {
+            int e = 0;
+            DatabaseMetaData data = this._connection.getMetaData();
+            Relationship[] temp = new Relationship[data.getMaxColumnsInTable()];
+            ResultSet results = data.getExportedKeys((String)null, this._getSchemaName(), this.getName());
+            Object var13 = this._RESULTS_OBJECT;
+            synchronized(this._RESULTS_OBJECT) {
+                while(results.next()) {
+                    String refColumnName = results.getString(4);
+                    String childColumnName = results.getString(8);
+                    String childTableName = results.getString(7);
+                    String keyName = results.getString(12);
+                    JDBCTable childTable = new JDBCTable(this._connection, this.getSchema(), childTableName);
+                    Column refColumn = this.getColumn(refColumnName);
+                    Column childColumn = childTable.getColumn(childColumnName);
+                    temp[e] = new RelationshipImpl(childColumn, refColumn, keyName);
+                    ++e;
+                }
+            }
+
+            key = new Relationship[e];
+            System.arraycopy(temp, 0, key, 0, e);
+            results.close();
+        } catch (SQLException var16) {
+            System.err.println("A SQLException has occured: " + var16);
+        }
+
+        return key;
+    }
+
+    private Column[] _getColumns() {
+        if(this._columns == null) {
+            this._columns = this.createColumns();
+        }
+
+        return this._columns;
+    }
+
+    private Column[] _createPrimaryKey() {
+        Column[] key = null;
+
+        try {
+            int count = 0;
+            DatabaseMetaData data = this._connection.getMetaData();
+            Column[] temp = new Column[data.getMaxColumnsInTable()];
+            ResultSet results = data.getPrimaryKeys((String)null, this._getSchemaName(), this.getName());
+            Object var7 = this._RESULTS_OBJECT;
+            synchronized(this._RESULTS_OBJECT) {
+                while(results.next()) {
+                    String e = results.getString(4);
+                    temp[count] = this.getColumn(e);
+                    ++count;
+                }
+            }
+
+            key = new Column[count];
+            System.arraycopy(temp, 0, key, 0, count);
+            results.close();
+        } catch (SQLException var10) {
+            System.err.println("A SQLException has occured: " + var10);
+        }
+
+        return key;
+    }
+
+    private Class _getClass(int sqlType, int digits) {
+        Class c;
+        switch(sqlType) {
+            case -7:
+                c = Boolean.class;
+                break;
+            case -6:
+            case -5:
+            case 4:
+            case 5:
+                c = Long.class;
+                break;
+            case -4:
+            case -3:
+            case -2:
+            case 1111:
+                c = Object.class;
+                break;
+            case -1:
+            case 12:
+                c = String.class;
+                break;
+            case 0:
+            default:
+                c = null;
+                break;
+            case 1:
+                c = Character.class;
+                break;
+            case 2:
+            case 3:
+            case 7:
+            case 8:
+                if(digits == 0) {
+                    c = Long.class;
+                } else {
+                    c = Double.class;
+                }
+                break;
+            case 6:
+                c = Float.class;
+                break;
+            case 91:
+                c = Date.class;
+                break;
+            case 92:
+                c = Time.class;
+                break;
+            case 93:
+                c = Timestamp.class;
+        }
+
+        return c;
+    }
+
+    private String _getSchemaName() {
+        Schema s = this.getSchema();
+        return s == null?null:s.getName();
+    }
+}
