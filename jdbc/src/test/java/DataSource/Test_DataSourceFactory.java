@@ -104,8 +104,9 @@ public class Test_DataSourceFactory
     @Test
     public  void JDBCTable_test()
     {
-        DsFactory dsFactory=new DsFactory("db1");
+        DsFactory dsFactory=new DsFactory();
         Connection connection=dsFactory.getConnection();
+
         JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
         JDBCSchema jdbcSchema=new JDBCSchema(connection,jdbcDatabase,"JPA");
 

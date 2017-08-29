@@ -42,7 +42,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
     private final Object        _RESULTS_OBJECT = new Object();
 
     public JDBCTable(Connection connection, Schema schema, String tableName) {
-        this._tableName = tableName;
+        this._tableName = tableName.toUpperCase(Locale.CHINA);
         this._connection = connection;
         this._schema = schema;
     }
