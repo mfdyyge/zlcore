@@ -11,6 +11,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.ftpserver:ftpserver-core:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.mina:mina-core:2.0.16" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.ftpserver:ftplet-api:1.1.1" level="project" />
     <orderEntry type="module" module-name="base" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" level="project" />

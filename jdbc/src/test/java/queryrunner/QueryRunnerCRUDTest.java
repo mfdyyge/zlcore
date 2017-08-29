@@ -1,6 +1,6 @@
 package queryrunner;
 
-import com.zl.jdbc.DataSource.DsFactory_Druid;
+import com.zl.jdbc.DataSource.DsFactory;
 import com.zl.jdbc.apche.dbutils.domain.T_user;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.ResultSetHandler;
@@ -28,7 +28,7 @@ public class QueryRunnerCRUDTest {
 	@Test
 	public void add() throws SQLException {
 		// 将数据源传递给QueryRunner，QueryRunner内部通过数据源获取数据库连接
-		QueryRunner qr = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner qr = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "insert into users(name,password,email,birthday) values(?,?,?,?)";
 		Object params[] = { "钢背猪☣", "123", "gacl@sina.com", new Date() };
 		qr.update(sql, params);
@@ -37,7 +37,7 @@ public class QueryRunnerCRUDTest {
 	@Test
 	public void delete() throws SQLException {
 
-		QueryRunner qr = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner qr = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "delete from users where id=?";
 		qr.update(sql, 1);
 
@@ -45,7 +45,7 @@ public class QueryRunnerCRUDTest {
 
 	@Test
 	public void update() throws SQLException {
-		QueryRunner qr = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner qr = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "update users set name=? where id=?";
 		Object params[] = { "ddd", 5 };
 		qr.update(sql, params);
@@ -53,7 +53,7 @@ public class QueryRunnerCRUDTest {
 
 	@Test
 	public void findUserById() throws SQLException {
-		QueryRunner qr = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner qr = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "select * from t_user u where u.user_id=?";
 		T_user user = qr.query(sql, new ResultSetHandler<T_user>() {
 			public T_user handle(ResultSet rs) throws SQLException {
@@ -72,7 +72,7 @@ public class QueryRunnerCRUDTest {
 
 	@Test
 	public void findAllUser() throws SQLException {
-		QueryRunner queryRunner = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner queryRunner = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "select * from t_user";
 		List<T_user> userList = queryRunner.query(sql,
 				new ResultSetHandler<List<T_user>>() {
@@ -101,7 +101,7 @@ public class QueryRunnerCRUDTest {
 	 */
 	@Test
 	public void testBatch() throws SQLException {
-		QueryRunner qr = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner qr = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "insert into users(name,password,email,birthday) values(?,?,?,?)";
 		Object params[][] = new Object[10][];
 		for (int i = 0; i < 10; i++) {
@@ -113,7 +113,7 @@ public class QueryRunnerCRUDTest {
 
 	@Test
 	public void testclob() throws SQLException, IOException {
-		QueryRunner runner = new QueryRunner(DsFactory_Druid.getDataSource());
+		QueryRunner runner = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "insert into testclob(resume) values(?)"; // clob
 		// 这种方式获取的路径，其中的空格会被使用“%20”代替
 		String path = QueryRunnerCRUDTest.class.getClassLoader()

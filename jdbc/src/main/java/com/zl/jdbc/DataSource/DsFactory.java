@@ -23,7 +23,7 @@ public class DsFactory
 {
 
 
-	public	static final DataSource 		dataSource;// 数据库连接池
+	private static DataSource 		dataSource;// 数据库连接池
 
 	/**********************************************************************/
 /*	private static 	String 					DataSourceName;	//链接池名字
@@ -39,8 +39,10 @@ public class DsFactory
 
 
 
+/*
 	static
 	{
+
 		if(null==rbundle)
 		{
 			System.out.println("  配置文件读取〉conf/db/db");
@@ -82,8 +84,77 @@ public class DsFactory
 				dataSource =  DsFactory_Druid.getDataSource();
 		}
 	}
+*/
+	/**
+	 * 没有指定配置文件名字->默认加载：db.properties 文件
+	 * @param db_properties_filename:数据库配置文件名字
+	 */
+	public DsFactory()
+	{
+		String db_properties_filename="db";
 
+		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
+		String 			DataSourceName	=dsProperties.getDataSourceName();
+		switch (DataSourceName)
+		{
+			case HikariCp_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_HikariCp.getDataSource(dsProperties);
+				break;
+			case druid_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
+				break;
+			case TomcatJdbc_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_TomcatJdbc.getDataSource(dsProperties);
+				break;
+			case c3p0_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
+				break;
+			default:
+				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
+				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
+		}
+	}
 
+	/**
+	 * 配置文件名字==null->默认加载：db.properties 文件
+	 * @param db_properties_filename:数据库配置文件名字
+	 */
+	public DsFactory(String db_properties_filename)
+	{
+		//配置文件名字==null->默认加载：db.properties 文件
+		if(null==db_properties_filename || !("".equals(db_properties_filename))) {db_properties_filename="db";	}
+
+		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
+		String 			DataSourceName	=dsProperties.getDataSourceName();
+		switch (DataSourceName)
+		{
+			case HikariCp_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_HikariCp.getDataSource(dsProperties);
+				break;
+			case druid_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
+				break;
+			case TomcatJdbc_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_TomcatJdbc.getDataSource(dsProperties);
+				break;
+			case c3p0_NAME:
+				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
+				break;
+			default:
+				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
+				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
+				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
+		}
+	}
 
 
 	/**
@@ -92,7 +163,7 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 * @return DataSource
 	 */
-	public static DataSource getDataSource()
+	public  DataSource getDataSource()
 	{
 		DataSource dataSource_DsSpring=DsSpring_Factory.getDataSource();
 		if( null != dataSource_DsSpring)
@@ -113,7 +184,7 @@ public class DsFactory
 	 * @return Connection
 	 * @throws SQLException
 	 */
-	public static Connection getConnection()
+	public  Connection getConnection()
 	{
 		// 从当前线程中获取Connection
 		Connection conn = threadLocal.get();
@@ -139,7 +210,7 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 *
 	 */
-	public static void startTransaction()
+	public  void startTransaction()
 	{
 		try
 		{
@@ -161,7 +232,7 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 *
 	 */
-	public static void rollback()
+	public  void rollback()
 	{
 		try {
 			// 从当前线程中获取Connection
@@ -182,7 +253,7 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 *
 	 */
-	public static void commit()
+	public  void commit()
 	{
 		try
 		{
@@ -201,7 +272,7 @@ public class DsFactory
 	 * 判断是否可用<br/>
 	 * @return
 	 */
-	public static boolean isValid(Connection conn)
+	public  boolean isValid(Connection conn)
 	{
 		try
 		{
@@ -222,7 +293,7 @@ public class DsFactory
 	 * 判断当前线程[conn]是否可用<br/>
 	 * @return
 	 */
-	public static boolean isValid()
+	public  boolean isValid()
 	{
 		Connection conn = threadLocal.get();
 		try
@@ -244,7 +315,7 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 *
 	 */
-	public static void close()
+	public  void close()
 	{
 		try
 		{

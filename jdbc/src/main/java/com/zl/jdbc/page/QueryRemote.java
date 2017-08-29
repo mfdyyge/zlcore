@@ -17,7 +17,7 @@ import java.util.List;
 
 public class QueryRemote {
 
-    // 获得c3p0连接池对象
+    // 连接池对象
     private static DataSource ds;
 
     @SuppressWarnings({
@@ -75,7 +75,8 @@ public class QueryRemote {
 
     private static DataSource getResource()
     {
-        ds= DsFactory.getDataSource();
+
+        ds= new DsFactory().getDataSource();
         return ds;
     }
 }

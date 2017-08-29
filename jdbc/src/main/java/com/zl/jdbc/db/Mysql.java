@@ -24,7 +24,7 @@ public class Mysql
         t.setColumns(new ArrayList<Column>());
         try
         {
-            DatabaseMetaData dmd = DsFactory.getConnection().getMetaData();// 获取数据库的MataData信息
+            DatabaseMetaData dmd = new DsFactory().getConnection().getMetaData();// 获取数据库的MataData信息
             rs = dmd.getColumns(null, "", tableName, "");
             getColumns(rs, t);
             rs = dmd.getPrimaryKeys(null, null, tableName);
@@ -36,7 +36,7 @@ public class Mysql
         }
         finally
         {
-            DsFactory.close();
+            new DsFactory().close();
         }
         return t;
     }
@@ -94,7 +94,7 @@ public class Mysql
         ResultSet rs = null;
         try
         {
-            DatabaseMetaData dmd = DsFactory.getConnection().getMetaData();
+            DatabaseMetaData dmd = new DsFactory().getConnection().getMetaData();
             rs = dmd.getTables("", "", "%", null);
             while (rs.next())
             {
@@ -109,7 +109,7 @@ public class Mysql
         }
         finally
         {
-            DsFactory.close();
+            new DsFactory().close();
         }
         return tables;
     }

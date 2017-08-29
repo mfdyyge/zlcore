@@ -50,7 +50,7 @@ public class Test_AdminQueryDao {
 	public void testArrayHandler() throws SQLException
 	{
 		//QueryRunner query_apc = new QueryRunner(JdbcUtils.getDataSource());
-		QueryRunner query_apc = new QueryRunner(DsFactory.getDataSource());
+		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "select * from jpa_persons";
 		Object result[] = (Object[]) query_apc.query(sql, new ArrayHandler());
 		System.out.println(Arrays.asList(result)); // list toString()
@@ -60,7 +60,7 @@ public class Test_AdminQueryDao {
 	public void testArrayListHandler() throws SQLException
 	{
 		//
-		QueryRunner query_apc = new QueryRunner(DsFactory.getDataSource());
+		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 
 		//顺序读取数据表的内容
 		String sql = "select * from jpa_persons";
@@ -74,7 +74,7 @@ public class Test_AdminQueryDao {
 	public void testColumnListHandler() throws SQLException
 	{
 		//查询指定列|或者说表中的某个"单列"
-		QueryRunner query_apc = new QueryRunner(DsFactory.getDataSource());
+		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 
 		String sql = "select * from jpa_persons";
 		List list_id = (List) query_apc.query(sql, new ColumnListHandler("id"));
@@ -86,7 +86,7 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testKeyedHandler() throws Exception
 	{
-		QueryRunner query_apc = new QueryRunner(DsFactory.getDataSource());
+		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "select * from jpa_persons";
 
 		Map<Integer, Map> map = (Map) query_apc.query(sql, new KeyedHandler("add_id"));
@@ -105,7 +105,7 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testMapHandler() throws SQLException {
 
-		QueryRunner query_apc = new QueryRunner(DsFactory.getDataSource());
+		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 		String sql = "select * from jpa_persons";
 
 		Map<String, Object> map = (Map) query_apc.query(sql, new MapHandler());
@@ -117,7 +117,7 @@ public class Test_AdminQueryDao {
 	@Test
 	public void testMapListHandler() throws SQLException
 	{
-		QueryRunner query_apc = new QueryRunner(DsFactory.getDataSource());
+		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 
 		String sql = "select * from jpa_persons";
 		List<Map> list = (List) query_apc.query(sql, new MapListHandler());
@@ -134,7 +134,7 @@ public class Test_AdminQueryDao {
 	public void testScalarHandler() throws SQLException
 	{
 		QueryRunner query_apc = new QueryRunner();
-		Connection connection=DsFactory.getConnection();
+		Connection connection=new DsFactory().getConnection();
 
 		String sql = "select count(id) from jpa_persons"; // [13] list[13]
 		//int count = ((Long) query_apc.query(connection,utils, new ScalarHandler(1))).intValue();

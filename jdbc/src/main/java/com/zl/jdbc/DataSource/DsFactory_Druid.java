@@ -5,8 +5,6 @@ package com.zl.jdbc.DataSource;
 import com.alibaba.druid.pool.DruidDataSource;
 
 import javax.sql.DataSource;
-
-import static com.zl.jdbc.DataSource.DsProperties.*;
 /**
  * @ClassName:   DataSouceFactory_InterFace
  * @Description: druid-数据库连接池 \n 采用线程安全\n为了单例模式不出现并发错误的一种每个线程
@@ -26,15 +24,27 @@ public class DsFactory_Druid
 	{// 在静态代码块中创建数据库连接池
 
 
+
+	}
+
+
+	/**
+	 * @Method: getDataSource
+	 * @Description: 获取数据源
+	 * @author: 钢背猪☣
+	 * @return DataSource 返回:javax.utils.DataSource
+	 */
+	public static DataSource getDataSource(DsProperties dsProperties)
+	{
 		System.out.println("**\tRead db.properties info ... ");
 		System.out.println("**\tDatabase connect start ...DS_NAME=["+DS_NAME+"]");
 
 		dataSource= new DruidDataSource();// druid数据库连接池
 
-		dataSource.setDriverClassName(DriverClassName);
-		dataSource.setUrl(JdbcUrl);
-		dataSource.setUsername(DbName);
-		dataSource.setPassword(pwd);
+		dataSource.setDriverClassName(dsProperties.getDriverClassName());
+		dataSource.setUrl(dsProperties.getJdbcUrl());
+		dataSource.setUsername(dsProperties.getDbName());
+		dataSource.setPassword(dsProperties.getPwd());
 		dataSource.setDefaultAutoCommit(true);   //设置事务[默认=>自动提交]
 		/****************************************************************/
 
@@ -74,17 +84,6 @@ public class DsFactory_Druid
 		//是否缓存preparedStatement，也就是PSCache。PSCache对支持游标的数据库性能提升巨大。
 		dataSource.setPoolPreparedStatements(true);
 		dataSource.setMaxPoolPreparedStatementPerConnectionSize(10);
-	}
-
-
-	/**
-	 * @Method: getDataSource
-	 * @Description: 获取数据源
-	 * @author: 钢背猪☣
-	 * @return DataSource 返回:javax.utils.DataSource
-	 */
-	public static DataSource getDataSource()
-	{
 		return dataSource;
 	}
 

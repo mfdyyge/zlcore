@@ -20,6 +20,13 @@ import java.util.Arrays;
  */
 public class Test_DataSourceFactory
 {
+    private static DsFactory dsFactory;
+    static
+    {
+        dsFactory=new DsFactory();
+
+    }
+
     @Test
     public void test_Dao()
     {
@@ -29,7 +36,7 @@ public class Test_DataSourceFactory
 
 
         //System.out.println("getDataSource = " + DsFactory.getDataSource());
-        Connection connection= DsFactory.getConnection();
+        Connection connection= dsFactory.getConnection();
         System.out.println("getConnection = " + connection);
 
         Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql,params);
@@ -42,28 +49,32 @@ public class Test_DataSourceFactory
     @Test
     public  void  DsFactory()
     {
-        System.out.println("DsFactory.getDataSource = " + DsFactory.getDataSource());
+        System.out.println("DsFactory.getDataSource = " + dsFactory.getDataSource());
 
-        Connection connection=DsFactory.getConnection();
+        DsFactory dsFactory1=new DsFactory("db1");
+        Connection connection=dsFactory1.getConnection();
+
 
         System.out.println("DsFactory.Connection = " + connection);
 
-        System.out.println("Connection = " + DsFactory.isValid());
-        System.out.println("connection = " + DsFactory.isValid(connection));
+        System.out.println("Connection = " + dsFactory1.isValid());
+        System.out.println("connection = " + dsFactory1.isValid(connection));
 
         System.out.println("connection = " + connection.hashCode());
-        System.out.println("DsFactory.getConnection().hashCode() = " + DsFactory.getConnection().hashCode());
+        System.out.println("DsFactory.getConnection().hashCode() = " + dsFactory1.getConnection().hashCode());
 
 
         //判断两个Connection 是否相等
-        System.out.println("connection =threadLocal.get(Connection) " + connection.equals(DsFactory.getConnection()));
+        System.out.println("connection =threadLocal.get(Connection) " + connection.equals(dsFactory1.getConnection()));
     }
 
     //数据库对象
     @Test
     public  void JDBCDatabase_test()
     {
-        Connection connection=DsFactory.getConnection();
+        DsFactory dsFactory=new DsFactory("db1");
+        Connection connection=dsFactory.getConnection();
+
         JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
         System.out.println("数据库对象>jdbcDatabase.getSchemaCount = " + jdbcDatabase.getSchemaCount());
 
@@ -73,7 +84,9 @@ public class Test_DataSourceFactory
     @Test
     public  void JDBCSchema_test()
     {
-        Connection connection=DsFactory.getConnection();
+        DsFactory dsFactory=new DsFactory("db1");
+        Connection connection=dsFactory.getConnection();
+
         JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
         String dbName=jdbcDatabase.getSchemaName(0);
 
@@ -91,7 +104,8 @@ public class Test_DataSourceFactory
     @Test
     public  void JDBCTable_test()
     {
-        Connection connection=DsFactory.getConnection();
+        DsFactory dsFactory=new DsFactory("db1");
+        Connection connection=dsFactory.getConnection();
         JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
         JDBCSchema jdbcSchema=new JDBCSchema(connection,jdbcDatabase,"JPA");
 

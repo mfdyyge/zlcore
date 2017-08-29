@@ -2,7 +2,6 @@ package com.zl.jdbc.db;
 
 
 import com.zl.jdbc.DataSource.DsFactory;
-import com.zl.jdbc.DataSource.DsProperties;
 import com.zl.jdbc.vo.Column;
 import com.zl.jdbc.vo.Table;
 
@@ -18,7 +17,26 @@ import java.util.List;
 public class Oracle
 {
 
-    
+    private static DsFactory dsFactory;
+
+    /**
+     * 指定配置文件名
+     * @param db_properties_filename
+     */
+    public Oracle(String db_properties_filename)
+    {
+        dsFactory=new DsFactory(db_properties_filename);
+    }
+
+    /**
+     * 默认配置文件：db_properties_filename="db" 〈br/〉
+     * 路径："conf/db/db.properties"
+     */
+    public Oracle()
+    {
+        dsFactory=new DsFactory("");
+    }
+
     /**
      * 获取所有列
      * 
@@ -56,10 +74,11 @@ public class Oracle
      */
     public static void getDataBaseInfo()
     {
-        //Connection conn =getConnection();
+
         ResultSet rs = null;
         try{
-            DatabaseMetaData dbmd = DsFactory.getConnection().getMetaData();
+
+            DatabaseMetaData dbmd = dsFactory.getConnection().getMetaData();
             System.out.println("数据库已知的用户: "+ dbmd.getUserName());
             System.out.println("数据库的系统函数的逗号分隔列表: "+ dbmd.getSystemFunctions());
             System.out.println("数据库的时间和日期函数的逗号分隔列表: "+ dbmd.getTimeDateFunctions());
@@ -80,7 +99,7 @@ public class Oracle
         }catch (SQLException e){
             e.printStackTrace();
         } finally{
-            DsFactory.close();
+            dsFactory.close();
         }
     }
 
@@ -117,9 +136,11 @@ public class Oracle
         ResultSet rs = null;
         try
         {
-            DatabaseMetaData dmd = DsFactory.getConnection().getMetaData();
-            String dbname=DsProperties.DbName.toUpperCase();
-            rs = dmd.getTables("", dbname, "%", null);
+            DatabaseMetaData dbmd = dsFactory.getConnection().getMetaData();
+            String dbname=dsFactory.getConnection().getMetaData().getUserName().toUpperCase();
+            System.out.println("当前链接用户名 〉dbname = " + dbname);
+
+            rs = dbmd.getTables("", dbname, "%", null);
             while (rs.next())
             {
                 Table t = new Table();
@@ -136,7 +157,7 @@ public class Oracle
         }
         finally
         {
-            DsFactory.close();
+            dsFactory.close();
         }
         return tables;
     }
@@ -154,11 +175,13 @@ public class Oracle
         t.setColumns(new ArrayList<Column>());
         try
         {
-            //DatabaseMetaData dmd = getConnection().getMetaData();// 获取数据库的MataData信息
+            //DatabaseMetaData dbmd = getConnection().getMetaData();// 获取数据库的MataData信息
 
-            DatabaseMetaData dbmd= DsFactory.getConnection().getMetaData();
+            DatabaseMetaData dbmd = dsFactory.getConnection().getMetaData();
+            String dbname=dsFactory.getConnection().getMetaData().getUserName().toUpperCase();
+            System.out.println("当前链接用户名 〉dbname = " + dbname);
 
-            rs = dbmd.getColumns(null, DsProperties.DbName.toUpperCase(), tableName.toUpperCase(), null);
+            rs = dbmd.getColumns(null, dbname, tableName.toUpperCase(), null);
 
             // 打印信息自己加的
             System.out.println("\n\n\n com.keta.generate.db.Oracle.getTable()-35-tableName = " + tableName.toUpperCase());
@@ -181,7 +204,7 @@ public class Oracle
         }
         finally
         {
-            DsFactory.close();
+            dsFactory.close();
         }
         return t;
     }

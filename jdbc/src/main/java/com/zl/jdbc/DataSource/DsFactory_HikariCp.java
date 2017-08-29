@@ -5,8 +5,6 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 import javax.sql.DataSource;
-
-import static com.zl.jdbc.DataSource.DsProperties.*;
 /**
  * @ClassName:   DsFactory_HikariCp 光连接池
  * @Description: HikariCp-光连接池 \n 采用线程安全\n为了单例模式不出现并发错误的一种每个线程
@@ -26,18 +24,34 @@ public class DsFactory_HikariCp
 	static
 	{// 在静态代码块中创建数据库连接池
 
+
+	}
+
+
+
+	/**
+	 * @Method: getDataSource
+	 * @Description: 获取数据源
+	 * @author: 钢背猪☣
+	 * @return DataSource
+	 * 修改：2017年8月29日18:12:22
+	 */
+	public static DataSource getDataSource(DsProperties dsProperties)
+	{
+
 		System.out.println("**\tRead db.properties info ... ");
 		System.out.println("**\tDatabase connect start ...DS_NAME=["+DS_NAME+"]");
 
 		config 		= new HikariConfig();//暂时没用
 		dataSource	= new HikariDataSource();
 
-		dataSource.setDriverClassName(DriverClassName);
-		dataSource.setJdbcUrl(JdbcUrl);
-		dataSource.setUsername(DbName);
-		dataSource.setPassword(pwd);
-		dataSource.setAutoCommit(true);//设置事务[默认=>自动提交]
+		dataSource.setDriverClassName(dsProperties.getDriverClassName());
+		dataSource.setJdbcUrl(dsProperties.getJdbcUrl());
+		dataSource.setUsername(dsProperties.getDbName());
+		dataSource.setPassword(dsProperties.getPwd());
 		/****************************************************************/
+
+		dataSource.setAutoCommit(true);//设置事务[默认=>自动提交]
 
 		/*
 		* 连接只读数据库时配置为true， 保证安全
@@ -77,33 +91,20 @@ public class DsFactory_HikariCp
 
 
 		/**
-		* 其中，很多配置都使用缺省值就行了，除了[MaxLifetime]和[MaximumPoolSize]要注意自己计算一下。
-		其他的配置
+		 * 其中，很多配置都使用缺省值就行了，除了[MaxLifetime]和[MaximumPoolSize]要注意自己计算一下。
+		 其他的配置
 		 [sqlSessionFactory、
 		 MyBatis MapperScannerConfigurer、
 		 transactionManager等]统统不用变。
 
-		其他关于Datasource配置参数的建议：
-		Configure your HikariCP idleTimeout and maxLifeTime settings to be one minute less than the wait_timeout of MySQL.
-		对于有Java连接池的系统，
-		建议MySQL的wait_timeout使用缺省的8小时（http://www.rackspace.com/knowledge_center/article/how-to-change-the-mysql-timeout-on-a-server）。
+		 其他关于Datasource配置参数的建议：
+		 Configure your HikariCP idleTimeout and maxLifeTime settings to be one minute less than the wait_timeout of MySQL.
+		 对于有Java连接池的系统，
+		 建议MySQL的wait_timeout使用缺省的8小时（http://www.rackspace.com/knowledge_center/article/how-to-change-the-mysql-timeout-on-a-server）。
 
 
-		另外：对于web项目，记得要配置：destroy-method="shutdown"
-		*/
-
-	}
-
-
-
-	/**
-	 * @Method: getDataSource
-	 * @Description: 获取数据源
-	 * @author: 钢背猪☣
-	 * @return DataSource
-	 */
-	public static DataSource getDataSource()
-	{
+		 另外：对于web项目，记得要配置：destroy-method="shutdown"
+		 */
 		return dataSource;
 	}
 
