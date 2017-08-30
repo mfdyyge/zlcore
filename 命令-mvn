@@ -70,7 +70,7 @@ com.boot        boot-facede        1.0.0-SNAPSHOT        boot-facede-flat    jar
  mvn archetype:generate -DartifactId=maven-demo-quickstart -DgroupId=org.flyne.demo            -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 
- ---------------------------------------------------------------set JAVA_HOME------------------------------------------------------
+ ---------------------------------------------------------------设置：〉 JAVA_HOME------------------------------------------------------
 
  @REM JAVA_HOME - location of a JDK home dir
  @REM
