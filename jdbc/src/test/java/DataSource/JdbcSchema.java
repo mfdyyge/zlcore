@@ -69,11 +69,9 @@ public class JdbcSchema
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
         //ColumnImpl[] columns= (ColumnImpl[])
         Column[]            A_columns=jdbcTable.getColumns();
-/*
         System.out.println("A_columns[0].toString() = " + A_columns[0].toString());
         System.out.println(" 字段类型 = " +  A_columns[0].getDataType());
         System.out.println(">>>> (columns)= " + A_columns[0].getName());
-*/
        // System.out.println("数据库表对象> j Arrays.asList(columns)= " + Arrays.asList(columns));
 
     }
