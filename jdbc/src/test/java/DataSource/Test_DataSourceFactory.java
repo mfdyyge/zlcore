@@ -27,6 +27,35 @@ public class Test_DataSourceFactory
 
     }
 
+    //查找月的第一天,最后一天
+    @Test
+    public  void  getFrist()
+    {
+
+        String sql_a=   "SELECT "+
+                            "to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, "+
+                            "to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')	         as 当月最后一天 "+
+                            "FROM dual ";
+
+        String sql_b=   "SELECT "+
+                           "to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, "+
+                           "to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 "+
+                           "FROM dual ";
+
+        Object [] params = new Object[]{"%4%"};
+
+
+        //System.out.println("getDataSource = " + DsFactory.getDataSource());
+        Connection connection= dsFactory.getConnection();
+        System.out.println("getConnection = " + connection);
+
+        Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql_a);
+        System.out.println(Arrays.asList(result));
+        Object result_2[]=QueryRunnerDao.getFirstRowArray(connection,sql_b);
+        System.out.println(Arrays.asList(result_2));
+
+    }
+
     @Test
     public void test_Dao()
     {

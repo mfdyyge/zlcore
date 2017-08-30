@@ -12,63 +12,63 @@
 		<param-value>classpath:applicationContext.xml</param-value>
 	</context-param>
 	<!-- 编码处理 -->
-	<filter>
-		<filter-name>encodingFilter</filter-name>
-		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+	<dbtools.query.filter>
+		<dbtools.query.filter-name>encodingFilter</dbtools.query.filter-name>
+		<dbtools.query.filter-class>org.springframework.web.dbtools.query.filter.CharacterEncodingFilter</dbtools.query.filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
 		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>encodingFilter</filter-name>
+	</dbtools.query.filter>
+	<dbtools.query.filter-mapping>
+		<dbtools.query.filter-name>encodingFilter</dbtools.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+	</dbtools.query.filter-mapping>
 	<!-- 由Spring借助Redis接管HttpSession，实现分布式共享Session
-	<filter>
-		<filter-name>springSessionRepositoryFilter</filter-name>
-		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>springSessionRepositoryFilter</filter-name>
+	<dbtools.query.filter>
+		<dbtools.query.filter-name>springSessionRepositoryFilter</dbtools.query.filter-name>
+		<dbtools.query.filter-class>org.springframework.web.dbtools.query.filter.DelegatingFilterProxy</dbtools.query.filter-class>
+	</dbtools.query.filter>
+	<dbtools.query.filter-mapping>
+		<dbtools.query.filter-name>springSessionRepositoryFilter</dbtools.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+	</dbtools.query.filter-mapping>
 	 -->
 	<!-- 验证码 -->
-	<filter>
-		<filter-name>captchaFilter</filter-name>
-		<filter-class>mvc.captcha.CaptchaFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>captchaFilter</filter-name>
+	<dbtools.query.filter>
+		<dbtools.query.filter-name>captchaFilter</dbtools.query.filter-name>
+		<dbtools.query.filter-class>mvc.captcha.CaptchaFilter</dbtools.query.filter-class>
+	</dbtools.query.filter>
+	<dbtools.query.filter-mapping>
+		<dbtools.query.filter-name>captchaFilter</dbtools.query.filter-name>
 		<url-pattern>/captcha</url-pattern>
-	</filter-mapping>
+	</dbtools.query.filter-mapping>
 	<!-- 单点登录 -->
-	<filter>
-		<filter-name>ssoFilter</filter-name>
-		<filter-class>com.smart.sso.client.SsoFilter</filter-class>
+	<dbtools.query.filter>
+		<dbtools.query.filter-name>ssoFilter</dbtools.query.filter-name>
+		<dbtools.query.filter-class>com.smart.sso.client.SsoFilter</dbtools.query.filter-class>
 		<init-param>
 			<param-name>excludes</param-name>
 			<param-value>/login,/logout,/rpc,/swagger-ui.html,/webjars/**,/swagger-resources/**,/v2/api-docs</param-value>
 		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>ssoFilter</filter-name>
+	</dbtools.query.filter>
+	<dbtools.query.filter-mapping>
+		<dbtools.query.filter-name>ssoFilter</dbtools.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+	</dbtools.query.filter-mapping>
 	<!-- 权限控制(选配) -->
-	<filter>
-		<filter-name>permissionFilter</filter-name>
-		<filter-class>com.smart.sso.client.PermissionFilter</filter-class>
+	<dbtools.query.filter>
+		<dbtools.query.filter-name>permissionFilter</dbtools.query.filter-name>
+		<dbtools.query.filter-class>com.smart.sso.client.PermissionFilter</dbtools.query.filter-class>
 		<init-param>
 			<param-name>excludes</param-name>
 			<param-value>/login,/logout,/rpc,/swagger-ui.html,/webjars/**,/swagger-resources/**,/v2/api-docs</param-value>
 		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>permissionFilter</filter-name>
+	</dbtools.query.filter>
+	<dbtools.query.filter-mapping>
+		<dbtools.query.filter-name>permissionFilter</dbtools.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+	</dbtools.query.filter-mapping>
 	<!-- SpringMVC核心 -->
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>

@@ -18,27 +18,36 @@
 
 
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdbc.version>11.2.0.4</jdbc.version>
-        <mysql.version>5.1.40</mysql.version>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jdbc.version>11.2.0.4</jdbc.version>
+    <mysql.version>5.1.40</mysql.version>
 
-        <!--链接池-->
-        <hikaricp.version>2.4.12</hikaricp.version>
-        <druid.version>1.0.29</druid.version>
-        <c3p0.version>0.9.2.1</c3p0.version>
-        <c3p0_mchange-commons.version>0.2.11</c3p0_mchange-commons.version>
 
-        <!--Plugin -->
-        <assembly.version>3.0.0</assembly.version>
-        <compiler.version>3.3</compiler.version>
-    </properties>
+
+    <!--链接池-->
+    <hikaricp.version>2.4.12</hikaricp.version>
+    <druid.version>1.0.29</druid.version>
+    <c3p0.version>0.9.2.1</c3p0.version>
+    <c3p0_mchange-commons.version>0.2.11</c3p0_mchange-commons.version>
+
+    <!--Plugin -->
+    <assembly.version>3.0.0</assembly.version>
+    <compiler.version>3.3</compiler.version>
+</properties>
 
     <dependencies>
         <dependency>
             <groupId>com.zl.core</groupId>
             <artifactId>base</artifactId>
             <version>1.0.20170811</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.dbtools/dbtools-query -->
+        <dependency>
+            <groupId>org.dbtools</groupId>
+            <artifactId>dbtools-query</artifactId>
+            <version>3.0.0</version>
         </dependency>
 
         <!--单元测试   ****************************************************************-->
