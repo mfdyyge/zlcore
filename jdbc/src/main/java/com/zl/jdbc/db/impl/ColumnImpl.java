@@ -77,4 +77,16 @@ public class ColumnImpl extends Column    implements Serializable
         return null;
     }
 
+    @Override
+    public String toString()
+    {
+        return "ColumnImpl{" +
+                "_table=" + _table +
+                ", _name='" + _name + '\'' +
+                ", _displayName='" + _displayName + '\'' +
+                ", _type=" + _type +
+                ", _allowsNull=" + _allowsNull +
+                ", _defaultValue=" + _defaultValue +
+                '}';
+    }
 }

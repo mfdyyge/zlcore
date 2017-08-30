@@ -269,7 +269,7 @@ public class DsFactory
 	}
 
 	/**
-	 * 判断是否可用<br/>
+	 * * 判断是否可用<br/>
 	 * @return
 	 */
 	public  boolean isValid(Connection conn)

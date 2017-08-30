@@ -94,7 +94,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
         if(this._columns == null) {
             this._columns = this.createColumns();
         }
-
+        //System.out.println(">>>> (columns)= " + Arrays.asList(_columns));
         return this._columns;
     }
 
@@ -180,30 +180,44 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
         Column[] columns = null;
 
         try {
-            ResultSet e = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);
+            ResultSet rs = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);
             Vector temp = new Vector();
             boolean dataType = false;
             Object var13 = this._RESULTS_OBJECT;
-            synchronized(this._RESULTS_OBJECT) {
-                while(e.next()) {
-                    String name = e.getString(4);
-                    int dataType1 = e.getInt(5);
-                    int decimalDigits = e.getInt(9);
+            synchronized(this._RESULTS_OBJECT)
+            {
+                while(rs.next())
+                {
+                    String name = rs.getString(4);
+                    int dataType1 = rs.getInt(5);
+                    int decimalDigits = rs.getInt(9);
                     Class type = this._getClass(dataType1, decimalDigits);
-                    int nullable = e.getInt(11);
+
+                    String DATA_TYPE  = rs.getString("DATA_TYPE");//字段数据类型(对应java.sql.Types中的常量)
+                    String TYPE_NAME = rs.getString("TYPE_NAME");//字段类型名称(例如：VACHAR2)
+
+
+                    System.out.println("DATA_TYPE="+DATA_TYPE+" |TYPE_NAME = "+TYPE_NAME+" | 字段类型 = " + type);
+                    int nullable = rs.getInt(11);
                     boolean allowsNull = nullable == 1;
-                    String defaultValue = e.getString(13);
+                    String defaultValue = rs.getString(13);
+
                     ColumnImpl column = new ColumnImpl(name, name, type, allowsNull, defaultValue, this);
+
                     temp.addElement(column);
                 }
             }
 
             columns = new Column[temp.size()];
-            if(temp.size() != 0) {
+            System.out.println("column.size() = " + temp.size());
+
+            if(temp.size() != 0)
+            {
                 temp.copyInto(columns);
+               // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
             }
 
-            e.close();
+            rs.close();
         } catch (SQLException var16) {
             System.err.println("A SQLException occured " + var16);
         }
@@ -327,11 +341,11 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
             case -4:
             case -3:
             case -2:
-            case 1111:
                 c = Object.class;
                 break;
             case -1:
             case 12:
+            case 1111://NVARCHAR2
                 c = String.class;
                 break;
             case 0:
@@ -361,7 +375,11 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
                 c = Time.class;
                 break;
             case 93:
+            case -102:
                 c = Timestamp.class;
+                break;
+            case 2005://CLOB
+                c= Clob.class;
         }
 
         return c;
