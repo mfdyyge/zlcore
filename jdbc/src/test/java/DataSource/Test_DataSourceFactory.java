@@ -2,6 +2,7 @@ package DataSource;
 
 import com.zl.jdbc.DataSource.DsFactory;
 import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.sql.Connection;
@@ -17,11 +18,24 @@ import java.util.Arrays;
  */
 public class Test_DataSourceFactory
 {
+    protected static Logger logger = Logger.getLogger(Test_DataSourceFactory.class);
+
     private static DsFactory dsFactory;
+    private StringBuffer msg;
+
+
     static
     {
         dsFactory=new DsFactory();
 
+    }
+
+
+
+    @Test
+    public void  DsFactory_test()
+    {
+        //logger.info("test error");
     }
 
     //查找月的第一天,最后一天
@@ -39,17 +53,19 @@ public class Test_DataSourceFactory
                            "to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 "+
                            "FROM dual ";
 
+
         Object [] params = new Object[]{"%4%"};
 
 
         //System.out.println("getDataSource = " + DsFactory.getDataSource());
         Connection connection= dsFactory.getConnection();
-        System.out.println("getConnection = " + connection);
+        logger.info(new StringBuffer("行>getConnection = ").append(connection));
 
         Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql_a);
-        System.out.println(Arrays.asList(result));
+        logger.info(new StringBuffer("行>").append(Arrays.asList(result)));
+
         Object result_2[]=QueryRunnerDao.getFirstRowArray(connection,sql_b);
-        System.out.println(Arrays.asList(result_2));
+        logger.info(new StringBuffer("行>").append(Arrays.asList(result_2)));
 
     }
 
@@ -63,10 +79,10 @@ public class Test_DataSourceFactory
 
         //System.out.println("getDataSource = " + DsFactory.getDataSource());
         Connection connection= dsFactory.getConnection();
-        System.out.println("getConnection = " + connection);
+        logger.info(connection);
 
         Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql,params);
-        System.out.println(Arrays.asList(result));
+        logger.info(Arrays.asList(result));
 
     }
 

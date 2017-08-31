@@ -1,8 +1,8 @@
 package page;
 
 import com.zl.jdbc.apche.dbutils.domain.Jpa_persons;
-import com.zl.jdbc.page.Page;
-import com.zl.jdbc.page.QueryRemote;
+import com.zl.jdbc.apche.dbutils.page.Page;
+import com.zl.jdbc.apche.dbutils.page.QueryRemote;
 import org.junit.Test;
 
 import java.util.ArrayList;

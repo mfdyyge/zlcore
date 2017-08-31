@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.zl.core</groupId>
         <artifactId>zlcore</artifactId>
-        <version>1.0.20170811</version>
+        <version>1.0.2017-08-31</version>
     </parent>
 
 
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>com.zl.core</groupId>
             <artifactId>base</artifactId>
-            <version>1.0.20170811</version>
+            <version>1.0.2017-08-31</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.dbtools/dbtools-query -->
@@ -71,11 +71,6 @@
             <version>1.3</version>
         </dependency>
 
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-        </dependency>
 
 
 

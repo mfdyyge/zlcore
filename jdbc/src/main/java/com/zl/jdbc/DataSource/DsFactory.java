@@ -3,6 +3,7 @@ package com.zl.jdbc.DataSource;
 
 
 import com.zl.jdbc.DataSource.spring.DsSpring_Factory;
+import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -21,8 +22,9 @@ import static com.zl.jdbc.DataSource.DsProperties.*;
  */
 public class DsFactory
 {
+	protected static Logger logger = Logger.getLogger(DsFactory.class);
 
-
+	private StringBuffer msg;
 	private static DataSource 		dataSource;// 数据库连接池
 
 	/**********************************************************************/
@@ -39,52 +41,6 @@ public class DsFactory
 
 
 
-/*
-	static
-	{
-
-		if(null==rbundle)
-		{
-			System.out.println("  配置文件读取〉conf/db/db");
-			rbundle = ResourceBundle.getBundle("conf/db/db");//配置文件读取类
-
-		}
-
-		if (null==DataSourceName)
-		{
-			DataSourceName  = rbundle.getString("DataSourceName");//读取配置文件中的链接池名字
-		}
-
-		DriverClassName = rbundle.getString("DriverClassName");//数据库驱动类型
-		JdbcUrl 		= rbundle.getString("JdbcUrl");		//数据库链接地址
-		DbName 		= rbundle.getString("DbName");
-		pwd 			= rbundle.getString("pwd");
-
-		switch (DataSourceName)
-		{
-			case HikariCp_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource =  DsFactory_HikariCp.getDataSource();
-				break;
-			case druid_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource =  DsFactory_Druid.getDataSource();
-				break;
-			case TomcatJdbc_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource =  DsFactory_TomcatJdbc.getDataSource();
-				break;
-			case c3p0_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource =  DsFactory_C3p0.getDataSource();
-				break;
-			default:
-				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
-				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource =  DsFactory_Druid.getDataSource();
-		}
-	}
-*/
 	/**
 	 * 没有指定配置文件名字->默认加载：db.properties 文件
 	 * @param db_properties_filename:数据库配置文件名字
@@ -94,28 +50,25 @@ public class DsFactory
 		String db_properties_filename="db";
 
 		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
+
 		String 			DataSourceName	=dsProperties.getDataSourceName();
 		switch (DataSourceName)
 		{
 			case HikariCp_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_HikariCp.getDataSource(dsProperties);
 				break;
 			case druid_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
 				break;
 			case TomcatJdbc_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_TomcatJdbc.getDataSource(dsProperties);
 				break;
 			case c3p0_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
 				break;
 			default:
-				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
-				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
+				System.out.println("因为[配置文件]中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
+				System.out.println("默认配置=>conf/db/db.properties >>> DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
 		}
 	}
@@ -131,22 +84,19 @@ public class DsFactory
 
 		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
 		String 			DataSourceName	=dsProperties.getDataSourceName();
+		System.out.println("com.zl.jdbc.DataSource.DsFactory.DsFactory(java.lang.String) DataSourceName = " + DataSourceName);
 		switch (DataSourceName)
 		{
 			case HikariCp_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_HikariCp.getDataSource(dsProperties);
 				break;
 			case druid_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
 				break;
 			case TomcatJdbc_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_TomcatJdbc.getDataSource(dsProperties);
 				break;
 			case c3p0_NAME:
-				System.out.println("conf/db/db.properties>DataSourceName = " + DataSourceName);
 				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
 				break;
 			default:
@@ -168,7 +118,7 @@ public class DsFactory
 		DataSource dataSource_DsSpring=DsSpring_Factory.getDataSource();
 		if( null != dataSource_DsSpring)
 		{
-			System.out.println("当前使用Spring配置的dataSource_dataSource_DsSpring.getClass() = " + dataSource_DsSpring.getClass());
+			logger.info(new StringBuffer("当前使用Spring配置的dataSource_dataSource_DsSpring.getClass() = ").append(dataSource_DsSpring.getClass()));
 			return dataSource_DsSpring;
 		}
 		return DsFactory.dataSource;
@@ -196,7 +146,7 @@ public class DsFactory
 			}
 			catch (SQLException e)
 			{
-				System.out.println(" com.zl.jdbc.DataSource.DataSouceFactory_InterFace.getConnection() 获取链接出错! " );
+				logger.error(new StringBuffer("获取链接出错! ").append(e));
 				e.printStackTrace();
 			}
 			threadLocal.set(conn);

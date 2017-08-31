@@ -1,5 +1,8 @@
 package com.zl.jdbc.DataSource;
 
+
+import org.apache.log4j.Logger;
+
 import java.util.ResourceBundle;
 
 /**
@@ -12,7 +15,8 @@ import java.util.ResourceBundle;
  */
 public class DsProperties
 {
-    //
+    protected static Logger logger = Logger.getLogger(DsProperties.class);
+
     public  static final String 			HikariCp_NAME 	= "HikariCp";
     public  static final String 			druid_NAME 		= "druid";
     public 	static final String 			TomcatJdbc_NAME = "TomcatJdbc";
@@ -31,6 +35,12 @@ public class DsProperties
     private  	String 					pwd;
 
     private static	ResourceBundle			rbundle;//配置文件读取类
+    private static  StringBuffer            dbPropertiesPath=new StringBuffer("conf/db/");
+
+    private String msg;
+
+
+
 
     /**
      *
@@ -38,12 +48,13 @@ public class DsProperties
      */
     public DsProperties(String db_properties_filename)
     {
-            String dbPropertiesPath="conf/db/"+db_properties_filename;
+        dbPropertiesPath.append(db_properties_filename);
 
-            if(null==rbundle)
+        if(null==rbundle)
             {
-                System.out.println("  配置文件读取〉"+dbPropertiesPath);
-                rbundle = ResourceBundle.getBundle(dbPropertiesPath);//配置文件读取类
+                logger.info(new StringBuffer("行 >>>[配置文件读取] = ").append(dbPropertiesPath));
+                //System.out.println(msg);
+                rbundle = ResourceBundle.getBundle(dbPropertiesPath.toString());//配置文件读取类
             }
 
             if (null==dataSourceName)
@@ -55,14 +66,20 @@ public class DsProperties
         jdbcUrl 		= rbundle.getString("JdbcUrl");
         dbName 		    = rbundle.getString("DbName");
         pwd 			= rbundle.getString("pwd");
-
+        logger.info(new StringBuffer("行 >>>[配置文件读取]  DataSourceName = ").append(dataSourceName));
     }
 
+    /**
+     * 加载默认配置文件：conf/db/db
+     */
     public DsProperties()
     {
         if(null==rbundle)
         {
-            System.out.println("  配置文件读取〉conf/db/db");
+            //System.out.println(msg);
+            logger.info(new StringBuffer("行 >>>[配置文件读取] = ").append(dbPropertiesPath));
+
+
             rbundle = ResourceBundle.getBundle("conf/db/db");//配置文件读取类
 
         }
@@ -77,6 +94,7 @@ public class DsProperties
         dbName 		    = rbundle.getString("DbName");
         pwd 			= rbundle.getString("pwd");
 
+        logger.info(new StringBuffer("行 >>>[配置文件读取]  DataSourceName = ").append(dataSourceName));
     }
 
 

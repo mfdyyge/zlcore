@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.zl.core</groupId>
         <artifactId>zlcore</artifactId>
-        <version>1.0.20170801</version>
+        <version>1.0.20170811</version>
     </parent>
 
 
@@ -22,6 +22,8 @@
     </properties>
 
     <dependencies>
+
+
 
         <!--单元测试   ****************************************************************-->
         <!--****************************************************************************************************************8  -->
@@ -59,6 +61,18 @@
 
         <!-- tomcat.servlet-api 核心包 -->
         <!--****************************************************************************************************************8  -->
+        <!-- ****************************************************org.apache.commons*******************************************************8  -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.0</version>
+        </dependency>
+
         <dependency>
             <groupId>tomcat</groupId>
             <artifactId>servlet-api</artifactId>
@@ -87,18 +101,6 @@
 
         <!-- log4j 日志包 -->
         <!--****************************************************************************************************************8  -->
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
-            <scope>compile</scope>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
@@ -106,9 +108,23 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.6.1</version>
         </dependency>
-        <!--数据库链接池 ****************************************************************-->
 
-        <!-- 阿里八八 fastjson-json 包 -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!--数据库链接池 ****************************************************************-->
         <!--************************************************json****************************************************************8  -->
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
         <dependency>
@@ -142,12 +158,43 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.6.1</version>
         </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+
+        <!--Ftp-->
+        <!--****************************************************************************************************************8  -->
+        <!-- https://mvnrepository.com/artifact/org.apache.ftpserver/ftpserver-core -->
+        <dependency>
+            <groupId>org.apache.ftpserver</groupId>
+            <artifactId>ftpserver-core</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.ftpserver/ftplet-api -->
+        <dependency>
+            <groupId>org.apache.ftpserver</groupId>
+            <artifactId>ftplet-api</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
 
     </dependencies>
 
 
     <build>
         <plugins>
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
 
             <plugin><!--  依赖的JAR包一起打包 -->
                 <groupId>org.apache.maven.plugins</groupId>

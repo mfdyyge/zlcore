@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.zl.core</groupId>
         <artifactId>zlcore</artifactId>
-        <version>1.0.20170811</version>
+        <version>1.0.2017-08-31</version>
     </parent>
 
 
@@ -22,6 +22,8 @@
     </properties>
 
     <dependencies>
+
+
 
         <!--单元测试   ****************************************************************-->
         <!--****************************************************************************************************************8  -->
@@ -99,18 +101,6 @@
 
         <!-- log4j 日志包 -->
         <!--****************************************************************************************************************8  -->
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
-            <scope>compile</scope>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
@@ -118,6 +108,21 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.6.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+            <scope>compile</scope>
+        </dependency>
+
 
         <!--数据库链接池 ****************************************************************-->
         <!--************************************************json****************************************************************8  -->
@@ -173,6 +178,7 @@
             <artifactId>ftplet-api</artifactId>
             <version>1.1.1</version>
         </dependency>
+
 
 
     </dependencies>

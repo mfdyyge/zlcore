@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.zl.core</groupId>
         <artifactId>zlcore</artifactId>
-        <version>1.0.20170811</version>
+        <version>1.0.2017-08-31</version>
     </parent>
 
 <properties>
@@ -26,7 +26,7 @@
     <dependency>
             <groupId>com.zl.core</groupId>
             <artifactId>ActiveMQ</artifactId>
-            <version>1.0.20170811</version>
+            <version>1.0.2017-08-31</version>
     </dependency>
 
         <!-- spring核心包 -->
@@ -70,7 +70,7 @@
     <dependency>
         <groupId>com.zl.core</groupId>
         <artifactId>base</artifactId>
-        <version>1.0.20170811</version>
+        <version>1.0.2017-08-31</version>
     </dependency>
 
 </dependencies>

@@ -1,0 +1,11 @@
+2017-08-31 17:33:43,437 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:33:43,442 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:34:00,387 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:34:00,393 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:34:00,950 [INFO ]  (Test_DataSourceFactory.java.getFrist:62) - 行>getConnection = HikariProxyConnection@1952779858 wrapping oracle.jdbc.driver.T4CConnection@5c3bd550
+2017-08-31 17:34:01,172 [INFO ]  (Test_DataSourceFactory.java.getFrist:65) - 行>[2017-07-01, 2017-07-31]
+2017-08-31 17:34:01,174 [INFO ]  (Test_DataSourceFactory.java.getFrist:68) - 行>[2017-08-01, 2017-08-31]
+2017-08-31 17:36:36,914 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:36:36,919 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:36:37,512 [INFO ]  (Test_DataSourceFactory.java.test_Dao:82) - HikariProxyConnection@81009902 wrapping oracle.jdbc.driver.T4CConnection@5c3bd550
+2017-08-31 17:36:37,762 [INFO ]  (Test_DataSourceFactory.java.test_Dao:85) - [43, 98, 2017-07-24 10:10:23.108, aa@atguigu.com, aa, null]

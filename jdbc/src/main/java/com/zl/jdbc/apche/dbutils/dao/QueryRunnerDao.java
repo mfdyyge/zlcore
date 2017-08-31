@@ -1,6 +1,6 @@
 package com.zl.jdbc.apche.dbutils.dao;
 
-import com.zl.jdbc.page.Page;
+import com.zl.jdbc.apche.dbutils.page.Page;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.*;
 
