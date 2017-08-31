@@ -76,29 +76,6 @@ public class JdbcSchema
 
     }
 
-    /*测试DsFactory*/
-    @Test
-    public  void  DsFactory()
-    {
-        System.out.println("DsFactory.getDataSource = " + dsFactory.getDataSource());
 
-        DsFactory   dsFactory1      =new DsFactory("db1");
-        Connection  connection_1    =dsFactory1.getConnection();
-
-
-        //System.out.println(connection_1== connection);
-
-        System.out.println("Connection = " + dsFactory1.isValid());
-        System.out.println("connection = " + dsFactory1.isValid(connection));
-
-        System.out.println("connection.hashCode() = " + connection.hashCode());
-        System.out.println("connection_1.hashCode() = " + connection_1.hashCode());
-
-        System.out.println("DsFactory.getConnection() = " + dsFactory1.getConnection());
-
-
-        //判断两个Connection 是否相等
-        System.out.println("判断两个Connection 是否相等> connection.equals(connection_1)= " + connection.equals(connection_1));
-    }
 
 }
