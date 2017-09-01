@@ -28,7 +28,6 @@
         <module name="Freemarker" />
         <module name="hibernate" />
         <module name="jdbc" />
-        <module name="log" />
         <module name="redis" />
         <module name="shiro" />
         <module name="springdata" />

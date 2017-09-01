@@ -41,6 +41,7 @@
             <groupId>com.zl.core</groupId>
             <artifactId>base</artifactId>
             <version>2.0.0</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -166,7 +167,32 @@
             <artifactId>commons-beanutils</artifactId>
             <version>1.9.3</version>
         </dependency>
-</dependencies>
+
+        <!-- log4j 日志包 -->
+        <!--****************************************************************************************************************8  -->
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
 
 <build>
         <plugins>

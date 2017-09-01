@@ -1,44 +1,8 @@
-2017-09-01 23:48:03,038 [INFO ]  (DsFactory.java.<init>:82) - db_act
-2017-09-01 23:48:03,040 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
-2017-09-01 23:48:03,041 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
-2017-09-01 23:48:03,042 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
-2017-09-01 23:48:03,043 [INFO ]  (DsProperties.java.<init>:70) - 
-------------------------
-DataSourceName = 
-driverClassName = null
-jdbcUrl = null
-dbName = null
-pwd = null
-------------------------
-2017-09-01 23:49:28,642 [INFO ]  (DsFactory.java.<init>:82) - db_act
-2017-09-01 23:49:28,645 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
-2017-09-01 23:49:28,646 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
-2017-09-01 23:49:28,647 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
-2017-09-01 23:49:28,648 [INFO ]  (DsProperties.java.<init>:70) - 
-------------------------
-DataSourceName = 
-driverClassName = null
-jdbcUrl = null
-dbName = null
-pwd = null
-------------------------
-2017-09-01 23:51:43,143 [INFO ]  (DsFactory.java.<init>:82) - db_act
-2017-09-01 23:51:43,145 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
-2017-09-01 23:51:43,146 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
-2017-09-01 23:51:43,148 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
-2017-09-01 23:51:43,149 [INFO ]  (DsProperties.java.<init>:70) - 
-------------------------
-DataSourceName = 
-driverClassName = null
-jdbcUrl = null
-dbName = null
-pwd = null
-------------------------
-2017-09-01 23:54:05,672 [INFO ]  (DsFactory.java.<init>:82) - db_act
-2017-09-01 23:54:05,676 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
-2017-09-01 23:54:05,677 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
-2017-09-01 23:54:05,679 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
-2017-09-01 23:54:05,679 [INFO ]  (DsProperties.java.<init>:70) - 
+2017-09-02 02:10:43,652 [INFO ]  (DsFactory.java.<init>:81) - db_act
+2017-09-02 02:10:43,659 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-02 02:10:43,660 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-02 02:10:43,662 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-02 02:10:43,664 [INFO ]  (DsProperties.java.<init>:70) - 
 ------------------------
 DataSourceName = 
 driverClassName = null

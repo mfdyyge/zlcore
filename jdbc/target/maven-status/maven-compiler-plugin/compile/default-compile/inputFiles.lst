@@ -7,6 +7,7 @@ H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\DataSource\DsFa
 H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\db\DataDescriptorProvider.java
 H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\vo\JavaType.java
 H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\DataSource\spring\DsSpring_Factory.java
+H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\JDBCAppender_getConnection.java
 H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\db\DataDescriptor.java
 H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\memory\ColumnListHandler.java
 H:\Idea_namespase\GIT\zlcore\jdbc\src\main\java\com\zl\core\jdbc\DataSource\DsFactory_HikariCp.java
