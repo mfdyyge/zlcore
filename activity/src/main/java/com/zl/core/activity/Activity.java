@@ -1,10 +1,10 @@
-package com.zl.core.activemq;
+package com.zl.core.activity;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Activity
 {
     public static void main( String[] args )
     {

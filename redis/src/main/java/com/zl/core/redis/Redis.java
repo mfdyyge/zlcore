@@ -4,7 +4,7 @@ package com.zl.core.redis;
  * Hello world!
  *
  */
-public class App 
+public class Redis
 {
     public static void main( String[] args )
     {
