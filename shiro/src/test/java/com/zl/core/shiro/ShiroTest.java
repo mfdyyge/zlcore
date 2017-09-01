@@ -1,13 +1,13 @@
-package com.zl.core.redis;
+package com.zl.core.shiro;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple activemq.
+ * Unit test for simple ShiroApp.
  */
-public class RedisTest
+public class ShiroTest
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class RedisTest
      *
      * @param testName name of the test case
      */
-    public RedisTest(String testName )
+    public ShiroTest(String testName )
     {
         super( testName );
     }
@@ -25,7 +25,7 @@ public class RedisTest
      */
     public static Test suite()
     {
-        return new TestSuite( RedisTest.class );
+        return new TestSuite( ShiroTest.class );
     }
 
     /**

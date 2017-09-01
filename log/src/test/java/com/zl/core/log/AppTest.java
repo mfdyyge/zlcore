@@ -1,11 +1,11 @@
-package com.zl.core.redis;
+package com.zl.core.log;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple Activity.
+ * Unit test for simple App.
  */
 public class AppTest 
     extends TestCase
