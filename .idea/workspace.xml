@@ -2,555 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/java/com/zl/core/activemq/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/test/java/com/zl/core/redis/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Freemarker/src/main/java/com/zl/core/freemarker/FreeMarkers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Freemarker/src/test/java/com/zl/core/redis/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/activity/src/main/java/com/zl/core/activity/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/activity/src/test/java/com/zl/core/redis/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/BufferingOutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/StreamOverflowException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/Streams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/TeeInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/TeeOutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/Random.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/SessionJson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/time.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/map/MapUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Arrays.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/BigIntegers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/IPAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Integers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Pack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/StringList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/StringUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Strings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Times.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/core/hb/HbDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/core/hb/HbImp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_TomcatJdbc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/spring/DsSpring_Factory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCAppender_getConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCSchema.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/dao/QueryRunnerDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/dao/QueryRunnerDao_SetConn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Fw_notify.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Jpa_addresses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Jpa_persons.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Mc_user_field.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/T_user.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Users.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Zy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/OfferType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/Page.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/QueryRemote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/AttributeColumnFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/AttributeColumnWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/ColumnWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/ColumnWrapperFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/DynamicAttributeWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Column.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/ConvertHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/DataDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/DataDescriptorProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Database.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/DynamicColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Mysql.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Oracle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/OuterJoin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Relationship.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Schema.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Table.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/ColumnImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/DataDescProviderImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/DataDescriptorImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/DynamicColumnImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/RelationshipImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/gridpojo/EsayJsonEn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/gridpojo/ExtGridJsonEn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanListHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ColumnHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ColumnListHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/JSONArrayHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/JSONObjectHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/Memory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/PreparedStatementHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ResultSetHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/pojo/TableFormParams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/ArrayCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/ArrayEnumeration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/Collection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/DBUIStringConstants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/SQLGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/TransForMation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Column.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/JavaType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Resources.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Table.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/log.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/com/zl/core/log/LogAppender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/test/java/com/zl/core/springdata/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/main/java/com/zl/core/redis/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro/src/main/java/com/zl/core/shiro/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro/src/test/java/com/zl/core/redis/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/zl/core/springdata/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springdata/src/test/java/com/zl/core/springdata/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/cache/RedisCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/Captcha.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/CaptchaException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/CaptchaFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/CaptchaHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/config/ConfigUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/config/DynamicPropertyPlaceholderConfigurer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/controller/BaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/dao/mybatis/Dao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/enums/TrueFalseEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ApplicationException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/CacheException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/DaoException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ExceptionResolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ServiceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ValidateException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/filter/CrossOriginFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/interceptor/StopWatchHandlerInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/interceptor/mybatis/PaginationInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/locks/DistributedLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/locks/DistributedLockTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/locks/ZookeeperLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/EnumHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/EnumItemable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Item.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Itemable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Pagination.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/PaginationSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/PersistentObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/ResultCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/provider/IdProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/provider/PasswordProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/resovler/MethodArgumentResovler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/service/mybatis/Service.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/service/mybatis/impl/ServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/AESUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/CookieUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/DateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/ExcelUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/FileUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/SpringUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/StringUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/ValidateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/validator/Validator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/validator/annotation/ValidateParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/ApplicationPermissionUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/ClientFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/LogoutFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/PermissionFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/PermissionJmsListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/PermissionJmsMonitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SessionPermission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SessionUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SessionUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SsoFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SsoResultCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/rpc/AuthenticationRpcService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/rpc/RpcPermission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/rpc/RpcUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/ConfigServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/LocalTokenManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/LoginUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/RedisTokenManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/TokenManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/LoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/LogoutController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/AppController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/PermissionController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/ProfileController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/RoleController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/UserAppController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/UserRoleController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/AppDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/PermissionDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/RoleDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/RolePermissionDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/UserAppDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/UserRoleDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/App.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/Permission.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/Role.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/RolePermission.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/User.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/UserApp.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/UserRole.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/Permission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/RolePermission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/UserApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/UserRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/AppService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/PermissionJmsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/PermissionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/RolePermissionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/RoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/UserAppService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/UserRoleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/AppServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/AuthenticationRpcServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/PermissionJmsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/PermissionServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/RolePermissionServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/RoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/UserAppServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/UserRoleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/UserServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/java/com/zl/freemarker/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/service.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-mq.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-redis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/src/main/java/com/zl/freemarker/FreeMarkers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/src/main/java/com/zl/freemarker/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/BufferingOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/StreamOverflowException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/Streams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/TeeInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/TeeOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/json/Random.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/json/SessionJson.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/json/time.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/map/MapUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Arrays.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/BigIntegers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/IPAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Integers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Pack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/StringList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/StringUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Strings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Times.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/hb/HbDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/hb/HbImp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_debug" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/pom.xml.versionsBackup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_C3p0.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_Druid.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_HikariCp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_TomcatJdbc.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/spring/DsSpring_Factory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/JDBCDatabase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/JDBCSchema.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/JDBCTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/dao/QueryRunnerDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/dao/QueryRunnerDao_SetConn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Fw_notify.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Jpa_addresses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Jpa_persons.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Mc_user_field.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/T_user.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Users.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Zy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/page/OfferType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/page/Page.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/page/QueryRemote.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/AttributeColumnFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/AttributeColumnWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/ColumnWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/ColumnWrapperFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/DynamicAttributeWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Column.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/ConvertHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/DataDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/DataDescriptorProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Database.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/DynamicColumn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Mysql.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Oracle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/OuterJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Relationship.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Schema.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Table.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/ColumnImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/DataDescProviderImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/DataDescriptorImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/DynamicColumnImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/RelationshipImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/gridpojo/EsayJsonEn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/gridpojo/ExtGridJsonEn.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/BeanHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/BeanListHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/BeanProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/ColumnHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/ColumnListHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/JSONArrayHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/JSONObjectHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/Memory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/PreparedStatementHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/ResultSetHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/pojo/TableFormParams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/ArrayCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/ArrayEnumeration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/Collection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/DBUIStringConstants.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/SQLGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/TransForMation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/Column.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/JavaType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/Resources.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/Table.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/LogAppender.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/src/main/java/com/zl/freemarker/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/src/main/java/com/zl/freemarker/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/src/main/java/com/zl/core/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/src/test/java/com/zl/core/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/ApplicationPermissionUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/ClientFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/LogoutFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/PermissionFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/PermissionJmsListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/PermissionJmsMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SessionPermission.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SessionUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SessionUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SsoFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SsoResultCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/rpc/AuthenticationRpcService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/rpc/RpcPermission.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/rpc/RpcUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/ConfigServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/LocalTokenManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/LoginUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/RedisTokenManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/TokenManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/AdminController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/LoginController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/LogoutController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/AppController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/PermissionController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/ProfileController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/RoleController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/UserAppController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/UserController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/UserRoleController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/AppDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/PermissionDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/RoleDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/RolePermissionDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/UserAppDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/UserDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/UserRoleDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/App.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/Permission.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/Role.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/RolePermission.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/User.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/UserApp.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/UserRole.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/App.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/Permission.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/Role.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/RolePermission.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/UserApp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/UserRole.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/AppService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/PermissionJmsService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/PermissionService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/RolePermissionService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/RoleService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/UserAppService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/UserRoleService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/UserService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/AppServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/AuthenticationRpcServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/PermissionJmsServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/PermissionServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/RolePermissionServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/RoleServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/UserAppServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/UserRoleServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/UserServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/cache/RedisCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/Captcha.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/CaptchaException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/CaptchaFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/CaptchaHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/config/ConfigUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/config/DynamicPropertyPlaceholderConfigurer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/controller/BaseController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/dao/mybatis/Dao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/enums/TrueFalseEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ApplicationException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/CacheException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/DaoException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ExceptionResolver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ServiceException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ValidateException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/filter/CrossOriginFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/interceptor/StopWatchHandlerInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/interceptor/mybatis/PaginationInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/locks/DistributedLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/locks/DistributedLockTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/locks/ZookeeperLock.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/EnumHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/EnumItemable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Item.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Itemable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Pagination.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/PaginationSupport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/PersistentObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Result.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/ResultCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/provider/IdProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/provider/PasswordProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/resovler/MethodArgumentResovler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/service/mybatis/Service.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/service/mybatis/impl/ServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/AESUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/CookieUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/DateUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/ExcelUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/FileUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/SpringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/ValidateUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/validator/Validator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/validator/annotation/ValidateParam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-mq.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-rpc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-service.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/dubbo-provider.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/logback.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/spring-mq-sso.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/spring-redis-sso.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/pom.xml" afterPath="$PROJECT_DIR$/ActiveMQ/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-redis.xml" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-redis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/pom.xml" afterPath="$PROJECT_DIR$/Freemarker/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/pom.xml" afterPath="$PROJECT_DIR$/activity/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/base/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/pom.xml" afterPath="$PROJECT_DIR$/hibernate/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/pom.xml" afterPath="$PROJECT_DIR$/jdbc/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_properties.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/log4j.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/pom.xml" afterPath="$PROJECT_DIR$/shiro/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/pom.xml" afterPath="$PROJECT_DIR$/springdata/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/pom.xml" afterPath="$PROJECT_DIR$/springmvc/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/permission.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/permission.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/role.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/role.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext-rpc.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext-rpc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/dubbo-provider.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/dubbo-provider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/spring-mq-sso.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/spring-mq-sso.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/参数说明/Druid_参数说明" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/参数说明/Druid_参数说明" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/参数说明/HikariCp_参数说明" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/参数说明/HikariCp_参数说明" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/README.md" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/命令/命令-GIT" afterPath="$PROJECT_DIR$/命令/命令-GIT" />
     </list>
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
@@ -645,8 +98,8 @@
       <file leaf-file-name="命令-GIT" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/命令/命令-GIT">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="779">
+              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -795,6 +248,7 @@
         <option value="$PROJECT_DIR$/log/pom.xml" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java" />
         <option value="$PROJECT_DIR$/jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/命令/命令-GIT" />
       </list>
     </option>
   </component>
@@ -1684,7 +1138,7 @@
       <workItem from="1502454355359" duration="1776000" />
       <workItem from="1502507929046" duration="9213000" />
       <workItem from="1503649964310" duration="1083000" />
-      <workItem from="1504250184769" duration="19878000" />
+      <workItem from="1504250184769" duration="20428000" />
     </task>
     <servers />
   </component>
@@ -1721,11 +1175,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32241000" />
+    <option name="totallyTimeSpent" value="32791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1741,7 +1195,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21884984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2207,8 +1661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/命令/命令-GIT">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="779">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
           <folding />
         </state>
       </provider>
