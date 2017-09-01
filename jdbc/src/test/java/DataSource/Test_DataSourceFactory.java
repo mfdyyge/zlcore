@@ -1,7 +1,7 @@
 package DataSource;
 
-import com.zl.jdbc.DataSource.DsFactory;
-import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
+import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.apche.dbutils.dao.QueryRunnerDao;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 

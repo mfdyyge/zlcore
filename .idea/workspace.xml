@@ -2,50 +2,557 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/dbjcxt.properties" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/java/com/zl/core/activemq/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ActiveMQ/src/test/java/com/zl/core/redis/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Freemarker/src/main/java/com/zl/core/freemarker/FreeMarkers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Freemarker/src/test/java/com/zl/core/redis/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/activity/src/main/java/com/zl/core/activity/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/activity/src/test/java/com/zl/core/redis/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/BufferingOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/StreamOverflowException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/Streams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/TeeInputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/io/TeeOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/Random.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/SessionJson.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/time.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/map/MapUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Arrays.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/BigIntegers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/IPAddress.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Integers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Pack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/StringList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/StringUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Strings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/string/Times.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/core/hb/HbDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/core/hb/HbImp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_TomcatJdbc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/spring/DsSpring_Factory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCAppender_getConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCDatabase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCSchema.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/dao/QueryRunnerDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/dao/QueryRunnerDao_SetConn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Fw_notify.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Jpa_addresses.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Jpa_persons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Mc_user_field.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/T_user.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Users.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Zy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/OfferType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/Page.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/QueryRemote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/AttributeColumnFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/AttributeColumnWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/ColumnWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/ColumnWrapperFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/columnPropertyEditor/DynamicAttributeWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Column.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/ConvertHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/DataDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/DataDescriptorProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Database.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/DynamicColumn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Mysql.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Oracle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/OuterJoin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Relationship.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Schema.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Table.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/ColumnImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/DataDescProviderImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/DataDescriptorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/DynamicColumnImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/RelationshipImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/gridpojo/EsayJsonEn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/gridpojo/ExtGridJsonEn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanListHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ColumnHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ColumnListHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/JSONArrayHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/JSONObjectHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/Memory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/PreparedStatementHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ResultSetHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/pojo/TableFormParams.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/ArrayCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/ArrayEnumeration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/Collection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/DBUIStringConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/SQLGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/TransForMation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Column.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/JavaType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Resources.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Table.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/log.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/com/zl/core/log/LogAppender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/test/java/com/zl/core/springdata/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/main/java/com/zl/core/redis/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro/src/main/java/com/zl/core/shiro/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro/src/test/java/com/zl/core/redis/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/zl/core/springdata/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springdata/src/test/java/com/zl/core/springdata/AppTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/cache/RedisCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/Captcha.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/CaptchaException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/CaptchaFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/captcha/CaptchaHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/config/ConfigUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/config/DynamicPropertyPlaceholderConfigurer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/controller/BaseController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/dao/mybatis/Dao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/enums/TrueFalseEnum.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ApplicationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/CacheException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/DaoException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ExceptionResolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ServiceException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/exception/ValidateException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/filter/CrossOriginFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/interceptor/StopWatchHandlerInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/interceptor/mybatis/PaginationInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/locks/DistributedLock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/locks/DistributedLockTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/locks/ZookeeperLock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/EnumHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/EnumItemable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Item.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Itemable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Pagination.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/PaginationSupport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/PersistentObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/Result.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/model/ResultCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/provider/IdProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/provider/PasswordProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/resovler/MethodArgumentResovler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/service/mybatis/Service.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/service/mybatis/impl/ServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/AESUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/CookieUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/DateUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/ExcelUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/FileUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/SpringUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/StringUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/util/ValidateUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/validator/Validator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/validator/annotation/ValidateParam.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/ApplicationPermissionUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/ClientFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/LogoutFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/PermissionFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/PermissionJmsListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/PermissionJmsMonitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SessionPermission.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SessionUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SessionUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SsoFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/client/SsoResultCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/rpc/AuthenticationRpcService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/rpc/RpcPermission.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/rpc/RpcUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/ConfigServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/LocalTokenManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/LoginUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/RedisTokenManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/common/TokenManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/AdminController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/LoginController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/LogoutController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/AppController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/PermissionController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/ProfileController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/RoleController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/UserAppController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/controller/admin/UserRoleController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/AppDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/PermissionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/RoleDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/RolePermissionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/UserAppDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/UserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/dao/UserRoleDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/App.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/Permission.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/Role.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/RolePermission.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/User.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/UserApp.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/mapper/UserRole.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/Permission.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/RolePermission.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/UserApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/model/UserRole.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/AppService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/PermissionJmsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/PermissionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/RolePermissionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/RoleService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/UserAppService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/UserRoleService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/AppServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/AuthenticationRpcServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/PermissionJmsServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/PermissionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/RolePermissionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/RoleServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/UserAppServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/UserRoleServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springmvc/src/main/java/smart/sso/server/service/impl/UserServiceImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/java/com/zl/freemarker/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/service.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-mq.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/classes/spring-redis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/src/main/java/com/zl/freemarker/FreeMarkers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/src/main/java/com/zl/freemarker/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/activity/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/BufferingOutputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/StreamOverflowException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/Streams.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/TeeInputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/io/TeeOutputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/json/Random.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/json/SessionJson.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/json/time.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/map/MapUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Arrays.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/BigIntegers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/IPAddress.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Integers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Pack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/StringList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/StringUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Strings.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/base/string/Times.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/hb/HbDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/src/main/java/com/zl/hb/HbImp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hibernate/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_debug" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/pom.xml.versionsBackup" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_C3p0.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_Druid.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_HikariCp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_TomcatJdbc.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/spring/DsSpring_Factory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/JDBCDatabase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/JDBCSchema.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/JDBCTable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/dao/QueryRunnerDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/dao/QueryRunnerDao_SetConn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Fw_notify.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Jpa_addresses.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Jpa_persons.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Mc_user_field.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/T_user.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Users.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/domain/Zy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/page/OfferType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/page/Page.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/apche/dbutils/page/QueryRemote.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/AttributeColumnFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/AttributeColumnWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/ColumnWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/ColumnWrapperFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/columnPropertyEditor/DynamicAttributeWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Column.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/ConvertHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/DataDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/DataDescriptorProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Database.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/DynamicColumn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Mysql.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Oracle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/OuterJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Relationship.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Schema.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Table.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/ColumnImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/DataDescProviderImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/DataDescriptorImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/DynamicColumnImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/impl/RelationshipImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/gridpojo/EsayJsonEn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/gridpojo/ExtGridJsonEn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/BeanHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/BeanListHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/BeanProcessor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/ColumnHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/ColumnListHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/JSONArrayHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/JSONObjectHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/Memory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/PreparedStatementHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/ResultSetHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/pojo/TableFormParams.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/ArrayCollection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/ArrayEnumeration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/Collection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/DBUIStringConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/SQLGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/TransForMation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/Column.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/JavaType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/Resources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/vo/Table.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/LogAppender.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/src/main/java/com/zl/freemarker/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/surefire-reports/TEST-com.zl.freemarker.AppTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/target/surefire-reports/com.zl.freemarker.AppTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/src/main/java/com/zl/freemarker/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/src/test/java/com/zl/freemarker/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/src/main/java/com/zl/core/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/src/test/java/com/zl/core/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/ApplicationPermissionUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/ClientFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/LogoutFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/PermissionFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/PermissionJmsListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/PermissionJmsMonitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SessionPermission.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SessionUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SessionUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SsoFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/client/SsoResultCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/rpc/AuthenticationRpcService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/rpc/RpcPermission.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/rpc/RpcUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/ConfigServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/LocalTokenManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/LoginUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/RedisTokenManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/common/TokenManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/AdminController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/LoginController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/LogoutController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/AppController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/PermissionController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/ProfileController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/RoleController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/UserAppController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/UserController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/controller/admin/UserRoleController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/AppDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/PermissionDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/RoleDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/RolePermissionDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/UserAppDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/UserDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/dao/UserRoleDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/App.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/Permission.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/Role.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/RolePermission.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/User.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/UserApp.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/mapper/UserRole.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/Permission.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/Role.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/RolePermission.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/UserApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/model/UserRole.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/AppService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/PermissionJmsService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/PermissionService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/RolePermissionService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/RoleService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/UserAppService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/UserRoleService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/AppServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/AuthenticationRpcServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/PermissionJmsServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/PermissionServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/RolePermissionServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/RoleServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/UserAppServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/UserRoleServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/smart/sso/server/service/impl/UserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/cache/RedisCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/Captcha.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/CaptchaException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/CaptchaFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/captcha/CaptchaHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/config/ConfigUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/config/DynamicPropertyPlaceholderConfigurer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/controller/BaseController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/dao/mybatis/Dao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/enums/TrueFalseEnum.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ApplicationException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/CacheException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/DaoException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ExceptionResolver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ServiceException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/exception/ValidateException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/filter/CrossOriginFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/interceptor/StopWatchHandlerInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/interceptor/mybatis/PaginationInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/locks/DistributedLock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/locks/DistributedLockTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/locks/ZookeeperLock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/EnumHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/EnumItemable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Item.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Itemable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Pagination.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/PaginationSupport.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/PersistentObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/Result.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/model/ResultCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/provider/IdProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/provider/PasswordProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/resovler/MethodArgumentResovler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/service/mybatis/Service.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/service/mybatis/impl/ServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/AESUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/CookieUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/DateUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/ExcelUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/FileUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/SpringUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/StringUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/util/ValidateUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/validator/Validator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/src/main/java/mvc/validator/annotation/ValidateParam.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-mq.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-rpc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext-service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/dubbo-provider.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/spring-mq-sso.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/classes/spring-redis-sso.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/pom.xml" afterPath="$PROJECT_DIR$/ActiveMQ/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-redis.xml" afterPath="$PROJECT_DIR$/ActiveMQ/src/main/resources/spring-redis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/pom.xml" afterPath="$PROJECT_DIR$/Freemarker/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/pom.xml" afterPath="$PROJECT_DIR$/activity/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/base/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/pom.xml" afterPath="$PROJECT_DIR$/hibernate/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Oracle.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Oracle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/SQLGenerator.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/SQLGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/pom.xml" afterPath="$PROJECT_DIR$/jdbc/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_properties.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_properties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/SQL/create_table.sql" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/SQL/create_table.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/SQL/create_table.sql" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/SQL/create_table.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/db.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/db.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/log4j.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/pom.xml" afterPath="$PROJECT_DIR$/shiro/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/pom.xml" afterPath="$PROJECT_DIR$/springdata/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/pom.xml" afterPath="$PROJECT_DIR$/springmvc/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbjcxt.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db_act.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/permission.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/permission.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/role.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/role.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext-rpc.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext-rpc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/dubbo-provider.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/dubbo-provider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/spring-mq-sso.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/spring-mq-sso.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/参数说明/Druid_参数说明" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/参数说明/Druid_参数说明" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/参数说明/HikariCp_参数说明" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/参数说明/HikariCp_参数说明" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/memory/README.md" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/README.md" />
     </list>
-    <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Freemarker/Freemarker.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis/redis.iml" afterPath="" />
-    </list>
+    <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/springmvc/target/" />
@@ -60,6 +567,7 @@
     <ignored path="$PROJECT_DIR$/Freemarker/target/" />
     <ignored path="$PROJECT_DIR$/redis/target/" />
     <ignored path="$PROJECT_DIR$/ActiveMQ/target/" />
+    <ignored path="$PROJECT_DIR$/log/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +591,17 @@
     <favorites_list name="zlcore" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="380">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="221">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="db_act.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db_act.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,71 +615,98 @@
       <file leaf-file-name="JdbcSchema.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="76">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ftpserver_debug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_debug">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="309">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ftpserver_error" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error">
+      <file leaf-file-name="JavaType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/JavaType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="779">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDBCAppender_getConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java">
+      <file leaf-file-name="命令-GIT" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/命令/命令-GIT">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-323">
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DsProperties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-              <folding>
-                <element signature="e#2645#2646#0" expanded="true" />
-                <element signature="e#2682#2683#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogAppender.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/LogAppender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="342">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ftpserver_info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsFactory_C3p0.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-221">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogAppender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/src/main/java/com/zl/core/log/LogAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -170,8 +715,28 @@
       <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="347">
+              <caret line="79" column="67" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ftpserver_info" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ftpserver_error" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,7 +771,6 @@
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/GetSql.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/TransForMation.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/resources/SQL/create_table.sql" />
-        <option value="$PROJECT_DIR$/jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" />
@@ -217,14 +781,20 @@
         <option value="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/SQLGenerator.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbjcxt.properties" />
-        <option value="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db_act.properties" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java" />
         <option value="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error" />
-        <option value="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/LogAppender.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
+        <option value="$PROJECT_DIR$/base/pom.xml" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/zl/core/log/JDBCAppender_getConnection.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCAppender_getConnection.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/log/pom.xml" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java" />
+        <option value="$PROJECT_DIR$/jdbc/pom.xml" />
       </list>
     </option>
   </component>
@@ -291,10 +861,6 @@
               <option name="myItemId" value="zlcore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -302,37 +868,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: log4j:log4j:1.2.14" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4j-1.2.14.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="zlcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: log4j:log4j:1.2.14" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4j-1.2.14.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,6 +879,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="命令" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,11 +1008,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
+              <option name="myItemId" value="jdbc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,29 +1038,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zlcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zlcore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="jdbc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ftpserver" />
+              <option name="myItemId" value="DataSource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,6 +1065,9 @@
     <property name="SearchEverywhereHistoryKey" value="redis&#9;PSI&#9;JAVA://mvc.cache.RedisCache" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zl.core" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zl.jdbc.pojo" />
     </key>
@@ -1163,29 +1684,11 @@
       <workItem from="1502454355359" duration="1776000" />
       <workItem from="1502507929046" duration="9213000" />
       <workItem from="1503649964310" duration="1083000" />
-      <workItem from="1504250184769" duration="14357000" />
+      <workItem from="1504250184769" duration="19878000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 25m 30s.xml">
-      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 26m 23s.xml">
-      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 27m 21s.xml">
-      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 27m 52s.xml">
-      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 28m 54s.xml">
-      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 29m 30s.xml">
-      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 31m 00s.xml">
       <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
     </history-entry>
@@ -1198,43 +1701,61 @@
     <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 37m 39s.xml">
       <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 46m 21s.xml">
+      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 46m 55s.xml">
+      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 48m 03s.xml">
+      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 49m 28s.xml">
+      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 51m 43s.xml">
+      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcSchema_DsFactory - 2017.09.01 at 23h 54m 06s.xml">
+      <configuration name="JdbcSchema.DsFactory" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26720000" />
+    <option name="totallyTimeSpent" value="32241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23695421" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42438763" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17358893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30191693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17358893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2028754" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16613418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20127796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21884984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1262,55 +1783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/GetSql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/编译命令" />
-    <entry file="file://$PROJECT_DIR$/.idea/markdown-navigator.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-845">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/springmvc.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="156" column="56" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4961a42a/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348/TT.TEST08">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1367,21 +1839,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/TransForMation.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/TransForMation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding>
-            <element signature="e#2719#2735#0" expanded="false" />
+            <element signature="e#2724#2740#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,23 +1897,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/db/Oracle.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Oracle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
-            <element signature="e#494#495#0" expanded="false" />
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#723#724#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#577#578#0" expanded="false" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#743#744#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1478,7 +1934,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/utils/SQLGenerator.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/SQLGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
@@ -1486,7 +1942,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/cache/RedisCache.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/cache/RedisCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
@@ -1494,7 +1950,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/config/ConfigUtils.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/config/ConfigUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
@@ -1502,7 +1958,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/config/DynamicPropertyPlaceholderConfigurer.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/config/DynamicPropertyPlaceholderConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
@@ -1510,7 +1966,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/controller/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/controller/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -1518,38 +1974,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/interceptor/StopWatchHandlerInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/interceptor/StopWatchHandlerInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#592#598#0" expanded="false" />
+            <element signature="e#610#616#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/interceptor/mybatis/PaginationInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/interceptor/mybatis/PaginationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
-            <marker date="1503649953400" expanded="true" signature="4604:4640" ph="SELECT COUNT... missingValue" />
+            <marker date="1504282910153" expanded="true" signature="4640:4676" ph="SELECT COUNT... missingValue" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/mvc/dao/mybatis/Dao.java">
+    <entry file="file://$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/dao/mybatis/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1570,7 +2018,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory_Druid.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
@@ -1591,17 +2039,9 @@
         <state relative-caret-position="433">
           <caret line="446" column="50" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="50" />
           <folding>
-            <element signature="e#15397#15398#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
+            <element signature="e#15397#15398#0" expanded="false" />
+            <element signature="e#15443#15444#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/JDBCAppender_getConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1629,25 +2069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/jdbc/DataSource/DsProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding>
-            <element signature="e#2645#2646#0" expanded="true" />
-            <element signature="e#2682#2683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_debug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1658,40 +2079,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="76">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="684">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/shiro/src/main/java/com/zl/core/shiro/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="76">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/log/LogAppender.java">
+    <entry file="file://$PROJECT_DIR$/base/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="266">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCAppender_getConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="79" column="67" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/zl/core/log/LogAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/JavaType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/命令/命令-GIT">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1748,7 +2265,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>base</last-edited>
+          <last-edited>log</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1787,8 +2304,11 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
+    <option value="versions:set -DnewVersion=2.0.0" />
     <option value="install" />
     <option value="clean" />
+    <option value="versions:set -DnewVersion=1.1.0" />
+    <option value="versions:set -DnewVersion=1.0.2017-09-01" />
     <option value="versions:set -DnewVersion=1.0.20170811" />
   </component>
 </project>

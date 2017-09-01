@@ -1,7 +1,7 @@
 package queryrunner;
 
-import com.zl.jdbc.DataSource.DsFactory;
-import com.zl.jdbc.apche.dbutils.dao.QueryRunnerDao;
+import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.apche.dbutils.dao.QueryRunnerDao;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.*;
 import org.junit.Test;

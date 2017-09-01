@@ -16,7 +16,7 @@
 
 	<aop:aspectj-autoproxy />
 
-	<bean class="mvc.config.ConfigUtils">
+	<bean class="com.zl.core.springmvc.config.ConfigUtils">
 		<property name="fileEncoding" value="UTF-8" />
 		<property name="locations">
 			<list>
@@ -35,7 +35,7 @@
 	</bean>
 
 	<!-- SSO令牌管理 -->
-	<bean id="tokenManager" class="com.smart.sso.server.common.LocalTokenManager">
+	<bean id="tokenManager" class="smart.sso.server.common.LocalTokenManager">
 		<property name="tokenTimeout" value="${sso.timeout}" />
 	</bean>
 

@@ -14,6 +14,6 @@
 	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 	<bean name="/authenticationRpcService" class="org.springframework.remoting.caucho.HessianServiceExporter">
 		<property name="service" ref="authenticationRpcService" />
-		<property name="serviceInterface" value="com.smart.sso.rpc.AuthenticationRpcService" />
+		<property name="serviceInterface" value="smart.sso.rpc.AuthenticationRpcService" />
 	</bean>
 </beans>

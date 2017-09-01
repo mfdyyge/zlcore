@@ -1,10 +1,11 @@
 package DataSource;
 
-import com.zl.jdbc.DataSource.DsFactory;
-import com.zl.jdbc.JDBCDatabase;
-import com.zl.jdbc.JDBCSchema;
-import com.zl.jdbc.JDBCTable;
-import com.zl.jdbc.db.Column;
+import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.JDBCDatabase;
+import com.zl.core.jdbc.JDBCSchema;
+import com.zl.core.jdbc.JDBCTable;
+import com.zl.core.jdbc.db.Column;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.sql.Connection;
@@ -19,6 +20,8 @@ import java.sql.Connection;
  */
 public class JdbcSchema
 {
+    protected static Logger logger = Logger.getLogger(JdbcSchema.class);
+
     private static Connection connection;
     private static Connection connection_jcxt;
 
@@ -36,7 +39,7 @@ public class JdbcSchema
     @Test
     public  void  DsFactory()
     {
-
+        logger.debug("DsFactory()");
         //System.out.println(connection_1== connection);
 
 /*        System.out.println("Connection = " +dsFactory.isValid(connection_jcxt));

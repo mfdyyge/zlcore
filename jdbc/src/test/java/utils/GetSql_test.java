@@ -1,7 +1,7 @@
 package utils;
 
-import com.zl.jdbc.pojo.TableFormParams;
-import com.zl.jdbc.utils.SQLGenerator;
+import com.zl.core.jdbc.pojo.TableFormParams;
+import com.zl.core.jdbc.utils.SQLGenerator;
 import org.junit.Test;
 
 import java.util.Arrays;

@@ -28,6 +28,7 @@
         <module name="Freemarker" />
         <module name="hibernate" />
         <module name="jdbc" />
+        <module name="log" />
         <module name="redis" />
         <module name="shiro" />
         <module name="springdata" />
@@ -35,17 +36,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="ActiveMQ" target="1.8" />
-      <module name="activity" target="1.8" />
-      <module name="base" target="1.8" />
-      <module name="Freemarker" target="1.8" />
-      <module name="hibernate" target="1.8" />
+      <module name="ActiveMQ" target="1.7" />
+      <module name="activity" target="1.7" />
+      <module name="base" target="1.7" />
+      <module name="Freemarker" target="1.7" />
+      <module name="hibernate" target="1.7" />
       <module name="jdbc" target="1.8" />
-      <module name="redis" target="1.8" />
-      <module name="shiro" target="1.8" />
-      <module name="springdata" target="1.8" />
-      <module name="springmvc" target="1.8" />
-      <module name="zlcore" target="1.8" />
+      <module name="log" target="1.8" />
+      <module name="redis" target="1.7" />
+      <module name="shiro" target="1.7" />
+      <module name="springdata" target="1.7" />
+      <module name="springmvc" target="1.7" />
+      <module name="zlcore" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

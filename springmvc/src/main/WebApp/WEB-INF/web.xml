@@ -37,7 +37,7 @@
 	<!-- 验证码 -->
 	<dbtools.query.filter>
 		<dbtools.query.filter-name>captchaFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>mvc.captcha.CaptchaFilter</dbtools.query.filter-class>
+		<dbtools.query.filter-class>com.zl.core.springmvc.captcha.CaptchaFilter</dbtools.query.filter-class>
 	</dbtools.query.filter>
 	<dbtools.query.filter-mapping>
 		<dbtools.query.filter-name>captchaFilter</dbtools.query.filter-name>
@@ -46,7 +46,7 @@
 	<!-- 单点登录 -->
 	<dbtools.query.filter>
 		<dbtools.query.filter-name>ssoFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>com.smart.sso.client.SsoFilter</dbtools.query.filter-class>
+		<dbtools.query.filter-class>smart.sso.client.SsoFilter</dbtools.query.filter-class>
 		<init-param>
 			<param-name>excludes</param-name>
 			<param-value>/login,/logout,/rpc,/swagger-ui.html,/webjars/**,/swagger-resources/**,/v2/api-docs</param-value>
@@ -59,7 +59,7 @@
 	<!-- 权限控制(选配) -->
 	<dbtools.query.filter>
 		<dbtools.query.filter-name>permissionFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>com.smart.sso.client.PermissionFilter</dbtools.query.filter-class>
+		<dbtools.query.filter-class>smart.sso.client.PermissionFilter</dbtools.query.filter-class>
 		<init-param>
 			<param-name>excludes</param-name>
 			<param-value>/login,/logout,/rpc,/swagger-ui.html,/webjars/**,/swagger-resources/**,/v2/api-docs</param-value>
@@ -100,7 +100,7 @@
 	<!-- 应用初始化参数 -->
 	<servlet>
 		<servlet-name>configServlet</servlet-name>
-		<servlet-class>com.smart.sso.server.common.ConfigServlet</servlet-class>
+		<servlet-class>smart.sso.server.common.ConfigServlet</servlet-class>
 		<load-on-startup>2</load-on-startup>
 		<async-supported>true</async-supported>
 	</servlet>
