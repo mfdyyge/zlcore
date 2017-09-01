@@ -19,22 +19,20 @@ import java.sql.Connection;
  */
 public class JdbcSchema
 {
-   private static DsFactory dsFactory;
-   private static Connection connection;
+   private static Connection connection,connection_jcxt;
 
    static
    {
-       dsFactory=new DsFactory();
-       connection=dsFactory.getConnection();
+       connection=new DsFactory().getConnection();
+       connection_jcxt=new DsFactory("dbjcxt").getConnection();
    }
 
     /*测试DsFactory*/
     @Test
     public  void  DsFactory()
     {
-        System.out.println("DsFactory.getDataSource = " + dsFactory.getDataSource());
 
-        DsFactory   dsFactory1      =new DsFactory("db1");
+        DsFactory   dsFactory1      =new DsFactory("dbjcxt");
         Connection  connection_1    =dsFactory1.getConnection();
 
 
@@ -84,7 +82,9 @@ public class JdbcSchema
 
     }
 
-    //数据库表对象
+    /**
+     *     数据库表对象
+     */
     @Test
     public  void JDBCTable_test()
     {
@@ -92,7 +92,7 @@ public class JdbcSchema
         JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
         JDBCSchema jdbcSchema=new JDBCSchema(connection,jdbcDatabase,"JPA");
 
-        JDBCTable jdbcTable= new JDBCTable(connection,jdbcSchema,"zy");
+        JDBCTable jdbcTable= new JDBCTable(connection,jdbcSchema,"test11d");
 
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 

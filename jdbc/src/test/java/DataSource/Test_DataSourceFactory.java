@@ -94,20 +94,20 @@ public class Test_DataSourceFactory
         System.out.println("DsFactory.getDataSource = " + dsFactory.getDataSource());
 
         DsFactory dsFactory1=new DsFactory("db1");
-        Connection connection=dsFactory1.getConnection();
+        Connection connection_db1=dsFactory1.getConnection();
+        Connection connection    =dsFactory.getConnection();
 
-
-        System.out.println("DsFactory.Connection = " + connection);
+        System.out.println("DsFactory.Connection = " + connection_db1);
 
         System.out.println("Connection = " + dsFactory1.isValid());
-        System.out.println("connection = " + dsFactory1.isValid(connection));
+        System.out.println("connection = " + dsFactory1.isValid(connection_db1));
 
-        System.out.println("connection = " + connection.hashCode());
-        System.out.println("DsFactory.getConnection().hashCode() = " + dsFactory1.getConnection().hashCode());
+        System.out.println("connection.hashCode()  = " + connection.hashCode());
+        System.out.println("connection_db1.hashCode() = " +connection_db1.hashCode());
 
 
         //判断两个Connection 是否相等
-        System.out.println("connection =threadLocal.get(Connection) " + connection.equals(dsFactory1.getConnection()));
+        System.out.println("connection == connection_db1 >" + connection.equals(connection_db1));
     }
 
 

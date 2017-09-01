@@ -197,7 +197,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
                     String TYPE_NAME = rs.getString("TYPE_NAME");//字段类型名称(例如：VACHAR2)
 
 
-                    System.out.println("DATA_TYPE="+DATA_TYPE+" |TYPE_NAME = "+TYPE_NAME+" | 字段类型 = " + type);
+                    System.out.println("name: "+name+" | DATA_TYPE="+DATA_TYPE+" |TYPE_NAME = "+TYPE_NAME+" | 字段类型 = " + type);
                     int nullable = rs.getInt(11);
                     boolean allowsNull = nullable == 1;
                     String defaultValue = rs.getString(13);
@@ -360,7 +360,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
             case 7:
             case 8:
                 if(digits == 0) {
-                    c = Long.class;
+                    c = Integer.class;
                 } else {
                     c = Double.class;
                 }

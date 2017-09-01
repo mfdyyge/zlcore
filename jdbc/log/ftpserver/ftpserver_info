@@ -9,3 +9,48 @@
 2017-08-31 17:36:36,919 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
 2017-08-31 17:36:37,512 [INFO ]  (Test_DataSourceFactory.java.test_Dao:82) - HikariProxyConnection@81009902 wrapping oracle.jdbc.driver.T4CConnection@5c3bd550
 2017-08-31 17:36:37,762 [INFO ]  (Test_DataSourceFactory.java.test_Dao:85) - [43, 98, 2017-07-24 10:10:23.108, aa@atguigu.com, aa, null]
+2017-08-31 17:44:27,941 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:44:27,946 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:44:28,507 [INFO ]  (Test_DataSourceFactory.java.getFrist:62) - 行>getConnection = HikariProxyConnection@1952779858 wrapping oracle.jdbc.driver.T4CConnection@5c3bd550
+2017-08-31 17:44:28,697 [INFO ]  (Test_DataSourceFactory.java.getFrist:65) - 行>[2017-07-01, 2017-07-31]
+2017-08-31 17:44:28,699 [INFO ]  (Test_DataSourceFactory.java.getFrist:68) - 行>[2017-08-01, 2017-08-31]
+2017-08-31 17:46:27,981 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:46:27,986 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:46:28,113 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:49:31,721 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:49:31,728 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:49:31,867 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:50:59,425 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:50:59,430 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:50:59,579 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:52:11,723 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:52:11,729 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:52:11,863 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:52:43,765 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:52:43,771 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:52:43,900 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:53:15,337 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:53:15,341 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:53:15,475 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:56:32,413 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:56:32,417 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 17:57:27,767 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 17:57:27,773 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:05:35,438 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 18:05:35,443 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:05:35,967 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:10:51,251 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 18:10:51,256 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:10:51,858 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:11:15,768 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 18:11:15,777 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:11:16,367 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:12:14,516 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 18:12:14,522 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:12:15,138 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:12:34,528 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 18:12:34,533 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:12:35,083 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:14:44,065 [INFO ]  (DsProperties.java.<init>:55) - 行 >>>[配置文件读取] = conf/db/db
+2017-08-31 18:14:44,071 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
+2017-08-31 18:14:44,652 [INFO ]  (DsProperties.java.<init>:69) - 行 >>>[配置文件读取]  DataSourceName = HikariCp
