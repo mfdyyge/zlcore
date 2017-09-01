@@ -79,12 +79,17 @@ public class DsFactory
 	 */
 	public DsFactory(String db_properties_filename)
 	{
+		logger.info(db_properties_filename);
 		//配置文件名字==null->默认加载：db.properties 文件
-		if(null==db_properties_filename || !("".equals(db_properties_filename))) {db_properties_filename="db";	}
+		if(null==db_properties_filename || "".equals(db_properties_filename))
+		{
+			db_properties_filename="db";
+			logger.info(db_properties_filename);
+		}
 
 		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
 		String 			DataSourceName	=dsProperties.getDataSourceName();
-		System.out.println("com.zl.jdbc.DataSource.DsFactory.DsFactory(java.lang.String) DataSourceName = " + DataSourceName);
+
 		switch (DataSourceName)
 		{
 			case HikariCp_NAME:
@@ -99,10 +104,6 @@ public class DsFactory
 			case c3p0_NAME:
 				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
 				break;
-			default:
-				System.out.println("因为配置文件中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
-				System.out.println("默认配置=>conf/db/db.properties>DataSourceName = " + DataSourceName);
-				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
 		}
 	}
 

@@ -1,6 +1,8 @@
 package com.zl.log;
 
 import com.zl.jdbc.DataSource.DsFactory;
+import org.apache.log4j.DailyRollingFileAppender;
+import org.apache.log4j.Priority;
 import org.apache.log4j.jdbc.JDBCAppender;
 
 import java.sql.Connection;
@@ -27,3 +29,5 @@ public class JDBCAppender_getConnection extends JDBCAppender
     }
 
 }
+
+

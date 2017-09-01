@@ -252,6 +252,10 @@ select to_timestamp('2018-7-28 03:12:00','yyyy-mm-dd hh24:mi:ss')-systimestamp f
 --------------------------------------------------------
 --  DDL for Table TEST08
 --------------------------------------------------------
+CREATE TABLE "TEST08"
+(	"VC2" VARCHAR2(60 BYTE),
+	 "TS" TIMESTAMP (6) DEFAULT NULL
+) ;
 --insert records
 insert into TEST08(VC2,TS) values('test',to_timestamp(to_char(sysdate,'YYYY-MM-DD HH24:MI:SS'),'YYYY-MM-DD HH24:MI:SS'));
 insert into TEST08(VC2,TS) values('test',to_timestamp('2018-07-26 13:12:22','YYYY-MM-DD HH24:MI:SS'));
@@ -280,10 +284,7 @@ select VC2,to_char(TS,'YYYY-MM-DD HH24:MI:SS.FF') as time  from TEST08;
 select  VC2,to_char(TS,'YYYY-MM-DD HH24:MI:SS.FF') as time from TEST08 where  TS >= to_date('2018-07-26','YYYY-MM-DD');
 select VC2,to_char(TS,'YYYY-MM-DD HH24:MI:SS.FF')  from TEST08 where to_timestamp('','YYYY-MM-DD HH24:MI:SS');
 --------------------------------------------------------------------------------------------------------------------
-  CREATE TABLE "TEST08"
-   (	"VC2" VARCHAR2(60 BYTE),
-	"TS" TIMESTAMP (6) DEFAULT NULL
-   ) ;
+
 --------------------------------------------------------
 --  DDL for Table TEST08A
 --------------------------------------------------------

@@ -3,6 +3,7 @@ package com.zl.jdbc.DataSource;
 
 import org.apache.log4j.Logger;
 
+import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 /**
@@ -27,19 +28,15 @@ public class DsProperties
     /**
      *  db.properties=>链接池名字
      */
-    private  	String 					dataSourceName;
+    private  	String 					dataSourceName="";
 
     private  	String 					driverClassName;//数据库驱动类型
     private  	String 					jdbcUrl;        //数据库链接地址
     private  	String 					dbName;
     private  	String 					pwd;
 
-    private static	ResourceBundle			rbundle;//配置文件读取类
-    private static  StringBuffer            dbPropertiesPath=new StringBuffer("conf/db/");
-
-    private String msg;
-
-
+    private static  ResourceBundle  rbundle;
+    private static  StringBuffer    dbPropertiesPath=new StringBuffer("conf/db/");//配置文件路径
 
 
     /**
@@ -48,53 +45,29 @@ public class DsProperties
      */
     public DsProperties(String db_properties_filename)
     {
+        logger.info(dbPropertiesPath);
         dbPropertiesPath.append(db_properties_filename);
+        logger.info(dbPropertiesPath);
 
-        if(null==rbundle)
-            {
-                logger.info(new StringBuffer("行 >>>[配置文件读取] = ").append(dbPropertiesPath));
-                //System.out.println(msg);
-                rbundle = ResourceBundle.getBundle(dbPropertiesPath.toString());//配置文件读取类
-            }
-
-            if (null==dataSourceName)
-            {
-                dataSourceName  = rbundle.getString("DataSourceName");//读取配置文件中的链接池名字
-            }
-
-        driverClassName = rbundle.getString("DriverClassName");
-        jdbcUrl 		= rbundle.getString("JdbcUrl");
-        dbName 		    = rbundle.getString("DbName");
-        pwd 			= rbundle.getString("pwd");
-        logger.info(new StringBuffer("行 >>>[配置文件读取]  DataSourceName = ").append(dataSourceName));
-    }
-
-    /**
-     * 加载默认配置文件：conf/db/db
-     */
-    public DsProperties()
-    {
         if(null==rbundle)
         {
-            //System.out.println(msg);
-            logger.info(new StringBuffer("行 >>>[配置文件读取] = ").append(dbPropertiesPath));
+            rbundle = ResourceBundle.getBundle(dbPropertiesPath.toString());//配置文件读取类
 
-
-            rbundle = ResourceBundle.getBundle("conf/db/db");//配置文件读取类
-
+            logger.info(new StringBuffer("[配置文件读取] = ").append(dbPropertiesPath).append(".properties"));
         }
-
-        if (null==dataSourceName)
+        try
         {
+            //配置文件中字段不存在,会报错
             dataSourceName  = rbundle.getString("DataSourceName");//读取配置文件中的链接池名字
+
+            driverClassName = rbundle.getString("DriverClassName");
+            jdbcUrl 		  = rbundle.getString("JdbcUrl");
+            dbName 		  = rbundle.getString("DbName");
+            pwd 			  = rbundle.getString("pwd");
+        }catch (MissingResourceException ex){
+            logger.error("异常:配置文件中找不到对应字段>[MissingResourceException] = "+ex.getMessage());
         }
-
-        driverClassName = rbundle.getString("DriverClassName");
-        jdbcUrl 		= rbundle.getString("JdbcUrl");
-        dbName 		    = rbundle.getString("DbName");
-        pwd 			= rbundle.getString("pwd");
-
-        logger.info(new StringBuffer("行 >>>[配置文件读取]  DataSourceName = ").append(dataSourceName));
+        logger.info(new StringBuffer("\n------------------------\nDataSourceName = ").append(dataSourceName).append("\ndriverClassName = ").append(driverClassName).append("\njdbcUrl = ").append(jdbcUrl).append("\ndbName = ").append(dbName).append("\npwd = ").append(pwd).append("\n------------------------"));
     }
 
 

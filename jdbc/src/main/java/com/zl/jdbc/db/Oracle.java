@@ -34,7 +34,7 @@ public class Oracle
      */
     public Oracle()
     {
-        dsFactory=new DsFactory("");
+        dsFactory=new DsFactory();
     }
 
     /**

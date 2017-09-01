@@ -19,12 +19,17 @@ import java.sql.Connection;
  */
 public class JdbcSchema
 {
-   private static Connection connection,connection_jcxt;
+    private static Connection connection;
+    private static Connection connection_jcxt;
 
-   static
+    //private static DsFactory dsFactory=new DsFactory();
+    private static DsFactory dsFactory_jcxt=new DsFactory("db_act");
+
+
+    static
    {
-       connection=new DsFactory().getConnection();
-       connection_jcxt=new DsFactory("dbjcxt").getConnection();
+       //connection=dsFactory.getConnection();
+       //connection_jcxt=dsFactory_jcxt.getConnection();
    }
 
     /*测试DsFactory*/
@@ -32,23 +37,19 @@ public class JdbcSchema
     public  void  DsFactory()
     {
 
-        DsFactory   dsFactory1      =new DsFactory("dbjcxt");
-        Connection  connection_1    =dsFactory1.getConnection();
-
-
         //System.out.println(connection_1== connection);
 
-        System.out.println("Connection = " + dsFactory1.isValid());
-        System.out.println("connection = " + dsFactory1.isValid(connection));
+/*        System.out.println("Connection = " +dsFactory.isValid(connection_jcxt));
+        System.out.println("connection = " + dsFactory_jcxt.isValid(connection));
 
         System.out.println("connection.hashCode() = " + connection.hashCode());
-        System.out.println("connection_1.hashCode() = " + connection_1.hashCode());
+        System.out.println("connection_1.hashCode() = " + connection_jcxt.hashCode());
 
-        System.out.println("DsFactory.getConnection() = " + dsFactory1.getConnection());
+        System.out.println("DsFactory.getConnection() = " + new DsFactory().getConnection());
 
 
         //判断两个Connection 是否相等
-        System.out.println("判断两个Connection 是否相等> connection.equals(connection_1)= " + connection.equals(connection_1));
+        System.out.println("判断两个Connection 是否相等> connection.equals(connection_1)= " + connection.equals(connection_jcxt));*/
     }
 
 

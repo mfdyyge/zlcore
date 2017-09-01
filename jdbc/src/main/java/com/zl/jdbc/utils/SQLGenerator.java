@@ -21,10 +21,7 @@ public class SQLGenerator
     }
 
     /**
-     *  获取sql
-     * @param querySql
-     * @param pageNumber
-     * @param pageSize
+     * 获取sql
      * @return
      */
     public  static String getQueryPageSql_oracle()

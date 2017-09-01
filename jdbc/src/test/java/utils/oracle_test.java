@@ -20,7 +20,7 @@ public class oracle_test
         Oracle oracle=new Oracle();
 
        // List<Table> tables = oracle.getTables();
-        oracle.getTable("USERS");
+        oracle.getTable("oa_leave");
 /*
         List<String> tableToSelect = new ArrayList<String>();
 
