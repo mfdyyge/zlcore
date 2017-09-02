@@ -5,16 +5,21 @@
 
 package com.zl.core.jdbc;
 
-import com.zl.core.jdbc.db.*;
-import com.zl.core.jdbc.db.impl.RelationshipImpl;
-import com.zl.core.jdbc.db.impl.ColumnImpl;
+import com.zl.core.jdbc.jdbc.*;
+import com.zl.core.jdbc.jdbc.impl.RelationshipImpl;
+import com.zl.core.jdbc.jdbc.impl.ColumnImpl;
+import org.apache.log4j.Logger;
 
 import java.beans.PropertyChangeListener;
 import java.sql.*;
 import java.util.Locale;
 import java.util.Vector;
 
-public class JDBCTable extends Table implements DataDescriptorProvider {
+public class JdbcTable extends Table implements DataDescriptorProvider
+{
+    //protected static Logger logger = Logger.getLogger();
+    protected static Logger logger = Logger.getLogger(JdbcTable.class);
+
     private static final int _COLUMN_NAME = 4;
     private static final int _DATA_TYPE = 5;
     private static final int _COLUMN_SIZE = 7;
@@ -41,7 +46,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
     private Relationship[]      _exportedKey;
     private final Object        _RESULTS_OBJECT = new Object();
 
-    public JDBCTable(Connection connection, Schema schema, String tableName) {
+    public JdbcTable(Connection connection, Schema schema, String tableName) {
         this._tableName = tableName.toUpperCase(Locale.CHINA);
         this._connection = connection;
         this._schema = schema;
@@ -176,8 +181,9 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
         return this.getName();
     }
 
-    protected Column[] createColumns() {
-        Column[] columns = null;
+    protected Column[] createColumns()
+    {
+        com.zl.core.jdbc.jdbc.Column[] columns = null;
 
         try {
             ResultSet rs = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);
@@ -240,7 +246,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
                     String refTableName = results.getString(3);
                     String childColumnName = results.getString(8);
                     String keyName = results.getString(12);
-                    JDBCTable refTable = new JDBCTable(this._connection, this.getSchema(), refTableName);
+                    JdbcTable refTable = new JdbcTable(this._connection, this.getSchema(), refTableName);
                     Column refColumn = refTable.getColumn(refColumnName);
                     Column childColumn = this.getColumn(childColumnName);
                     temp[e] = new RelationshipImpl(childColumn, refColumn, keyName);
@@ -273,7 +279,7 @@ public class JDBCTable extends Table implements DataDescriptorProvider {
                     String childColumnName = results.getString(8);
                     String childTableName = results.getString(7);
                     String keyName = results.getString(12);
-                    JDBCTable childTable = new JDBCTable(this._connection, this.getSchema(), childTableName);
+                    JdbcTable childTable = new JdbcTable(this._connection, this.getSchema(), childTableName);
                     Column refColumn = this.getColumn(refColumnName);
                     Column childColumn = childTable.getColumn(childColumnName);
                     temp[e] = new RelationshipImpl(childColumn, refColumn, keyName);

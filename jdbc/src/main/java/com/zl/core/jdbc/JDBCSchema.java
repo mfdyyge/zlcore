@@ -1,9 +1,9 @@
 package com.zl.core.jdbc;
 
 
-import com.zl.core.jdbc.db.Schema;
-import com.zl.core.jdbc.db.Table;
-import com.zl.core.jdbc.db.Database;
+import com.zl.core.jdbc.jdbc.Schema;
+import com.zl.core.jdbc.jdbc.Table;
+import com.zl.core.jdbc.jdbc.Database;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -12,10 +12,12 @@ import java.util.Locale;
 import java.util.Vector;
 
 // Referenced classes of package com.zl.jdbc.util.jdbc:
-//            JDBCTable
+//            JdbcTable
 
-public class JDBCSchema extends Schema
+public class JdbcSchema extends Schema
 {
+    //protected static Logger logger = Logger.getLogger();
+
     private static final int _TABLE_NAME = 3;
     private Connection  _connection;
     private String      _schemaName;
@@ -29,7 +31,7 @@ public class JDBCSchema extends Schema
      * @param database
      * @param schemaName
      */
-    public JDBCSchema(Connection connection, Database database, String schemaName)
+    public JdbcSchema(Connection connection, Database database, String schemaName)
     {
         _schemaName = schemaName;
         _connection = connection;
@@ -92,7 +94,7 @@ public class JDBCSchema extends Schema
     protected Table createTable(int index)
     {
         String name = getTableName(index);
-        return new JDBCTable(_connection, this, name);
+        return new JdbcTable(_connection, this, name);
     }
 
     protected String[] createTableNames()

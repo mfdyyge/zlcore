@@ -67,8 +67,7 @@ public class Memory {
 						.toArray(new Object[] {}));
 	}
 
-	public <T> T query(Connection conn, String sql, ResultSetHandler<T> rsh,
-                       Object... params) {
+	public <T> T query(Connection conn, String sql, ResultSetHandler<T> rsh, Object... params) {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		T result = null;
@@ -156,8 +155,7 @@ public class Memory {
 		return this.create(conn, cls, bean, false);
 	}
 
-	public <T> int create(Connection conn, Class<T> cls, T bean,
-                          boolean customKey) {
+	public <T> int create(Connection conn, Class<T> cls, T bean, boolean customKey) {
 		int rows = 0;
 		PreparedStatement stmt = null;
 		try {			

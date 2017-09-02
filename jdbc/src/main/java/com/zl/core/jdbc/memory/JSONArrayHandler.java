@@ -63,8 +63,7 @@ public class JSONArrayHandler implements ResultSetHandler<JSONArray> {
 
 					if (value instanceof Clob) {
 						Clob clob = (Clob) value;
-						value = clob
-								.getSubString((long) 1, (int) clob.length());
+						value = clob.getSubString((long) 1, (int) clob.length());
 					}
 
 					if (camel) {

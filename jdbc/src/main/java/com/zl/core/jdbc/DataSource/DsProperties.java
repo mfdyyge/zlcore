@@ -67,7 +67,7 @@ public class DsProperties
         }catch (MissingResourceException ex){
             logger.error("异常:配置文件中找不到对应字段>[MissingResourceException] = "+ex.getMessage());
         }
-        logger.info(new StringBuffer("\n------------------------\nDataSourceName = ").append(dataSourceName).append("\ndriverClassName = ").append(driverClassName).append("\njdbcUrl = ").append(jdbcUrl).append("\ndbName = ").append(dbName).append("\npwd = ").append(pwd).append("\n------------------------"));
+        logger.info(new StringBuffer("\n------------------------\nDataSourceName = ").append(dataSourceName).append("\n------------------------").append("\ndriverClassName = ").append(driverClassName).append("\njdbcUrl = ").append(jdbcUrl).append("\ndbName = ").append(dbName).append("\npwd = ").append(pwd).append("\n------------------------"));
     }
 
 

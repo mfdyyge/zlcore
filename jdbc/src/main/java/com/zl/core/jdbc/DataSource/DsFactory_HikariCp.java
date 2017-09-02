@@ -3,6 +3,7 @@ package com.zl.core.jdbc.DataSource;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
 /**
@@ -13,13 +14,11 @@ import javax.sql.DataSource;
  */
 public class DsFactory_HikariCp
 {
-
-
+	protected static Logger logger = Logger.getLogger(DsFactory_HikariCp.class);
 	public  static final String DS_NAME = "HikariCp";
 
 	private static HikariConfig 	config;
 	private static HikariDataSource dataSource	;
-
 
 	static
 	{// 在静态代码块中创建数据库连接池
@@ -38,11 +37,9 @@ public class DsFactory_HikariCp
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
+		logger.info("**\tRead db.properties info ... ");
 
-		System.out.println("**\tRead db.properties info ... ");
-		System.out.println("**\tDatabase connect start ...DS_NAME=["+DS_NAME+"]");
-
-		config 		= new HikariConfig();//暂时没用
+		//config 		= new HikariConfig();//暂时没用
 		dataSource	= new HikariDataSource();
 
 		dataSource.setDriverClassName(dsProperties.getDriverClassName());

@@ -3,6 +3,7 @@ package com.zl.core.jdbc.DataSource;
 
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
@@ -16,6 +17,7 @@ import java.beans.PropertyVetoException;
  */
 public class DsFactory_C3p0
 {
+	protected static Logger logger = Logger.getLogger(DsFactory_C3p0.class);
 
 	public  static final String 	DS_NAME 		= "c3p0";
 	private static ComboPooledDataSource dataSource ;
@@ -39,9 +41,7 @@ public class DsFactory_C3p0
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		System.out.println("**\tRead db.properties info ... ");
-		System.out.println("**\tDatabase connect start ...DS_NAME=["+DS_NAME+"]");
-
+		logger.info("**\tRead db.properties info ... ");
 		dataSource = new ComboPooledDataSource();// C3P0数据库连接池
 		try
 		{

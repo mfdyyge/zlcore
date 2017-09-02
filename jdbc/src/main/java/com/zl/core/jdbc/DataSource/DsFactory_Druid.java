@@ -3,6 +3,7 @@ package com.zl.core.jdbc.DataSource;
 
 
 import com.alibaba.druid.pool.DruidDataSource;
+import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
 /**
@@ -13,7 +14,7 @@ import javax.sql.DataSource;
  */
 public class DsFactory_Druid
 {
-
+	protected static Logger logger = Logger.getLogger(DsFactory_Druid.class);
 	public  static final String DS_NAME = "druid";
 
 	private static DruidDataSource dataSource;// druid数据库连接池
@@ -36,9 +37,7 @@ public class DsFactory_Druid
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		System.out.println("**\tRead db.properties info ... ");
-		System.out.println("**\tDatabase connect start ...DS_NAME=["+DS_NAME+"]");
-
+		logger.info("**\tRead db.properties info ... ");
 		dataSource= new DruidDataSource();// druid数据库连接池
 
 		dataSource.setDriverClassName(dsProperties.getDriverClassName());

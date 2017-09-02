@@ -39,18 +39,16 @@ public class DsFactory
 	private static	ThreadLocal<Connection>	threadLocal = new ThreadLocal<Connection>();	// 使用ThreadLocal存储当前线程中的Connection对象
 
 
-
 	/**
-	 * 没有指定配置文件名字->默认加载：db.properties 文件
-	 * @param db_properties_filename:数据库配置文件名字
+	 * 	 * 没有指定配置文件名字->默认加载：db.properties 文件
 	 */
 	public DsFactory()
 	{
 		String db_properties_filename="db";
-
+		logger.info(db_properties_filename);
 		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
-
 		String 			DataSourceName	=dsProperties.getDataSourceName();
+		logger.info(DataSourceName);
 		switch (DataSourceName)
 		{
 			case HikariCp_NAME:
@@ -66,8 +64,7 @@ public class DsFactory
 				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
 				break;
 			default:
-				System.out.println("因为[配置文件]中链接池名字[conf/db/db.properties>DataSourceName=?]无法匹配");
-				System.out.println("默认配置=>conf/db/db.properties >>> DataSourceName = " + DataSourceName);
+				logger.info(new StringBuffer("加载[配置文件]=>conf/db/db.properties >>> DataSourceName = " ).append(DataSourceName));
 				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
 		}
 	}
@@ -228,12 +225,14 @@ public class DsFactory
 		{
 			if (null==conn || conn.isClosed())
 			{
+				logger.info(conn);
 				return false;
 			}
 		}
 		catch (SQLException e)
 		{
-			e.printStackTrace();
+			logger.error(e.getStackTrace());
+			//e.printStackTrace();
 		}
 		return true;
 	}
@@ -255,7 +254,8 @@ public class DsFactory
 		}
 		catch (SQLException e)
 		{
-			e.printStackTrace();
+			logger.error(e.getStackTrace());
+			//e.printStackTrace();
 		}
 		return true;
 	}

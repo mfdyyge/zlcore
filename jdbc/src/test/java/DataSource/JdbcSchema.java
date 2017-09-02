@@ -1,10 +1,9 @@
 package DataSource;
 
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.JDBCDatabase;
-import com.zl.core.jdbc.JDBCSchema;
-import com.zl.core.jdbc.JDBCTable;
-import com.zl.core.jdbc.db.Column;
+import com.zl.core.jdbc.JdbcDatabase;
+import com.zl.core.jdbc.JdbcTable;
+import com.zl.core.jdbc.jdbc.Column;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
@@ -63,7 +62,7 @@ public class JdbcSchema
     {
 
 
-        JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
+        JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
         System.out.println("数据库对象>jdbcDatabase.getSchemaCount = " + jdbcDatabase.getSchemaCount());
 
     }
@@ -73,15 +72,15 @@ public class JdbcSchema
     public  void JDBCSchema_test()
     {
 
-        JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
+        JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
         String dbName=jdbcDatabase.getSchemaName(0);
 
-        JDBCSchema jdbcSchema=new JDBCSchema(connection,jdbcDatabase,dbName);
+        com.zl.core.jdbc.JdbcSchema jdbcSchema=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,dbName);
         System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
 
 
 
-        JDBCSchema jdbcSchema_jpa=new JDBCSchema(connection,jdbcDatabase,dbName);
+        com.zl.core.jdbc.JdbcSchema jdbcSchema_jpa=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,dbName);
         System.out.println("数据库用户>jpa> jdbcSchema.getTableCount = " + jdbcSchema_jpa.getTableCount());
 
     }
@@ -93,10 +92,10 @@ public class JdbcSchema
     public  void JDBCTable_test()
     {
 
-        JDBCDatabase jdbcDatabase= new JDBCDatabase(connection);
-        JDBCSchema jdbcSchema=new JDBCSchema(connection,jdbcDatabase,"JPA");
+        JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
+        com.zl.core.jdbc.JdbcSchema jdbcSchema=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,"JPA");
 
-        JDBCTable jdbcTable= new JDBCTable(connection,jdbcSchema,"test11d");
+        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"test11d");
 
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 

@@ -1,7 +1,7 @@
 package utils;
 
-import com.zl.core.jdbc.pojo.TableFormParams;
-import com.zl.core.jdbc.utils.SQLGenerator;
+import com.zl.core.jdbc.sql.pojo.TableFormParams;
+import com.zl.core.jdbc.SqlGenerator;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -41,11 +41,11 @@ public class GetSql_test
 
         String sql;
         //sql = getSqlFromMap(map);
-        sql= SQLGenerator.getSqlFromMap(map);
+        sql= SqlGenerator.getSqlFromMap(map);
         System.out.println("utils: " + sql);
-        System.out.println("paramers = " + Arrays.asList(SQLGenerator.getArryFromMap(map)));
+        System.out.println("paramers = " + Arrays.asList(SqlGenerator.getArryFromMap(map)));
         //getTableFromMap(map);
-        TableFormParams tableFormParams= SQLGenerator.getTableFormParams_FromMap_oracle(map,"USERS","pageNum","pageSize");
+        TableFormParams tableFormParams= SqlGenerator.getTableFormParams_FromMap_oracle(map,"USERS","pageNum","pageSize");
         System.out.println("tableFormParams.getSql_add() = " + tableFormParams.getSql_add());
     }
 

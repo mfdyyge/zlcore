@@ -1,13 +1,13 @@
 // Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
-// Source File Name:   JDBCDatabase.java
+// Source File Name:   JdbcDatabase.java
 
 package com.zl.core.jdbc;
 
 
-import com.zl.core.jdbc.db.Schema;
-import com.zl.core.jdbc.db.Database;
+import com.zl.core.jdbc.jdbc.Schema;
+import com.zl.core.jdbc.jdbc.Database;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -21,8 +21,9 @@ import java.util.Vector;
  * @author  刚背猪 474752515@qq.com
  *
  */
-public class JDBCDatabase extends Database
+public class JdbcDatabase extends Database
 {
+    //protected static Logger logger = Logger.getLogger();
 
     private static final int _SCHEMA_NAME = 1;
     private Connection _connection;
@@ -32,7 +33,7 @@ public class JDBCDatabase extends Database
 
 
 
-    public JDBCDatabase(Connection connection)
+    public JdbcDatabase(Connection connection)
     {
         _connection = connection;
         try
@@ -104,7 +105,7 @@ public class JDBCDatabase extends Database
 
     protected Schema createSchema(int index)
     {
-        return new JDBCSchema(_connection, this, getSchemaName(index));
+        return new JdbcSchema(_connection, this, getSchemaName(index));
     }
 
     protected String[] createSchemaNames()

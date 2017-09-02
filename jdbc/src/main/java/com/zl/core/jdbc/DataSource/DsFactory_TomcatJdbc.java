@@ -1,5 +1,6 @@
 package com.zl.core.jdbc.DataSource;
 
+import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
@@ -11,6 +12,7 @@ import org.apache.tomcat.jdbc.pool.PoolProperties;
  */
 public class DsFactory_TomcatJdbc
 {
+	protected static Logger logger = Logger.getLogger(DsFactory_TomcatJdbc.class);
 
 	public static final String DS_NAME = "TomcatJdbc";
 
@@ -33,9 +35,7 @@ public class DsFactory_TomcatJdbc
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		System.out.println("**\tRead db.properties info ... ");
-		System.out.println("**\tDatabase connect start ...DS_NAME=["+DS_NAME+"]");
-
+		logger.info("**\tRead db.properties info ... ");
 		poolProps = new PoolProperties();
 		dataSource=new org.apache.tomcat.jdbc.pool.DataSource();
 
