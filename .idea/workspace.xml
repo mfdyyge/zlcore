@@ -2,50 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_xiaoleilu_hutool_all_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/pojo/Zy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/product.sql" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/base/pom.xml.versionsBackup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanListHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/BeanProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ColumnHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ColumnListHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/JSONArrayHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/JSONObjectHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/Memory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/PreparedStatementHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/ResultSetHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/持久化工具-memory介绍.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/memory/Demo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/memory/DemoServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/memory/HelloServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/memory/MemoryFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/memory/SimpleDataSource.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/pom.xml" afterPath="$PROJECT_DIR$/ActiveMQ/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/pom.xml" afterPath="$PROJECT_DIR$/Freemarker/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/pom.xml" afterPath="$PROJECT_DIR$/activity/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_error" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SQLGenerator.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SQLGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db_act.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db_act.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/db_act.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/db_act.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/Random.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/Random.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/SessionJson.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/SessionJson.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/json/time.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/time.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/memory/Product.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/pojo/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/pom.xml" afterPath="$PROJECT_DIR$/hibernate/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/pom.xml" afterPath="$PROJECT_DIR$/jdbc/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/pom.xml" afterPath="$PROJECT_DIR$/shiro/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/pom.xml" afterPath="$PROJECT_DIR$/springdata/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/pom.xml" afterPath="$PROJECT_DIR$/springmvc/pom.xml" />
     </list>
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
@@ -121,15 +89,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SqlGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SqlGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="475">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
                 <element signature="e#392#409#0" expanded="true" />
                 <element signature="method#getTableFormParams_FromMap_oracle#0;class#SqlGenerator#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,7 +231,14 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -1602,7 +1587,7 @@
       <workItem from="1504250184769" duration="23530000" />
       <workItem from="1504327790867" duration="17563000" />
       <workItem from="1504356879145" duration="5071000" />
-      <workItem from="1504412375988" duration="10695000" />
+      <workItem from="1504412375988" duration="11297000" />
     </task>
     <servers />
   </component>
@@ -1639,7 +1624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69222000" />
+    <option name="totallyTimeSpent" value="69824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1653,7 +1638,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17358893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17039403" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35356763" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1862,14 +1847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2127,12 +2104,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SqlGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="475">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
             <element signature="e#392#409#0" expanded="true" />
             <element signature="method#getTableFormParams_FromMap_oracle#0;class#SqlGenerator#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2226,7 +2211,8 @@
     </states>
   </component>
   <component name="mavenExecuteGoalHistory">
-    <option value="$PROJECT_DIR$/jdbc" />
+    <option value="$PROJECT_DIR$/" />
+    <option value="versions:set -DnewVersion=2.0.0.0903" />
     <option value="install" />
     <option value="clean" />
     <option value="versions:set -DnewVersion=2.0.0" />
