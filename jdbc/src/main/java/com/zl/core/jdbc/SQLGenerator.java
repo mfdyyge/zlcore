@@ -13,7 +13,9 @@ import java.util.Collection;
  */
 public class SqlGenerator
 {
-    private  static  ThreadLocal<TableFormParams> tb=new ThreadLocal<TableFormParams>();
+    //protected static Logger logger = Logger.getLogger();
+
+    private  static  ThreadLocal<TableFormParams> tableFormParamsThreadLocal=new ThreadLocal<TableFormParams>();
 
     static
     {
@@ -35,35 +37,37 @@ public class SqlGenerator
     }
 
 
-
     /**
      * 通过map取得sql语句
-     * @param map
+     * @param table_name  表名
+     * @param MapTableProperties 表字段
      * @return
      */
-    public static String getSqlFromMap(Map<String, String> map)
+    public static String getSqlFromMap(String table_name,Map<String, Object> MapTableProperties)
     {
 
-        String sql = "select * from emp where 1=1 ";
+        StringBuffer sql = new StringBuffer("select * from "+table_name+" where 1=1 ");
 
-        Set<String> set = map.keySet();
+        Set<String> set = MapTableProperties.keySet();
 
-        for (String keyName : set)
+        for (Object keyName : set)
         {
 
-            String value = map.get(keyName);
+            Object value = MapTableProperties.get(keyName);
 
             if (value != null)
             {
 
                 //utils = utils + " and " + keyName + " = " + value;
-                sql = sql + " and " + keyName + " = ? ";
+                sql.append( " and " );
+                sql.append(keyName);
+                sql.append(" = ? ");
 
             }
 
         }
 
-        return sql;
+        return sql.toString();
 
     }
 
@@ -96,7 +100,7 @@ public class SqlGenerator
      * @param pageNumber    //当前页码
      * @param pageSize      //每页显示记录数
      */
-    public static TableFormParams getTableFormParams_FromMap_oracle(Map<String, String> map, String tableName, String pageNumber, String pageSize)
+    public static TableFormParams getTableFormParams_FromMap_oracle(String tableName,Map<String, String> map,  String pageNumber, String pageSize)
     {
         //"SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
         TableFormParams tableformParams      =new TableFormParams(tableName); //设置表名

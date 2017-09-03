@@ -1,7 +1,7 @@
 package apche.dbutils.test;
 
-import com.zl.core.base.json.Random;
-import com.zl.core.base.json.time;
+import com.zl.core.base.utils.Random;
+import com.zl.core.base.utils.time;
 /*import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

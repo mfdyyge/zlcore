@@ -1,7 +1,9 @@
 package queryrunner;
 
+import com.zl.core.base.utils.time;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.apche.dbutils.dao.QueryRunnerDao;
+
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.*;
 import org.junit.Test;
@@ -19,10 +21,22 @@ import java.util.Map;
  * @date: 2014-10-6 上午8:39:14
  *
  */
-public class Test_AdminQueryDao {
+public class Test_AdminQueryDao
+{
+	//protected static Logger logger = Logger.getLogger();
 
+	protected static DsFactory dsFactory=new DsFactory("db");
 	//AdminQueryDao
 
+	//保存记录
+	@Test
+	public  void test_create()
+	{
+		/**
+		 * 创建一条记录
+		 */
+
+	}
 
 	@Test
 	public void test_AdminDao()
@@ -63,7 +77,7 @@ public class Test_AdminQueryDao {
 		QueryRunner query_apc = new QueryRunner(new DsFactory().getDataSource());
 
 		//顺序读取数据表的内容
-		String sql = "select * from jpa_persons";
+		String sql = "select * from Product";
 		List<Object[]> list = (List) query_apc.query(sql, new ArrayListHandler());
 		for (Object[] o : list) {
 			System.out.println(Arrays.asList(o));

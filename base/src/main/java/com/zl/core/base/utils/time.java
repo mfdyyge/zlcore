@@ -1,4 +1,4 @@
-package com.zl.core.base.json;
+package com.zl.core.base.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

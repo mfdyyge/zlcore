@@ -59,7 +59,11 @@ public class DsProperties
         {
             //配置文件中字段不存在,会报错
             dataSourceName  = rbundle.getString("DataSourceName");//读取配置文件中的链接池名字
-
+        }catch (MissingResourceException ex){
+            logger.error("异常:配置文件中找不到对应字段>[MissingResourceException] = "+ex.getMessage());
+        }
+        try
+        {
             driverClassName = rbundle.getString("DriverClassName");
             jdbcUrl 		  = rbundle.getString("JdbcUrl");
             dbName 		  = rbundle.getString("DbName");

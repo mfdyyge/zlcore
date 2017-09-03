@@ -1,4 +1,6 @@
-package memory;
+package pojo;
+
+import com.xiaoleilu.hutool.date.DateUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -53,8 +55,14 @@ public class Product {
 		this.stock = stock;
 	}
 
-	public void setCreatedDate(Date createdDate) {
-		this.createdDate = createdDate;
+	/**
+	 * 2017-09-03 <br/>
+	 * "yyyy-MM-dd"  <br/>
+	 * @param createdDate
+     */
+	public void setCreatedDate(String createdDate)
+	{
+		this.createdDate = DateUtil.parse(createdDate, "yyyy-MM-dd");
 	}
 
 	public void setStatus(boolean status) {
@@ -63,7 +71,6 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", stock=" + stock
-				+ ", createdDate=" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(createdDate) + ", status=" + status + "]";
+		return "Product [id=" + id + ", name=" + name + ", stock=" + stock	+ ", createdDate=" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(createdDate) ;
 	}
 }
