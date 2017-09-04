@@ -1,9 +1,11 @@
 package page;
 
-import com.zl.jdbc.apche.dbutils.domain.Jpa_persons;
-import com.zl.jdbc.apche.dbutils.page.Page;
-import com.zl.jdbc.apche.dbutils.page.QueryRemote;
+import com.zl.core.jdbc.apche.dbutils.domain.Jpa_persons;
+import com.zl.core.jdbc.apche.dbutils.page.Page;
+import com.zl.core.jdbc.apche.dbutils.page.QueryRemote;
+import org.apache.log4j.Logger;
 import org.junit.Test;
+import pojo.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,7 @@ import java.util.List;
  */
 public class page_test
 {
+    protected static Logger logger = Logger.getLogger(page_test.class);
 
     @Test
     public void page_test()
@@ -31,17 +34,17 @@ public class page_test
         System.out.println("page.getPageEnd() = " + page.getPageEnd());
         System.out.println("page.getPageBegin() = " + page.getPageBegin());
 
-        List<Jpa_persons> offerTypes = new ArrayList<Jpa_persons>();
-        String sql = "select * from jpa_persons where id > ?";
-        List<Object> list = QueryRemote.query(sql, page, params, Jpa_persons.class);
+        List<Product> offerTypes = new ArrayList<Product>();
+        String sql = "select * from Product where id > ?";
+        List<Object> list = QueryRemote.query(sql, page, params, Product.class);
 
 
         for (int i = 0; i < list.size(); i++)
         {
-            Jpa_persons jpa_persons = new Jpa_persons();
-            jpa_persons = (Jpa_persons) list.get(i);
+            Product pojo = new Product();
+            pojo = (Product) list.get(i);
 
-            System.out.println(" | "+jpa_persons.getId()+" | "+jpa_persons.getAdd_id()+" | "+jpa_persons.getEmail()+" | "+jpa_persons.getLast_name());
+            logger.info(" | "+pojo.getId()+" | "+pojo.getCreatedDate());
         }
 
         System.out.println();

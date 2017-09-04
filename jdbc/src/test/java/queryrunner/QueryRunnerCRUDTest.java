@@ -1,7 +1,7 @@
 package queryrunner;
 
-import com.zl.jdbc.DataSource.DsFactory;
-import com.zl.jdbc.apche.dbutils.domain.T_user;
+import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.apche.dbutils.domain.T_user;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.ResultSetHandler;
 import org.junit.Test;

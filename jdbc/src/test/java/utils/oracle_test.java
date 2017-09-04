@@ -1,6 +1,6 @@
 package utils;
 
-import com.zl.jdbc.db.Oracle;
+import com.zl.core.jdbc.Oracle;
 import org.junit.Test;
 
 /**
@@ -14,13 +14,15 @@ import org.junit.Test;
 public class oracle_test
 {
     @Test
-    public void tearDown() throws Exception
+    public void Oracle_getTable()
     {
         //Oracle.getDataBaseInfo();
         Oracle oracle=new Oracle();
 
        // List<Table> tables = oracle.getTables();
-        oracle.getTable("oa_leave");
+        //oracle.getTables();
+        //oracle.getTable("act","");
+        oracle.getTable("zy");
 /*
         List<String> tableToSelect = new ArrayList<String>();
 

@@ -56,5 +56,5 @@
 	</bean>
 
 	<!--分页插件 -->
-	<bean id="paginationInterceptor" class="mvc.interceptor.mybatis.PaginationInterceptor"></bean>
+	<bean id="paginationInterceptor" class="PaginationInterceptor"></bean>
 </beans>
