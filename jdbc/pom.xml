@@ -12,7 +12,7 @@
     <parent>
         <groupId>com.zl.core</groupId>
         <artifactId>zlcore</artifactId>
-        <version>2.0.0.0903</version>
+        <version>2.0.0.0904</version>
     </parent>
 
 
@@ -40,15 +40,10 @@
         <dependency>
             <groupId>com.zl.core</groupId>
             <artifactId>base</artifactId>
-            <version>2.0.0.0903</version>
-            <scope>compile</scope>
+            <version>2.0.0.0904</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.zl.core</groupId>
-            <artifactId>log</artifactId>
-            <version>2.0.0</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.dbtools/dbtools-query -->
         <dependency>
             <groupId>org.dbtools</groupId>
@@ -86,7 +81,7 @@
         <dependency>
             <groupId>com.oracle.jdbc</groupId>
             <artifactId>ojdbc6</artifactId>
-            <version>${jdbc.version}</version>
+            <version>11.2.0.4</version>
         </dependency>
 
         <!-- mysql数据库相关依赖 start -->

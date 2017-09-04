@@ -92,10 +92,40 @@ $ git branch -a
   remotes/origin/2.0.0
   remotes/origin/HEAD -> origin/master
   remotes/origin/master
-----------------------------------------------------------------------切换版本-end
+
+-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ 项目操作[提交本地更改 | 推送]
+-----------------------------------------------------------------------------------------------------------------
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git add -A
+warning: LF will be replaced by CRLF in .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348.xml.
+The file will have its original line endings in your working directory.
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git commit -m"GIT命令文件：更新项目操作命令"
+[2.0.0 01cc4ff] GIT命令文件：更新项目操作命令
+ 9 files changed, 2837 insertions(+), 481 deletions(-)
+ create mode 100644 .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2.xml
+ create mode 100644 .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2/storage.xml
+ create mode 100644 .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348.xml
+ create mode 100644 .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348/storage.xml
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git push origin 2.0.0
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (14/14), 13.21 KiB | 0 bytes/s, done.
+Total 14 (delta 6), reused 0 (delta 0)
+To https://git.oschina.net/mfdyyge-zl/zlcore.git
+   e52c2c0..01cc4ff  2.0.0 -> 2.0.0
 
 
 
-
+-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ 项目操作[创建远程分支 ]
+-----------------------------------------------------------------------------------------------------------------
 
 
