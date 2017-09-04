@@ -1,3 +1,22 @@
+2017年9月4日16:12:41
+1.配置GIT上传用户密码
+文件路径：C:\Users\Administrator\.git-credentials
+文件内容：https://mfdyyge%40qq.com:zl474752515@git.oschina.net
+
+1.文件路径：C:\Users\Administrator\.gitconfig
+  文件内容： [user]
+                name = mfdyyge
+                email = mfdyyge@qq.com
+            [filter "lfs"]
+                clean = git-lfs clean -- %f
+                smudge = git-lfs smudge -- %f
+                process = git-lfs filter-process
+                required = true
+            [color]
+                ui = always
+            [credential]
+                helper=store
+
 ------------------------------------------------------------------------------------------------------------------------
 GIT http://blog.csdn.net/arkblue/article/details/9568249/
 GIT
