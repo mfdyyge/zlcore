@@ -60,7 +60,7 @@ $ git push origin :branch-name          //2.推到远程【必须推送到远程
 
 
 -----------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------- 项目操作[切换版本>操作顺序]
+------------------------------------------------------------------------------------ 项目操作[切换版本]
 -----------------------------------------------------------------------------------------------------------------
 
 1》前必须先提交本地更改【】
@@ -128,4 +128,36 @@ To https://git.oschina.net/mfdyyge-zl/zlcore.git
 ------------------------------------------------------------------------------------ 项目操作[创建远程分支 ]
 -----------------------------------------------------------------------------------------------------------------
 
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git branch 2.0.0.0904
 
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git branch -a
+* 2.0.0
+  2.0.0.0904
+  master
+  temp
+  remotes/origin/1.0.0.20170808
+  remotes/origin/2.0.0
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git push origin 2.0.0.0904
+Total 0 (delta 0), reused 0 (delta 0)
+To https://git.oschina.net/mfdyyge-zl/zlcore.git
+ * [new branch]      2.0.0.0904 -> 2.0.0.0904
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+$ git branch -a
+* 2.0.0
+  2.0.0.0904
+  master
+  temp
+  remotes/origin/1.0.0.20170808
+  remotes/origin/2.0.0
+  remotes/origin/2.0.0.0904
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)

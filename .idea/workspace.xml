@@ -2,32 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/pom.xml" afterPath="$PROJECT_DIR$/ActiveMQ/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/pom.xml" afterPath="$PROJECT_DIR$/Freemarker/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/pom.xml" afterPath="$PROJECT_DIR$/activity/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/pom.xml" afterPath="$PROJECT_DIR$/hibernate/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/pom.xml" afterPath="$PROJECT_DIR$/jdbc/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/pom.xml" afterPath="$PROJECT_DIR$/shiro/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/pom.xml" afterPath="$PROJECT_DIR$/springdata/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/pom.xml" afterPath="$PROJECT_DIR$/springmvc/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/命令/命令-GIT" afterPath="$PROJECT_DIR$/命令/命令-GIT" />
     </list>
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
-    <list id="6d3ca750-16c0-4bd9-aac4-0e6261c85937" name="not" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <list id="daff82ca-dd4c-4fc6-92e0-f94a3ccda809" name="配置文件" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zl_core_log_2_0_0.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/hibernate.iml" afterPath="$PROJECT_DIR$/hibernate/hibernate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" />
-    </list>
+    <list id="6d3ca750-16c0-4bd9-aac4-0e6261c85937" name="not" comment="" />
+    <list id="daff82ca-dd4c-4fc6-92e0-f94a3ccda809" name="配置文件" comment="" />
     <ignored path="zlcore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/springmvc/target/" />
@@ -44,7 +24,6 @@
     <ignored path="$PROJECT_DIR$/ActiveMQ/target/" />
     <ignored path="$PROJECT_DIR$/log/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +103,8 @@
       <file leaf-file-name="命令-GIT" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/命令/命令-GIT">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="77">
+              <caret line="62" column="94" lean-forward="false" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -227,8 +206,8 @@
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SqlGenerator.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/QueryRemote.java" />
-        <option value="$PROJECT_DIR$/命令/命令-GIT" />
         <option value="$PROJECT_DIR$/jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/命令/命令-GIT" />
       </list>
     </option>
   </component>
@@ -1561,7 +1540,7 @@
       <workItem from="1504356879145" duration="5071000" />
       <workItem from="1504412375988" duration="11297000" />
       <workItem from="1504489176974" duration="953000" />
-      <workItem from="1504490376835" duration="1124000" />
+      <workItem from="1504490376835" duration="1683000" />
     </task>
     <servers />
   </component>
@@ -1598,7 +1577,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71901000" />
+    <option name="totallyTimeSpent" value="72460000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1902,14 +1881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1199">
-          <caret line="243" column="27" lean-forward="false" selection-start-line="243" selection-start-column="27" selection-end-line="243" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1918,10 +1889,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="243" column="27" lean-forward="false" selection-start-line="243" selection-start-column="27" selection-end-line="243" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/命令/命令-GIT">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        <state relative-caret-position="77">
+          <caret line="62" column="94" lean-forward="false" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
           <folding />
         </state>
       </provider>
