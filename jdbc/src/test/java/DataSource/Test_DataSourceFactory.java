@@ -59,6 +59,9 @@ public class Test_DataSourceFactory
 
         //System.out.println("getDataSource = " + DsFactory.getDataSource());
         Connection connection= dsFactory.getConnection();
+        logger.info(sql_a);
+        logger.info(sql_b);
+
         logger.info(new StringBuffer("行>getConnection = ").append(connection));
 
         Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql_a);
@@ -66,6 +69,7 @@ public class Test_DataSourceFactory
 
         Object result_2[]=QueryRunnerDao.getFirstRowArray(connection,sql_b);
         logger.info(new StringBuffer("行>").append(Arrays.asList(result_2)));
+
 
     }
 

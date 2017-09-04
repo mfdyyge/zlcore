@@ -1,9 +1,5 @@
-package com.zl.core.jdbc.orcl;
+package com.zl.core.jdbc.oracle_mysql.properties;
 
-
-import com.zl.core.jdbc.oracle_mysql.properties.Table;
-import com.zl.core.jdbc.oracle_mysql.properties.Column;
-import com.zl.core.jdbc.oracle_mysql.properties.JavaType;
 
 /**
  * 转化器。将表名称、列名称、orcl Type转换为Entity Name、Fields、Java Type
@@ -53,8 +49,11 @@ public class ConvertHandler
             return;
         // JDBC类型转换java类型
         column.setJavaType(JavaType.getJavaType(column.getType()));
-        // column转换变量
-        column.setFieldName(column2field(column.getName()));
+
+        // column转换变量- 去除下划线，变为驼峰：fieldName=nameLdm, name=NAME_LDM
+        //column.setFieldName(column2field(column.getName()));
+        column.setFieldName(column.getName());
+
         // get set方法
         String filedName = column.getFieldName();// table2clazzName(column.getFieldName());
         String methodName = filedName.substring(0, 1).toUpperCase() + filedName.substring(1, filedName.length());

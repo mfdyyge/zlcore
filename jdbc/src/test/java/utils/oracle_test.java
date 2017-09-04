@@ -1,6 +1,8 @@
 package utils;
 
 import com.zl.core.jdbc.Oracle;
+import com.zl.core.jdbc.oracle_mysql.properties.Table;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 /**
@@ -13,16 +15,19 @@ import org.junit.Test;
  */
 public class oracle_test
 {
+    protected static Logger logger = Logger.getLogger(oracle_test.class);
+
     @Test
     public void Oracle_getTable()
     {
         //Oracle.getDataBaseInfo();
-        Oracle oracle=new Oracle();
+        Oracle oracle=new Oracle("dbjpa");
 
        // List<Table> tables = oracle.getTables();
         //oracle.getTables();
         //oracle.getTable("act","");
-        oracle.getTable("zy");
+        Table table=oracle.getTable("zy");
+        logger.info(table);
 /*
         List<String> tableToSelect = new ArrayList<String>();
 

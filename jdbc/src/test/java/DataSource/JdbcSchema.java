@@ -24,13 +24,13 @@ public class JdbcSchema
     private static Connection connection;
     private static Connection connection_jcxt;
 
-    //private static DsFactory dsFactory=new DsFactory();
-    private static DsFactory dsFactory_jcxt=new DsFactory("db_act");
+    private static DsFactory dsFactory=new DsFactory();
+    private static DsFactory dsFactory_jcxt=new DsFactory("dbjpa");
 
 
     static
    {
-       //connection=dsFactory.getConnection();
+       connection=dsFactory.getConnection();
        //connection_jcxt=dsFactory_jcxt.getConnection();
    }
 
@@ -78,9 +78,11 @@ public class JdbcSchema
         System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
 
 
+/*
 
         com.zl.core.jdbc.JdbcSchema jdbcSchema_jpa=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,dbName);
         System.out.println("数据库用户>jpa> jdbcSchema.getTableCount = " + jdbcSchema_jpa.getTableCount());
+*/
 
     }
 

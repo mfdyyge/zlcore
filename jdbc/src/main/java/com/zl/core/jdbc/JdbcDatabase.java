@@ -6,8 +6,9 @@
 package com.zl.core.jdbc;
 
 
-import com.zl.core.jdbc.orcl.Schema;
 import com.zl.core.jdbc.orcl.Database;
+import com.zl.core.jdbc.orcl.Schema;
+import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -23,7 +24,7 @@ import java.util.Vector;
  */
 public class JdbcDatabase extends Database
 {
-    //protected static Logger logger = Logger.getLogger();
+    protected static Logger logger = Logger.getLogger(JdbcDatabase.class);
 
     private static final int _SCHEMA_NAME = 1;
     private Connection _connection;
@@ -39,11 +40,11 @@ public class JdbcDatabase extends Database
         try
         {
             _dbUrl = _connection.getMetaData().getURL();
-            System.out.println("_connection.getMetaData().getURL = " + _dbUrl);
+            logger.info("_connection.getMetaData().getURL = " + _dbUrl);
         }
         catch(SQLException e)
         {
-            System.err.println((new StringBuilder()).append("A SQLException occured ").append(e).toString());
+            logger.error((new StringBuilder()).append("出错： ").append(e).toString());
         }
     }
 

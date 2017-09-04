@@ -3,6 +3,7 @@ package com.zl.core.jdbc;
 
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.oracle_mysql.properties.Column;
+import com.zl.core.jdbc.oracle_mysql.properties.ConvertHandler;
 import com.zl.core.jdbc.oracle_mysql.properties.Table;
 import org.apache.log4j.Logger;
 
@@ -64,11 +65,14 @@ public class Oracle
 
             col.setName(rs.getString("COLUMN_NAME"));
             col.setType(rs.getString("TYPE_NAME"));
+
             col.setSize(rs.getInt("COLUMN_SIZE"));
             col.setNullable(rs.getBoolean("NULLABLE"));
             col.setDigits(rs.getInt("DECIMAL_DIGITS"));
             col.setDefaultValue(rs.getString("COLUMN_DEF"));
             col.setComment(rs.getString("REMARKS"));
+
+            ConvertHandler.columnHandler(col);
             logger.info(col.toString());
             t.getColumns().add(col);
         }
@@ -190,7 +194,7 @@ public class Oracle
             String dbname=dsFactory.getConnection().getMetaData().getUserName().toUpperCase();
             rs = dbmd.getColumns(null, dbname, tableName.toUpperCase(), null);
 
-
+//设置Table 字段
             getColumns(rs, table);
             rs = dbmd.getPrimaryKeys(null, null, tableName);
             table.setPk(getPk(rs));

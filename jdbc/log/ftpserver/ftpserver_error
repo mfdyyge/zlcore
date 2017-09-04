@@ -1,1 +1,3 @@
 2017-09-03 12:20:01,984 [ERROR]  (DsProperties.java.<init>:63) - 异常:配置文件中找不到对应字段>[MissingResourceException] = Can't find resource for bundle java.util.PropertyResourceBundle, key DataSourceName
+2017-09-04 17:24:10,525 [ERROR]  (DruidDataSource.java.oracleValidationQueryCheck:970) - invalid oracle validationQuery. SELECT 1, may should be : SELECT 1 FROM DUAL
+2017-09-04 17:26:06,631 [ERROR]  (DruidDataSource.java.oracleValidationQueryCheck:970) - invalid oracle validationQuery. SELECT 1, may should be : SELECT 1 FROM DUAL
