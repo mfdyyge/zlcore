@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 /**
  * Created by 钢背猪☣ on 2017-8-31 0031.
- * 注意:这里需要引入[com.zl.zlcore.jdbc]
+ * 注意:这里需要引入[com.zl.zlcore.orcl]
  * 编译错误的时候:先注释这个类,在编译JDBC
  * @ClassName: com.zl.core.log
  * @Description: 描述:474752515@qq.com

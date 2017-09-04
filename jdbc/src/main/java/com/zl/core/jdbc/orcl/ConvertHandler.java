@@ -1,4 +1,4 @@
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 
 import com.zl.core.jdbc.oracle_mysql.properties.Table;
@@ -6,7 +6,7 @@ import com.zl.core.jdbc.oracle_mysql.properties.Column;
 import com.zl.core.jdbc.oracle_mysql.properties.JavaType;
 
 /**
- * 转化器。将表名称、列名称、JDBC Type转换为Entity Name、Fields、Java Type
+ * 转化器。将表名称、列名称、orcl Type转换为Entity Name、Fields、Java Type
  * 
  */
 public class ConvertHandler

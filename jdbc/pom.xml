@@ -148,7 +148,7 @@
 
         <!-- mirrored from git://git.apache.org/commons-dbutils.git        -->
         <!-- ****************************************************apache/commons*******************************************************8  -->
-        <!--JDBC-ORM-->
+        <!--orcl-ORM-->
         <dependency>
             <groupId>commons-dbutils</groupId>
             <artifactId>commons-dbutils</artifactId>

@@ -3,11 +3,11 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DataDescriptorProvider.java
 
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 import java.beans.PropertyChangeListener;
 
-// Referenced classes of package com.zl.jdbc.db:
+// Referenced classes of package com.zl.orcl.db:
 //            DataDescriptor
 
 public interface DataDescriptorProvider

@@ -54,7 +54,7 @@ public class Resources
      */
     public static void init(String driver, String dburl, String username, String password, String tabName, String packName, String projectDir, String className, String tplFileDir)
     {
-        // JDBC
+        // orcl
         JDBC_DRIVER = driver;
         JDBC_URL = dburl;
         JDBC_USERNAME = username;

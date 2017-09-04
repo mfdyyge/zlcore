@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 /**
  * Created by 钢背猪☣ on 2017-8-10 0010.
  *
- * @ClassName: com.zl.jdbc.DataSource
+ * @ClassName: com.zl.orcl.DataSource
  * @Description: 描述:db.properties
  * @author: 钢背猪☣474752515@qq.com
  * @date: 2017-8-10 0010

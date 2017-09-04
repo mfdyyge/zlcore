@@ -3,7 +3,7 @@ package com.zl.core.jdbc.oracle_mysql.properties;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * JDBC Types转换Java Types
+ * orcl Types转换Java Types
  * 
  */
 public enum JavaType

@@ -1,8 +1,8 @@
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 import java.util.Locale;
 
-// Referenced classes of package com.zl.jdbc.db:
+// Referenced classes of package com.zl.orcl.db:
 //            Table, Database
 
 public abstract class Schema

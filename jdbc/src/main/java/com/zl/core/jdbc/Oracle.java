@@ -173,9 +173,9 @@ public class Oracle
     }
 
     /**
-     * 返回一个表对象【com.zl.core.jdbc.vo.properties.Table】
+     * 返回一个表对象【com.zl.core.orcl.vo.properties.Table】
      * @param tableName
-     * @return 返回一个表对象【com.zl.core.jdbc.vo.properties.Table】
+     * @return 返回一个表对象【com.zl.core.orcl.vo.properties.Table】
      */
     public Table getTable(String tableName)
     {
@@ -204,10 +204,10 @@ public class Oracle
     }
 
     /**
-     * 查询指定【用户，表名】 返回一个表对象【com.zl.core.jdbc.vo.properties.Table】
+     * 查询指定【用户，表名】 返回一个表对象【com.zl.core.orcl.vo.properties.Table】
      * @param DB_Name    【用户】
      * @param tableName 【表名】
-     * @return 返回一个表对象【com.zl.core.jdbc.vo.properties.Table】
+     * @return 返回一个表对象【com.zl.core.orcl.vo.properties.Table】
      */
     public Table getTable(String DB_Name, String tableName)
     {

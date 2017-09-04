@@ -3,10 +3,10 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   Column.java
 
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 
-// Referenced classes of package com.zl.jdbc.db:
+// Referenced classes of package com.zl.orcl.db:
 //            DataDescriptor, Table
 
 public abstract class Column extends DataDescriptor

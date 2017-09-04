@@ -2,7 +2,7 @@ package com.zl.core.jdbc.oracle_mysql.properties;
 
 public class Column
 {
-    /********** JDBC **************/
+    /********** orcl **************/
     private String name;// 字段名
     
     private String type;// 字段类型

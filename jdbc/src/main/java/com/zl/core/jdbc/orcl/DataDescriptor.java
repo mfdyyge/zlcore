@@ -3,7 +3,7 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DataDescriptor.java
 
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 import java.util.Locale;
 

@@ -3,10 +3,10 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   OuterJoin.java
 
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 
-// Referenced classes of package com.zl.jdbc.db:
+// Referenced classes of package com.zl.orcl.db:
 //            Table
 
 public class OuterJoin

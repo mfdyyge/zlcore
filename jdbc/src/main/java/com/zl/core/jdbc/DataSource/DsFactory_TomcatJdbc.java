@@ -31,7 +31,7 @@ public class DsFactory_TomcatJdbc
 	 * @Method: getDataSource
 	 * @Description: 获取数据源
 	 * @author: 钢背猪☣
-	 * @return DataSource:此处返回=>org.apache.tomcat.jdbc.pool.DataSource
+	 * @return DataSource:此处返回=>org.apache.tomcat.orcl.pool.DataSource
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{

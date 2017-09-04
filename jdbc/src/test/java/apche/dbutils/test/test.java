@@ -28,8 +28,8 @@ public static void main(String[] args) throws ClassNotFoundException {
         McUserField userField =new McUserField();
 
         Connection conn =null;
-        String jdbcURL ="jdbc:oracle:thin:@localhost:1521:orcl";
-        String jdbcDriver ="oracle.jdbc.driver.OracleDriver";
+        String jdbcURL ="orcl:oracle:thin:@localhost:1521:orcl";
+        String jdbcDriver ="oracle.orcl.driver.OracleDriver";
         try
         {
         DbUtils.loadDriver(jdbcDriver);

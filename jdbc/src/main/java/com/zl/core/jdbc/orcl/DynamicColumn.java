@@ -3,12 +3,12 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DynamicColumn.java
 
-package com.zl.core.jdbc.jdbc;
+package com.zl.core.jdbc.orcl;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-// Referenced classes of package com.zl.jdbc.db:
+// Referenced classes of package com.zl.orcl.db:
 //            Column
 
 public abstract class DynamicColumn extends Column

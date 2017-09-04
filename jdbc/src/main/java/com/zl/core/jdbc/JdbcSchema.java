@@ -1,9 +1,9 @@
 package com.zl.core.jdbc;
 
 
-import com.zl.core.jdbc.jdbc.Schema;
-import com.zl.core.jdbc.jdbc.Table;
-import com.zl.core.jdbc.jdbc.Database;
+import com.zl.core.jdbc.orcl.Schema;
+import com.zl.core.jdbc.orcl.Table;
+import com.zl.core.jdbc.orcl.Database;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.Locale;
 import java.util.Vector;
 
-// Referenced classes of package com.zl.jdbc.util.jdbc:
+// Referenced classes of package com.zl.orcl.util.orcl:
 //            JdbcTable
 
 public class JdbcSchema extends Schema

@@ -6,8 +6,8 @@
 package com.zl.core.jdbc;
 
 
-import com.zl.core.jdbc.jdbc.Schema;
-import com.zl.core.jdbc.jdbc.Database;
+import com.zl.core.jdbc.orcl.Schema;
+import com.zl.core.jdbc.orcl.Database;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

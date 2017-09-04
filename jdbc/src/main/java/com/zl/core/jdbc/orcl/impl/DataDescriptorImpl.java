@@ -3,12 +3,12 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DataDescriptorImpl.java
 
-package com.zl.core.jdbc.jdbc.impl;
+package com.zl.core.jdbc.orcl.impl;
 
 import java.io.Serializable;
 import java.util.Locale;
 
-import com.zl.core.jdbc.jdbc.DataDescriptor;
+import com.zl.core.jdbc.orcl.DataDescriptor;
 
 public class DataDescriptorImpl extends DataDescriptor    implements Serializable
 {

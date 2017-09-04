@@ -3,7 +3,7 @@ package DataSource;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.JdbcDatabase;
 import com.zl.core.jdbc.JdbcTable;
-import com.zl.core.jdbc.jdbc.Column;
+import com.zl.core.jdbc.orcl.Column;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
