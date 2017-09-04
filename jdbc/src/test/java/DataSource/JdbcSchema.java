@@ -61,7 +61,6 @@ public class JdbcSchema
     public  void JDBCDatabase_test()
     {
 
-
         JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
         System.out.println("数据库对象>jdbcDatabase.getSchemaCount = " + jdbcDatabase.getSchemaCount());
 

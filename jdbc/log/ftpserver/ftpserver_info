@@ -272,3 +272,17 @@ pwd = tt
 2017-09-03 15:40:51,808 [INFO ]  (page_test.java.page_test:47) -  | 3 | null
 2017-09-03 15:40:51,808 [INFO ]  (page_test.java.page_test:47) -  | 4 | null
 2017-09-03 15:40:51,809 [INFO ]  (page_test.java.page_test:47) -  | 5 | null
+2017-09-04 16:50:50,646 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 16:50:50,650 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 16:50:50,650 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-04 16:50:50,652 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-04 16:50:50,652 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 16:50:50,653 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
