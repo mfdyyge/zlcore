@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="tt">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="TT">
+      <ObjectId>94</ObjectId>
+      <IntrospectionTimestamp>2017-09-01.19:43:03</IntrospectionTimestamp>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-01.19:43:03</ModifiedTimestamp>
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="CLOB_TAB">
+      <ObjectId>81664</ObjectId>
+      <CreatedTimestamp>2017-09-01.19:40:17</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-01.19:40:17</ModifiedTimestamp>
+    </table>
+    <table id="4" parent="2" name="ORG_RESOURCE">
+      <ObjectId>76989</ObjectId>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+    </table>
+    <table id="5" parent="2" name="ORG_ROLE">
+      <ObjectId>76991</ObjectId>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+    </table>
+    <table id="6" parent="2" name="ORG_ROLE_RESOURCE_REL">
+      <ObjectId>76993</ObjectId>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+    </table>
+    <table id="7" parent="2" name="ORG_USER">
+      <ObjectId>76995</ObjectId>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.12:53:42</ModifiedTimestamp>
+    </table>
+    <table id="8" parent="2" name="ORG_USER_ROLE_REL">
+      <ObjectId>76997</ObjectId>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+    </table>
+    <table id="9" parent="2" name="TEST01">
+      <ObjectId>81667</ObjectId>
+      <CreatedTimestamp>2017-09-01.19:41:19</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-01.19:41:19</ModifiedTimestamp>
+    </table>
+    <table id="10" parent="2" name="TEST02">
+      <ObjectId>81668</ObjectId>
+      <CreatedTimestamp>2017-09-01.19:42:29</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-01.19:42:29</ModifiedTimestamp>
+    </table>
+    <table id="11" parent="2" name="TEST08">
+      <ObjectId>81669</ObjectId>
+      <CreatedTimestamp>2017-09-01.19:43:03</CreatedTimestamp>
+      <ModifiedTimestamp>2017-09-01.19:43:03</ModifiedTimestamp>
+    </table>
+    <table id="12" parent="2" name="ZY">
+      <ObjectId>81264</ObjectId>
+      <Comment>药材基础信息表</Comment>
+      <CreatedTimestamp>2017-08-05.16:02:35</CreatedTimestamp>
+      <ModifiedTimestamp>2017-08-05.16:34:54</ModifiedTimestamp>
+    </table>
+    <column id="13" parent="3" name="COLUMN1">
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="14" parent="3" name="COLUMN2">
+      <DataType>CLOB|0</DataType>
+    </column>
+    <column id="15" parent="4" name="ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="4" name="AUDIT_FLAG">
+      <DataType>VARCHAR2(2)|0</DataType>
+    </column>
+    <column id="17" parent="4" name="CREATE_DATE">
+      <DataType>TIMESTAMP(6)|0</DataType>
+    </column>
+    <column id="18" parent="4" name="DELETE_FLAG">
+      <DataType>VARCHAR2(1)|0</DataType>
+    </column>
+    <column id="19" parent="4" name="UPDATE_DATE">
+      <DataType>TIMESTAMP(6)|0</DataType>
+    </column>
+    <column id="20" parent="4" name="ICON">
+      <DataType>VARCHAR2(512)|0</DataType>
+    </column>
+    <column id="21" parent="4" name="NAME">
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="22" parent="4" name="ORDER_NO">
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="23" parent="4" name="TYPE">
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="24" parent="4" name="URL">
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="25" parent="4" name="PARENT_ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+    </column>
+    <index id="26" parent="4" name="SYS_C0012531">
+      <ObjectId>76990</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="4" name="SYS_C0012531">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012531</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="28" parent="4" name="FK_2QOSCU42YXYPNO5IV9W9RAJ2N">
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>PARENT_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>ORG_RESOURCE</RefTableName>
+      <RefKeyName>SYS_C0012531</RefKeyName>
+    </foreign-key>
+    <column id="29" parent="5" name="ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="5" name="AUDIT_FLAG">
+      <DataType>VARCHAR2(2)|0</DataType>
+    </column>
+    <column id="31" parent="5" name="CREATE_DATE">
+      <DataType>TIMESTAMP(6)|0</DataType>
+    </column>
+    <column id="32" parent="5" name="DELETE_FLAG">
+      <DataType>VARCHAR2(1)|0</DataType>
+    </column>
+    <column id="33" parent="5" name="UPDATE_DATE">
+      <DataType>TIMESTAMP(6)|0</DataType>
+    </column>
+    <column id="34" parent="5" name="CODE">
+      <DataType>VARCHAR2(128)|0</DataType>
+    </column>
+    <column id="35" parent="5" name="DESCRIPTION">
+      <DataType>VARCHAR2(500)|0</DataType>
+    </column>
+    <column id="36" parent="5" name="NAME">
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="37" parent="5" name="NO">
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="38" parent="5" name="ROLE_NAME">
+      <DataType>VARCHAR2(64)|0</DataType>
+    </column>
+    <column id="39" parent="5" name="STATUS">
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <index id="40" parent="5" name="SYS_C0012533">
+      <ObjectId>76992</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="5" name="SYS_C0012533">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012533</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="6" name="ROLE_ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="6" name="RESOURCES_ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="44" parent="6" name="SYS_C0012536">
+      <ObjectId>76994</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ROLE_ID
+RESOURCES_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="6" name="SYS_C0012536">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>ROLE_ID
+RESOURCES_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012536</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="46" parent="6" name="FK_EW2X71WSJWD939PDGQDSVNNSD">
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>ROLE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>ORG_ROLE</RefTableName>
+      <RefKeyName>SYS_C0012533</RefKeyName>
+    </foreign-key>
+    <foreign-key id="47" parent="6" name="FK_HPSDQTXBYPYCWCDRW23NA40BP">
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>RESOURCES_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>ORG_RESOURCE</RefTableName>
+      <RefKeyName>SYS_C0012531</RefKeyName>
+    </foreign-key>
+    <column id="48" parent="7" name="ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="7" name="AUDIT_FLAG">
+      <DataType>VARCHAR2(2)|0</DataType>
+    </column>
+    <column id="50" parent="7" name="CREATE_DATE">
+      <DataType>TIMESTAMP(6)|0</DataType>
+    </column>
+    <column id="51" parent="7" name="DELETE_FLAG">
+      <DataType>VARCHAR2(1)|0</DataType>
+    </column>
+    <column id="52" parent="7" name="UPDATE_DATE">
+      <DataType>TIMESTAMP(6)|0</DataType>
+    </column>
+    <column id="53" parent="7" name="CURRENT_SKIN">
+      <DataType>VARCHAR2(16)|0</DataType>
+    </column>
+    <column id="54" parent="7" name="EMAIL">
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="55" parent="7" name="MOBILE">
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="56" parent="7" name="PASSWORD">
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="57" parent="7" name="REAL_NAME">
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="58" parent="7" name="STATUS">
+      <DataType>NUMBER(10)|0</DataType>
+    </column>
+    <column id="59" parent="7" name="TYPE">
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="60" parent="7" name="USERNAME">
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="61" parent="7" name="SYS_C0012539">
+      <ObjectId>76996</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="62" parent="7" name="SYS_C0012539">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012539</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="63" parent="8" name="USER_ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="8" name="ROLE_ID">
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="65" parent="8" name="SYS_C0012542">
+      <ObjectId>76998</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-03-31.11:43:12</CreatedTimestamp>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>USER_ID
+ROLE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="8" name="SYS_C0012542">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>USER_ID
+ROLE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0012542</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="67" parent="8" name="FK_92837TRMH851IO1PB73QJAKVF">
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>USER_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>ORG_USER</RefTableName>
+      <RefKeyName>SYS_C0012539</RefKeyName>
+    </foreign-key>
+    <foreign-key id="68" parent="8" name="FK_IKYYD9VV4U7Y3M3YQVQO1VWDD">
+      <ModifiedTimestamp>2017-03-31.11:43:12</ModifiedTimestamp>
+      <ColNames>ROLE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableName>ORG_ROLE</RefTableName>
+      <RefKeyName>SYS_C0012533</RefKeyName>
+    </foreign-key>
+    <column id="69" parent="9" name="DEPARTMENT_ID">
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="70" parent="9" name="DEPARTMENT_NAME">
+      <DataType>VARCHAR2(30)|0</DataType>
+    </column>
+    <column id="71" parent="9" name="MANAGER_ID">
+      <DataType>NUMBER(6)|0</DataType>
+    </column>
+    <column id="72" parent="9" name="LOCATION_ID">
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="73" parent="10" name="EMPLOYEE_ID">
+      <DataType>NUMBER(6)|0</DataType>
+    </column>
+    <column id="74" parent="10" name="FIRST_NAME">
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="75" parent="10" name="LAST_NAME">
+      <DataType>VARCHAR2(25 byte)|0</DataType>
+    </column>
+    <column id="76" parent="10" name="EMAIL">
+      <DataType>VARCHAR2(25 byte)|0</DataType>
+    </column>
+    <column id="77" parent="10" name="PHONE_NUMBER">
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="78" parent="10" name="HIRE_DATE">
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="79" parent="10" name="JOB_ID">
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="80" parent="10" name="SALARY">
+      <DataType>NUMBER(8,2)|0</DataType>
+    </column>
+    <column id="81" parent="10" name="COMMISSION_PCT">
+      <DataType>NUMBER(2,2)|0</DataType>
+    </column>
+    <column id="82" parent="10" name="MANAGER_ID">
+      <DataType>NUMBER(6)|0</DataType>
+    </column>
+    <column id="83" parent="10" name="DEPARTMENT_ID">
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="84" parent="11" name="VC2">
+      <DataType>VARCHAR2(60 byte)|0</DataType>
+    </column>
+    <column id="85" parent="11" name="TS">
+      <DataType>TIMESTAMP(6)|0</DataType>
+      <DefaultExpression>NULL
+</DefaultExpression>
+    </column>
+    <column id="86" parent="12" name="ID">
+      <Comment>主键:ID</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="87" parent="12" name="NAME">
+      <Comment>药材:中文名称</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="88" parent="12" name="YX">
+      <Comment>药性</Comment>
+      <DataType>NVARCHAR2(100)|0</DataType>
+    </column>
+    <column id="89" parent="12" name="NAME_BM">
+      <Comment>药材:别称|别名</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="90" parent="12" name="NAME_LDM">
+      <Comment>药材:拉丁学名</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="91" parent="12" name="NAME_EMF">
+      <Comment>药材:二名法</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="92" parent="12" name="NAME_MMZ">
+      <Comment>命名者</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="93" parent="12" name="DX">
+      <Comment>毒性</Comment>
+      <DataType>VARCHAR2(40)|0</DataType>
+    </column>
+    <column id="94" parent="12" name="SZHJ">
+      <Comment>生长环境分布</Comment>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="95" parent="12" name="STXX">
+      <Comment>生态习性</Comment>
+      <DataType>VARCHAR2(200)|0</DataType>
+    </column>
+    <column id="96" parent="12" name="TR">
+      <Comment>土壤</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="97" parent="12" name="HB">
+      <Comment>海拔</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="98" parent="12" name="HQ">
+      <Comment>花期</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="99" parent="12" name="GQ">
+      <Comment>果期</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="100" parent="12" name="CSQ">
+      <Comment>采收期</Comment>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="101" parent="12" name="RJ">
+      <Comment>入经</Comment>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="102" parent="12" name="QW">
+      <Comment>气|味</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="103" parent="12" name="HXCF">
+      <Comment>化学成分</Comment>
+      <DataType>VARCHAR2(500)|0</DataType>
+    </column>
+    <column id="104" parent="12" name="YCJB">
+      <Comment>药材鉴别</Comment>
+      <DataType>VARCHAR2(1000)|0</DataType>
+    </column>
+    <column id="105" parent="12" name="YYBW">
+      <Comment>药用部位</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="106" parent="12" name="YYJZ">
+      <Comment>药用价值|功效</Comment>
+      <DataType>VARCHAR2(1000)|0</DataType>
+    </column>
+    <column id="107" parent="12" name="REMARK">
+      <Comment>说明</Comment>
+      <DataType>CLOB|0</DataType>
+    </column>
+    <column id="108" parent="12" name="TIME_STAR">
+      <Comment>添加时间</Comment>
+      <DataType>TIMESTAMP(6) WITH LOCAL TIME ZONE|0</DataType>
+    </column>
+    <column id="109" parent="12" name="TIME_CHANG">
+      <Comment>修改时间</Comment>
+      <DataType>TIMESTAMP(6) WITH LOCAL TIME ZONE|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
