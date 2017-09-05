@@ -176,7 +176,7 @@ public abstract class ServiceImpl<DAO extends Dao<T, ID>, T extends PersistentOb
 	protected void verifyRows(int updateRows, int rows, String message) {
 		if (updateRows != rows) {
 			DaoException e = new DaoException(message);
-			LOGGER.error("need update is {}, but real update rows is {}.", rows, updateRows, e);
+			//LOGGER.error("need update is {}, but real update rows is {}.", rows, updateRows, e);
 			throw e;
 		}
 	}
