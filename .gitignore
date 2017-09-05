@@ -1,11 +1,15 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-/.project
-/.idea
+#/.idea/compiler.xml 项目编译JDK级别
+#由pom.xml中的maven-compiler-plugin 插件指定
+# <plugin>
+#     <groupId>org.apache.maven.plugins</groupId>
+#     <artifactId>maven-compiler-plugin</artifactId>
+#     <version>3.3</version>
+#     <configuration>
+#         <source>1.8</source>
+#         <target>1.8</target>
+#         <encoding>utf-8</encoding>
+#     </configuration>
+# </plugin>
 
 #编译目录
 ActiveMQ/target/generated-sources/
@@ -26,3 +30,14 @@ springdata/target/generated-sources/
 springdata/target/generated-test-sources/
 springmvc/target/generated-sources/
 springmvc/target/generated-test-sources/
+
+
+# Package Files #
+*.class
+*.jar
+*.war
+*.ear
+
+#项目目录
+/.project
+/.idea
