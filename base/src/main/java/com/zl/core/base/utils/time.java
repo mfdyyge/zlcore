@@ -60,7 +60,7 @@ Timestamp t ;
 
 	     Date smp_format_ymd=smp_format.parse(Ymd);
 	     
-	     java.utils.Timestamp tsp=new java.utils.Timestamp(smp_format_ymd);
+	     java.getSql.Timestamp tsp=new java.getSql.Timestamp(smp_format_ymd);
 	     
 	     System.out.println("tsp:"+smp_format.format(tsp));
 return date_long;
@@ -419,7 +419,7 @@ return Long.valueOf(time);
 	     Date smp_format_ymd_date=smp_format.parse("12/01/1900");
 	     
 	    // long time_long=util.time.get_mdy_int("MM/dd/yyyy", "12/01/1900");
-	     java.utils.Timestamp tsp=new java.utils.Timestamp(smp_format_ymd_date.getTime());
+	     java.getSql.Timestamp tsp=new java.getSql.Timestamp(smp_format_ymd_date.getTime());
 	    
 	     
 	     

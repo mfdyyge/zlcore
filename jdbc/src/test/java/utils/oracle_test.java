@@ -1,7 +1,7 @@
 package utils;
 
-import com.zl.core.jdbc.Oracle;
-import com.zl.core.jdbc.oracle_mysql.properties.Table;
+import com.zl.core.jdbc.generator.Oracle;
+import com.zl.core.jdbc.generator.Table;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 

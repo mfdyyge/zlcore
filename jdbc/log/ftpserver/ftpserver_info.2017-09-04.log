@@ -1,0 +1,849 @@
+2017-09-03 12:20:01,969 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-03 12:20:01,981 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 12:20:01,981 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-03 12:20:01,984 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-03 12:20:01,986 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = 
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-03 12:21:00,099 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-03 12:21:00,102 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 12:21:00,102 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-03 12:21:00,104 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-03 12:21:00,104 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-03 12:21:00,105 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 12:23:01,726 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 12:23:01,729 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 12:23:01,730 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 12:23:01,732 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 12:23:01,733 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 12:23:01,734 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 12:26:09,857 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 12:26:09,861 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 12:26:09,861 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 12:26:09,863 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 12:26:09,863 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 12:26:09,864 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 12:49:08,389 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 12:49:08,391 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 12:49:08,392 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 12:49:08,393 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 12:49:08,393 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 12:49:08,394 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 12:49:58,605 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 12:49:58,607 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 12:49:58,608 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 12:49:58,609 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 12:49:58,609 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 12:49:58,610 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:03:13,689 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:03:13,692 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:03:13,692 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:03:13,693 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:03:13,694 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:03:13,694 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:07:00,975 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:07:00,977 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:07:00,977 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:07:00,979 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:07:00,979 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:07:00,979 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:09:49,877 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:09:49,880 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:09:49,880 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:09:49,881 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:09:49,882 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:09:49,882 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:12:26,941 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:12:26,944 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:12:26,944 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:12:26,945 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:12:26,945 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:12:26,946 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:13:14,423 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:13:14,425 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:13:14,425 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:13:14,426 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:13:14,427 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:13:14,427 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:14:04,715 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:14:04,718 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:14:04,718 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:14:04,720 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:14:04,720 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:14:04,720 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:15:38,589 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:15:38,591 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:15:38,591 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:15:38,592 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:15:38,593 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:15:38,593 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:15:54,951 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-03 13:15:54,954 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:15:54,955 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:15:54,956 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:15:54,956 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:15:54,957 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 13:44:58,476 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-03 13:44:58,479 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 13:44:58,479 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 13:44:58,481 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 13:44:58,481 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 13:44:58,481 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-03 13:44:58,482 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 15:32:46,936 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-03 15:32:46,939 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 15:32:46,939 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 15:32:46,941 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 15:32:46,941 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 15:32:46,941 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-03 15:32:46,941 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 15:38:00,412 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-03 15:38:00,415 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 15:38:00,415 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 15:38:00,416 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 15:38:00,416 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 15:38:00,417 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-03 15:38:00,417 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 15:38:46,258 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-03 15:38:46,262 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 15:38:46,262 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 15:38:46,264 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 15:38:46,265 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 15:38:46,265 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-03 15:38:46,265 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 15:40:51,348 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-03 15:40:51,351 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-03 15:40:51,351 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-03 15:40:51,353 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-03 15:40:51,353 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-03 15:40:51,354 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-03 15:40:51,354 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-03 15:40:51,808 [INFO ]  (page_test.java.page_test:47) -  | 2 | null
+2017-09-03 15:40:51,808 [INFO ]  (page_test.java.page_test:47) -  | 3 | null
+2017-09-03 15:40:51,808 [INFO ]  (page_test.java.page_test:47) -  | 4 | null
+2017-09-03 15:40:51,809 [INFO ]  (page_test.java.page_test:47) -  | 5 | null
+2017-09-04 16:50:50,646 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 16:50:50,650 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 16:50:50,650 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-04 16:50:50,652 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-04 16:50:50,652 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 16:50:50,653 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:08:14,539 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 17:08:14,543 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:08:14,543 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-04 17:08:14,545 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-04 17:08:14,545 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 17:08:14,546 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:10:25,329 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 17:10:25,332 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:10:25,332 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-04 17:10:25,334 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-04 17:10:25,334 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 17:10:25,335 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:10:51,507 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 17:10:51,510 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:10:51,510 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db_act
+2017-09-04 17:10:51,512 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db_act.properties
+2017-09-04 17:10:51,512 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 17:10:51,513 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:11:32,369 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:11:32,371 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:11:32,372 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:11:32,373 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:11:32,373 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:11:32,374 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-04 17:11:32,374 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:11:32,492 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 17:11:32,492 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-04 17:11:32,492 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdb_act
+2017-09-04 17:11:32,492 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:11:32,493 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:11:32,971 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-04 17:11:42,224 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:11:42,227 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:11:42,227 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:11:42,229 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:11:42,229 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:11:42,229 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-04 17:11:42,230 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:11:42,349 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 17:11:42,350 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-04 17:11:42,350 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdb_act
+2017-09-04 17:11:42,350 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:11:42,350 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:11:42,690 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-04 17:12:32,869 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:12:32,872 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:12:32,872 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:12:32,875 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:12:32,875 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:12:32,876 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-04 17:12:32,877 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:12:33,010 [INFO ]  (DsFactory.java.<init>:78) - db_act
+2017-09-04 17:12:33,010 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-04 17:12:33,011 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdb_act
+2017-09-04 17:12:33,011 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:12:33,011 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:12:33,366 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-04 17:14:36,309 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:14:36,313 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:14:36,313 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:14:36,315 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:14:36,315 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-04 17:14:36,315 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-04 17:14:36,316 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:19:34,189 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:19:34,192 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:19:34,192 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:19:34,193 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:19:34,194 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:19:34,194 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:19:34,849 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,850 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,851 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:19:34,852 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,853 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,853 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,854 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,855 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,855 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,856 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,859 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,860 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,860 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,861 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,862 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,862 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,863 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,864 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,864 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,865 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,866 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:19:34,866 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 17:19:34,867 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:19:34,868 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:24:10,218 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:24:10,223 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:24:10,223 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:24:10,226 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:24:10,227 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:24:10,228 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:24:13,975 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-04 17:24:14,042 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,042 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,043 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:24:14,043 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,044 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,044 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,045 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,045 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,046 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,047 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,047 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,048 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,048 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,049 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,049 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,050 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,050 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,050 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,051 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,051 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,052 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:24:14,052 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 17:24:14,052 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:24:14,053 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:26:06,421 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:26:06,425 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:26:06,425 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:26:06,428 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:26:06,428 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 17:26:06,428 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-04 17:26:06,429 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:26:10,158 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-04 17:26:10,162 [INFO ]  (Test_DataSourceFactory.java.getFrist:62) - SELECT to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')	         as 当月最后一天 FROM dual 
+2017-09-04 17:26:10,162 [INFO ]  (Test_DataSourceFactory.java.getFrist:63) - SELECT to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 FROM dual 
+2017-09-04 17:26:10,162 [INFO ]  (Test_DataSourceFactory.java.getFrist:65) - 行>getConnection = oracle.jdbc.driver.T4CConnection@dd3b207
+2017-09-04 17:26:10,267 [INFO ]  (Test_DataSourceFactory.java.getFrist:68) - 行>[2017-08-01, 2017-08-31]
+2017-09-04 17:26:10,269 [INFO ]  (Test_DataSourceFactory.java.getFrist:71) - 行>[2017-09-01, 2017-09-30]
+2017-09-04 17:27:40,123 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:27:40,126 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:27:40,127 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:27:40,129 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:27:40,129 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 17:27:40,130 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-04 17:27:40,130 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:27:43,865 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-04 17:27:43,869 [INFO ]  (Test_DataSourceFactory.java.getFrist:62) - SELECT to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')	         as 当月最后一天 FROM dual 
+2017-09-04 17:27:43,869 [INFO ]  (Test_DataSourceFactory.java.getFrist:63) - SELECT to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 FROM dual 
+2017-09-04 17:27:43,869 [INFO ]  (Test_DataSourceFactory.java.getFrist:65) - 行>getConnection = oracle.jdbc.driver.T4CConnection@2b4a2ec7
+2017-09-04 17:27:43,924 [INFO ]  (Test_DataSourceFactory.java.getFrist:68) - 行>[2017-08-01, 2017-08-31]
+2017-09-04 17:27:43,925 [INFO ]  (Test_DataSourceFactory.java.getFrist:71) - 行>[2017-09-01, 2017-09-30]
+2017-09-04 17:31:01,988 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-04 17:31:01,992 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:31:01,992 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-04 17:31:01,994 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-04 17:31:01,994 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-04 17:31:01,995 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-04 17:31:01,995 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:31:05,789 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-04 17:31:05,792 [INFO ]  (Test_DataSourceFactory.java.getFrist:62) - SELECT to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')	         as 当月最后一天 FROM dual 
+2017-09-04 17:31:05,793 [INFO ]  (Test_DataSourceFactory.java.getFrist:63) - SELECT to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 FROM dual 
+2017-09-04 17:31:05,793 [INFO ]  (Test_DataSourceFactory.java.getFrist:65) - 行>getConnection = oracle.jdbc.driver.T4CConnection@2b4a2ec7
+2017-09-04 17:31:05,844 [INFO ]  (Test_DataSourceFactory.java.getFrist:68) - 行>[2017-08-01, 2017-08-31]
+2017-09-04 17:31:05,845 [INFO ]  (Test_DataSourceFactory.java.getFrist:71) - 行>[2017-09-01, 2017-09-30]
+2017-09-04 17:33:24,171 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:33:24,175 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:33:24,175 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:33:24,177 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:33:24,177 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:33:24,177 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:33:28,020 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-04 17:33:28,067 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,067 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,068 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:33:28,068 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,069 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,069 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,069 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,070 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,070 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,071 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,072 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,072 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,072 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,073 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,073 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,073 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,074 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,074 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,074 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,075 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,075 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:33:28,075 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 17:33:28,076 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:33:28,076 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:33:57,338 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:33:57,341 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:33:57,341 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:33:57,343 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:33:57,343 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:33:57,344 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:33:58,077 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,078 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,079 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:33:58,081 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,082 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,083 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,084 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,085 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,086 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,087 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,090 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,091 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,092 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,093 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,094 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,095 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,096 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,096 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,097 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,098 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,099 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:33:58,099 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 17:33:58,100 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:33:58,101 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:39:22,282 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:39:22,286 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:39:22,286 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:39:22,289 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:39:22,289 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:39:22,290 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:39:23,026 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,026 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,027 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:39:23,028 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,029 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,029 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,030 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,031 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,032 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,032 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,037 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,038 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,039 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,040 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,040 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,041 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,041 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,042 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,042 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,043 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,044 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:39:23,045 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 17:39:23,046 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:39:23,047 [INFO ]  (Oracle.java.getColumns:72) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:39:23,095 [INFO ]  (oracle_test.java.Oracle_getTable:30) - Table [clazzName=null, columns=[Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB], Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE], Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]], fks=null, pk=Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=null, nullable=false, size=0, table=null, type=null], tableName=ZY, tableType=null]
+2017-09-04 17:48:11,631 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:48:11,633 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:48:11,634 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:48:11,635 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:48:11,636 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:48:11,636 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:48:12,325 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,326 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,327 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:48:12,328 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,329 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,331 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,332 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,333 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,334 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,335 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,338 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,339 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,339 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,341 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,342 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,343 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,345 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,346 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,347 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,349 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,350 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:48:12,351 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 17:48:12,352 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:48:12,353 [INFO ]  (Oracle.java.getColumns:73) - Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]
+2017-09-04 17:48:12,409 [INFO ]  (oracle_test.java.Oracle_getTable:30) - Table [clazzName=null, columns=[Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=ID, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=DX, nullable=true, size=40, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=TR, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HB, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=QW, nullable=true, size=50, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2], Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=REMARK, nullable=true, size=4000, table=null, type=CLOB], Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_STAR, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE], Column [comment=null, defaultValue=null, digits=6, fieldName=null, javaType=null, name=TIME_CHANG, nullable=true, size=11, table=null, type=TIMESTAMP(6) WITH LOCAL TIME ZONE]], fks=null, pk=Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=null, nullable=false, size=0, table=null, type=null], tableName=ZY, tableType=null]
+2017-09-04 17:58:45,667 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 17:58:45,671 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 17:58:45,671 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 17:58:45,674 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 17:58:45,674 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 17:58:45,675 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 17:58:46,379 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=id, javaType=String, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,380 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=name, javaType=String, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,381 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=yx, javaType=String, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 17:58:46,382 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameBm, javaType=String, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,383 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameLdm, javaType=String, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,384 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameEmf, javaType=String, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,386 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameMmz, javaType=String, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,387 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=dx, javaType=String, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,388 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=szhj, javaType=String, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,389 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=stxx, javaType=String, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,393 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=tr, javaType=String, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,394 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=hb, javaType=String, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,396 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=hq, javaType=String, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,397 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=gq, javaType=String, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,398 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=csq, javaType=String, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,399 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=rj, javaType=String, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,399 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=qw, javaType=String, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,400 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=hxcf, javaType=String, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,401 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=ycjb, javaType=String, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,402 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=yybw, javaType=String, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,403 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=yyjz, javaType=String, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 17:58:46,403 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=remark, javaType=String, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 18:05:48,973 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 18:05:48,976 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 18:05:48,976 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 18:05:48,978 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 18:05:48,978 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 18:05:48,978 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 18:06:14,075 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 18:06:14,078 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 18:06:14,078 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 18:06:14,080 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 18:06:14,080 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 18:06:14,080 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 18:06:14,737 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=id, javaType=String, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,739 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=name, javaType=String, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,740 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=yx, javaType=String, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 18:06:14,741 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameBm, javaType=String, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,743 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameLdm, javaType=String, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,744 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameEmf, javaType=String, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,746 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=nameMmz, javaType=String, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,747 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=dx, javaType=String, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,748 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=szhj, javaType=String, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,749 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=stxx, javaType=String, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,752 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=tr, javaType=String, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,754 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=hb, javaType=String, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,755 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=hq, javaType=String, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,755 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=gq, javaType=String, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,756 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=csq, javaType=String, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,757 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=rj, javaType=String, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,758 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=qw, javaType=String, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,760 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=hxcf, javaType=String, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,761 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=ycjb, javaType=String, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,762 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=yybw, javaType=String, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,763 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=yyjz, javaType=String, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 18:06:14,763 [INFO ]  (Oracle.java.getColumns:75) - Column [comment=null, defaultValue=null, digits=0, fieldName=remark, javaType=String, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]
+2017-09-04 18:10:00,307 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-04 18:10:00,311 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-04 18:10:00,311 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbjpa
+2017-09-04 18:10:00,313 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbjpa.properties
+2017-09-04 18:10:00,313 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-04 18:10:00,314 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-04 18:10:00,980 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=ID, javaType=String, name=ID, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,982 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=NAME, javaType=String, name=NAME, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,982 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=YX, javaType=String, name=YX, nullable=true, size=100, table=null, type=NVARCHAR2]
+2017-09-04 18:10:00,983 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=NAME_BM, javaType=String, name=NAME_BM, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,984 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=NAME_LDM, javaType=String, name=NAME_LDM, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,985 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=NAME_EMF, javaType=String, name=NAME_EMF, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,986 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=NAME_MMZ, javaType=String, name=NAME_MMZ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,987 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=DX, javaType=String, name=DX, nullable=true, size=40, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,988 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=SZHJ, javaType=String, name=SZHJ, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,989 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=STXX, javaType=String, name=STXX, nullable=true, size=200, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,993 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=TR, javaType=String, name=TR, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,994 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=HB, javaType=String, name=HB, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,994 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=HQ, javaType=String, name=HQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,995 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=GQ, javaType=String, name=GQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,996 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=CSQ, javaType=String, name=CSQ, nullable=true, size=20, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,996 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=RJ, javaType=String, name=RJ, nullable=true, size=100, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,997 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=QW, javaType=String, name=QW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 18:10:00,999 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=HXCF, javaType=String, name=HXCF, nullable=true, size=500, table=null, type=VARCHAR2]
+2017-09-04 18:10:01,000 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=YCJB, javaType=String, name=YCJB, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 18:10:01,000 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=YYBW, javaType=String, name=YYBW, nullable=true, size=50, table=null, type=VARCHAR2]
+2017-09-04 18:10:01,001 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=YYJZ, javaType=String, name=YYJZ, nullable=true, size=1000, table=null, type=VARCHAR2]
+2017-09-04 18:10:01,002 [INFO ]  (Oracle.java.getColumns:76) - Column [comment=null, defaultValue=null, digits=0, fieldName=REMARK, javaType=String, name=REMARK, nullable=true, size=4000, table=null, type=CLOB]

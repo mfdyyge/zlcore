@@ -1,6 +1,8 @@
 package com.zl.core.base.utils;
 
 
+import java.util.UUID;
+
 public class Random {
 
 
@@ -35,8 +37,16 @@ public class Random {
             Data temp1 = new Data(i, 0); 
             intarray_dc[i] = temp1; 
         }
-    } 
- 
+    }
+
+    /**
+     *
+     * @return
+     */
+    public static String createUUID() {
+        return UUID.randomUUID().toString();
+    }
+
     /*** 
      * 产生数字组成的密码 
      *  

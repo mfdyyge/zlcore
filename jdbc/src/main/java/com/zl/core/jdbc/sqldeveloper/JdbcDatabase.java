@@ -3,11 +3,11 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   JdbcDatabase.java
 
-package com.zl.core.jdbc;
+package com.zl.core.jdbc.sqldeveloper;
 
 
-import com.zl.core.jdbc.orcl.Database;
-import com.zl.core.jdbc.orcl.Schema;
+import com.zl.core.jdbc.sqldeveloper.properties.Database;
+import com.zl.core.jdbc.sqldeveloper.properties.Schema;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;

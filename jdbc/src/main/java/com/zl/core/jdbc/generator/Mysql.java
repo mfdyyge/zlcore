@@ -1,9 +1,7 @@
-package com.zl.core.jdbc;
+package com.zl.core.jdbc.generator;
 
 
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.oracle_mysql.properties.Table;
-import com.zl.core.jdbc.oracle_mysql.properties.Column;
 
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;

@@ -3,10 +3,10 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DynamicColumnImpl.java
 
-package com.zl.core.jdbc.orcl.impl;
+package com.zl.core.jdbc.sqldeveloper.properties.impl;
 
-import com.zl.core.jdbc.orcl.DynamicColumn;
-import com.zl.core.jdbc.orcl.Table;
+import com.zl.core.jdbc.sqldeveloper.properties.DynamicColumn;
+import com.zl.core.jdbc.sqldeveloper.properties.Table;
 
 import java.io.Serializable;
 import java.util.Locale;

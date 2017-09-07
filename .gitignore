@@ -1,3 +1,16 @@
+
+
+# ******************************************************项目操作[GIT合并上传本地项目 ]
+#   先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull
+
+#   因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在git pull，这句代码是在git 2.9.2版本发生的，
+#   最新的版本需要添加:[ --allow-unrelated-histories ]
+
+#   假如我们的源是origin，分支是master，
+#   需要这样写:$ git pull origin master --allow-unrelated-histories
+#   需要知道，我们的源可以是本地的路径
+# ******************************************************END
+
 #/.idea/compiler.xml 项目编译JDK级别
 #由pom.xml中的maven-compiler-plugin 插件指定
 # <plugin>
@@ -11,33 +24,26 @@
 #     </configuration>
 # </plugin>
 
-#编译目录
-ActiveMQ/target/generated-sources/
-ActiveMQ/target/generated-test-sources/
-Freemarker/target/generated-sources/
-Freemarker/target/generated-test-sources/
-activity/target/generated-sources/
-activity/target/generated-test-sources/
-base/target/generated-sources/
-hibernate/target/generated-sources/
-jdbc/target/generated-sources/
-jdbc/target/generated-test-sources/
-redis/target/generated-sources/
-redis/target/generated-test-sources/
-shiro/target/generated-sources/
-shiro/target/generated-test-sources/
-springdata/target/generated-sources/
-springdata/target/generated-test-sources/
-springmvc/target/generated-sources/
-springmvc/target/generated-test-sources/
+# ******************************************************[ 项目目录 ]
+/.project
+/.idea
 
-
-# Package Files #
+# ******************************************************[ Package Files ]
 *.class
 *.jar
 *.war
 *.ear
 
-#项目目录
-/.project
-/.idea
+# ******************************************************[ 编译目录 ]
+ActiveMQ/target
+Freemarker/target
+activity/target
+base/target
+hibernate/target
+jdbc/target
+redis/target
+shiro/target
+springdata/target
+springmvc/target
+
+

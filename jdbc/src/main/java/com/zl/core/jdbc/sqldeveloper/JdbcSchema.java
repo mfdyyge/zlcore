@@ -1,9 +1,9 @@
-package com.zl.core.jdbc;
+package com.zl.core.jdbc.sqldeveloper;
 
 
-import com.zl.core.jdbc.orcl.Schema;
-import com.zl.core.jdbc.orcl.Table;
-import com.zl.core.jdbc.orcl.Database;
+import com.zl.core.jdbc.sqldeveloper.properties.Schema;
+import com.zl.core.jdbc.sqldeveloper.properties.Table;
+import com.zl.core.jdbc.sqldeveloper.properties.Database;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

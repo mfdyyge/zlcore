@@ -3,7 +3,7 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   Column.java
 
-package com.zl.core.jdbc.orcl;
+package com.zl.core.jdbc.sqldeveloper.properties;
 
 
 // Referenced classes of package com.zl.orcl.db:
