@@ -80,9 +80,64 @@ $ git push origin :branch-name          //2.推到远程【必须推送到远程
 -----------------------------------------------------------------------------------------------------------------
 *》注意:先提交本地更改
 
+-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ 项目操作[切换本地版本]
+-----------------------------------------------------------------------------------------------------------------
+-- http://blog.csdn.net/xiaoputao0903/article/details/23995055
+3.*(no branch)
+
+        在执行命令git branch查看分支的时候，如果出现*(no branch)，则表示不在任何分支上进行工作。出现这种情况我也是在几次不经意之间，用git checkou回溯版本的时候，
+        用git pull或者merge和rebase的时候会出现*(no branch)。目前我在rebase的时候都是在*(no branch)上进行的，当衍合完成后自动切到master上，我觉得这是个正常现象，
+        但是其他几种方式就不正常了，具体原因我也不是很清楚。
+
+        由于*(no branch)表示不在任何分支上进行，而有时我们不知道自己是在*(no branch)上进行操作的，而且可能我们已经进行很久的开发工作了，已经提交好几个版本的代码了，
+        突然执行git branch发现在*(no branch)上，是不是一件很恐怖的事啊。
+
+        当然经过提交的版本数据都会以快照的方式被记录在commit对象存在.git目录的objects子目录里，那么当我们发现是在*(no branch)时应该怎么解决呢。有两种情况。
+
+        第一种情况是我们还没离开*(no branch)，这个时候，我们可以执行git checkout -b mybranch命令，这个时候会创建新分支mybranch，并将*(no branch)里面的数据都checkout到mybranch分支上，
+        然后我们再在mybranch上开发，最终合并到master上。
+
+        第二种情况就不乐观了，我们已经离开*(no branch)了，然后发现用git log都找不到之前的提交了，当然了，在*(no branch)上提交的，在别的分支上怎么找的到在它上面提交的数据呢。
+        不过也许还有救，如果git还没有执行git gc，那么我们可以通过执行git reflog找到在*(no branch)上提交的数据，然后根据找到的commit的id来恢复该数据，这也是最后唯一的希望了，
+        如果git已经执行了git gc或者你手贱自己执行了git gc，那么就真的不能在一起愉快的玩耍了。
+
+        所以在执行过git checkout恢复过以前的数据或者是做过合并分支的操作，那么不要吝啬你们的git branch，敲这个命令又不要钱，却能让你之后的提交高枕无忧。
+------------------------------------------------------------------------------------------------------------------------
+Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
+$ git checkout origin 2.0.0
+error: pathspec '2.0.0' did not match any file(s) known to git.
+
+Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
+$ git branch -a
+* (no branch, rebasing 2.0.0)    //出现这个[ no branch]
+  2.0.0
+  master
+  temp
+  remotes/origin/1.0.0.20170808
+  remotes/origin/2.0.0
+  remotes/origin/2.0.0.0904
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
+$ git checkout -b test2.0.0    //建立本地分支
+Switched to a new branch 'test2.0.0'
+
+Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
+$ git branch -a
+  2.0.0
+  master
+  temp
+* test2.0.0
+  remotes/origin/1.0.0.20170808
+  remotes/origin/2.0.0
+  remotes/origin/2.0.0.0904
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
 
 -----------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------- 项目操作[切换版本]
+------------------------------------------------------------------------------------ 项目操作[切换远程版本]
 -----------------------------------------------------------------------------------------------------------------
 
 1》前必须先提交本地更改【】
