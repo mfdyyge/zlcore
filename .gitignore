@@ -1,13 +1,28 @@
-*.class
 
+##############
 # Package Files #
+*.class
 *.jar
 *.war
-*.ear
-/.project
-/.idea
-.idea/**
+.idea
+*.versionsBackup
 
+
+##############[.iml]
+ActiveMQ/ActiveMQ.iml
+activity/activity.iml
+base/base.iml
+Freemarker/Freemarker.iml
+hibernate/hibernate.iml
+jdbc/jdbc.iml
+redis/redis.iml
+shiro/shiro.iml
+springdata/springdata.iml
+springmvc/springmvc.iml
+
+
+
+############## [target]
 ActiveMQ/target/generated-sources/
 ActiveMQ/target/generated-test-sources/
 Freemarker/target/generated-sources/
