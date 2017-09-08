@@ -4,22 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" line="53" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/test/java/wb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/Freemarker.iml" afterPath="$PROJECT_DIR$/Freemarker/Freemarker.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/activity.iml" afterPath="$PROJECT_DIR$/activity/activity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/hibernate.iml" afterPath="$PROJECT_DIR$/hibernate/hibernate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/redis.iml" afterPath="$PROJECT_DIR$/redis/redis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/shiro.iml" afterPath="$PROJECT_DIR$/shiro/shiro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/springdata.iml" afterPath="$PROJECT_DIR$/springdata/springdata.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zlcore.iml" afterPath="$PROJECT_DIR$/zlcore.iml" />
-    </list>
+    <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="" />
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,8 +117,8 @@
       <file leaf-file-name="wb.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/src/test/java/wb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-537">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="296">
+              <caret line="17" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -1134,7 +1119,7 @@
       <workItem from="1504525003032" duration="70000" />
       <workItem from="1504525190102" duration="35000" />
       <workItem from="1504525236368" duration="1284000" />
-      <workItem from="1504840831730" duration="3163000" />
+      <workItem from="1504840831730" duration="3257000" />
     </task>
     <servers />
   </component>
@@ -1171,11 +1156,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74972000" />
+    <option name="totallyTimeSpent" value="75066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1188,7 +1173,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1943557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1943557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21884984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1536,8 +1521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/src/test/java/wb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="17" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
