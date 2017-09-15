@@ -9,16 +9,16 @@
 
 
 ##############[.iml]
-ActiveMQ/ActiveMQ.iml
-activity/activity.iml
-base/base.iml
-Freemarker/Freemarker.iml
-hibernate/hibernate.iml
-jdbc/jdbc.iml
-redis/redis.iml
-shiro/shiro.iml
-springdata/springdata.iml
-springmvc/springmvc.iml
+#ActiveMQ/ActiveMQ.iml
+#activity/activity.iml
+#base/base.iml
+#Freemarker/Freemarker.iml
+#hibernate/hibernate.iml
+#jdbc/jdbc.iml
+#redis/redis.iml
+#shiro/shiro.iml
+#springdata/springdata.iml
+#springmvc/springmvc.iml
 
 
 
@@ -42,3 +42,4 @@ springdata/target/generated-sources/
 springdata/target/generated-test-sources/
 springmvc/target/generated-sources/
 springmvc/target/generated-test-sources/
+base/target/generated-test-sources/

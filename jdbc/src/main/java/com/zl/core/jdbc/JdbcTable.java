@@ -5,7 +5,7 @@
 
 package com.zl.core.jdbc;
 
-import com.zl.core.jdbc.orcl.*;
+
 import com.zl.core.jdbc.sqldeveloper.orcl.*;
 import com.zl.core.jdbc.sqldeveloper.orcl.impl.RelationshipImpl;
 import com.zl.core.jdbc.sqldeveloper.orcl.impl.ColumnImpl;

@@ -24,8 +24,8 @@ public class JdbcSchema
     private static Connection connection;
     private static Connection connection_jcxt;
 
-    private static DsFactory dsFactory=new DsFactory();
-    private static DsFactory dsFactory_jcxt=new DsFactory("dbjpa");
+    //private static DsFactory dsFactory=new DsFactory();
+    private static DsFactory dsFactory=new DsFactory("dbtt");
 
 
     static
@@ -74,7 +74,7 @@ public class JdbcSchema
         JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
         String dbName=jdbcDatabase.getSchemaName(0);
 
-        com.zl.core.jdbc.JdbcSchema jdbcSchema=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,dbName);
+        com.zl.core.jdbc.JdbcSchema jdbcSchema=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,"TT");
         System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
 
 
