@@ -25,8 +25,8 @@
 
 # ******************************************************[ 项目目录 ]
 /.project
-/.idea
-
+!/.idea
+!/.idea/workspace.xml
 # ******************************************************[ Package Files ]
 *.class
 *.jar
@@ -44,5 +44,6 @@ redis/target
 shiro/target
 springdata/target
 springmvc/target
+
 
 
