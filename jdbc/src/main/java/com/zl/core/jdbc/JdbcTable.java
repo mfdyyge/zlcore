@@ -6,8 +6,9 @@
 package com.zl.core.jdbc;
 
 import com.zl.core.jdbc.orcl.*;
-import com.zl.core.jdbc.orcl.impl.RelationshipImpl;
-import com.zl.core.jdbc.orcl.impl.ColumnImpl;
+import com.zl.core.jdbc.sqldeveloper.orcl.*;
+import com.zl.core.jdbc.sqldeveloper.orcl.impl.RelationshipImpl;
+import com.zl.core.jdbc.sqldeveloper.orcl.impl.ColumnImpl;
 import org.apache.log4j.Logger;
 
 import java.beans.PropertyChangeListener;
@@ -183,7 +184,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
 
     protected Column[] createColumns()
     {
-        com.zl.core.jdbc.orcl.Column[] columns = null;
+        Column[] columns = null;
 
         try {
             ResultSet rs = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);

@@ -2,9 +2,9 @@ package com.zl.core.jdbc;
 
 
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.oracle_mysql.properties.Column;
-import com.zl.core.jdbc.oracle_mysql.properties.ConvertHandler;
-import com.zl.core.jdbc.oracle_mysql.properties.Table;
+import com.zl.core.jdbc.generator.orcl.Column;
+import com.zl.core.jdbc.generator.orcl.ConvertHandler;
+import com.zl.core.jdbc.generator.orcl.Table;
 import org.apache.log4j.Logger;
 
 import java.sql.DatabaseMetaData;

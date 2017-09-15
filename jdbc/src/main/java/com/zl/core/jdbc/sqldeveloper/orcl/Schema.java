@@ -1,4 +1,4 @@
-package com.zl.core.jdbc.orcl;
+package com.zl.core.jdbc.sqldeveloper.orcl;
 
 import java.util.Locale;
 

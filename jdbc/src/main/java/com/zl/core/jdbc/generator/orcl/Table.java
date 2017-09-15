@@ -1,4 +1,4 @@
-package com.zl.core.jdbc.oracle_mysql.properties;
+package com.zl.core.jdbc.generator.orcl;
 
 import java.util.List;
 

@@ -3,11 +3,11 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   RelationshipImpl.java
 
-package com.zl.core.jdbc.orcl.impl;
+package com.zl.core.jdbc.sqldeveloper.orcl.impl;
 
 import java.util.Locale;
-import com.zl.core.jdbc.orcl.Column;
-import com.zl.core.jdbc.orcl.Relationship;
+import com.zl.core.jdbc.sqldeveloper.orcl.Column;
+import com.zl.core.jdbc.sqldeveloper.orcl.Relationship;
 
 public final class RelationshipImpl extends Relationship
 {

@@ -3,10 +3,10 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DataDescProviderImpl.java
 
-package com.zl.core.jdbc.orcl.impl;
+package com.zl.core.jdbc.sqldeveloper.orcl.impl;
 
-import com.zl.core.jdbc.orcl.DataDescriptor;
-import com.zl.core.jdbc.orcl.DataDescriptorProvider;
+import com.zl.core.jdbc.sqldeveloper.orcl.DataDescriptor;
+import com.zl.core.jdbc.sqldeveloper.orcl.DataDescriptorProvider;
 
 import java.beans.PropertyChangeListener;
 

@@ -3,14 +3,14 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DataDescriptorImpl.java
 
-package com.zl.core.jdbc.orcl.impl;
+package com.zl.core.jdbc.sqldeveloper.orcl.impl;
 
 import java.io.Serializable;
 import java.util.Locale;
 
-import com.zl.core.jdbc.orcl.DataDescriptor;
+import com.zl.core.jdbc.sqldeveloper.orcl.DataDescriptor;
 
-public class DataDescriptorImpl extends DataDescriptor    implements Serializable
+public class DataDescriptorImpl extends DataDescriptor implements Serializable
 {
     //protected static Logger logger = Logger.getLogger();
 

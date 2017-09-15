@@ -3,7 +3,7 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   DynamicColumn.java
 
-package com.zl.core.jdbc.orcl;
+package com.zl.core.jdbc.sqldeveloper.orcl;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

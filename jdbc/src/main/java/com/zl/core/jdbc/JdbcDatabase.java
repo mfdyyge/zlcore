@@ -6,8 +6,8 @@
 package com.zl.core.jdbc;
 
 
-import com.zl.core.jdbc.orcl.Database;
-import com.zl.core.jdbc.orcl.Schema;
+import com.zl.core.jdbc.sqldeveloper.orcl.Database;
+import com.zl.core.jdbc.sqldeveloper.orcl.Schema;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;

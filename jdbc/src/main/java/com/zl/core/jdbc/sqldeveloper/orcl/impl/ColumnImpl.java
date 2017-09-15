@@ -3,10 +3,10 @@
 // Decompiler options: packimports(3) 
 // Source File Name:   ColumnImpl.java
 
-package com.zl.core.jdbc.orcl.impl;
+package com.zl.core.jdbc.sqldeveloper.orcl.impl;
 
-import com.zl.core.jdbc.orcl.Column;
-import com.zl.core.jdbc.orcl.Table;
+import com.zl.core.jdbc.sqldeveloper.orcl.Column;
+import com.zl.core.jdbc.sqldeveloper.orcl.Table;
 
 import java.io.Serializable;
 import java.util.Locale;
