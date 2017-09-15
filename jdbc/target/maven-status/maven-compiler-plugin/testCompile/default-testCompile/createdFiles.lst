@@ -8,6 +8,7 @@ queryrunner\Test_AdminQueryDao.class
 dbtools\query\filter\InParameterizedFilterTest.class
 dbtools\query\filter\CompareFilterTest.class
 dbtools\query\filter\NullFilterTest.class
+pojo\Zy.class
 DataSource\Test_DataSourceFactory.class
 dbtools\query\filter\OrFilterTest.class
 utils\GetSql_test.class
@@ -15,6 +16,7 @@ queryrunner\QueryRunnerCRUDTest.class
 queryrunner\QueryRunnerCRUDTest$1.class
 page\page_test.class
 DataSource\JdbcSchema.class
+pojo\Product.class
 queryrunner\Test_properties.class
 utils\oracle_test.class
 dbtools\query\db\jpa\query\JPAQueryBuilderTest.class

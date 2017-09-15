@@ -1,4 +1,4 @@
-package com.zl.core.jdbc;
+package com.zl.core.jdbc.generator;
 
 
 import com.zl.core.jdbc.DataSource.DsFactory;

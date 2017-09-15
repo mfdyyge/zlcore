@@ -238,3 +238,41 @@ $ git branch -a
   remotes/origin/master
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ 项目操作[GIT合并上传本地项目 ]
+-----------------------------------------------------------------------------------------------------------------
+
+本文讲的是把git在最新2.9.2，合并pull两个不同的项目，出现的问题如何去解决fatal: refusing to merge unrelated histories
+
+我在Github新建一个仓库，写了License，然后把本地一个写了很久仓库上传。
+
+先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull
+
+因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在git pull，这句代码是在git 2.9.2版本发生的，最新的版本需要添加--allow-unrelated-histories
+
+假如我们的源是origin，分支是master，那么我们 需要这样写git pull origin master --allow-unrelated-histories需要知道，我们的源可以是本地的路径
+
+--------------------------------------------------------------------------------------------------
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/代码生成工具/zlGenerator (master|REBASE 2/2)
+$ git pull origin master --allow-unrelated-histories
+
+From https://git.oschina.net/mfdyyge-zl/zlGenerator
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ LICENSE | 191 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 191 insertions(+)
+ create mode 100644 LICENSE
+
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/代码生成工具/zlGenerator (master|REBASE 2/2)
+$ git push origin master
+
+Counting objects: 534, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (515/515), done.
+Writing objects: 100% (534/534), 328.63 KiB | 0 bytes/s, done.
+Total 534 (delta 308), reused 0 (delta 0)
+To https://git.oschina.net/mfdyyge-zl/zlGenerator.git

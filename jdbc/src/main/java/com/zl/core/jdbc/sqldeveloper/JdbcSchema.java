@@ -1,9 +1,10 @@
-package com.zl.core.jdbc;
+package com.zl.core.jdbc.sqldeveloper;
 
 
 import com.zl.core.jdbc.sqldeveloper.orcl.Schema;
 import com.zl.core.jdbc.sqldeveloper.orcl.Table;
 import com.zl.core.jdbc.sqldeveloper.orcl.Database;
+
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -33,7 +34,7 @@ public class JdbcSchema extends Schema
      */
     public JdbcSchema(Connection connection, Database database, String schemaName)
     {
-        _schemaName = schemaName;
+        _schemaName = schemaName.toUpperCase();
         _connection = connection;
         _database = database;
     }

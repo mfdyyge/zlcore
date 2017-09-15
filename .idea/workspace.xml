@@ -5,21 +5,119 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info.2017-09-04.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info.2017-09-05.log" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcDatabase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcSchema.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/Mysql.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/Oracle.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" afterPath="$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/activity.iml" afterPath="$PROJECT_DIR$/activity/activity.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/pom.xml" afterPath="$PROJECT_DIR$/ActiveMQ/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/ActiveMQ/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/ActiveMQ/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/TEST-com.zl.core.activemq.RedisTest.xml" afterPath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/TEST-com.zl.core.activemq.RedisTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/com.zl.core.activemq.RedisTest.txt" afterPath="$PROJECT_DIR$/ActiveMQ/target/surefire-reports/com.zl.core.activemq.RedisTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/Freemarker.iml" afterPath="$PROJECT_DIR$/Freemarker/Freemarker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/pom.xml" afterPath="$PROJECT_DIR$/Freemarker/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/Freemarker/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/Freemarker/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/target/surefire-reports/TEST-com.zl.core.redis.AppTest.xml" afterPath="$PROJECT_DIR$/Freemarker/target/surefire-reports/TEST-com.zl.core.redis.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Freemarker/target/surefire-reports/com.zl.core.redis.AppTest.txt" afterPath="$PROJECT_DIR$/Freemarker/target/surefire-reports/com.zl.core.redis.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/pom.xml" afterPath="$PROJECT_DIR$/activity/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/activity/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/activity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/target/surefire-reports/TEST-com.zl.core.activity.AppTest.xml" afterPath="$PROJECT_DIR$/activity/target/surefire-reports/TEST-com.zl.core.activity.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity/target/surefire-reports/com.zl.core.activity.AppTest.txt" afterPath="$PROJECT_DIR$/activity/target/surefire-reports/com.zl.core.activity.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/Random.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/Random.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/time.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/time.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/base/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/base/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/hibernate.iml" afterPath="$PROJECT_DIR$/hibernate/hibernate.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/pom.xml" afterPath="$PROJECT_DIR$/hibernate/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/hibernate/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/hibernate/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/pom.xml" afterPath="$PROJECT_DIR$/jdbc/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Mysql.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Mysql.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Oracle.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Oracle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Column.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Column.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/ConvertHandler.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/ConvertHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/JavaType.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/JavaType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Resources.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Resources.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Table.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Table.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcSchema.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcSchema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Column.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Column.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/DataDescriptor.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/DataDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/DataDescriptorProvider.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/DataDescriptorProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Database.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/DynamicColumn.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/DynamicColumn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/OuterJoin.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/OuterJoin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Relationship.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Relationship.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Schema.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Schema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Table.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Table.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/ColumnImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/ColumnImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/DataDescProviderImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/DataDescProviderImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/DataDescriptorImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/DataDescriptorImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/DynamicColumnImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/DynamicColumnImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/RelationshipImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/impl/RelationshipImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Column.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Column.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/DataDescriptor.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/DataDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/DataDescriptorProvider.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/DataDescriptorProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Database.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/DynamicColumn.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/DynamicColumn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/OuterJoin.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/OuterJoin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Relationship.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Relationship.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Schema.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Schema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Table.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Table.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/ColumnImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/ColumnImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/DataDescProviderImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/DataDescProviderImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/DataDescriptorImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/DataDescriptorImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/DynamicColumnImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/DynamicColumnImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/RelationshipImpl.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/impl/RelationshipImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbtt.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbtt.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/dbtt.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/dbtt.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/jdbc/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/jdbc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zlcore.iml" afterPath="$PROJECT_DIR$/zlcore.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/redis.iml" afterPath="$PROJECT_DIR$/redis/redis.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/redis/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/redis/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/target/surefire-reports/TEST-com.zl.core.redis.AppTest.xml" afterPath="$PROJECT_DIR$/redis/target/surefire-reports/TEST-com.zl.core.redis.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/target/surefire-reports/com.zl.core.redis.AppTest.txt" afterPath="$PROJECT_DIR$/redis/target/surefire-reports/com.zl.core.redis.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/pom.xml" afterPath="$PROJECT_DIR$/shiro/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/shiro.iml" afterPath="$PROJECT_DIR$/shiro/shiro.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/shiro/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/shiro/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/pom.xml" afterPath="$PROJECT_DIR$/springdata/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/springdata.iml" afterPath="$PROJECT_DIR$/springdata/springdata.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/springdata/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/pom.xml" afterPath="$PROJECT_DIR$/springmvc/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/service/mybatis/impl/ServiceImpl.java" afterPath="$PROJECT_DIR$/springmvc/src/main/java/com/zl/core/springmvc/service/mybatis/impl/ServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/springmvc/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/springmvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/命令/命令-GIT" afterPath="$PROJECT_DIR$/命令/命令-GIT" />
     </list>
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
@@ -64,79 +162,234 @@
       <file leaf-file-name="JdbcSchema.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="76" column="74" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+            <state relative-caret-position="-996">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcSchema.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcSchema.java">
+      <file leaf-file-name="Test_DataSourceFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-684">
-              <caret line="33" column="81" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="81" />
+            <state relative-caret-position="1026">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Oracle.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/Oracle.java">
+      <file leaf-file-name="oracle_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbtt.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbtt.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbjpa.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbjpa.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryRunnerCRUDTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
-              <caret line="215" column="58" selection-start-line="215" selection-start-column="49" selection-end-line="215" selection-end-column="58" />
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java">
+      <file leaf-file-name="McUserField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-722">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mysql.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Mysql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Oracle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Oracle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3439">
+              <caret line="184" column="12" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
               <folding>
-                <element signature="e#0#12688#0" expanded="false" />
-                <element signature="e#2027#2028#0" expanded="false" />
-                <element signature="e#2062#2063#0" expanded="false" />
-                <element signature="e#2093#2094#0" expanded="false" />
-                <element signature="e#2131#2132#0" expanded="false" />
-                <element signature="e#2182#2183#0" expanded="false" />
-                <element signature="e#2219#2220#0" expanded="false" />
-                <element signature="e#2871#2872#0" expanded="false" />
-                <element signature="e#2919#2920#0" expanded="false" />
-                <element signature="e#3376#3377#0" expanded="false" />
-                <element signature="e#3420#3421#0" expanded="false" />
-                <element signature="e#3474#3475#0" expanded="false" />
-                <element signature="e#3518#3519#0" expanded="false" />
-                <element signature="e#4627#4628#0" expanded="false" />
-                <element signature="e#4651#4652#0" expanded="false" />
-                <element signature="e#4696#4697#0" expanded="false" />
-                <element signature="e#4723#4724#0" expanded="false" />
-                <element signature="e#5228#5229#0" expanded="false" />
-                <element signature="e#5267#5268#0" expanded="false" />
-                <element signature="e#5299#5300#0" expanded="false" />
-                <element signature="e#5336#5337#0" expanded="false" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="DsFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="2671">
+              <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsProperties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsFactory_TomcatJdbc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_TomcatJdbc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsFactory_HikariCp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsFactory_Druid.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DsFactory_C3p0.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConvertHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/ConvertHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Column.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Column.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Table.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-164">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resources.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Resources.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcDatabase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1227">
+              <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+              <folding>
+                <element signature="e#2308#2309#0" expanded="true" />
+                <element signature="e#2351#2352#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="52" column="47" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -162,16 +415,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/impl/RelationshipImpl.java" />
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/ConvertHandler.java" />
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/pojo/TableFormParams.java" />
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java" />
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java" />
-        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_TomcatJdbc.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/db/Oracle.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCSchema.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Table.java" />
-        <option value="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JDBCTable.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/utils/SQLGenerator.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/vo/Oracle.java" />
@@ -212,7 +458,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/base/base.iml" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcSchema.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Mysql.java" />
+        <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Oracle.java" />
       </list>
     </option>
   </component>
@@ -257,6 +510,9 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -272,13 +528,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -470,6 +719,168 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queryrunner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -527,11 +938,113 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataSource" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JdbcSchema" />
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqldeveloper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -564,6 +1077,14 @@
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqldeveloper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -598,6 +1119,14 @@
               <option name="myItemId" value="jdbc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sqldeveloper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcDatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -630,6 +1159,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -671,6 +1204,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="DataSource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -713,8 +1284,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DsFactory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+              <option name="myItemId" value="参数说明" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -778,10 +1349,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -817,6 +1384,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -832,17 +1406,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\Idea_namespase\GIT\zlcore\jdbc\src\test\java\queryrunner" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zl.core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Idea_namespase\GIT\zlcore\jdbc\src\test\java\memory" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zl.jdbc.pojo" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\Idea_namespase\GIT\zlcore\jdbc\src\test\java\memory" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Idea_namespase\GIT\zlcore\jdbc\src\test\java\queryrunner" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.JdbcSchema.JDBCSchema_test">
@@ -1469,7 +2043,8 @@
       <workItem from="1504887473468" duration="55000" />
       <workItem from="1504888118217" duration="24000" />
       <workItem from="1504888608731" duration="229000" />
-      <workItem from="1505471309782" duration="3829000" />
+      <workItem from="1505471309782" duration="4066000" />
+      <workItem from="1505476266539" duration="645000" />
     </task>
     <servers />
   </component>
@@ -1506,7 +2081,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79631000" />
+    <option name="totallyTimeSpent" value="80513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1514,33 +2089,33 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35889244" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17358893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29605964" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1943557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29499468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21884984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35889244" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29605964" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1711111" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1571,111 +2146,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/memory/Memory.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/memory/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/memory/SimpleDataSource.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/memory/MemoryFactory.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/memory/DemoServlet.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/memory/HelloServlet.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db_act.properties" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
-          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4961a42a/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348/TT.PRODUCT" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/pojo/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/pojo/Zy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7.jar!/org/apache/commons/dbutils/handlers/BeanListHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/handlers/BeanListHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/QueryRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1261">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/page/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/jdbc/Table.java" />
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SqlGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding>
-            <element signature="method#getTableFormParams_FromMap_oracle#0;class#SqlGenerator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zlcore.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/src/test/java/wb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1690,23 +2160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4560">
           <caret line="240" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Column.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/ConvertHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1718,35 +2171,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df34c68f-3924-4906-ad7a-ae0619a47b99/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1762,31 +2190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-874">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1794,7 +2197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1821,9 +2223,9 @@
         <state relative-caret-position="228">
           <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="202" selection-end-column="21" />
           <folding>
-            <marker date="1505475130981" expanded="true" signature="104:8278" ph="..." />
-            <marker date="1505475130981" expanded="true" signature="6164:7544" ph="..." />
-            <marker date="1505475130981" expanded="true" signature="6182:7531" ph="..." />
+            <marker date="1505476109409" expanded="true" signature="104:9276" ph="..." />
+            <marker date="1505476109409" expanded="true" signature="7162:8542" ph="..." />
+            <marker date="1505476109409" expanded="true" signature="7180:8529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1832,19 +2234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-          <folding>
-            <marker date="1505475149880" expanded="true" signature="104:5629" ph="..." />
-            <marker date="1505475149880" expanded="true" signature="2303:4951" ph="..." />
-            <marker date="1505475149880" expanded="true" signature="2321:4938" ph="..." />
-            <marker date="1505475149880" expanded="true" signature="2343:2721" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1853,7 +2242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1877,53 +2265,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java" />
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcSchema.java" />
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/Oracle.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="893">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java">
+    <entry file="file://$PROJECT_DIR$/ActiveMQ/ActiveMQ.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-722">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/base.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/base.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="42" column="96" selection-start-line="42" selection-start-column="96" selection-end-line="42" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#12688#0" expanded="false" />
-            <element signature="e#2027#2028#0" expanded="false" />
-            <element signature="e#2062#2063#0" expanded="false" />
-            <element signature="e#2093#2094#0" expanded="false" />
-            <element signature="e#2131#2132#0" expanded="false" />
-            <element signature="e#2182#2183#0" expanded="false" />
-            <element signature="e#2219#2220#0" expanded="false" />
-            <element signature="e#2871#2872#0" expanded="false" />
-            <element signature="e#2919#2920#0" expanded="false" />
-            <element signature="e#3376#3377#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-            <element signature="e#3474#3475#0" expanded="false" />
-            <element signature="e#3518#3519#0" expanded="false" />
-            <element signature="e#4627#4628#0" expanded="false" />
-            <element signature="e#4651#4652#0" expanded="false" />
-            <element signature="e#4696#4697#0" expanded="false" />
-            <element signature="e#4723#4724#0" expanded="false" />
-            <element signature="e#5228#5229#0" expanded="false" />
-            <element signature="e#5267#5268#0" expanded="false" />
-            <element signature="e#5299#5300#0" expanded="false" />
-            <element signature="e#5336#5337#0" expanded="false" />
+            <element signature="e#0#1830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/orcl/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="52" column="47" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1227">
+          <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+          <folding>
+            <element signature="e#2308#2309#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1936,26 +2358,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbjpa.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="76" column="74" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcSchema.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="33" column="81" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="81" />
+        <state relative-caret-position="304">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/Oracle.java">
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
-          <caret line="215" column="58" selection-start-line="215" selection-start-column="49" selection-end-line="215" selection-end-column="58" />
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/McUserField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/ConvertHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Mysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/ConvertHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/orcl/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-996">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/generator/Oracle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3439">
+          <caret line="184" column="12" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="12" />
+          <folding>
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2671">
+          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_TomcatJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_HikariCp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_Druid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/DsFactory_C3p0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>

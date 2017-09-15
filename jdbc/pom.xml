@@ -37,18 +37,11 @@
 </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>com.zl.core</groupId>
             <artifactId>base</artifactId>
             <version>2.0.0.0904</version>
-        </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/org.dbtools/dbtools-query -->
-        <dependency>
-            <groupId>org.dbtools</groupId>
-            <artifactId>dbtools-query</artifactId>
-            <version>3.0.0</version>
         </dependency>
 
         <!--单元测试   ****************************************************************-->
@@ -148,11 +141,19 @@
 
         <!-- mirrored from git://git.apache.org/commons-dbutils.git        -->
         <!-- ****************************************************apache/commons*******************************************************8  -->
-        <!--orcl-ORM-->
+        <!--DBUtils-->
         <dependency>
             <groupId>commons-dbutils</groupId>
             <artifactId>commons-dbutils</artifactId>
             <version>1.7</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.dbtools/dbtools-query -->
+        <dependency>
+            <groupId>org.dbtools</groupId>
+            <artifactId>dbtools-query</artifactId>
+            <version>3.0.0</version>
         </dependency>
 
         <!---->
@@ -163,34 +164,23 @@
             <version>1.9.3</version>
         </dependency>
 
-        <!-- log4j 日志包 -->
-        <!--****************************************************************************************************************8  -->
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
-            <scope>compile</scope>
-        </dependency>
 
     </dependencies>
 
 <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+
             <!--
                         <plugin>&lt;!&ndash;  依赖的JAR包一起打包 >mvn assembly:assembly &ndash;&gt;
                                 <groupId>org.apache.maven.plugins</groupId>
@@ -226,6 +216,7 @@
                 </configuration>
             </plugin>
 
+<<<<<<< HEAD
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -236,6 +227,8 @@
                     <encoding>utf-8</encoding>
                 </configuration>
             </plugin>
+=======
+>>>>>>> temp
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
