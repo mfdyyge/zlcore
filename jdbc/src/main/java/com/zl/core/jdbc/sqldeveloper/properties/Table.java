@@ -5,10 +5,12 @@
 
 package com.zl.core.jdbc.sqldeveloper.properties;
 
-import java.util.Locale;
+
 
 // Referenced classes of package com.zl.orcl.db:
 //            Column, Schema, Database, Relationship
+
+import java.util.Locale;
 
 public abstract class Table
 {

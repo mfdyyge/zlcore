@@ -27,6 +27,8 @@
     <module>redis</module>
     <module>ActiveMQ</module>
     <module>Freemarker</module>
+    <module>ftp</module>
+    <module>ftpServer</module>
 </modules>
 <dependencies>
     <!--单元测试   ****************************************************************-->
