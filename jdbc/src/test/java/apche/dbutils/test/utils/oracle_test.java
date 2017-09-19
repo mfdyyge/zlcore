@@ -25,13 +25,13 @@ public class oracle_test
     public void Oracle_getTable()
     {
         //Oracle.getDataBaseInfo();
-        Oracle oracle=new Oracle("dbjpa");
+        Oracle oracle=new Oracle("dbtt");
 
        // List<Table> tables = oracle.getTables();
         //oracle.getTables();
         //oracle.getTable("act","");
         Table table=oracle.getTable("zy");
-        logger.info(table);
+        //logger.info(table);
 /*
         List<String> tableToSelect = new ArrayList<String>();
 

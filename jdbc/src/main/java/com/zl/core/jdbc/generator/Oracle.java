@@ -66,6 +66,7 @@ public class Oracle
 
             col.setName(rs.getString("COLUMN_NAME"));
             col.setType(rs.getString("TYPE_NAME"));
+            logger.info(rs.getString("TYPE_NAME"));
 
             col.setSize(rs.getInt("COLUMN_SIZE"));
             col.setNullable(rs.getBoolean("NULLABLE"));
@@ -74,7 +75,7 @@ public class Oracle
             col.setComment(rs.getString("REMARKS"));
 
             ConvertHandler.columnHandler(col);
-            logger.info(col.toString());
+
             t.getColumns().add(col);
         }
     }

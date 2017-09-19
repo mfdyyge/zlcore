@@ -40,7 +40,7 @@ public enum JavaType
     DATE("Date"),
     DATETIME("Date"),
     TIME("Date"),
-    TIMESTAMP("Date"),
+    TIMESTAMP("TIMESTAMP"),
     INT("Integer");
 
     private String typeName;
