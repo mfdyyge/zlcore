@@ -2,435 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/ftpserver.jks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/test/test" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/ftpserver.jks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/test/test" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/ftp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/doc/manual.en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/doc/manual.it.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPAbortedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPCodes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPCommunicationChannel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPCommunicationListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPDataTransferConnectionProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPDataTransferException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPDataTransferListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPDataTransferServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPIllegalReplyException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPKeys.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPListParseException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPListParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPReply.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/FTPTextualExtensionRecognizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/NVTASCIIReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/NVTASCIIWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/Base64.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/Base64InputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/Base64OutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/DirectConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/FTPProxyConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/HTTPTunnelConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/SOCKS4Connector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/SOCKS5Connector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/connectors/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/extrecognizers/DefaultTextualExtensionRecognizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/extrecognizers/ParametricTextualExtensionRecognizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/extrecognizers/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/extrecognizers/textualexts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/listparsers/DOSListParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/listparsers/EPLFListParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/listparsers/MLSDListParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/listparsers/NetWareListParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/listparsers/UnixListParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/listparsers/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/main/java/it/sauronsoftware/ftp4j/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftp/src/test/java/ftp4j/Ftp4jTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/ftpServer.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/main/java/com/zl/core/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/java/doc/cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/java/ftpServer/FtpServerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/conf/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/conf/ftpd-full.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/conf/ftpd-typical.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/ftp-db.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/home/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/log/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/log/error.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/log/ftpd.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/log/jakarta_service_20170918.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/res/log/out.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/src/test/resources/users.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/conf/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/conf/ftpd-full.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/conf/ftpd-typical.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/ftp-db.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/home/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/log/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/log/error.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/log/ftpd.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/log/jakarta_service_20170918.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/res/log/out.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ftpServer/target/test-classes/users.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info.2017-09-18.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/DatabaseOperationException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/DdlUtilsException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/PlatformFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/PlatformInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/PlatformUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/AddColumnChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/AddForeignKeyChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/AddIndexChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/AddPrimaryKeyChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/AddTableChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ColumnChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ColumnChangeImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ColumnDefinitionChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ColumnOrderChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ForeignKeyChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ForeignKeyChangeImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/IndexChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/IndexChangeImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ModelChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/ModelComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/Pair.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/PrimaryKeyChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/RecreateTableChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/RemoveColumnChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/RemoveForeignKeyChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/RemoveIndexChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/RemovePrimaryKeyChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/RemoveTableChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/TableChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/TableChangeImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/TableDefinitionChangesPredicate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/alteration/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/dynabean/DynaClassCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/dynabean/SqlDynaBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/dynabean/SqlDynaClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/dynabean/SqlDynaException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/dynabean/SqlDynaProperty.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/dynabean/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/BinaryObjectsHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/ColumnXmlWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/ConverterConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataConverterRegistration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataDtdWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataSink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataSinkException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataToDatabaseSink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DataWriterException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DatabaseDataIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DatabaseIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/DdlUtilsXMLException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/Identity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/LocalEntityResolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/ModelValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/ModelXmlWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/PrettyPrintingXmlWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/TableXmlWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/WaitingObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/XMLUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/ByteArrayBase64Converter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/ConversionException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/DateConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/NumberConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/SqlTypeConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/TimeConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/TimestampConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/converters/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/io/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/CascadeActionEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/CloneHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/Column.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/Database.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/ForeignKey.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/Index.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/IndexColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/IndexImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/JdbcTypeCategoryEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/ModelException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/ModelHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/NonUniqueIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/Reference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/Table.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/TypeMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/UniqueIndex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/model/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/CreationParameters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/DatabaseMetaDataWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/DefaultTableDefinitionChangesPredicate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/DefaultValueHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/JdbcModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/MetaDataColumnDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/ModelBasedResultSetIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/PlatformImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/SqlBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/axion/AxionBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/axion/AxionModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/axion/AxionPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/axion/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/cloudscape/CloudscapeBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/cloudscape/CloudscapePlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/cloudscape/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/db2/Db2Builder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/db2/Db2ModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/db2/Db2Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/db2/Db2v8Builder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/db2/Db2v8Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/db2/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/derby/DerbyBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/derby/DerbyModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/derby/DerbyPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/derby/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/firebird/FirebirdBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/firebird/FirebirdModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/firebird/FirebirdPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/firebird/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/hsqldb/HsqlDbBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/hsqldb/HsqlDbModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/hsqldb/HsqlDbPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/hsqldb/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/interbase/InterbaseBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/interbase/InterbaseModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/interbase/InterbasePlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/interbase/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/maxdb/MaxDbBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/maxdb/MaxDbModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/maxdb/MaxDbPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/maxdb/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mckoi/MckoiBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mckoi/MckoiModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mckoi/MckoiPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mckoi/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mssql/MSSqlBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mssql/MSSqlModelComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mssql/MSSqlModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mssql/MSSqlPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mssql/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySql50Builder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySql50ModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySql50Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySqlBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySqlModelComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySqlModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/MySqlPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/mysql/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle10Builder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle10ModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle10Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle8Builder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle8ModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle8Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/Oracle9Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/oracle/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/postgresql/PostgreSqlBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/postgresql/PostgreSqlModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/postgresql/PostgreSqlPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/postgresql/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sapdb/SapDbBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sapdb/SapDbModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sapdb/SapDbPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sapdb/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sybase/SybaseASE15Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sybase/SybaseBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sybase/SybaseModelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sybase/SybasePlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/platform/sybase/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/Command.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/ConvertingDatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/CreateDatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DatabaseCommandWithCreationParameters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DatabaseTaskBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DatabaseToDdlTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DdlToDatabaseTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DropDatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DropTablesCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/DumpMetadataTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/Parameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/PlatformConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/TableSpecificParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/TaskHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/VerbosityLevel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/WriteDataToDatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/WriteDataToFileCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/WriteDtdToFileCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/WriteSchemaSqlToFileCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/WriteSchemaToDatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/WriteSchemaToFileCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/task/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/util/CallbackClosure.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/util/JdbcSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/util/SqlTokenizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/util/StringUtilsExt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/main/java/org/apache/ddlutils/util/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/queryrunner/query_test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/TestAgainstLiveDatabaseBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/TestBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/TestPlatformBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/TestSummaryCreatorTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestAlterationAlgorithm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestComparisonBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestForeignKeyComparison.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestIndexComparison.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestModelComparison.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestPrimaryKeyComparison.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/TestTableComparison.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/alteration/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/dynabean/TestDynaSqlQueries.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/dynabean/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestAddColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestAlteration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestChangeColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestConstraints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestDataReaderAndWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestDatabaseIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestDatatypes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestDropColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestInsertColumn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/TestMisc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/converters/TestDateConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/converters/TestTimeConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/converters/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/io/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/model/TestArrayAccessAtTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/model/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestAxionPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestCloudscapePlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestDB2Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestDatabaseMetaDataWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestDerbyPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestFirebirdPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestHsqlDbPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestInterbasePlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestMSSqlPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestMaxDbPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestMcKoiPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestMySql50Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestMySqlPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestOracle8Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestOracle9Platform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestPlatformImplBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestPlatformUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestPostgresqlPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestSapDbPlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestSqlBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/TestSybasePlatform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/platform/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/task/TestDropTablesCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/task/TestTaskBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/task/TestWriteDataToDatabaseCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/task/TestWriteDataToFileCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/task/TestWriteSchemaToFileCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/task/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/java/org/apache/ddlutils/util/DatabaseTestHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.axion" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.db2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.derby" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.derby-embedded" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.firebird" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.hsqldb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.interbase2007" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.interbase75" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.maxdb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.mckoi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.mysql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.mysql50" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.oracle10" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.oracle9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.postgresql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.sapdb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.sqlserver2000" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.sqlserver2005" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/jdbc.properties.sybaseASE" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/GetSql_test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/utils/tt_zongyao" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/SessionJson.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/zl/core/base/utils/SessionJson.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/src/test/resources/config/log4j.properties" afterPath="$PROJECT_DIR$/base/src/test/resources/config/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/target/test-classes/config/log4j.properties" afterPath="$PROJECT_DIR$/base/target/test-classes/config/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" afterPath="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/pom.xml" afterPath="$PROJECT_DIR$/jdbc/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/参数说明/HikariCp_参数说明" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/DataSource/参数说明/HikariCp_参数说明" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SqlGenerator.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/SqlGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcSchema.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcSchema.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/JdbcTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Database.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Schema.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Schema.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Table.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/sqldeveloper/properties/Table.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/DataSource/JdbcSchema.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/DataSource/JdbcSchema.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/utils/GetSql_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/utils/GetSql_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/db.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/conf/db/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc/target/test-classes/log4j.properties" afterPath="$PROJECT_DIR$/jdbc/target/test-classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/app.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/app.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/appEdit.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/appEdit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/permission.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/permission.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/profile.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/role.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/role.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/roleEdit.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/roleEdit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/user.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/user.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/userApp.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/userApp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/userEdit.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/userEdit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/userRole.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/admin/userRole.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/common/common.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/common/common.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/login.jsp" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/view/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/WebApp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/springmvc/src/main/resources/logback.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Fw_notify.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/Fw_notify.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Jpa_addresses.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/Jpa_addresses.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Jpa_persons.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/Jpa_persons.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Mc_user_field.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/Mc_user_field.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/T_user.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/T_user.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Users.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/Users.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/domain/Zy.java" afterPath="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/apche/dbutils/pojo/Zy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/DataSource/Test_DataSourceFactory.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/DataSource/Test_DataSourceFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/db/jpa/query/JPAQueryBuilderTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/db/jpa/query/JPAQueryBuilderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/db/sql/SQLQueryBuilderTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/db/sql/SQLQueryBuilderTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/AndFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/AndFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/CompareFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/CompareFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/InFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/InFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/InParameterizedFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/InParameterizedFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/LikeFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/LikeFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/NullFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/NullFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/OrFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/OrFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/dbtools/query/filter/RawFilterTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/query/filter/RawFilterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/page/page_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/page/page_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/pojo/Personbean.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/pojo/Personbean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/pojo/Product.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/pojo/Product.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/pojo/Zy.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/pojo/Zy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/QueryRunnerCRUDTest.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/queryrunner/QueryRunnerCRUDTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_AdminQueryDao.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/queryrunner/Test_AdminQueryDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Test_properties.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/queryrunner/Test_properties.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/product.sql" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/queryrunner/product.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/java/utils/oracle_test.java" afterPath="$PROJECT_DIR$/jdbc/src/test/java/apche/dbutils/test/utils/oracle_test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jdbc/src/test/resources/utils/tt_zongyao" afterPath="$PROJECT_DIR$/jdbc/src/test/resources/apche/dbutils/test/utils/tt_zongyao" />
     </list>
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
@@ -497,8 +73,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-488">
-              <caret line="237" column="21" selection-start-line="237" selection-start-column="21" selection-end-line="237" selection-end-column="21" />
+            <state relative-caret-position="78">
+              <caret line="284" column="16" selection-start-line="284" selection-start-column="16" selection-end-line="284" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -561,7 +137,6 @@
         <option value="dbtable:/4961a42a/df34c68f-3924-4906-ad7a-ae0619a47b99/ACT.LEAVE_JPA" />
         <option value="$PROJECT_DIR$/jdbc/src/test/resources/conf/db/dbtt.properties" />
         <option value="$PROJECT_DIR$/base/pom.xml" />
-        <option value="$PROJECT_DIR$/jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/JdbcTable.java" />
         <option value="$PROJECT_DIR$/base/base.iml" />
@@ -575,6 +150,7 @@
         <option value="$PROJECT_DIR$/jdbc/src/test/java/DataSource/JdbcSchema.java" />
         <option value="$PROJECT_DIR$/jdbc/log/ftpserver/ftpserver_info" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/jdbc/pom.xml" />
       </list>
     </option>
   </component>
@@ -1857,7 +1433,7 @@
       <workItem from="1505471309782" duration="4066000" />
       <workItem from="1505476266539" duration="1790000" />
       <workItem from="1505828249560" duration="285000" />
-      <workItem from="1505828536550" duration="350000" />
+      <workItem from="1505828536550" duration="531000" />
     </task>
     <servers />
   </component>
@@ -1894,7 +1470,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82293000" />
+    <option name="totallyTimeSpent" value="82474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2285,8 +1861,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488">
-          <caret line="237" column="21" selection-start-line="237" selection-start-column="21" selection-end-line="237" selection-end-column="21" />
+        <state relative-caret-position="78">
+          <caret line="284" column="16" selection-start-line="284" selection-start-column="16" selection-end-line="284" selection-end-column="16" />
           <folding />
         </state>
       </provider>
