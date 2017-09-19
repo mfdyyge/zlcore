@@ -77,7 +77,7 @@ public class JdbcSchema
 
         //com.zl.core.jdbc.JdbcSchema jdbcSchema=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,"TT");
 
-        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,dbName);
+        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"tt");
 
         System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
 
