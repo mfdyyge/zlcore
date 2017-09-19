@@ -41,13 +41,10 @@ public class GetSql_test
 
         String sql;
         //sql = getSqlFromMap(map);
-<<<<<<< HEAD:jdbc/src/test/java/utils/GetSql_test.java
-        sql= SqlGenerator.getSqlFromMap("table",map);
-        System.out.println("utils: " + sql);
-=======
+
         sql= SqlGenerator.getSqlFromMap("",map);
         System.out.println("apche.dbutils.test.utils: " + sql);
->>>>>>> temp:jdbc/src/test/java/apche/dbutils/test/utils/GetSql_test.java
+
         //System.out.println("paramers = " + Arrays.asList(SqlGenerator.getArryFromMap(map)));
         //getTableFromMap(map);
         //TableFormParams tableFormParams= SqlGenerator.getTableFormParams_FromMap_oracle(map,"USERS","pageNum","pageSize");

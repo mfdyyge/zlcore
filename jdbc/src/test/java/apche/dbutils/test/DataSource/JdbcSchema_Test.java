@@ -1,15 +1,11 @@
 package apche.dbutils.test.DataSource;
 
 import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.sqldeveloper.JdbcSchema;
 import com.zl.core.jdbc.sqldeveloper.orcl.Column;
 import com.zl.core.jdbc.sqldeveloper.JdbcDatabase;
 import com.zl.core.jdbc.sqldeveloper.JdbcTable;
-<<<<<<< HEAD:jdbc/src/test/java/DataSource/JdbcSchema.java
 
-=======
-import com.zl.core.jdbc.sqldeveloper.properties.Column;
-import com.zl.core.jdbc.sqldeveloper.properties.Database;
->>>>>>> temp:jdbc/src/test/java/apche/dbutils/test/DataSource/JdbcSchema.java
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import java.sql.Connection;
@@ -23,9 +19,9 @@ import java.util.Arrays;
  * @author: 钢背猪☣
  * @date: 2017-8-30 0030
  */
-public class JdbcSchema
+public class JdbcSchema_Test
 {
-    protected static Logger logger = Logger.getLogger(JdbcSchema.class);
+    protected static Logger logger = Logger.getLogger(JdbcSchema_Test.class);
 
     private static Connection connection;
     private static Connection connection_jcxt;
@@ -76,29 +72,12 @@ public class JdbcSchema
     @Test
     public  void JDBCSchema_test()
     {
-
-        Database database= new JdbcDatabase(connection);
+        JdbcDatabase database= new JdbcDatabase(connection);
         String[] dbName=database.getSchemaNames();
         System.out.println("Arrays.asList(dbName) = " + Arrays.asList(dbName));
 
-<<<<<<< HEAD:jdbc/src/test/java/DataSource/JdbcSchema.java
-
-        //com.zl.core.jdbc.JdbcSchema jdbcSchema=new com.zl.core.jdbc.JdbcSchema(connection,jdbcDatabase,"TT");
-
-        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"tt");
-
-=======
-        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,database,"jpa");
->>>>>>> temp:jdbc/src/test/java/apche/dbutils/test/DataSource/JdbcSchema.java
+        JdbcSchema jdbcSchema=new JdbcSchema(connection,database,"tt");
         System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
-
-
-/*
-
-        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema_jpa=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,dbName);
-        System.out.println("数据库用户>jpa> jdbcSchema.getTableCount = " + jdbcSchema_jpa.getTableCount());
-*/
-
     }
 
     /**
@@ -109,9 +88,9 @@ public class JdbcSchema
     {
 
         JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
-        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"JPA");
+        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"tt");
 
-        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"test11d");
+        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"zy");
 
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 
