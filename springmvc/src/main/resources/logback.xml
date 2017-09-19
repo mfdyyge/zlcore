@@ -30,11 +30,11 @@
 
 	<appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">
 		<!-- 只有level为error才发送邮件 -->
-		<dbtools.query.filter class="ch.qos.logback.classic.dbtools.query.filter.LevelFilter">
+		<apche.dbutils.test.query.filter class="ch.qos.logback.classic.apche.dbutils.test.query.filter.LevelFilter">
 			<level>ERROR</level>
 			<onMatch>ACCEPT</onMatch>
 			<onMismatch>DENY</onMismatch>
-		</dbtools.query.filter>
+		</apche.dbutils.test.query.filter>
 
 		<smtpHost>${log.mail.host}</smtpHost>
 		<smtpPort>${log.mail.port}</smtpPort>

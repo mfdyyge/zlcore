@@ -1,0 +1,17 @@
+
+C:\Users\Administrator>cd E:\apache-ftpserver-1.1.1\bin
+
+C:\Users\Administrator>e:
+
+E:\apache-ftpserver-1.1.1\bin>service install
+Installing the service 'ftpd' ...
+Using FTPD_HOME:        E:\apache-ftpserver-1.1.1
+Using JAVA_HOME:        E:\Java\jdk1.8.0_92_64X
+Using JVM:              E:\Java\jdk1.8.0_92_64X\jre\bin\server\jvm.dll
+start
+start
+The service 'ftpd' has been installed.
+
+E:\apache-ftpserver-1.1.1\bin>ftpd.bat res/conf/ftpd-typical.xml
+Using XML configuration file res/conf/ftpd-typical.xml...
+FtpServer started

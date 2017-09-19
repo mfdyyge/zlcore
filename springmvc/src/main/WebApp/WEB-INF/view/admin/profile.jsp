@@ -1,4 +1,4 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%  
     response.setHeader("Pragma", "No-cache");
@@ -6,16 +6,16 @@
     response.setDateHeader("Expires", 0);   
 %>
 
-<jsp:include page="../common/common.jsp">
+<jsp:include apche.dbutils.test.page="../common/common.jsp">
 	<jsp:param name="title" value="个人中心"/>
 </jsp:include>
 
 <!-- ajax layout which only needs content area -->
-<div class="page-header">
+<div class="apche.dbutils.test.page-header">
 	<h1>
 		个人中心
 	</h1>
-</div><!-- /.page-header -->
+</div><!-- /.apche.dbutils.test.page-header -->
 
 <div class="row">
 	<div class="col-xs-12">
@@ -156,7 +156,7 @@
   <script src="${_staticPath}/assets/js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
-	$('.page-content-area').ace_ajax('loadScripts', scripts, function() {
+	$('.apche.dbutils.test.page-content-area').ace_ajax('loadScripts', scripts, function() {
 		jQuery(function($) {
 			// 提交
 			$("#_submit").click(function(){

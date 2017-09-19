@@ -50,7 +50,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
     private final Object        _RESULTS_OBJECT = new Object();
 
     public JdbcTable(Connection connection, Schema schema, String tableName) {
-        this._tableName = tableName.toUpperCase(Locale.CHINA);
+        this._tableName = tableName.toUpperCase();
         this._connection = connection;
         this._schema = schema;
     }
@@ -97,6 +97,16 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         Column[] columns = this._getColumns();
         return columns == null?null:columns[index].getName();
     }
+
+
+    public String[] getColumnNames()
+    {
+        String[] ColumnNames=null;
+        return ColumnNames;
+    }
+
+
+
 
     public synchronized Column[] getColumns() {
         if(this._columns == null) {

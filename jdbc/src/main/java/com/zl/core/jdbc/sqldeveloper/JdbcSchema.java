@@ -77,6 +77,18 @@ public class JdbcSchema extends Schema
         return _tableNames != null ? _tableNames[index] : null;
     }
 
+    /**
+     * 返回用户下所有表名
+     * @return
+     */
+    public String[] getTableNames()
+    {
+        if(_tableNames == null)
+            _tableNames = createTableNames();
+        return _tableNames ;
+    }
+
+
     public String getTableDisplayName(int index, Locale locale)
     {
         return getTableName(index);

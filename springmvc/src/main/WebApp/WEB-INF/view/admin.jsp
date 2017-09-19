@@ -1,4 +1,4 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 <%  
     response.setHeader("Pragma", "No-cache");
     response.setHeader("Cache-Control", "no-cache");
@@ -244,7 +244,7 @@
 					</div>
 
 					<!-- /section:basics/content.breadcrumbs -->
-					<div class="page-content">
+					<div class="apche.dbutils.test.page-content">
 						<!-- #section:settings.box -->
 						<div class="ace-settings-container" id="ace-settings-container">
 							<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
@@ -313,10 +313,10 @@
 						</div><!-- /.ace-settings-container -->
 
 						<!-- /section:settings.box -->
-						<div class="page-content-area" data-ajax-content="true">
+						<div class="apche.dbutils.test.page-content-area" data-ajax-content="true">
 							<!-- ajax content goes here -->
-						</div><!-- /.page-content-area -->
-					</div><!-- /.page-content -->
+						</div><!-- /.apche.dbutils.test.page-content-area -->
+					</div><!-- /.apche.dbutils.test.page-content -->
 				</div>
 			</div><!-- /.main-content -->
 

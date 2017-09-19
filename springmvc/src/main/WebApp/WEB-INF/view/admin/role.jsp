@@ -1,13 +1,13 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="../common/common.jsp">
+<jsp:include apche.dbutils.test.page="../common/common.jsp">
 	<jsp:param name="title" value="角色"/>
 </jsp:include>
 <link rel="stylesheet" href="${_staticPath}/custom/zTree/css/metroStyle/metroStyle.css?v=1" />
 <link rel="stylesheet" href="${_staticPath}/custom/zTree/css/metroStyle/metroStyle.custom.css" />
 
-<div class="page-header">
+<div class="apche.dbutils.test.page-header">
 	<h1>
 		角色列表
 	</h1>
@@ -97,7 +97,7 @@
 			"${_staticPath}/custom/zTree/js/jquery.ztree.redis-3.5.min.js",
 			"${_staticPath}/custom/zTree/js/jquery.ztree.excheck-3.5.min.js");
 	
-	$('.page-content-area').ace_ajax('loadScripts', scripts, function() {
+	$('.apche.dbutils.test.page-content-area').ace_ajax('loadScripts', scripts, function() {
 		jQuery(function($) {
 			// 列表
     		var $table = $("#_table").table({

@@ -1,0 +1,21 @@
+[2017-09-18 17:09:20] [info] Service ftpd name Apache FtpServer
+[2017-09-18 17:09:23] [info] Service ftpd installed
+[2017-09-18 17:09:23] [info] Procrun finished.
+[2017-09-18 17:09:23] [info] Updating service...
+[2017-09-18 17:09:23] [info] Service ftpd updated
+[2017-09-18 17:09:23] [info] Update service finished.
+[2017-09-18 17:09:23] [info] Procrun finished.
+[2017-09-18 17:10:27] [info] Running Service...
+[2017-09-18 17:10:27] [info] Starting service...
+[2017-09-18 17:10:27] [174  javajni.c] [error] %1 不是有效的 Win32 应用程序。
+[2017-09-18 17:10:27] [947  prunsrv.c] [error] Failed creating java E:\Java\jdk1.8.0_92_64X\jre\bin\server\jvm.dll
+[2017-09-18 17:10:27] [1202 prunsrv.c] [error] ServiceStart returned 1
+[2017-09-18 17:10:27] [info] Run service finished.
+[2017-09-18 17:10:27] [info] Procrun finished.
+[2017-09-18 17:10:43] [info] Running Service...
+[2017-09-18 17:10:43] [info] Starting service...
+[2017-09-18 17:10:43] [174  javajni.c] [error] %1 不是有效的 Win32 应用程序。
+[2017-09-18 17:10:43] [947  prunsrv.c] [error] Failed creating java E:\Java\jdk1.8.0_92_64X\jre\bin\server\jvm.dll
+[2017-09-18 17:10:43] [1202 prunsrv.c] [error] ServiceStart returned 1
+[2017-09-18 17:10:43] [info] Run service finished.
+[2017-09-18 17:10:43] [info] Procrun finished.

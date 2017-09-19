@@ -1,4 +1,4 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 
 <title>${param.title}-${_systemName}</title>
 

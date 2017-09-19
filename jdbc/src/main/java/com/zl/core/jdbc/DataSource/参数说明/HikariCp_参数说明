@@ -27,7 +27,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import javax.sql.DataSource;
+import javax.sql.apche.dbutils.test.DataSource;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -116,7 +116,7 @@ public class HikariConfig implements HikariConfigMXBean
    // 是否允许缓冲池暂停
    private boolean isAllowPoolSuspension;
    // 数据源
-   private DataSource dataSource;
+   private apche.dbutils.test.DataSource dataSource;
    // 数据源属性
    private Properties dataSourceProperties;
    // 线程工厂
@@ -298,24 +298,24 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 获取被明确指定被缓冲池包裹的数据源
-    * Get the {@link DataSource} that has been explicitly specified to be wrapped by the
+    * Get the {@link apche.dbutils.test.DataSource} that has been explicitly specified to be wrapped by the
     * pool.
     *
-    * @return the {@link DataSource} instance, or null
+    * @return the {@link apche.dbutils.test.DataSource} instance, or null
     */
-   public DataSource getDataSource()
+   public apche.dbutils.test.DataSource getDataSource()
    {
       return dataSource;
    }
 
    /**
     * 明确指定用缓冲池包裹数据源,已经通过属性文件初始化后,此setter方法不可以使用的
-    * Set a {@link DataSource} for the pool to explicitly wrap.  This setter is not
+    * Set a {@link apche.dbutils.test.DataSource} for the pool to explicitly wrap.  This setter is not
     * available through property file based initialization.
     *
-    * @param dataSource a specific {@link DataSource} to be wrapped by the pool
+    * @param dataSource a specific {@link apche.dbutils.test.DataSource} to be wrapped by the pool
     */
-   public void setDataSource(DataSource dataSource)
+   public void setDataSource(apche.dbutils.test.DataSource dataSource)
    {
       this.dataSource = dataSource;
    }
@@ -684,7 +684,7 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 获取默认密码用于DataSource.getConnection(username, password)调用
-    * Get the default password to use for DataSource.getConnection(username, password) calls.
+    * Get the default password to use for apche.dbutils.test.DataSource.getConnection(username, password) calls.
     * @return the password
     */
    public String getPassword()
@@ -694,7 +694,7 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 设置默认密码用于DataSource.getConnection(username, password)调用
-    * Set the default password to use for DataSource.getConnection(username, password) calls.
+    * Set the default password to use for apche.dbutils.test.DataSource.getConnection(username, password) calls.
     * @param password the password
     */
    @Override
@@ -764,7 +764,7 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 获取默认用户名称用于DataSource.getConnection(username, password)调用
-    * Get the default username used for DataSource.getConnection(username, password) calls.
+    * Get the default username used for apche.dbutils.test.DataSource.getConnection(username, password) calls.
     *
     * @return the username
     */
@@ -775,7 +775,7 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 设置默认用户名称用于DataSource.getConnection(username, password)调用
-    * Set the default username used for DataSource.getConnection(username, password) calls.
+    * Set the default username used for apche.dbutils.test.DataSource.getConnection(username, password) calls.
     *
     * @param username the username
     */

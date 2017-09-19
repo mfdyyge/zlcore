@@ -12,63 +12,63 @@
 		<param-value>classpath:applicationContext.xml</param-value>
 	</context-param>
 	<!-- 编码处理 -->
-	<dbtools.query.filter>
-		<dbtools.query.filter-name>encodingFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>org.springframework.web.dbtools.query.filter.CharacterEncodingFilter</dbtools.query.filter-class>
+	<apche.dbutils.test.query.filter>
+		<apche.dbutils.test.query.filter-name>encodingFilter</apche.dbutils.test.query.filter-name>
+		<apche.dbutils.test.query.filter-class>org.springframework.web.apche.dbutils.test.query.filter.CharacterEncodingFilter</apche.dbutils.test.query.filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
 		</init-param>
-	</dbtools.query.filter>
-	<dbtools.query.filter-mapping>
-		<dbtools.query.filter-name>encodingFilter</dbtools.query.filter-name>
+	</apche.dbutils.test.query.filter>
+	<apche.dbutils.test.query.filter-mapping>
+		<apche.dbutils.test.query.filter-name>encodingFilter</apche.dbutils.test.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</dbtools.query.filter-mapping>
+	</apche.dbutils.test.query.filter-mapping>
 	<!-- 由Spring借助Redis接管HttpSession，实现分布式共享Session
-	<dbtools.query.filter>
-		<dbtools.query.filter-name>springSessionRepositoryFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>org.springframework.web.dbtools.query.filter.DelegatingFilterProxy</dbtools.query.filter-class>
-	</dbtools.query.filter>
-	<dbtools.query.filter-mapping>
-		<dbtools.query.filter-name>springSessionRepositoryFilter</dbtools.query.filter-name>
+	<apche.dbutils.test.query.filter>
+		<apche.dbutils.test.query.filter-name>springSessionRepositoryFilter</apche.dbutils.test.query.filter-name>
+		<apche.dbutils.test.query.filter-class>org.springframework.web.apche.dbutils.test.query.filter.DelegatingFilterProxy</apche.dbutils.test.query.filter-class>
+	</apche.dbutils.test.query.filter>
+	<apche.dbutils.test.query.filter-mapping>
+		<apche.dbutils.test.query.filter-name>springSessionRepositoryFilter</apche.dbutils.test.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</dbtools.query.filter-mapping>
+	</apche.dbutils.test.query.filter-mapping>
 	 -->
 	<!-- 验证码 -->
-	<dbtools.query.filter>
-		<dbtools.query.filter-name>captchaFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>com.zl.core.springmvc.captcha.CaptchaFilter</dbtools.query.filter-class>
-	</dbtools.query.filter>
-	<dbtools.query.filter-mapping>
-		<dbtools.query.filter-name>captchaFilter</dbtools.query.filter-name>
+	<apche.dbutils.test.query.filter>
+		<apche.dbutils.test.query.filter-name>captchaFilter</apche.dbutils.test.query.filter-name>
+		<apche.dbutils.test.query.filter-class>com.zl.core.springmvc.captcha.CaptchaFilter</apche.dbutils.test.query.filter-class>
+	</apche.dbutils.test.query.filter>
+	<apche.dbutils.test.query.filter-mapping>
+		<apche.dbutils.test.query.filter-name>captchaFilter</apche.dbutils.test.query.filter-name>
 		<url-pattern>/captcha</url-pattern>
-	</dbtools.query.filter-mapping>
+	</apche.dbutils.test.query.filter-mapping>
 	<!-- 单点登录 -->
-	<dbtools.query.filter>
-		<dbtools.query.filter-name>ssoFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>smart.sso.client.SsoFilter</dbtools.query.filter-class>
+	<apche.dbutils.test.query.filter>
+		<apche.dbutils.test.query.filter-name>ssoFilter</apche.dbutils.test.query.filter-name>
+		<apche.dbutils.test.query.filter-class>smart.sso.client.SsoFilter</apche.dbutils.test.query.filter-class>
 		<init-param>
 			<param-name>excludes</param-name>
 			<param-value>/login,/logout,/rpc,/swagger-ui.html,/webjars/**,/swagger-resources/**,/v2/api-docs</param-value>
 		</init-param>
-	</dbtools.query.filter>
-	<dbtools.query.filter-mapping>
-		<dbtools.query.filter-name>ssoFilter</dbtools.query.filter-name>
+	</apche.dbutils.test.query.filter>
+	<apche.dbutils.test.query.filter-mapping>
+		<apche.dbutils.test.query.filter-name>ssoFilter</apche.dbutils.test.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</dbtools.query.filter-mapping>
+	</apche.dbutils.test.query.filter-mapping>
 	<!-- 权限控制(选配) -->
-	<dbtools.query.filter>
-		<dbtools.query.filter-name>permissionFilter</dbtools.query.filter-name>
-		<dbtools.query.filter-class>smart.sso.client.PermissionFilter</dbtools.query.filter-class>
+	<apche.dbutils.test.query.filter>
+		<apche.dbutils.test.query.filter-name>permissionFilter</apche.dbutils.test.query.filter-name>
+		<apche.dbutils.test.query.filter-class>smart.sso.client.PermissionFilter</apche.dbutils.test.query.filter-class>
 		<init-param>
 			<param-name>excludes</param-name>
 			<param-value>/login,/logout,/rpc,/swagger-ui.html,/webjars/**,/swagger-resources/**,/v2/api-docs</param-value>
 		</init-param>
-	</dbtools.query.filter>
-	<dbtools.query.filter-mapping>
-		<dbtools.query.filter-name>permissionFilter</dbtools.query.filter-name>
+	</apche.dbutils.test.query.filter>
+	<apche.dbutils.test.query.filter-mapping>
+		<apche.dbutils.test.query.filter-name>permissionFilter</apche.dbutils.test.query.filter-name>
 		<url-pattern>/*</url-pattern>
-	</dbtools.query.filter-mapping>
+	</apche.dbutils.test.query.filter-mapping>
 	<!-- SpringMVC核心 -->
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>

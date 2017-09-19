@@ -26,6 +26,8 @@
         <module name="activity" />
         <module name="base" />
         <module name="Freemarker" />
+        <module name="ftp" />
+        <module name="ftpServer" />
         <module name="hibernate" />
         <module name="jdbc" />
         <module name="redis" />
@@ -39,6 +41,8 @@
       <module name="activity" target="1.8" />
       <module name="base" target="1.8" />
       <module name="Freemarker" target="1.8" />
+      <module name="ftp" target="1.8" />
+      <module name="ftpServer" target="1.8" />
       <module name="hibernate" target="1.8" />
       <module name="jdbc" target="1.8" />
       <module name="redis" target="1.8" />
