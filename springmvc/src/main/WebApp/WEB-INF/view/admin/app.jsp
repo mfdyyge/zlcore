@@ -1,10 +1,10 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 
-<jsp:include page="../common/common.jsp">
+<jsp:include apche.dbutils.test.page="../common/common.jsp">
 	<jsp:param name="title" value="应用"/>
 </jsp:include>
 
-<div class="page-header">
+<div class="apche.dbutils.test.page-header">
 	<h1>
 		应用列表
 	</h1>
@@ -48,7 +48,7 @@
 </div>
 
 <script type="text/javascript">
-	$('.page-content-area').ace_ajax('loadScripts', scripts, function() {
+	$('.apche.dbutils.test.page-content-area').ace_ajax('loadScripts', scripts, function() {
 		jQuery(function($) {
 			// 列表
 			var $table = $("#_table").table({

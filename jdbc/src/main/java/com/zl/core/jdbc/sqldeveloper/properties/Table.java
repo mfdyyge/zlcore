@@ -34,6 +34,13 @@ public abstract class Table
         return getColumn(index).getName();
     }
 
+    /**
+     * 返回所有列名数组
+     * @return
+     */
+    public abstract String[] getColumnNames();
+
+
     public String getColumnDisplayName(int index, Locale locale)
     {
         return getColumn(index).getDisplayName(locale);

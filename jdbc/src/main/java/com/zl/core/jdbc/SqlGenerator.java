@@ -58,7 +58,7 @@ public class SqlGenerator
             if (value != null)
             {
 
-                //utils = utils + " and " + keyName + " = " + value;
+                //apche.dbutils.test.utils = apche.dbutils.test.utils + " and " + keyName + " = " + value;
                 sql.append( " and " );
                 sql.append(keyName);
                 sql.append(" = ? ");

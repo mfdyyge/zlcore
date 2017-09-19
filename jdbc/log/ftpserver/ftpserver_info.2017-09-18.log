@@ -1,0 +1,819 @@
+2017-09-07 14:50:16,631 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 14:50:16,637 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 14:50:16,637 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 14:50:16,639 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 14:50:16,639 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 14:50:16,639 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 14:50:16,640 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 14:50:16,832 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-07 14:50:16,832 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-07 14:50:16,832 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-07 14:50:16,833 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 14:50:16,833 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 14:50:17,606 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-07 14:50:17,606 [INFO ]  (DsProperties.java.<init>:48) - conf/db/dbdbjpa
+2017-09-07 14:50:17,606 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpadbjpa
+2017-09-07 14:50:17,606 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 14:50:17,608 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 14:50:18,735 [INFO ]  (JdbcSchema_test.java.Oracle_getTable:127) - Table [clazzName=null, columns=[], fks=null, pk=Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=null, nullable=false, size=0, table=null, type=null], tableName=ZY, tableType=null]
+2017-09-07 15:00:17,516 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:00:17,519 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:00:17,520 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:00:17,522 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:00:17,522 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:00:17,522 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:00:17,523 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:00:17,603 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-07 15:00:17,603 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-07 15:00:17,603 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-07 15:00:17,603 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:00:17,604 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:00:21,656 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:00:21,661 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:00:35,777 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:00:35,780 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:00:35,781 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:00:35,783 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:00:35,783 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:00:35,783 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:00:35,784 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:00:35,807 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-07 15:00:35,807 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-07 15:00:35,807 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-07 15:00:35,807 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:00:35,807 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:00:39,621 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:00:39,625 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:02:17,263 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:02:17,266 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:02:17,267 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:02:17,269 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:02:17,269 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:02:17,269 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:02:17,270 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:02:21,216 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:04:10,650 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:04:10,654 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:04:10,654 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:04:10,657 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:04:10,658 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:04:10,658 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:04:10,659 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:04:14,725 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:04:14,729 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:04:14,731 [INFO ]  (JdbcTable.java.<init>:60) - oracle.jdbc.driver.T4CConnection@4f9a3314
+2017-09-07 15:04:14,830 [INFO ]  (JdbcTable.java.createColumns:217) - name: ID	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,831 [INFO ]  (JdbcTable.java.createColumns:217) - name: NAME	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,832 [INFO ]  (JdbcTable.java.createColumns:217) - name: YX	| DATA_TYPE=1111	|TYPE_NAME = NVARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,832 [INFO ]  (JdbcTable.java.createColumns:217) - name: NAME_BM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,833 [INFO ]  (JdbcTable.java.createColumns:217) - name: NAME_LDM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,833 [INFO ]  (JdbcTable.java.createColumns:217) - name: NAME_EMF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,835 [INFO ]  (JdbcTable.java.createColumns:217) - name: NAME_MMZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,835 [INFO ]  (JdbcTable.java.createColumns:217) - name: DX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,835 [INFO ]  (JdbcTable.java.createColumns:217) - name: SZHJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,836 [INFO ]  (JdbcTable.java.createColumns:217) - name: STXX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,836 [INFO ]  (JdbcTable.java.createColumns:217) - name: TR	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,837 [INFO ]  (JdbcTable.java.createColumns:217) - name: HB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,837 [INFO ]  (JdbcTable.java.createColumns:217) - name: HQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,837 [INFO ]  (JdbcTable.java.createColumns:217) - name: GQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,838 [INFO ]  (JdbcTable.java.createColumns:217) - name: CSQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,838 [INFO ]  (JdbcTable.java.createColumns:217) - name: RJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,839 [INFO ]  (JdbcTable.java.createColumns:217) - name: QW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,839 [INFO ]  (JdbcTable.java.createColumns:217) - name: HXCF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,839 [INFO ]  (JdbcTable.java.createColumns:217) - name: YCJB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,840 [INFO ]  (JdbcTable.java.createColumns:217) - name: YYBW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,840 [INFO ]  (JdbcTable.java.createColumns:217) - name: YYJZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 15:04:14,841 [INFO ]  (JdbcTable.java.createColumns:217) - name: REMARK	| DATA_TYPE=2005	|TYPE_NAME = CLOB	| 字段类型 = interface java.sql.Clob
+2017-09-07 15:04:14,842 [INFO ]  (JdbcTable.java.createColumns:217) - name: TIME_STAR	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 15:04:14,842 [INFO ]  (JdbcTable.java.createColumns:217) - name: TIME_CHANG	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 15:17:12,632 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:17:12,636 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:17:12,636 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:17:12,638 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:17:12,638 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:17:12,638 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:17:12,639 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:17:16,581 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:17:16,587 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:17:16,589 [INFO ]  (JdbcTable.java.<init>:60) - oracle.jdbc.driver.T4CConnection@4f9a3314
+2017-09-07 15:18:33,565 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:18:33,568 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:18:33,568 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:18:33,570 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:18:33,570 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:18:33,571 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:18:33,571 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:18:37,566 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:18:37,571 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:18:37,573 [INFO ]  (JdbcTable.java.<init>:60) - oracle.jdbc.driver.T4CConnection@4f9a3314
+2017-09-07 15:18:37,623 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:104) - 数据库表对象> jdbcSchema.getColumnCount = 1
+2017-09-07 15:21:35,901 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:21:35,905 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:21:35,905 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:21:35,907 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:21:35,907 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:21:35,907 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:21:35,908 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:21:39,864 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:21:39,869 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:21:39,871 [INFO ]  (JdbcTable.java.<init>:60) - oracle.jdbc.driver.T4CConnection@4f9a3314
+2017-09-07 15:21:39,918 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:104) - 表字段总数> jdbcSchema.getColumnCount = 0
+2017-09-07 15:30:16,111 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:30:16,114 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:30:16,114 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:30:16,117 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:30:16,117 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:30:16,118 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:30:16,119 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:30:19,918 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:30:19,924 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:30:19,927 [INFO ]  (JdbcTable.java.<init>:60) - oracle.jdbc.driver.T4CConnection@4f9a3314
+2017-09-07 15:30:19,971 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:104) - 表字段总数> jdbcSchema.getColumnCount = 0
+2017-09-07 15:31:53,756 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:31:53,760 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:31:53,760 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:31:53,762 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:31:53,763 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:31:53,763 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:31:53,764 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:31:57,592 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:32:15,538 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:32:15,542 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:32:15,542 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:32:15,545 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:32:15,545 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:32:15,546 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:32:15,546 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:32:19,229 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:33:58,760 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:33:58,765 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:33:58,765 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:33:58,767 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:33:58,768 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = druid
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:33:58,768 [INFO ]  (DsFactory.java.<init>:51) - druid
+2017-09-07 15:33:58,769 [INFO ]  (DsFactory_Druid.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:34:01,122 [INFO ]  (DruidDataSource.java.init:785) - {dataSource-1} inited
+2017-09-07 15:34:31,855 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:34:31,859 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:34:31,859 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:34:31,861 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:34:31,862 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:34:31,862 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 15:34:31,863 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:36:00,020 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:36:00,022 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:36:00,023 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:36:00,025 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:36:00,026 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:36:00,026 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 15:36:00,027 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:36:48,523 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:36:48,527 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:36:48,527 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:36:48,530 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:36:48,530 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:36:48,530 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 15:36:48,531 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:36:49,113 [INFO ]  (JdbcSchema_test.java.DsFactory:43) - 测试：DsFactory()
+2017-09-07 15:48:52,264 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 15:48:52,268 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 15:48:52,269 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 15:48:52,271 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 15:48:52,271 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 15:48:52,271 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 15:48:52,272 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 15:48:52,794 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 15:48:52,878 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:77) - SchemaName.size=52
+2017-09-07 15:48:52,878 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:80) - ACT
+2017-09-07 15:48:53,066 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:83) - 数据库用户>all> jdbcSchemaTest.getTableCount = 28
+2017-09-07 16:21:45,442 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:21:45,446 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:21:45,446 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:21:45,449 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:21:45,449 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:21:45,449 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:21:45,450 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:21:45,990 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:21:46,071 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:77) - SchemaName.size=52
+2017-09-07 16:21:46,071 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:82) - ACT
+2017-09-07 16:21:46,219 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:85) - 所有表名：[Ljava.lang.String;@1dd02175
+2017-09-07 16:21:46,219 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:86) - 数据库用户>all> jdbcSchemaTest.getTableCount = 28
+2017-09-07 16:48:33,185 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:48:33,189 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:48:33,189 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:48:33,192 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:48:33,192 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:48:33,193 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:48:33,194 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:48:33,753 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:48:33,839 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:78) - SchemaName.size=52
+2017-09-07 16:48:33,840 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:83) - ACT
+2017-09-07 16:48:33,842 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:86) - 所有表名：[ACT]
+2017-09-07 16:48:33,985 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:87) - 数据库用户>all> jdbcSchemaTest.getTableCount = 28
+2017-09-07 16:49:53,321 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:49:53,324 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:49:53,324 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:49:53,327 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:49:53,327 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:49:53,327 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:49:53,328 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:49:53,889 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:49:53,987 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:78) - SchemaName.size=52
+2017-09-07 16:49:53,988 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:83) - ACT
+2017-09-07 16:49:54,123 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:87) - 所有表名：[ACT_EVT_LOG, ACT_GE_BYTEARRAY, ACT_GE_PROPERTY, ACT_HI_ACTINST, ACT_HI_ATTACHMENT, ACT_HI_COMMENT, ACT_HI_DETAIL, ACT_HI_IDENTITYLINK, ACT_HI_PROCINST, ACT_HI_TASKINST, ACT_HI_VARINST, ACT_ID_GROUP, ACT_ID_INFO, ACT_ID_MEMBERSHIP, ACT_ID_USER, ACT_PROCDEF_INFO, ACT_RE_DEPLOYMENT, ACT_RE_MODEL, ACT_RE_PROCDEF, ACT_RU_EVENT_SUBSCR, ACT_RU_EXECUTION, ACT_RU_IDENTITYLINK, ACT_RU_JOB, ACT_RU_TASK, ACT_RU_VARIABLE, LEAVE_JPA, LOG_TEST, OA_LEAVE]
+2017-09-07 16:49:54,124 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:88) - 数据库用户>all> jdbcSchemaTest.getTableCount = 28
+2017-09-07 16:51:36,836 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:51:36,840 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:51:36,840 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:51:36,842 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:51:36,842 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:51:36,842 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:51:36,843 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:51:37,380 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:51:37,470 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:78) - 所有表名：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 16:51:37,471 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:79) - SchemaName.size=52
+2017-09-07 16:51:37,471 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:84) - ACT
+2017-09-07 16:51:37,598 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:88) - 所有表名：[ACT_EVT_LOG, ACT_GE_BYTEARRAY, ACT_GE_PROPERTY, ACT_HI_ACTINST, ACT_HI_ATTACHMENT, ACT_HI_COMMENT, ACT_HI_DETAIL, ACT_HI_IDENTITYLINK, ACT_HI_PROCINST, ACT_HI_TASKINST, ACT_HI_VARINST, ACT_ID_GROUP, ACT_ID_INFO, ACT_ID_MEMBERSHIP, ACT_ID_USER, ACT_PROCDEF_INFO, ACT_RE_DEPLOYMENT, ACT_RE_MODEL, ACT_RE_PROCDEF, ACT_RU_EVENT_SUBSCR, ACT_RU_EXECUTION, ACT_RU_IDENTITYLINK, ACT_RU_JOB, ACT_RU_TASK, ACT_RU_VARIABLE, LEAVE_JPA, LOG_TEST, OA_LEAVE]
+2017-09-07 16:51:37,598 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:89) - 数据库用户>all> jdbcSchemaTest.getTableCount = 28
+2017-09-07 16:55:32,249 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:55:32,252 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:55:32,253 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:55:32,255 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:55:32,255 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:55:32,255 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:55:32,256 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:55:32,813 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:55:32,816 [INFO ]  (JdbcTable.java.<init>:60) - HikariProxyConnection@54495403 wrapping oracle.jdbc.driver.T4CConnection@3bfdc050
+2017-09-07 16:55:32,992 [INFO ]  (JdbcTable.java.createColumns:224) - name: ID	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:32,994 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:32,996 [INFO ]  (JdbcTable.java.createColumns:224) - name: YX	| DATA_TYPE=1111	|TYPE_NAME = NVARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:32,997 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_BM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,000 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_LDM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,001 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_EMF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,002 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_MMZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,009 [INFO ]  (JdbcTable.java.createColumns:224) - name: DX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,011 [INFO ]  (JdbcTable.java.createColumns:224) - name: SZHJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,012 [INFO ]  (JdbcTable.java.createColumns:224) - name: STXX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,013 [INFO ]  (JdbcTable.java.createColumns:224) - name: TR	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,014 [INFO ]  (JdbcTable.java.createColumns:224) - name: HB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,015 [INFO ]  (JdbcTable.java.createColumns:224) - name: HQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,016 [INFO ]  (JdbcTable.java.createColumns:224) - name: GQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,017 [INFO ]  (JdbcTable.java.createColumns:224) - name: CSQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,018 [INFO ]  (JdbcTable.java.createColumns:224) - name: RJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,019 [INFO ]  (JdbcTable.java.createColumns:224) - name: QW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,019 [INFO ]  (JdbcTable.java.createColumns:224) - name: HXCF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,022 [INFO ]  (JdbcTable.java.createColumns:224) - name: YCJB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,042 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYBW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,044 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYJZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:55:33,044 [INFO ]  (JdbcTable.java.createColumns:224) - name: REMARK	| DATA_TYPE=2005	|TYPE_NAME = CLOB	| 字段类型 = interface java.sql.Clob
+2017-09-07 16:55:33,045 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_STAR	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 16:55:33,046 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_CHANG	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 16:55:33,048 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:105) - 表字段总数> jdbcSchema.getColumnCount = 24
+2017-09-07 16:57:06,438 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:57:06,442 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:57:06,442 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:57:06,444 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:57:06,444 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:57:06,445 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:57:06,445 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:57:06,973 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:57:06,976 [INFO ]  (JdbcTable.java.<init>:60) - HikariProxyConnection@54495403 wrapping oracle.jdbc.driver.T4CConnection@3bfdc050
+2017-09-07 16:57:07,147 [INFO ]  (JdbcTable.java.createColumns:224) - name: ID	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,149 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,150 [INFO ]  (JdbcTable.java.createColumns:224) - name: YX	| DATA_TYPE=1111	|TYPE_NAME = NVARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,151 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_BM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,154 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_LDM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,155 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_EMF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,156 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_MMZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,160 [INFO ]  (JdbcTable.java.createColumns:224) - name: DX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,161 [INFO ]  (JdbcTable.java.createColumns:224) - name: SZHJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,162 [INFO ]  (JdbcTable.java.createColumns:224) - name: STXX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,163 [INFO ]  (JdbcTable.java.createColumns:224) - name: TR	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,164 [INFO ]  (JdbcTable.java.createColumns:224) - name: HB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,164 [INFO ]  (JdbcTable.java.createColumns:224) - name: HQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,166 [INFO ]  (JdbcTable.java.createColumns:224) - name: GQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,168 [INFO ]  (JdbcTable.java.createColumns:224) - name: CSQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,169 [INFO ]  (JdbcTable.java.createColumns:224) - name: RJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,170 [INFO ]  (JdbcTable.java.createColumns:224) - name: QW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,171 [INFO ]  (JdbcTable.java.createColumns:224) - name: HXCF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,171 [INFO ]  (JdbcTable.java.createColumns:224) - name: YCJB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,172 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYBW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,174 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYJZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:07,176 [INFO ]  (JdbcTable.java.createColumns:224) - name: REMARK	| DATA_TYPE=2005	|TYPE_NAME = CLOB	| 字段类型 = interface java.sql.Clob
+2017-09-07 16:57:07,177 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_STAR	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 16:57:07,177 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_CHANG	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 16:57:07,181 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:105) - 表字段总数> jdbcSchema.getColumnCount = 24
+2017-09-07 16:57:07,182 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:106) - 表字段>  = [Lcom.zl.core.jdbc.orcl.Column;@5606c0b
+2017-09-07 16:57:48,293 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 16:57:48,296 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 16:57:48,296 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 16:57:48,299 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 16:57:48,299 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 16:57:48,299 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 16:57:48,300 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 16:57:48,825 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 16:57:48,828 [INFO ]  (JdbcTable.java.<init>:60) - HikariProxyConnection@54495403 wrapping oracle.jdbc.driver.T4CConnection@3bfdc050
+2017-09-07 16:57:49,009 [INFO ]  (JdbcTable.java.createColumns:224) - name: ID	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,014 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,015 [INFO ]  (JdbcTable.java.createColumns:224) - name: YX	| DATA_TYPE=1111	|TYPE_NAME = NVARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,016 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_BM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,017 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_LDM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,019 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_EMF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,027 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_MMZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,043 [INFO ]  (JdbcTable.java.createColumns:224) - name: DX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,044 [INFO ]  (JdbcTable.java.createColumns:224) - name: SZHJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,046 [INFO ]  (JdbcTable.java.createColumns:224) - name: STXX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,048 [INFO ]  (JdbcTable.java.createColumns:224) - name: TR	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,052 [INFO ]  (JdbcTable.java.createColumns:224) - name: HB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,053 [INFO ]  (JdbcTable.java.createColumns:224) - name: HQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,056 [INFO ]  (JdbcTable.java.createColumns:224) - name: GQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,070 [INFO ]  (JdbcTable.java.createColumns:224) - name: CSQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,071 [INFO ]  (JdbcTable.java.createColumns:224) - name: RJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,072 [INFO ]  (JdbcTable.java.createColumns:224) - name: QW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,073 [INFO ]  (JdbcTable.java.createColumns:224) - name: HXCF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,074 [INFO ]  (JdbcTable.java.createColumns:224) - name: YCJB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,074 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYBW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,075 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYJZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 16:57:49,076 [INFO ]  (JdbcTable.java.createColumns:224) - name: REMARK	| DATA_TYPE=2005	|TYPE_NAME = CLOB	| 字段类型 = interface java.sql.Clob
+2017-09-07 16:57:49,076 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_STAR	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 16:57:49,078 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_CHANG	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 16:57:49,080 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:105) - 表字段总数> jdbcSchema.getColumnCount = 24
+2017-09-07 16:57:49,080 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:106) - 表字段>  = [ColumnImpl{_table=ZY, _name='ID', _displayName='ID', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME', _displayName='NAME', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YX', _displayName='YX', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_BM', _displayName='NAME_BM', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_LDM', _displayName='NAME_LDM', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_EMF', _displayName='NAME_EMF', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_MMZ', _displayName='NAME_MMZ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='DX', _displayName='DX', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='SZHJ', _displayName='SZHJ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='STXX', _displayName='STXX', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='TR', _displayName='TR', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='HB', _displayName='HB', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='HQ', _displayName='HQ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='GQ', _displayName='GQ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='CSQ', _displayName='CSQ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='RJ', _displayName='RJ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='QW', _displayName='QW', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='HXCF', _displayName='HXCF', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YCJB', _displayName='YCJB', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YYBW', _displayName='YYBW', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YYJZ', _displayName='YYJZ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='REMARK', _displayName='REMARK', _type=interface java.sql.Clob, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='TIME_STAR', _displayName='TIME_STAR', _type=class java.sql.Timestamp, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='TIME_CHANG', _displayName='TIME_CHANG', _type=class java.sql.Timestamp, _allowsNull=true, _defaultValue=null}]
+2017-09-07 17:00:46,648 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:00:46,652 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:00:46,653 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:00:46,655 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:00:46,656 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:00:46,656 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:00:46,657 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:00:47,205 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:00:47,208 [INFO ]  (JdbcTable.java.<init>:60) - HikariProxyConnection@54495403 wrapping oracle.jdbc.driver.T4CConnection@3bfdc050
+2017-09-07 17:00:47,392 [INFO ]  (JdbcTable.java.createColumns:224) - name: ID	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,395 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,396 [INFO ]  (JdbcTable.java.createColumns:224) - name: YX	| DATA_TYPE=1111	|TYPE_NAME = NVARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,397 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_BM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,398 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_LDM	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,399 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_EMF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,400 [INFO ]  (JdbcTable.java.createColumns:224) - name: NAME_MMZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,403 [INFO ]  (JdbcTable.java.createColumns:224) - name: DX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,404 [INFO ]  (JdbcTable.java.createColumns:224) - name: SZHJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,405 [INFO ]  (JdbcTable.java.createColumns:224) - name: STXX	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,406 [INFO ]  (JdbcTable.java.createColumns:224) - name: TR	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,407 [INFO ]  (JdbcTable.java.createColumns:224) - name: HB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,409 [INFO ]  (JdbcTable.java.createColumns:224) - name: HQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,411 [INFO ]  (JdbcTable.java.createColumns:224) - name: GQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,414 [INFO ]  (JdbcTable.java.createColumns:224) - name: CSQ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,416 [INFO ]  (JdbcTable.java.createColumns:224) - name: RJ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,417 [INFO ]  (JdbcTable.java.createColumns:224) - name: QW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,418 [INFO ]  (JdbcTable.java.createColumns:224) - name: HXCF	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,420 [INFO ]  (JdbcTable.java.createColumns:224) - name: YCJB	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,423 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYBW	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,431 [INFO ]  (JdbcTable.java.createColumns:224) - name: YYJZ	| DATA_TYPE=12	|TYPE_NAME = VARCHAR2	| 字段类型 = class java.lang.String
+2017-09-07 17:00:47,435 [INFO ]  (JdbcTable.java.createColumns:224) - name: REMARK	| DATA_TYPE=2005	|TYPE_NAME = CLOB	| 字段类型 = interface java.sql.Clob
+2017-09-07 17:00:47,436 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_STAR	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 17:00:47,439 [INFO ]  (JdbcTable.java.createColumns:224) - name: TIME_CHANG	| DATA_TYPE=-102	|TYPE_NAME = TIMESTAMP(6) WITH LOCAL TIME ZONE	| 字段类型 = class java.sql.Timestamp
+2017-09-07 17:00:47,441 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:106) - 表字段总数> jdbcSchema.getColumnCount = 24
+2017-09-07 17:00:47,441 [INFO ]  (JdbcSchema_test.java.JDBCTable_test:108) - 表字段>  = [ColumnImpl{_table=ZY, _name='ID', _displayName='ID', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME', _displayName='NAME', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YX', _displayName='YX', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_BM', _displayName='NAME_BM', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_LDM', _displayName='NAME_LDM', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_EMF', _displayName='NAME_EMF', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='NAME_MMZ', _displayName='NAME_MMZ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='DX', _displayName='DX', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='SZHJ', _displayName='SZHJ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='STXX', _displayName='STXX', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='TR', _displayName='TR', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='HB', _displayName='HB', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='HQ', _displayName='HQ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='GQ', _displayName='GQ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='CSQ', _displayName='CSQ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='RJ', _displayName='RJ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='QW', _displayName='QW', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='HXCF', _displayName='HXCF', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YCJB', _displayName='YCJB', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YYBW', _displayName='YYBW', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='YYJZ', _displayName='YYJZ', _type=class java.lang.String, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='REMARK', _displayName='REMARK', _type=interface java.sql.Clob, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='TIME_STAR', _displayName='TIME_STAR', _type=class java.sql.Timestamp, _allowsNull=true, _defaultValue=null}, ColumnImpl{_table=ZY, _name='TIME_CHANG', _displayName='TIME_CHANG', _type=class java.sql.Timestamp, _allowsNull=true, _defaultValue=null}]
+2017-09-07 17:14:29,268 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:14:29,271 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:14:29,272 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:14:29,273 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:14:29,274 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:14:29,274 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:14:29,274 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:14:29,800 [INFO ]  (DsFactory.java.<init>:78) - db
+2017-09-07 17:14:29,800 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-07 17:14:29,800 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdb
+2017-09-07 17:14:29,801 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:14:29,802 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:14:30,686 [INFO ]  (JdbcSchema_test.java.Oracle_getTable:125) - Table [clazzName=null, columns=[], fks=null, pk=Column [comment=null, defaultValue=null, digits=0, fieldName=null, javaType=null, name=null, nullable=false, size=0, table=null, type=null], tableName=ZY, tableType=null]
+2017-09-07 17:55:41,800 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:55:41,804 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:55:41,804 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:55:41,806 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:55:41,806 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:55:41,807 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:55:41,807 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:55:42,345 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:56:07,770 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:56:07,774 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:56:07,775 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:56:07,777 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:56:07,778 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:56:07,778 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:56:07,779 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:56:08,360 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:57:01,715 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:57:01,718 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:57:01,718 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:57:01,720 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:57:01,721 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:57:01,721 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:57:01,722 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:57:02,303 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:57:21,439 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:57:21,442 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:57:21,443 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:57:21,445 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:57:21,446 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:57:21,446 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:57:21,447 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:57:21,971 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:57:22,057 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:79) - 所有用户：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 17:57:22,058 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:80) - SchemaName.size=52
+2017-09-07 17:57:22,058 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:85) - ACT
+2017-09-07 17:59:11,813 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:59:11,817 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:59:11,818 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:59:11,820 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:59:11,820 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:59:11,821 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:59:11,822 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:59:12,355 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:59:12,441 [INFO ]  (JdbcSchema_test.java.JDBCDatabase_test:68) - 所有用户：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 17:59:12,442 [INFO ]  (JdbcSchema_test.java.JDBCDatabase_test:69) - SchemaName.size=52
+2017-09-07 17:59:30,100 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:59:30,104 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:59:30,104 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:59:30,106 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:59:30,106 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:59:30,106 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:59:30,107 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:59:30,680 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:59:30,760 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:79) - 所有用户：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 17:59:30,760 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:80) - SchemaName.size=52
+2017-09-07 17:59:30,760 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:85) - ACT
+2017-09-07 17:59:41,254 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 17:59:41,258 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 17:59:41,258 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 17:59:41,260 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 17:59:41,260 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 17:59:41,260 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 17:59:41,261 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 17:59:41,862 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 17:59:41,949 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:79) - 所有用户：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 17:59:41,949 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:80) - SchemaName.size=52
+2017-09-07 17:59:41,950 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:85) - ACT
+2017-09-07 18:00:03,303 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 18:00:03,306 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 18:00:03,307 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 18:00:03,309 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 18:00:03,309 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 18:00:03,310 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 18:00:03,310 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 18:00:03,871 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 18:00:03,951 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:79) - 所有用户：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 18:00:03,951 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:80) - SchemaName.size=52
+2017-09-07 18:00:03,952 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:85) - ACT
+2017-09-07 18:03:01,105 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 18:03:01,109 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 18:03:01,109 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 18:03:01,111 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 18:03:01,111 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 18:03:01,111 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 18:03:01,112 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 18:03:01,642 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-07 18:03:01,723 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:79) - 所有用户：[ACT, ACT516, ANONYMOUS, APEX_030200, APEX_PUBLIC_USER, APPQOSSYS, BI, CAST, CTXSYS, DBSNMP, DIP, EXFSYS, FLOWS_FILES, FWZS, HR, HX_DJ, HX_DM_ZDY, IX, JCXT, JHCX, JPA, MDDATA, MDSYS, MGMT_VIEW, MP, OADEMO, OE, OLAPSYS, ORACLE_OCM, ORDDATA, ORDPLUGINS, ORDSYS, OUTLN, OWBSYS, OWBSYS_AUDIT, PM, SCOTT, SH, SI_INFORMTN_SCHEMA, SMART, SPATIAL_CSW_ADMIN_USR, SPATIAL_WFS_ADMIN_USR, SPRINGDATA, SYS, SYSMAN, SYSTEM, TT, WB, WMSYS, WS, XDB, XS$NULL]
+2017-09-07 18:03:01,724 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:80) - SchemaName.size=52
+2017-09-07 18:03:01,724 [INFO ]  (JdbcSchema_test.java.JDBCSchema_test:85) - ACT
+2017-09-07 18:05:20,388 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-07 18:05:20,391 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-07 18:05:20,391 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-07 18:05:20,393 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-07 18:05:20,394 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 18:05:20,394 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-07 18:05:20,395 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 18:05:20,527 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-07 18:05:20,528 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-07 18:05:20,528 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-07 18:05:20,528 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-07 18:05:20,528 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-07 18:05:20,927 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl

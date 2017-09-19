@@ -175,12 +175,12 @@ public class SOCKS5Connector extends FTPConnector {
 			out.write(0x01);
 			// Reserved.
 			out.write(0x00);
-			// Address type -> domain.
+			// Address type -> pojo.
 			out.write(0x03);
 			// Domain.
 			byte[] domain = host.getBytes("UTF-8");
 			if (domain.length > 0xff) {
-				throw new IOException("SOCKS5Connector: domain name too long");
+				throw new IOException("SOCKS5Connector: pojo name too long");
 			}
 			out.write(domain.length);
 			out.write(domain);

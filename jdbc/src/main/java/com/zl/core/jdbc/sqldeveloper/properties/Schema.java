@@ -28,6 +28,8 @@ public abstract class Schema
         return getTable(index).getName();
     }
 
+    public abstract String[] getTableNames();
+
     public String getTableDisplayName(int index, Locale locale)
     {
         return getTable(index).getDisplayName(locale);

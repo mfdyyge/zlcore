@@ -30,6 +30,7 @@ public abstract class Database
     {
         return getSchema(index).getName();
     }
+    public abstract String[] getSchemaNames();
 
     public String getSchemaDisplayName(int index, Locale locale)
     {

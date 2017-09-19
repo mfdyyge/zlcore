@@ -89,6 +89,19 @@ public class JdbcDatabase extends Database
         return schemaName;
     }
 
+
+    /**
+     * 返回 数据库用户名 数组
+     * @return schemaName
+     */
+    public String[] getSchemaNames()
+    {
+        if(_schemaNames == null)
+            _schemaNames = createSchemaNames();
+
+        return _schemaNames;
+    }
+
     public String getSchemaDisplayName(int index, Locale locale)
     {
         return getSchemaName(index);

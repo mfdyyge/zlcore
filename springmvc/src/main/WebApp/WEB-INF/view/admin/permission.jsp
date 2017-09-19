@@ -1,7 +1,7 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="../common/common.jsp">
+<jsp:include apche.dbutils.test.page="../common/common.jsp">
 	<jsp:param name="title" value="权限"/>
 </jsp:include>
 <link rel="stylesheet" href="${_staticPath}/custom/zTree/css/metroStyle/metroStyle.css?v=1" />
@@ -11,11 +11,11 @@
 	.ztree li ul.level0 {padding:0; background:none;}
 </style>
 	
-<div class="page-header">
+<div class="apche.dbutils.test.page-header">
 	<h1>
 		权限管理
 	</h1>
-</div><!-- /.page-header -->
+</div><!-- /.apche.dbutils.test.page-header -->
 
 <div class="row">
 	<div class="col-xs-12">
@@ -196,7 +196,7 @@
 			"${_staticPath}/custom/zTree/js/jquery.ztree.redis-3.5.min.js",
 			"${_staticPath}/custom/zTree/js/jquery.ztree.excheck-3.5.min.js");
 		
-	$('.page-content-area').ace_ajax('loadScripts', scripts, function() {
+	$('.apche.dbutils.test.page-content-area').ace_ajax('loadScripts', scripts, function() {
 		jQuery(function($) {
     		var setting = {
 	            view: {
@@ -230,8 +230,8 @@
 	        //弹出层初始化
 	        $('.modal.aside').ace_aside();
 		
-			$(document).one('ajaxloadstart.page', function(e) {
-				//in ajax mode, remove before leaving page
+			$(document).one('ajaxloadstart.apche.dbutils.test.page', function(e) {
+				//in ajax mode, remove before leaving apche.dbutils.test.page
 				$('.modal.aside').remove();
 				$(window).off('.aside');
 			});

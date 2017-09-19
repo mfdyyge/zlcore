@@ -1,4 +1,4 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+<%@ apche.dbutils.test.page language="java" pageEncoding="utf-8"%>
 <%  
     response.setHeader("Pragma", "No-cache");
     response.setHeader("Cache-Control", "no-cache");
@@ -11,7 +11,7 @@
 		<meta charset="utf-8" />
 		<title>登录-${_systemName}</title>
 		
-		<meta name="description" content="User login page" />
+		<meta name="description" content="User login apche.dbutils.test.page" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link type="images/x-icon" rel="shortcut icon" href="${_staticPath}/custom/assets/favicon.ico">
 		
@@ -178,7 +178,7 @@
 		<script type="text/javascript" src="${_staticPath}/custom/jquery.validate-2.0.min.js"></script>
 		<script type="text/javascript" src="${_staticPath}/custom/jquery.validate-2.0.custom.min.js"></script>
 
-		<!-- inline scripts related to this page -->
+		<!-- inline scripts related to this apche.dbutils.test.page -->
 		<script type="text/javascript">
 			jQuery(function($) {
 			    
