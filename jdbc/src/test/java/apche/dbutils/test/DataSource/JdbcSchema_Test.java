@@ -95,7 +95,7 @@ public class JdbcSchema_Test
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 
         Column[]            A_columns=jdbcTable.getColumns();
-
+        System.out.println("Arrays.asList(jdbcTable.getColumnNames()) = " + Arrays.asList(jdbcTable.getColumnNames()));
 
 /*        System.out.println("A_columns[0].toString() = " + A_columns[0].toString());
         System.out.println(" 字段类型 = " +  A_columns[0].getDataType());

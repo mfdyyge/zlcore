@@ -102,6 +102,35 @@ public class JdbcTable extends Table implements DataDescriptorProvider
     public String[] getColumnNames()
     {
         String[] ColumnNames=null;
+
+        try {
+            ResultSet rs = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);
+            Vector temp = new Vector();
+            boolean dataType = false;
+            Object var13 = this._RESULTS_OBJECT;
+            synchronized(this._RESULTS_OBJECT)
+            {
+                while(rs.next())
+                {
+                    String name = rs.getString(4);
+                    temp.addElement(name);
+                }
+            }
+            int columnNames_size=temp.size();
+            ColumnNames = new String[columnNames_size];
+            System.out.println("columnNames_size = " + columnNames_size);
+
+            if(temp.size() != 0)
+            {
+                temp.copyInto(ColumnNames);
+                // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
+            }
+
+            rs.close();
+        } catch (SQLException var16) {
+            System.err.println("A SQLException occured " + var16);
+        }
+
         return ColumnNames;
     }
 

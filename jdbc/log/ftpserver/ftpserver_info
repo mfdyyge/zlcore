@@ -438,3 +438,33 @@ pwd = tt
 ------------------------
 2017-09-19 22:03:26,330 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
 2017-09-19 22:03:26,603 [INFO ]  (JdbcDatabase.java.<init>:46) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-19 22:06:59,082 [INFO ]  (DsFactory.java.<init>:78) - dbtt
+2017-09-19 22:06:59,085 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-19 22:06:59,085 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbtt
+2017-09-19 22:06:59,086 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbtt.properties
+2017-09-19 22:06:59,086 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-19 22:06:59,087 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-19 22:06:59,370 [INFO ]  (JdbcDatabase.java.<init>:46) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-19 22:13:15,551 [INFO ]  (DsFactory.java.<init>:78) - dbtt
+2017-09-19 22:13:15,552 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-19 22:13:15,552 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbtt
+2017-09-19 22:13:15,554 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbtt.properties
+2017-09-19 22:13:15,554 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-19 22:13:15,555 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-19 22:13:15,839 [INFO ]  (JdbcDatabase.java.<init>:46) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
