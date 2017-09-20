@@ -443,3 +443,267 @@ pwd = jpa
 2017-09-20 17:32:14,591 [INFO ]  (JdbcTable.java.createColumns:250) - ColumnName: EMAIL | DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
 2017-09-20 17:32:14,592 [INFO ]  (JdbcTable.java.createColumns:250) - ColumnName: LAST_NAME | DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
 2017-09-20 17:32:14,593 [INFO ]  (JdbcTable.java.createColumns:250) - ColumnName: ADDRESS_ID | DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:07:23,604 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-20 18:07:23,608 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-20 18:07:23,608 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-20 18:07:23,613 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-20 18:07:23,613 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:07:23,614 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-20 18:07:23,614 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:07:23,762 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-20 18:07:23,762 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-20 18:07:23,762 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-20 18:07:23,763 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:07:23,763 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:07:24,349 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-20 18:07:24,572 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: ROWID_ | DATA_TYPE=1111 |sqlTypeName = ROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,580 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: UROWID_ | DATA_TYPE=1111 |sqlTypeName = UROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,583 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: CHAR_BYTE | DATA_TYPE=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:07:24,586 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: CHAR_CHAR | DATA_TYPE=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:07:24,587 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NCHAR_ | DATA_TYPE=1111 |sqlTypeName = NCHAR | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,588 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR_BYTE_20 | DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,589 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR_CHAR_20 | DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,590 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR2_BYTE_20 | DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,591 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR2_CHAR_20 | DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,593 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NVARCHAR2_20 | DATA_TYPE=1111 |sqlTypeName = NVARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,594 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: INTEGER_ | DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:07:24,596 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: LONG_ | DATA_TYPE=-1 |sqlTypeName = LONG | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,598 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: INT_ | DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:07:24,599 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: FLOAT_ | DATA_TYPE=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:07:24,600 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NUMBER_2_3 | DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Double
+2017-09-20 18:07:24,601 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: DOUBLE_PRECISION | DATA_TYPE=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:07:24,601 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: DATE_ | DATA_TYPE=93 |sqlTypeName = DATE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:07:24,603 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: TIMESTARMP | DATA_TYPE=93 |sqlTypeName = TIMESTAMP(6) | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:07:24,605 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: TIMESTARMP_TIME_ZONE | DATA_TYPE=-101 |sqlTypeName = TIMESTAMP(6) WITH TIME ZONE | 对应JavaType = null
+2017-09-20 18:07:24,606 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: TIMESTARMP_LOCAL_TIME_ZONE | DATA_TYPE=-102 |sqlTypeName = TIMESTAMP(6) WITH LOCAL TIME ZONE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:07:24,607 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: CLOB_ | DATA_TYPE=2005 |sqlTypeName = CLOB | 对应JavaType = interface java.sql.Clob
+2017-09-20 18:07:24,607 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NCLOB_ | DATA_TYPE=1111 |sqlTypeName = NCLOB | 对应JavaType = class java.lang.String
+2017-09-20 18:07:24,608 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: BLOB_ | DATA_TYPE=2004 |sqlTypeName = BLOB | 对应JavaType = null
+2017-09-20 18:17:14,452 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-20 18:17:14,456 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-20 18:17:14,457 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-20 18:17:14,463 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-20 18:17:14,464 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:17:14,464 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-20 18:17:14,465 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:17:14,639 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-20 18:17:14,640 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-20 18:17:14,641 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-20 18:17:14,642 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:17:14,642 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:17:15,242 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-20 18:17:15,469 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: ROWID_	| DATA_TYPE=1111 |sqlTypeName = ROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,472 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: UROWID_	| DATA_TYPE=1111 |sqlTypeName = UROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,473 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: CHAR_BYTE	| DATA_TYPE=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:17:15,476 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: CHAR_CHAR	| DATA_TYPE=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:17:15,477 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NCHAR_	| DATA_TYPE=1111 |sqlTypeName = NCHAR | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,478 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR_BYTE_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,478 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR_CHAR_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,479 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR2_BYTE_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,480 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: VARCHAR2_CHAR_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,481 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NVARCHAR2_20	| DATA_TYPE=1111 |sqlTypeName = NVARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,483 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: INTEGER_	| DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:17:15,489 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: LONG_	| DATA_TYPE=-1 |sqlTypeName = LONG | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,490 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: INT_	| DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:17:15,491 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: FLOAT_	| DATA_TYPE=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:17:15,492 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NUMBER_2_3	| DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Double
+2017-09-20 18:17:15,493 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: DOUBLE_PRECISION	| DATA_TYPE=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:17:15,497 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: DATE_	| DATA_TYPE=93 |sqlTypeName = DATE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:17:15,500 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: TIMESTARMP	| DATA_TYPE=93 |sqlTypeName = TIMESTAMP(6) | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:17:15,500 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: TIMESTARMP_TIME_ZONE	| DATA_TYPE=-101 |sqlTypeName = TIMESTAMP(6) WITH TIME ZONE | 对应JavaType = null
+2017-09-20 18:17:15,505 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: TIMESTARMP_LOCAL_TIME_ZONE	| DATA_TYPE=-102 |sqlTypeName = TIMESTAMP(6) WITH LOCAL TIME ZONE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:17:15,507 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: CLOB_	| DATA_TYPE=2005 |sqlTypeName = CLOB | 对应JavaType = interface java.sql.Clob
+2017-09-20 18:17:15,509 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: NCLOB_	| DATA_TYPE=1111 |sqlTypeName = NCLOB | 对应JavaType = class java.lang.String
+2017-09-20 18:17:15,510 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: BLOB_	| DATA_TYPE=2004 |sqlTypeName = BLOB | 对应JavaType = null
+2017-09-20 18:17:15,511 [INFO ]  (JdbcTable.java.createColumns:251) - ColumnName: RAW_2000	| DATA_TYPE=-3 |sqlTypeName = RAW | 对应JavaType = class java.lang.Object
+2017-09-20 18:33:08,602 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-20 18:33:08,610 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-20 18:33:08,611 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-20 18:33:08,615 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-20 18:33:08,615 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:33:08,616 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-20 18:33:08,616 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:33:08,813 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-20 18:33:08,814 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-20 18:33:08,814 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-20 18:33:08,814 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:33:08,815 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:33:09,663 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-20 18:33:09,965 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: ROWID_	| DATA_TYPE=1111 |sqlTypeName = ROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,968 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: UROWID_	| DATA_TYPE=1111 |sqlTypeName = UROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,969 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CHAR_BYTE	| DATA_TYPE=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:33:09,982 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CHAR_CHAR	| DATA_TYPE=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:33:09,984 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NCHAR_	| DATA_TYPE=1111 |sqlTypeName = NCHAR | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,985 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR_BYTE_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,986 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR_CHAR_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,993 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR2_BYTE_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,995 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR2_CHAR_20	| DATA_TYPE=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,998 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NVARCHAR2_20	| DATA_TYPE=1111 |sqlTypeName = NVARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:33:09,999 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: INTEGER_	| DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:33:10,000 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: LONG_	| DATA_TYPE=-1 |sqlTypeName = LONG | 对应JavaType = class java.lang.String
+2017-09-20 18:33:10,001 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: INT_	| DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:33:10,002 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: FLOAT_	| DATA_TYPE=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:33:10,003 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NUMBER_2_3	| DATA_TYPE=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:33:10,004 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: DOUBLE_PRECISION	| DATA_TYPE=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:33:10,004 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: DATE_	| DATA_TYPE=93 |sqlTypeName = DATE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:33:10,005 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP	| DATA_TYPE=93 |sqlTypeName = TIMESTAMP(6) | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:33:10,006 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP_TIME_ZONE	| DATA_TYPE=-101 |sqlTypeName = TIMESTAMP(6) WITH TIME ZONE | 对应JavaType = null
+2017-09-20 18:33:10,007 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP_LOCAL_TIME_ZONE	| DATA_TYPE=-102 |sqlTypeName = TIMESTAMP(6) WITH LOCAL TIME ZONE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:33:10,008 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CLOB_	| DATA_TYPE=2005 |sqlTypeName = CLOB | 对应JavaType = interface java.sql.Clob
+2017-09-20 18:33:10,009 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NCLOB_	| DATA_TYPE=1111 |sqlTypeName = NCLOB | 对应JavaType = class java.lang.String
+2017-09-20 18:33:10,012 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: BLOB_	| DATA_TYPE=2004 |sqlTypeName = BLOB | 对应JavaType = null
+2017-09-20 18:33:10,013 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: RAW_2000	| DATA_TYPE=-3 |sqlTypeName = RAW | 对应JavaType = class java.lang.Object
+2017-09-20 18:38:45,502 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-20 18:38:45,507 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-20 18:38:45,508 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-20 18:38:45,513 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-20 18:38:45,513 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:38:45,514 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-20 18:38:45,515 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:38:45,693 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-20 18:38:45,694 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-20 18:38:45,694 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-20 18:38:45,694 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:38:45,694 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:38:46,405 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-20 18:38:46,615 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: ROWID_	| DATA_TYPE=1111 sqlTypeCode=1111 |sqlTypeName = ROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,621 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: UROWID_	| DATA_TYPE=1111 sqlTypeCode=1111 |sqlTypeName = UROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,622 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CHAR_BYTE	| DATA_TYPE=1 sqlTypeCode=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:38:46,624 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CHAR_CHAR	| DATA_TYPE=1 sqlTypeCode=1 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:38:46,625 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NCHAR_	| DATA_TYPE=1111 sqlTypeCode=1111 |sqlTypeName = NCHAR | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,626 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR_BYTE_20	| DATA_TYPE=12 sqlTypeCode=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,627 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR_CHAR_20	| DATA_TYPE=12 sqlTypeCode=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,627 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR2_BYTE_20	| DATA_TYPE=12 sqlTypeCode=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,628 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR2_CHAR_20	| DATA_TYPE=12 sqlTypeCode=12 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,629 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NVARCHAR2_20	| DATA_TYPE=1111 sqlTypeCode=1111 |sqlTypeName = NVARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,630 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: INTEGER_	| DATA_TYPE=3 sqlTypeCode=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:38:46,630 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: LONG_	| DATA_TYPE=-1 sqlTypeCode=-1 |sqlTypeName = LONG | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,631 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: INT_	| DATA_TYPE=3 sqlTypeCode=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:38:46,632 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: FLOAT_	| DATA_TYPE=6 sqlTypeCode=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:38:46,633 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NUMBER_2_3	| DATA_TYPE=3 sqlTypeCode=3 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:38:46,635 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: DOUBLE_PRECISION	| DATA_TYPE=6 sqlTypeCode=6 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:38:46,636 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: DATE_	| DATA_TYPE=93 sqlTypeCode=93 |sqlTypeName = DATE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:38:46,637 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP	| DATA_TYPE=93 sqlTypeCode=93 |sqlTypeName = TIMESTAMP(6) | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:38:46,638 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP_TIME_ZONE	| DATA_TYPE=-101 sqlTypeCode=-101 |sqlTypeName = TIMESTAMP(6) WITH TIME ZONE | 对应JavaType = null
+2017-09-20 18:38:46,639 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP_LOCAL_TIME_ZONE	| DATA_TYPE=-102 sqlTypeCode=-102 |sqlTypeName = TIMESTAMP(6) WITH LOCAL TIME ZONE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:38:46,640 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CLOB_	| DATA_TYPE=2005 sqlTypeCode=2005 |sqlTypeName = CLOB | 对应JavaType = interface java.sql.Clob
+2017-09-20 18:38:46,641 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NCLOB_	| DATA_TYPE=1111 sqlTypeCode=1111 |sqlTypeName = NCLOB | 对应JavaType = class java.lang.String
+2017-09-20 18:38:46,642 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: BLOB_	| DATA_TYPE=2004 sqlTypeCode=2004 |sqlTypeName = BLOB | 对应JavaType = null
+2017-09-20 18:38:46,643 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: RAW_2000	| DATA_TYPE=-3 sqlTypeCode=-3 |sqlTypeName = RAW | 对应JavaType = class java.lang.Object
+2017-09-20 18:40:00,659 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-20 18:40:00,666 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-20 18:40:00,667 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-20 18:40:00,670 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-20 18:40:00,670 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:40:00,670 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-20 18:40:00,671 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:40:00,835 [INFO ]  (DsFactory.java.<init>:78) - dbjpa
+2017-09-20 18:40:00,836 [INFO ]  (DsProperties.java.<init>:48) - conf/db/db
+2017-09-20 18:40:00,836 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbdbjpa
+2017-09-20 18:40:00,836 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = jpa
+pwd = jpa
+------------------------
+2017-09-20 18:40:00,837 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-20 18:40:01,452 [INFO ]  (JdbcDatabase.java.<init>:43) - _connection.getMetaData().getURL = jdbc:oracle:thin:@localhost:1521:orcl
+2017-09-20 18:40:01,663 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: ROWID_	| DATA_TYPE=1111 | sqlTypeCode=1111 |decimalDigits0 |sqlTypeName = ROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,667 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: UROWID_	| DATA_TYPE=1111 | sqlTypeCode=1111 |decimalDigits0 |sqlTypeName = UROWID | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,669 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CHAR_BYTE	| DATA_TYPE=1 | sqlTypeCode=1 |decimalDigits0 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:40:01,674 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CHAR_CHAR	| DATA_TYPE=1 | sqlTypeCode=1 |decimalDigits0 |sqlTypeName = CHAR | 对应JavaType = class java.lang.Character
+2017-09-20 18:40:01,675 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NCHAR_	| DATA_TYPE=1111 | sqlTypeCode=1111 |decimalDigits0 |sqlTypeName = NCHAR | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,676 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR_BYTE_20	| DATA_TYPE=12 | sqlTypeCode=12 |decimalDigits0 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,677 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR_CHAR_20	| DATA_TYPE=12 | sqlTypeCode=12 |decimalDigits0 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,679 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR2_BYTE_20	| DATA_TYPE=12 | sqlTypeCode=12 |decimalDigits0 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,680 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: VARCHAR2_CHAR_20	| DATA_TYPE=12 | sqlTypeCode=12 |decimalDigits0 |sqlTypeName = VARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,682 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NVARCHAR2_20	| DATA_TYPE=1111 | sqlTypeCode=1111 |decimalDigits0 |sqlTypeName = NVARCHAR2 | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,683 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: INTEGER_	| DATA_TYPE=3 | sqlTypeCode=3 |decimalDigits0 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:40:01,684 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: LONG_	| DATA_TYPE=-1 | sqlTypeCode=-1 |decimalDigits0 |sqlTypeName = LONG | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,685 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: INT_	| DATA_TYPE=3 | sqlTypeCode=3 |decimalDigits0 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:40:01,686 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: FLOAT_	| DATA_TYPE=6 | sqlTypeCode=6 |decimalDigits0 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:40:01,687 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NUMBER_2_3	| DATA_TYPE=3 | sqlTypeCode=3 |decimalDigits2 |sqlTypeName = NUMBER | 对应JavaType = class java.lang.Integer
+2017-09-20 18:40:01,690 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: DOUBLE_PRECISION	| DATA_TYPE=6 | sqlTypeCode=6 |decimalDigits0 |sqlTypeName = FLOAT | 对应JavaType = class java.lang.Float
+2017-09-20 18:40:01,691 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: DATE_	| DATA_TYPE=93 | sqlTypeCode=93 |decimalDigits0 |sqlTypeName = DATE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:40:01,692 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP	| DATA_TYPE=93 | sqlTypeCode=93 |decimalDigits6 |sqlTypeName = TIMESTAMP(6) | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:40:01,693 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP_TIME_ZONE	| DATA_TYPE=-101 | sqlTypeCode=-101 |decimalDigits6 |sqlTypeName = TIMESTAMP(6) WITH TIME ZONE | 对应JavaType = null
+2017-09-20 18:40:01,695 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: TIMESTARMP_LOCAL_TIME_ZONE	| DATA_TYPE=-102 | sqlTypeCode=-102 |decimalDigits6 |sqlTypeName = TIMESTAMP(6) WITH LOCAL TIME ZONE | 对应JavaType = class java.sql.Timestamp
+2017-09-20 18:40:01,696 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: CLOB_	| DATA_TYPE=2005 | sqlTypeCode=2005 |decimalDigits0 |sqlTypeName = CLOB | 对应JavaType = interface java.sql.Clob
+2017-09-20 18:40:01,697 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: NCLOB_	| DATA_TYPE=1111 | sqlTypeCode=1111 |decimalDigits0 |sqlTypeName = NCLOB | 对应JavaType = class java.lang.String
+2017-09-20 18:40:01,700 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: BLOB_	| DATA_TYPE=2004 | sqlTypeCode=2004 |decimalDigits0 |sqlTypeName = BLOB | 对应JavaType = null
+2017-09-20 18:40:01,703 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: RAW_2000	| DATA_TYPE=-3 | sqlTypeCode=-3 |decimalDigits0 |sqlTypeName = RAW | 对应JavaType = class java.lang.Object

@@ -5,9 +5,12 @@
 
 package com.zl.core.jdbc.sqldeveloper;
 
+import com.mchange.v1.db.sql.TypesUtils;
+import com.mchange.v1.db.sql.UnsupportedTypeException;
 import com.zl.core.jdbc.sqldeveloper.properties.*;
 import com.zl.core.jdbc.sqldeveloper.properties.impl.ColumnImpl;
 import com.zl.core.jdbc.sqldeveloper.properties.impl.RelationshipImpl;
+import oracle.jdbc.internal.OracleTypes;
 import org.apache.log4j.Logger;
 
 import java.beans.PropertyChangeListener;
@@ -239,7 +242,8 @@ public class JdbcTable extends Table implements DataDescriptorProvider
                     int sqlTypeCode = rs.getInt(5);     //列数据类型Code
                     int decimalDigits = rs.getInt(9);   //小数点
 
-                    Class type = this._getClass(sqlTypeCode, decimalDigits);//根据SqlTypeCode 转换成 JavaType
+                    //Class type = this._getClass(sqlTypeCode, decimalDigits);//根据SqlTypeCode 转换成 JavaType
+                    Class type = this._getClassForSqlTypeCode(sqlTypeCode,decimalDigits);//根据SqlTypeCode 转换成 JavaType
 
                     String DATA_TYPE  = rs.getString("DATA_TYPE");//字段数据类型(对应java.sql.Types中的常量)
 
@@ -248,7 +252,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
                     String sqlTypeName = rs.getString("TYPE_NAME");//字段类型名称(例如：VACHAR2)
 
 
-                    logger.info("ColumnName: "+ColumnName+" | DATA_TYPE="+DATA_TYPE+" |sqlTypeName = "+sqlTypeName+" | 对应JavaType = " + type);
+                    logger.info("ColumnName: "+ColumnName+"\t| DATA_TYPE="+DATA_TYPE+" | sqlTypeCode="+sqlTypeCode+" |decimalDigits"+decimalDigits+" |sqlTypeName = "+sqlTypeName+" | 对应JavaType = " + type);
                     int nullable = rs.getInt(11);
                     boolean allowsNull = nullable == 1;
                     String defaultValue = rs.getString(13);
@@ -377,6 +381,12 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         return key;
     }
 
+    /**
+     * sqlType 转换 JavaType
+     * @param sqlTypeCode   列数据类型代码
+     * @param digits        小数位数
+     * @return
+     */
     private Class _getClass(int sqlTypeCode, int digits)
     {
 
@@ -444,8 +454,13 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         return c;
     }
 
-
-    private Class _getClass(int sqlTypeCode)
+    /**
+     * sqlType 转换 JavaType
+     * @param sqlTypeCode   列数据类型代码
+     * @param digits        小数位数
+     * @return
+     */
+    private Class _getClassForSqlTypeCode(int sqlTypeCode, int digits)
     {
 
 /*
@@ -454,7 +469,17 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         JDBCType jdbcType=JDBCType.valueOf(sqlTypeCode);
         logger.info(jdbcType.getDeclaringClass());
 */
-
+        try
+        {
+            String sqlTypeName=TypesUtils.getNameForSqlTypeCode(-1);
+            System.out.println("sqlTypeName = " +sqlTypeName);
+        } catch (UnsupportedTypeException e)
+        {
+            e.printStackTrace();
+        }
+        int BOOLEAN     =   OracleTypes.BOOLEAN;//16
+        int bit         =   OracleTypes.BIT;//-7
+        int LONGVARCHAR =   OracleTypes.LONGVARCHAR;//-1
         Class c;
         switch(sqlTypeCode) {
             case -7:
