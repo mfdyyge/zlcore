@@ -29,6 +29,8 @@
 /.idea
 
 # ******************************************************[ Package Files ]
+*.versionsBackup
+*.iml
 *.class
 *.jar
 *.war
