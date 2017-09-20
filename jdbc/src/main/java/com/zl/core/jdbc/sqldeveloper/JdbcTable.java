@@ -518,20 +518,22 @@ public class JdbcTable extends Table implements DataDescriptorProvider
                     c = Double.class;
                 }
                 break;
-            case 6:
+            case OracleTypes.FLOAT://6:
                 c = Float.class;
                 break;
-            case 91:
+            case OracleTypes.DATE://91:
                 c = Date.class;
                 break;
             case 92:
                 c = Time.class;
                 break;
-            case 93:
-            case -102:
+            case OracleTypes.TIMESTAMP:
+            case OracleTypes.TIMESTAMPTZ:
+            case OracleTypes.TIMESTAMPLTZ:
                 c = Timestamp.class;
                 break;
-            case 2005://CLOB
+            case OracleTypes.CLOB://CLOB
+            case OracleTypes.NCLOB:
                 c= Clob.class;
         }
         return c;
