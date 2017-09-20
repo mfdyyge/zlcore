@@ -1,4 +1,4 @@
-package apche.dbutils.test.utils;
+package apche.dbutils.test.DataSource;
 
 import com.zl.core.jdbc.SqlGenerator;
 import org.junit.Test;

@@ -26,11 +26,13 @@
 
 # ******************************************************[ 项目目录 ]
 /.project
-/.idea
+.idea
 
 # ******************************************************[ Package Files ]
+zlcore.iml
+base/base.iml
+jdbc/jdbc.iml
 *.versionsBackup
-*.iml
 *.class
 *.jar
 *.war
@@ -47,5 +49,7 @@ redis/target
 shiro/target
 springdata/target
 springmvc/target
+
+
 
 

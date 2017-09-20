@@ -1,5 +1,6 @@
 package com.zl.core.jdbc.generator;
 
+import com.mchange.v1.db.sql.TypesUtils;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -13,6 +14,7 @@ public enum JavaType
     VARCHAR("String"),
     VARCHAR2("String"),
     NVARCHAR2("String"),//刚加的
+
     LONGVARCHAR("String"),
     TEXT("String"),
     MEDIUMTEXT("String"),
@@ -76,6 +78,8 @@ public enum JavaType
         System.out.println("STRING:" + JavaType.getJavaType("STRING"));
         System.out.println("CHAR:" + JavaType.getJavaType("CHAR"));
         System.out.println("DATE:" + JavaType.getJavaType("DATE"));
+        System.out.println("DATE:" + JavaType.getJavaType("DATE"));
+        TypesUtils types;
     }
     
 }

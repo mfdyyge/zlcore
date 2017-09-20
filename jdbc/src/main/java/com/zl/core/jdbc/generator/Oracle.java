@@ -69,7 +69,13 @@ public class Oracle
             col.setDefaultValue(rs.getString("COLUMN_DEF"));
             col.setComment(rs.getString("REMARKS"));
 
+
+
             ConvertHandler.columnHandler(col);
+
+
+
+
             logger.info(col.toString());
             t.getColumns().add(col);
         }

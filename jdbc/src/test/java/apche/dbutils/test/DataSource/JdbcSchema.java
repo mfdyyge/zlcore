@@ -99,7 +99,7 @@ public class JdbcSchema
         JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
         com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"JPA");
 
-        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"test11d");
+        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"jpa_persons");
 
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 
