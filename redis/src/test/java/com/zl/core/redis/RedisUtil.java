@@ -12,7 +12,7 @@ import redis.clients.jedis.JedisPoolConfig;
 public final class RedisUtil {
 
     //Redis服务器IP
-    private static String ADDR = "192.168.0.100";
+    private static String ADDR = "127.0.0.1";
 
     //Redis的端口号
     private static int PORT = 6379;
@@ -40,16 +40,38 @@ public final class RedisUtil {
     /**
      * 初始化Redis连接池
      */
-    static {
-        try {
+    static
+    {
+/*
+http://blog.csdn.net/ljz9425/article/details/50478757
+        <bean id="jedisPoolConfig"  class="redis.clients.jedis.JedisPoolConfig">
+            <propertyname="maxIdle"         value="${redis.pool.maxIdle}"/>
+            <propertyname="maxTotal"        value="${redis.pool.maxActive}"/>
+            <propertyname="maxWaitMillis"   value="${redis.pool.maxWait}"/>
+            <propertyname="testOnBorrow"    value="${redis.pool.testOnBorrow}"/>
+            <propertyname="testOnReturn"    value="${redis.pool.testOnReturn}"/>
+        </bean>
+*/
+
+
+        try
+        {
             JedisPoolConfig config = new JedisPoolConfig();
-            config.setMaxActive(MAX_ACTIVE);
             config.setMaxIdle(MAX_IDLE);
-            config.setMaxWait(MAX_WAIT);
+/*
+            config.setMaxActive(MAX_ACTIVE);//Jedis-2.1.0
+            config.setMaxWait(MAX_WAIT);//Jedis-2.1.0
+*/
+            config.setMaxTotal(MAX_ACTIVE);     //Jedis-2.9.0
+            config.setMaxWaitMillis(MAX_WAIT);  //Jedis-2.9.0
+
             config.setTestOnBorrow(TEST_ON_BORROW);
             jedisPool = new JedisPool(config, ADDR, PORT, TIMEOUT, AUTH);
-        } catch (Exception e) {
-            e.printStackTrace();
+        }
+        catch (Exception e)
+        {
+            System.out.println(" JedisPool 初始化出错 " );
+            //e.printStackTrace();
         }
     }
 
@@ -57,15 +79,25 @@ public final class RedisUtil {
      * 获取Jedis实例
      * @return
      */
-    public synchronized static Jedis getJedis() {
-        try {
-            if (jedisPool != null) {
-                Jedis resource = jedisPool.getResource();
-                return resource;
-            } else {
-                return null;
+    public synchronized static Jedis getJedis()
+    {
+        try
+        {
+            if (jedisPool != null)
+            {
+                Jedis jedis = jedisPool.getResource();
+                return jedis;
             }
-        } catch (Exception e) {
+            else
+            {                return null;            }
+        }
+        catch (Exception e)
+        {
+            //e.printStackTrace();
+            System.out.println(" jedisPool.getResource 初始化出错 " );
+            System.out.println("e.getLocalizedMessage() = " + e.getLocalizedMessage());
+            System.out.println("e.getCause()            = " + e.getCause());
+
             e.printStackTrace();
             return null;
         }

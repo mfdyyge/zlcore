@@ -1095,3 +1095,17 @@ pwd = tt
 2017-09-20 18:40:01,700 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: BLOB_	| DATA_TYPE=2004 | sqlTypeCode=2004 |decimalDigits0 |sqlTypeName = BLOB | 对应JavaType = null
 2017-09-20 18:40:01,703 [INFO ]  (JdbcTable.java.createColumns:254) - ColumnName: RAW_2000	| DATA_TYPE=-3 | sqlTypeCode=-3 |decimalDigits0 |sqlTypeName = RAW | 对应JavaType = class java.lang.Object
 >>>>>>> temp2
+2017-09-24 12:46:12,107 [INFO ]  (DsFactory.java.<init>:78) - dbtt
+2017-09-24 12:46:12,111 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-24 12:46:12,112 [INFO ]  (DsProperties.java.<init>:50) - conf/db/dbtt
+2017-09-24 12:46:12,114 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/dbtt.properties
+2017-09-24 12:46:12,114 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = tt
+pwd = tt
+------------------------
+2017-09-24 12:46:12,117 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 

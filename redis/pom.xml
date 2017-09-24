@@ -28,34 +28,42 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
-<!--
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
         </dependency>
-        -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+
+<!--        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.5.4</version>
+        </dependency>-->
+<!---->
         <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+<!--
+
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>2.1.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/commons-pool/commons-pool -->
-        <dependency>
-            <groupId>commons-pool</groupId>
-            <artifactId>commons-pool</artifactId>
-            <version>1.5.4</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-pool2 -->
+-->
 <!--
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-            <version>2.4.2</version>
-        </dependency>
+http://blog.csdn.net/ljz9425/article/details/50478757
+        <bean id="jedisPoolConfig"  class="redis.clients.jedis.JedisPoolConfig">
+                <propertyname="maxIdle"         value="${redis.pool.maxIdle}"/>
+                <propertyname="maxTotal"        value="${redis.pool.maxActive}"/>
+                <propertyname="maxWaitMillis"   value="${redis.pool.maxWait}"/>
+                <propertyname="testOnBorrow"    value="${redis.pool.testOnBorrow}"/>
+                <propertyname="testOnReturn"    value="${redis.pool.testOnReturn}"/>
+        </bean>
 -->
 
     </dependencies>
