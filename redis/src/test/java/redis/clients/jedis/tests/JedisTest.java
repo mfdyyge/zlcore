@@ -24,11 +24,17 @@ import redis.clients.jedis.exceptions.JedisException;
 import redis.clients.jedis.tests.commands.JedisCommandTestBase;
 import redis.clients.util.SafeEncoder;
 
-public class JedisTest extends JedisCommandTestBase {
+public class JedisTest extends JedisCommandTestBase
+{
+  @Test
+  public  void  test_start(){
+
+  }
+
   @Test
   public void useWithoutConnecting() {
     Jedis jedis = new Jedis("localhost");
-    jedis.auth("foobared");
+    //jedis.auth("foobared");
     jedis.dbSize();
   }
 

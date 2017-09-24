@@ -2,66 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a914c84a-7143-4a85-92a5-15159d57baa3" name="变更内容" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/HostAndPortTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/TupleTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/BuilderFactoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/ConnectionCloseTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/ConnectionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/FragmentedByteArrayInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/HostAndPortUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisClusterTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisPoolTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisSentinelPoolTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisSentinelTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/KeyMergeUtilTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/PipeliningTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/ProtocolTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/SSLJedisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/ShardedJedisPipelineTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/ShardedJedisPoolTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/ShardedJedisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/CRC16Benchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/GetSetBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/HashingBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/PipelinedGetSetBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/PoolBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/ProtocolBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/SafeEncoderBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/benchmark/ShardedBenchmark.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/collections/SetFromListTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/AllKindOfValuesCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/BinaryValuesCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/BitCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ClusterBinaryJedisCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ClusterCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ClusterScriptingCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ConnectionHandlingCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ControlCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/GeoCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/HashesCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/HyperLogLogCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ListCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ObjectCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/PublishSubscribeCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/ScriptingCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/SetCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/SlowlogCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/SortedSetCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/SortingCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/StringValuesCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/TransactionCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/VariadicCommandsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/AssertUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/ClientKillerUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/FailoverAbortedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/JedisClusterCRC16Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/JedisClusterTestUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/JedisSentinelTestUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/utils/JedisURIHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/pom.xml" afterPath="$PROJECT_DIR$/redis/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java" afterPath="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java" />
     </list>
     <list id="ef314c30-c9e3-4752-9235-3d28c9178907" name="changlist" comment="" />
     <ignored path="zlcore.iws" />
@@ -125,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JedisTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JedisTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="248">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -138,61 +80,14 @@
       <file leaf-file-name="JedisCommandTestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="true">
-        <entry file="jar://D:/Java/jdk1.8.0_92_64X/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TupleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/TupleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HostAndPortTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/HostAndPortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRedis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/TestRedis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3439">
-              <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+            <state relative-caret-position="333">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
               <folding>
-                <element signature="e#2357#2373#0" expanded="false" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/RedisUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -217,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jdbc/src/test/java/memory/Product.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/java/memory/Demo.java" />
         <option value="$PROJECT_DIR$/jdbc/src/test/java/queryrunner/Product.java" />
         <option value="$PROJECT_DIR$/jdbc/src/main/java/com/zl/core/jdbc/gridpojo/Zy.java" />
@@ -267,6 +161,7 @@
         <option value="$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/RedisUtil.java" />
         <option value="$PROJECT_DIR$/redis/pom.xml" />
         <option value="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/HostAndPortTest.java" />
+        <option value="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java" />
         <option value="$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java" />
       </list>
     </option>
@@ -437,6 +332,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zlcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jedis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1005,33 +938,7 @@
       <recent name="H:\Idea_namespase\GIT\zlcore\jdbc\src\test\java\queryrunner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JedisTest.useWithoutConnecting">
-    <configuration default="false" name="TupleTest.testCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="redis.clients.jedis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="redis" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="redis.clients.jedis" />
-      <option name="MAIN_CLASS_NAME" value="redis.clients.jedis.TupleTest" />
-      <option name="METHOD_NAME" value="testCompareTo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.JedisTest.test_start">
     <configuration default="false" name="HostAndPortTest.checkExtractParts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1123,6 +1030,32 @@
       <option name="PACKAGE_NAME" value="redis.clients.jedis.tests" />
       <option name="MAIN_CLASS_NAME" value="redis.clients.jedis.tests.JedisTest" />
       <option name="METHOD_NAME" value="useWithoutConnecting" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="JedisTest.test_start" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="redis.clients.jedis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="redis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="redis.clients.jedis.tests" />
+      <option name="MAIN_CLASS_NAME" value="redis.clients.jedis.tests.JedisTest" />
+      <option name="METHOD_NAME" value="test_start" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1583,19 +1516,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TupleTest.testCompareTo" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkExtractParts" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseString" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseStringWithoutPort" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.JedisTest.useWithoutConnecting" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkExtractParts" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseString" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseStringWithoutPort" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JedisTest.useWithoutConnecting" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JedisTest.test_start" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JedisTest.useWithoutConnecting" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseStringWithoutPort" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseString" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkExtractParts" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TupleTest.testCompareTo" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JedisTest.test_start" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JedisTest.useWithoutConnecting" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseStringWithoutPort" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkParseString" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HostAndPortTest.checkExtractParts" />
       </list>
     </recent_temporary>
   </component>
@@ -1636,7 +1569,7 @@
       <workItem from="1506224902370" duration="100000" />
       <workItem from="1506225016977" duration="1876000" />
       <workItem from="1506227456389" duration="9317000" />
-      <workItem from="1506253666026" duration="963000" />
+      <workItem from="1506253666026" duration="1445000" />
     </task>
     <servers />
   </component>
@@ -1650,6 +1583,12 @@
     <history-entry file="HostAndPortTest_checkParseStringWithoutPort - 2017.09.24 at 19h 57m 53s.xml">
       <configuration name="HostAndPortTest.checkParseStringWithoutPort" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JedisTest_test_start - 2017.09.24 at 20h 08m 21s.xml">
+      <configuration name="JedisTest.test_start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JedisTest_test_start - 2017.09.24 at 20h 11m 30s.xml">
+      <configuration name="JedisTest.test_start" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="JedisTest_useWithoutConnecting - 2017.09.24 at 19h 58m 08s.xml">
       <configuration name="JedisTest.useWithoutConnecting" configurationId="JUnit" />
     </history-entry>
@@ -1662,18 +1601,12 @@
     <history-entry file="JedisTest_useWithoutConnecting - 2017.09.24 at 19h 59m 21s.xml">
       <configuration name="JedisTest.useWithoutConnecting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRedis_testRedisPool - 2017.09.24 at 15h 47m 26s.xml">
-      <configuration name="TestRedis.testRedisPool" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRedis_testRedisPool - 2017.09.24 at 15h 48m 09s.xml">
-      <configuration name="TestRedis.testRedisPool" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TupleTest_testCompareTo - 2017.09.24 at 19h 55m 13s.xml">
-      <configuration name="TupleTest.testCompareTo" configurationId="JUnit" />
+    <history-entry file="JedisTest_useWithoutConnecting - 2017.09.24 at 20h 08m 03s.xml">
+      <configuration name="JedisTest.useWithoutConnecting" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98683000" />
+    <option name="totallyTimeSpent" value="99165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1729,7 +1662,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2066,16 +1999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/TestRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3439">
-          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
-          <folding>
-            <element signature="e#2357#2373#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -2100,30 +2023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/TupleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/HostAndPortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -2143,17 +2042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/HostAndPort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Protocol.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -2162,18 +2050,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java">
+    <entry file="jar://D:/Java/jdk1.8.0_92_64X/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+        <state relative-caret-position="229">
+          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/HostAndPort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/HostAndPortUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="1376">
+          <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
           <folding>
             <element signature="e#274#287#0" expanded="true" />
             <element signature="e#3461#3462#0" expanded="true" />
@@ -2182,10 +2078,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_92_64X/src.zip!/java/util/List.java">
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/TupleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+        <state relative-caret-position="323">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/HostAndPortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/com/zl/core/redis/TestRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2671">
+          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/commands/JedisCommandTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+          <folding>
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/redis/clients/jedis/tests/JedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
           <folding />
         </state>
       </provider>

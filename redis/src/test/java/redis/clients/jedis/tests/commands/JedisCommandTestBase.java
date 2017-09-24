@@ -12,6 +12,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.ComparisonFailure;
 
+import org.junit.Test;
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.tests.HostAndPortUtil;
@@ -26,13 +27,22 @@ public abstract class JedisCommandTestBase {
   }
 
   @Before
-  public void setUp() throws Exception {
+  public void setUp() throws Exception 
+  {
+    System.out.println("hnp.getHost() = " + hnp.getHost());
+    System.out.println("hnp.getPort() = " + hnp.getPort());
     jedis = new Jedis(hnp.getHost(), hnp.getPort(), 500);
     jedis.connect();
-    jedis.auth("foobared");
+    /**
+     * jedis.auth("foobared"); 服务器没有设置密码这里发送密码请求会报错
+     * redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+     */
+
+    //jedis.auth("foobared");
     jedis.configSet("timeout", "300");
     jedis.flushAll();
   }
+
 
   @After
   public void tearDown() {
