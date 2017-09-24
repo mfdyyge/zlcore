@@ -2,7 +2,7 @@ package apche.dbutils.test.DataSource;
 
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.sqldeveloper.JdbcSchema;
-import com.zl.core.jdbc.sqldeveloper.orcl.Column;
+import com.zl.core.jdbc.sqldeveloper.properties.Column;
 import com.zl.core.jdbc.sqldeveloper.JdbcDatabase;
 import com.zl.core.jdbc.sqldeveloper.JdbcTable;
 
@@ -90,7 +90,13 @@ public class JdbcSchema_Test
         JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
         com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"tt");
 
+
         JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"zy");
+
+/*
+        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"jdbctable");
+
+*/
 
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 

@@ -1,9 +1,9 @@
 package com.zl.core.jdbc.sqldeveloper;
 
 
-import com.zl.core.jdbc.sqldeveloper.orcl.Schema;
-import com.zl.core.jdbc.sqldeveloper.orcl.Table;
-import com.zl.core.jdbc.sqldeveloper.orcl.Database;
+import com.zl.core.jdbc.sqldeveloper.properties.Schema;
+import com.zl.core.jdbc.sqldeveloper.properties.Table;
+import com.zl.core.jdbc.sqldeveloper.properties.Database;
 
 
 import java.sql.Connection;
@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.Locale;
 import java.util.Vector;
 
-// Referenced classes of package com.zl.orcl.util.orcl:
+// Referenced classes of package com.zl.properties.util.orcl:
 //            JdbcTable
 
 public class JdbcSchema extends Schema

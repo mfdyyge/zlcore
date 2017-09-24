@@ -2,8 +2,8 @@ package com.zl.core.jdbc.generator;
 
 
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.generator.orcl.Table;
-import com.zl.core.jdbc.generator.orcl.Column;
+import com.zl.core.jdbc.generator.properties.Table;
+import com.zl.core.jdbc.generator.properties.Column;
 
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;

@@ -1,14 +1,13 @@
-// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
-// Jad home page: http://www.kpdus.com/jad.html
-// Decompiler options: packimports(3) 
-// Source File Name:   JdbcDatabase.java
-
 package com.zl.core.jdbc.sqldeveloper;
 
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3)
+// Source File Name:   JdbcDatabase.java
 
 
-import com.zl.core.jdbc.sqldeveloper.orcl.Database;
-import com.zl.core.jdbc.sqldeveloper.orcl.Schema;
+import com.zl.core.jdbc.sqldeveloper.properties.Database;
+import com.zl.core.jdbc.sqldeveloper.properties.Schema;
 
 
 import org.apache.log4j.Logger;

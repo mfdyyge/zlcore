@@ -2,9 +2,9 @@ package com.zl.core.jdbc.generator;
 
 
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.generator.orcl.Column;
-import com.zl.core.jdbc.generator.orcl.ConvertHandler;
-import com.zl.core.jdbc.generator.orcl.Table;
+import com.zl.core.jdbc.generator.properties.Column;
+import com.zl.core.jdbc.generator.properties.ConvertHandler;
+import com.zl.core.jdbc.generator.properties.Table;
 
 import org.apache.log4j.Logger;
 
@@ -74,8 +74,11 @@ public class Oracle
             col.setDefaultValue(rs.getString("COLUMN_DEF"));
             col.setComment(rs.getString("REMARKS"));
 
+
+
             ConvertHandler.columnHandler(col);
 
+            logger.info(col.toString());
             t.getColumns().add(col);
         }
     }
