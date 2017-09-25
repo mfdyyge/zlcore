@@ -11,6 +11,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.oracle.jdbc:ojdbc6:11.2.0.4" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP-java7:2.4.12" level="project" />
     <orderEntry type="module" module-name="base" />
     <orderEntry type="library" name="Maven: com.xiaoleilu:hutool-all:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
