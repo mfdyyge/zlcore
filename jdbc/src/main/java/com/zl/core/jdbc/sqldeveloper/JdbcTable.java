@@ -10,7 +10,6 @@ import com.mchange.v1.db.sql.UnsupportedTypeException;
 import com.zl.core.jdbc.sqldeveloper.properties.*;
 import com.zl.core.jdbc.sqldeveloper.properties.impl.ColumnImpl;
 import com.zl.core.jdbc.sqldeveloper.properties.impl.RelationshipImpl;
-import oracle.jdbc.internal.OracleTypes;
 import org.apache.log4j.Logger;
 
 import java.beans.PropertyChangeListener;
@@ -462,6 +461,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
      */
     private Class _getClassForSqlTypeCode(int sqlTypeCode, int digits)
     {
+       // oracle.sql.SQLUtil.SQLToJava();
 
 /*
         TypesUtils typesUtils;
@@ -477,9 +477,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         {
             e.printStackTrace();
         }
-        int BOOLEAN     =   OracleTypes.BOOLEAN;//16
-        int bit         =   OracleTypes.BIT;//-7
-        int LONGVARCHAR =   OracleTypes.LONGVARCHAR;//-1
+
         Class c;
         switch(sqlTypeCode) {
             case -7:
@@ -518,22 +516,20 @@ public class JdbcTable extends Table implements DataDescriptorProvider
                     c = Double.class;
                 }
                 break;
-            case OracleTypes.FLOAT://6:
+            case 6:
                 c = Float.class;
                 break;
-            case OracleTypes.DATE://91:
+            case 91:
                 c = Date.class;
                 break;
             case 92:
                 c = Time.class;
                 break;
-            case OracleTypes.TIMESTAMP:
-            case OracleTypes.TIMESTAMPTZ:
-            case OracleTypes.TIMESTAMPLTZ:
+            case 93:
+            case -102:
                 c = Timestamp.class;
                 break;
-            case OracleTypes.CLOB://CLOB
-            case OracleTypes.NCLOB:
+            case 2005://CLOB
                 c= Clob.class;
         }
         return c;

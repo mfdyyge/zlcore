@@ -84,10 +84,17 @@
         <!-- 数据库 -->
         <!-- oracle数据库相关依赖 start -->
         <!-- ***********************************************************************************************************8  -->
+<!--
         <dependency>
             <groupId>com.oracle.jdbc</groupId>
             <artifactId>ojdbc6</artifactId>
             <version>11.2.0.4</version>
+        </dependency>
+ -->
+        <dependency>
+            <groupId>com.oracle.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>12.2.0.1.0</version>
         </dependency>
 
         <!-- mysql数据库相关依赖 start -->
