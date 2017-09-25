@@ -30,8 +30,8 @@ public class QueryRunnerCRUDTest {
 	public void add() throws SQLException {
 		// 将数据源传递给QueryRunner，QueryRunner内部通过数据源获取数据库连接
 		QueryRunner qr = new QueryRunner(new DsFactory("dbjpa").getDataSource());
-		String sql = "insert into users(id,name,password,email) values(?,?,?,?)";
-		Object params[] = {time.getTimeLongHm(),"钢背猪☣", "123", "gacl@sina.com" };
+		String sql = "insert into users(id,name) values(?,?)";
+		Object params[] = {time.getTimeLongHm(),"钢背猪☣", };
 		qr.update(sql, params);
 	}
 

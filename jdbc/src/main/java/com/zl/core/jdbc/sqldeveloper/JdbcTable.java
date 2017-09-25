@@ -1,15 +1,25 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
-
 package com.zl.core.jdbc.sqldeveloper;
 
+
 import com.zl.core.jdbc.sqldeveloper.properties.*;
+import com.zl.core.jdbc.sqldeveloper.properties.Column;
+import com.zl.core.jdbc.sqldeveloper.properties.DataDescriptor;
+import com.zl.core.jdbc.sqldeveloper.properties.DataDescriptorProvider;
+import com.zl.core.jdbc.sqldeveloper.properties.Relationship;
+import com.zl.core.jdbc.sqldeveloper.properties.Schema;
+import com.zl.core.jdbc.sqldeveloper.properties.Table;
 import com.zl.core.jdbc.sqldeveloper.properties.impl.RelationshipImpl;
-import com.zl.core.jdbc.sqldeveloper.properties.impl.ColumnImpl;
+
 import org.apache.log4j.Logger;
 
+import com.zl.core.jdbc.sqldeveloper.properties.impl.ColumnImpl;
+
+
+import com.mchange.v1.db.sql.TypesUtils;
+import com.mchange.v1.db.sql.UnsupportedTypeException;
+import oracle.jdbc.internal.OracleTypes;
+
+import org.apache.log4j.Logger;
 import java.beans.PropertyChangeListener;
 import java.sql.*;
 import java.util.Locale;
@@ -39,7 +49,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
 
     private Connection          _connection;
     private String              _tableName;
-    private Schema _schema;
+    private Schema              _schema;
     private Column[]            _columns;
     private Column[]            _primaryKey;
     private Relationship[]      _foreignKey;
@@ -99,8 +109,38 @@ public class JdbcTable extends Table implements DataDescriptorProvider
     public String[] getColumnNames()
     {
         String[] ColumnNames=null;
+
+        try {
+            ResultSet rs = this._connection.getMetaData().getColumns((String)null, this._getSchemaName(), this.getName(), (String)null);
+            Vector temp = new Vector();
+            boolean dataType = false;
+            Object var13 = this._RESULTS_OBJECT;
+            synchronized(this._RESULTS_OBJECT)
+            {
+                while(rs.next())
+                {
+                    String name = rs.getString(4);
+                    temp.addElement(name);
+                }
+            }
+            int columnNames_size=temp.size();
+            ColumnNames = new String[columnNames_size];
+            System.out.println("columnNames_size = " + columnNames_size);
+
+            if(temp.size() != 0)
+            {
+                temp.copyInto(ColumnNames);
+                // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
+            }
+
+            rs.close();
+        } catch (SQLException var16) {
+            System.err.println("A SQLException occured " + var16);
+        }
+
         return ColumnNames;
     }
+
 
 
 
@@ -204,21 +244,26 @@ public class JdbcTable extends Table implements DataDescriptorProvider
             {
                 while(rs.next())
                 {
-                    String name = rs.getString(4);
-                    int dataType1 = rs.getInt(5);
-                    int decimalDigits = rs.getInt(9);
-                    Class type = this._getClass(dataType1, decimalDigits);
+                    String ColumnName = rs.getString(4);// 列名
+                    int sqlTypeCode = rs.getInt(5);     //列数据类型Code
+                    int decimalDigits = rs.getInt(9);   //小数点
+
+                    //Class type = this._getClass(sqlTypeCode, decimalDigits);//根据SqlTypeCode 转换成 JavaType
+                    Class type = this._getClassForSqlTypeCode(sqlTypeCode,decimalDigits);//根据SqlTypeCode 转换成 JavaType
 
                     String DATA_TYPE  = rs.getString("DATA_TYPE");//字段数据类型(对应java.sql.Types中的常量)
-                    String TYPE_NAME = rs.getString("TYPE_NAME");//字段类型名称(例如：VACHAR2)
+
+                    Types types;
+                    //String sqlTypeName= TypesUtils.getNameForSqlTypeCode(sqlTypeCode);
+                    String sqlTypeName = rs.getString("TYPE_NAME");//字段类型名称(例如：VACHAR2)
 
 
-                    System.out.println("name: "+name+" | DATA_TYPE="+DATA_TYPE+" |TYPE_NAME = "+TYPE_NAME+" | 字段类型 = " + type);
+                    logger.info("ColumnName: "+ColumnName+"\t| DATA_TYPE="+DATA_TYPE+" | sqlTypeCode="+sqlTypeCode+" |decimalDigits"+decimalDigits+" |sqlTypeName = "+sqlTypeName+" | 对应JavaType = " + type);
                     int nullable = rs.getInt(11);
                     boolean allowsNull = nullable == 1;
                     String defaultValue = rs.getString(13);
 
-                    ColumnImpl column = new ColumnImpl(name, name, type, allowsNull, defaultValue, this);
+                    ColumnImpl column = new ColumnImpl(ColumnName, ColumnName, type, allowsNull, defaultValue, this);
 
                     temp.addElement(column);
                 }
@@ -342,9 +387,24 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         return key;
     }
 
-    private Class _getClass(int sqlType, int digits) {
+    /**
+     * sqlType 转换 JavaType
+     * @param sqlTypeCode   列数据类型代码
+     * @param digits        小数位数
+     * @return
+     */
+    private Class _getClass(int sqlTypeCode, int digits)
+    {
+
+/*
+        TypesUtils typesUtils;
+        javax.lang.model.util.Types types;
+        JDBCType jdbcType=JDBCType.valueOf(sqlTypeCode);
+        logger.info(jdbcType.getDeclaringClass());
+*/
+
         Class c;
-        switch(sqlType) {
+        switch(sqlTypeCode) {
             case -7:
                 c = Boolean.class;
                 break;
@@ -397,7 +457,88 @@ public class JdbcTable extends Table implements DataDescriptorProvider
             case 2005://CLOB
                 c= Clob.class;
         }
+        return c;
+    }
 
+    /**
+     * sqlType 转换 JavaType
+     * @param sqlTypeCode   列数据类型代码
+     * @param digits        小数位数
+     * @return
+     */
+    private Class _getClassForSqlTypeCode(int sqlTypeCode, int digits)
+    {
+       // oracle.sql.SQLUtil.SQLToJava();
+
+/*
+        TypesUtils typesUtils;
+        javax.lang.model.util.Types types;
+        JDBCType jdbcType=JDBCType.valueOf(sqlTypeCode);
+        logger.info(jdbcType.getDeclaringClass());
+*/
+        try
+        {
+            String sqlTypeName=TypesUtils.getNameForSqlTypeCode(-1);
+            System.out.println("sqlTypeName = " +sqlTypeName);
+        } catch (UnsupportedTypeException e)
+        {
+            e.printStackTrace();
+        }
+
+        Class c;
+        switch(sqlTypeCode) {
+            case -7:
+                c = Boolean.class;
+                break;
+            case -6:
+            case -5:
+            case 4:
+            case 5:
+                c = Long.class;
+                break;
+            case -4:
+            case -3:
+            case -2:
+                c = Object.class;
+                break;
+            case -1:
+            case 12:
+            case 1111://NVARCHAR2
+                c = String.class;
+                break;
+            case 0:
+            default:
+                c = null;
+                break;
+            case 1:
+                c = Character.class;
+                break;
+            case 2:
+            case 3:
+            case 7:
+            case 8:
+                if(digits == 0) {
+                    c = Integer.class;
+                } else {
+                    c = Double.class;
+                }
+                break;
+            case 6:
+                c = Float.class;
+                break;
+            case 91:
+                c = Date.class;
+                break;
+            case 92:
+                c = Time.class;
+                break;
+            case 93:
+            case -102:
+                c = Timestamp.class;
+                break;
+            case 2005://CLOB
+                c= Clob.class;
+        }
         return c;
     }
 

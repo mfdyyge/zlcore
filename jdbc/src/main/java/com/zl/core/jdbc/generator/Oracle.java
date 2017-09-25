@@ -2,6 +2,10 @@ package com.zl.core.jdbc.generator;
 
 
 import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.generator.properties.Column;
+import com.zl.core.jdbc.generator.properties.ConvertHandler;
+import com.zl.core.jdbc.generator.properties.Table;
+
 import org.apache.log4j.Logger;
 
 import java.sql.DatabaseMetaData;
@@ -62,6 +66,7 @@ public class Oracle
 
             col.setName(rs.getString("COLUMN_NAME"));
             col.setType(rs.getString("TYPE_NAME"));
+            logger.info(rs.getString("TYPE_NAME"));
 
             col.setSize(rs.getInt("COLUMN_SIZE"));
             col.setNullable(rs.getBoolean("NULLABLE"));
@@ -69,7 +74,10 @@ public class Oracle
             col.setDefaultValue(rs.getString("COLUMN_DEF"));
             col.setComment(rs.getString("REMARKS"));
 
+
+
             ConvertHandler.columnHandler(col);
+
             logger.info(col.toString());
             t.getColumns().add(col);
         }

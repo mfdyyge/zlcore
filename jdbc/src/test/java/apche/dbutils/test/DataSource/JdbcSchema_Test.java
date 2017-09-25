@@ -1,0 +1,118 @@
+package apche.dbutils.test.DataSource;
+
+import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.sqldeveloper.JdbcSchema;
+import com.zl.core.jdbc.sqldeveloper.properties.Column;
+import com.zl.core.jdbc.sqldeveloper.JdbcDatabase;
+import com.zl.core.jdbc.sqldeveloper.JdbcTable;
+
+import org.apache.log4j.Logger;
+import org.junit.Test;
+import java.sql.Connection;
+import java.util.Arrays;
+
+/**
+ * Created by 钢背猪☣ on 2017-8-30 0030.
+ *
+ * @ClassName: apche.dbutils.test.DataSource
+ * @Description: 描述:474752515@qq.com
+ * @author: 钢背猪☣
+ * @date: 2017-8-30 0030
+ */
+public class JdbcSchema_Test
+{
+    protected static Logger logger = Logger.getLogger(JdbcSchema_Test.class);
+
+    private static Connection connection;
+    private static Connection connection_jcxt;
+
+    //private static DsFactory dsFactory=new DsFactory();
+    private static DsFactory dsFactory=new DsFactory("dbtt");
+
+    static String getUserTypeTreeSql = "select level depth, parent_type, child_type, ATTR_NO, child_type_owner from  (select TYPE_NAME parent_type, ELEM_TYPE_NAME child_type, 0 ATTR_NO,       ELEM_TYPE_OWNER child_type_owner     from USER_COLL_TYPES  union   select TYPE_NAME parent_type, ATTR_TYPE_NAME child_type, ATTR_NO,       ATTR_TYPE_OWNER child_type_owner     from USER_TYPE_ATTRS  ) start with parent_type  = ?  connect by prior  child_type = parent_type";
+    String sqlHint = null;
+    static String getAllTypeTreeSql = "select parent_type, parent_type_owner, child_type, ATTR_NO, child_type_owner from ( select TYPE_NAME parent_type,  OWNER parent_type_owner,     ELEM_TYPE_NAME child_type, 0 ATTR_NO,     ELEM_TYPE_OWNER child_type_owner   from ALL_COLL_TYPES union   select TYPE_NAME parent_type, OWNER parent_type_owner,     ATTR_TYPE_NAME child_type, ATTR_NO,     ATTR_TYPE_OWNER child_type_owner   from ALL_TYPE_ATTRS ) start with parent_type  = ?  and parent_type_owner = ? connect by prior child_type = parent_type   and ( child_type_owner = parent_type_owner or child_type_owner is null )";
+
+    static
+   {
+       connection=dsFactory.getConnection();
+       //connection_jcxt=dsFactory_jcxt.getConnection();
+   }
+
+    /*测试DsFactory*/
+    @Test
+    public  void  DsFactory()
+    {
+        logger.debug("DsFactory()");
+        //System.out.println(connection_1== connection);
+
+/*        System.out.println("Connection = " +dsFactory.isValid(connection_jcxt));
+        System.out.println("connection = " + dsFactory_jcxt.isValid(connection));
+
+        System.out.println("connection.hashCode() = " + connection.hashCode());
+        System.out.println("connection_1.hashCode() = " + connection_jcxt.hashCode());
+
+        System.out.println("DsFactory.getConnection() = " + new DsFactory().getConnection());
+
+
+        //判断两个Connection 是否相等
+        System.out.println("判断两个Connection 是否相等> connection.equals(connection_1)= " + connection.equals(connection_jcxt));*/
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //数据库对象
+    @Test
+    public  void JDBCDatabase_test()
+    {
+
+        JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
+        System.out.println("数据库对象>jdbcDatabase.getSchemaCount = " + jdbcDatabase.getSchemaCount());
+
+    }
+
+    //数据库用户对象－或者说－数据库命名空间
+    @Test
+    public  void JDBCSchema_test()
+    {
+        JdbcDatabase database= new JdbcDatabase(connection);
+        String[] dbName=database.getSchemaNames();
+        System.out.println("Arrays.asList(dbName) = " + Arrays.asList(dbName));
+
+        JdbcSchema jdbcSchema=new JdbcSchema(connection,database,"tt");
+        System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
+    }
+
+    /**
+     *     数据库表对象
+     */
+    @Test
+    public  void JDBCTable_test()
+    {
+
+        JdbcDatabase jdbcDatabase= new JdbcDatabase(connection);
+        com.zl.core.jdbc.sqldeveloper.JdbcSchema jdbcSchema=new com.zl.core.jdbc.sqldeveloper.JdbcSchema(connection,jdbcDatabase,"tt");
+
+
+        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"zy");
+
+/*
+        JdbcTable jdbcTable= new JdbcTable(connection,jdbcSchema,"jdbctable");
+
+*/
+
+        System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
+
+        Column[]            A_columns=jdbcTable.getColumns();
+        System.out.println("Arrays.asList(jdbcTable.getColumnNames()) = " + Arrays.asList(jdbcTable.getColumnNames()));
+
+/*        System.out.println("A_columns[0].toString() = " + A_columns[0].toString());
+        System.out.println(" 字段类型 = " +  A_columns[0].getDataType());
+        System.out.println(">>>> (columns)= " + A_columns[0].getName());*/
+       // System.out.println("数据库表对象> j Arrays.asList(columns)= " + Arrays.asList(columns));
+
+    }
+
+
+
+}

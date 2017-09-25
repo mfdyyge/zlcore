@@ -1,13 +1,18 @@
 package apche.dbutils.test.DataSource;
 
+import com.alibaba.druid.sql.SQLUtils;
+import com.alibaba.druid.sql.ast.SQLObject;
+import com.alibaba.druid.sql.dialect.oracle.ast.OracleSQLObjectImpl;
+import com.alibaba.druid.sql.dialect.oracle.visitor.OracleASTVisitor;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.apche.dbutils.dao.QueryRunnerDao;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Arrays;
-
 /**
  * Created by 钢背猪☣ on 2017-8-7 0007.
  *
@@ -23,6 +28,10 @@ public class Test_DataSourceFactory
     private static DsFactory dsFactory;
     private StringBuffer msg;
 
+
+    static String getUserTypeTreeSql = "select level depth, parent_type, child_type, ATTR_NO, child_type_owner from  (select TYPE_NAME parent_type, ELEM_TYPE_NAME child_type, 0 ATTR_NO,       ELEM_TYPE_OWNER child_type_owner     from USER_COLL_TYPES  union   select TYPE_NAME parent_type, ATTR_TYPE_NAME child_type, ATTR_NO,       ATTR_TYPE_OWNER child_type_owner     from USER_TYPE_ATTRS  ) start with parent_type  = ?  connect by prior  child_type = parent_type";
+    String sqlHint = null;
+    static String getAllTypeTreeSql = "select parent_type, parent_type_owner, child_type, ATTR_NO, child_type_owner from ( select TYPE_NAME parent_type,  OWNER parent_type_owner,     ELEM_TYPE_NAME child_type, 0 ATTR_NO,     ELEM_TYPE_OWNER child_type_owner   from ALL_COLL_TYPES union   select TYPE_NAME parent_type, OWNER parent_type_owner,     ATTR_TYPE_NAME child_type, ATTR_NO,     ATTR_TYPE_OWNER child_type_owner   from ALL_TYPE_ATTRS ) start with parent_type  = ?  and parent_type_owner = ? connect by prior child_type = parent_type   and ( child_type_owner = parent_type_owner or child_type_owner is null )";
 
     static
     {
@@ -114,5 +123,63 @@ public class Test_DataSourceFactory
         System.out.println("connection == connection_db1 >" + connection.equals(connection_db1));
     }
 
+
+    /**
+     * Druid.SQLUtuils
+     */
+    @Test
+    public void  oracle_SQLUtils()
+    {
+
+        oracle.sql.SQLUtil sqlUtil=new oracle.sql.SQLUtil();
+
+    }
+
+    /**
+     * Druid.SQLUtuils
+     */
+    @Test
+    public void  druid_SQLUtils()
+    {
+        SQLObject toOracleString = new OracleSQLObjectImpl()
+        {
+            @Override
+            public void accept0(OracleASTVisitor oracleASTVisitor)
+            {
+
+            }
+        };
+
+        SQLUtils.toOracleString(toOracleString);
+    }
+
+
+    /**
+     * SQL建立表
+     * @throws SQLException
+     */
+    @Test
+    public void createTable() throws SQLException
+    {
+        int COUNT = 800;
+        //Connection connection    =dsFactory.getConnection();
+
+        StringBuffer ddl = new StringBuffer();
+        ddl.append("CREATE TABLE t_big (FID INT AUTO_INCREMENT PRIMARY KEY ");
+        for (int i = 0; i < COUNT; ++i) {
+            ddl.append(", ");
+            ddl.append("F" + i);
+            ddl.append(" BIGINT NULL");
+        }
+        ddl.append(")");
+
+        Connection conn = dsFactory.getConnection();
+
+        Statement stmt = conn.createStatement();
+        stmt.execute(ddl.toString());
+        stmt.close();
+
+        conn.close();
+    }
 
 }
