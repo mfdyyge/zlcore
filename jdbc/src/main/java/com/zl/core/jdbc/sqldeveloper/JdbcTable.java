@@ -275,7 +275,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
             if(temp.size() != 0)
             {
                 temp.copyInto(columns);
-               // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
+                // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
             }
 
             rs.close();
@@ -468,7 +468,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
      */
     private Class _getClassForSqlTypeCode(int sqlTypeCode, int digits)
     {
-       // oracle.sql.SQLUtil.SQLToJava();
+        // oracle.sql.SQLUtil.SQLToJava();
 
 /*
         TypesUtils typesUtils;
