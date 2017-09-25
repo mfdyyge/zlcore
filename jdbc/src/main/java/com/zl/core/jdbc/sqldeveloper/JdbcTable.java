@@ -1,17 +1,25 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
-
 package com.zl.core.jdbc.sqldeveloper;
+
+
+import com.zl.core.jdbc.sqldeveloper.properties.*;
+import com.zl.core.jdbc.sqldeveloper.properties.Column;
+import com.zl.core.jdbc.sqldeveloper.properties.DataDescriptor;
+import com.zl.core.jdbc.sqldeveloper.properties.DataDescriptorProvider;
+import com.zl.core.jdbc.sqldeveloper.properties.Relationship;
+import com.zl.core.jdbc.sqldeveloper.properties.Schema;
+import com.zl.core.jdbc.sqldeveloper.properties.Table;
+import com.zl.core.jdbc.sqldeveloper.properties.impl.RelationshipImpl;
+
+import org.apache.log4j.Logger;
+
+import com.zl.core.jdbc.sqldeveloper.properties.impl.ColumnImpl;
+
 
 import com.mchange.v1.db.sql.TypesUtils;
 import com.mchange.v1.db.sql.UnsupportedTypeException;
-import com.zl.core.jdbc.sqldeveloper.properties.*;
-import com.zl.core.jdbc.sqldeveloper.properties.impl.ColumnImpl;
-import com.zl.core.jdbc.sqldeveloper.properties.impl.RelationshipImpl;
-import org.apache.log4j.Logger;
+import oracle.jdbc.internal.OracleTypes;
 
+import org.apache.log4j.Logger;
 import java.beans.PropertyChangeListener;
 import java.sql.*;
 import java.util.Locale;
@@ -41,7 +49,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
 
     private Connection          _connection;
     private String              _tableName;
-    private Schema _schema;
+    private Schema              _schema;
     private Column[]            _columns;
     private Column[]            _primaryKey;
     private Relationship[]      _foreignKey;
@@ -123,7 +131,6 @@ public class JdbcTable extends Table implements DataDescriptorProvider
             {
                 temp.copyInto(ColumnNames);
                 // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
-
             }
 
             rs.close();

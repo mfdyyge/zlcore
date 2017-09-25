@@ -1,8 +1,13 @@
 package apche.dbutils.test.DataSource;
 
-import com.zl.core.jdbc.generator.Column;
+
+import com.zl.core.jdbc.generator.properties.Column;
+import com.zl.core.jdbc.generator.properties.Table;
+
+
 import com.zl.core.jdbc.generator.Oracle;
-import com.zl.core.jdbc.generator.Table;
+
+
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
@@ -24,16 +29,20 @@ public class oracle_test
     public void Oracle_getTable()
     {
         //Oracle.getDataBaseInfo();
-        Oracle oracle=new Oracle("dbjpa");
+        Oracle oracle=new Oracle("dbtt");
 
        // List<Table> tables = oracle.getTables();
         //oracle.getTables();
         //oracle.getTable("act","");
         Table table=oracle.getTable("zy");
+
+        //logger.info(table);
+
         List<Column> columns=table.getColumns();
         Column column1=columns.get(0);
 
         logger.info(column1.getJavaType());
+
 /*
         List<String> tableToSelect = new ArrayList<String>();
 

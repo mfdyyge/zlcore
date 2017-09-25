@@ -78,12 +78,13 @@ public class DsFactory_HikariCp
 		* 60000毫秒=1分
 		* */
 		dataSource.setMaxLifetime(600000);//10分钟-[链接池中->保持数据库链接->时间]
-		/*
+
+		/*常见的错误是设置一个太大的值，连接数多反而性能下降。
 		* 连接池中允许的最大连接数
 		* 缺省值：10；
-		* 推荐的公式：((core_count * 2) + effective_spindle_count)
+		* 参考计算公式是：：((core_count * 2) + effective_spindle_count) 例如：一个4核，1块硬盘的服务器，连接数 = （4 * 2） + 1 = 9，凑个整数，10就可以了
 		* */
-		dataSource.setMaximumPoolSize(40);
+		dataSource.setMaximumPoolSize(10);
 
 
 

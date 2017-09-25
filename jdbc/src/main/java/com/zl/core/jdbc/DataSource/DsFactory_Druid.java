@@ -59,8 +59,8 @@ public class DsFactory_Druid
 		/****************************************************************/
 
 
-		dataSource.setInitialSize(100);			//初始化时建立物理连接的个数。初始化发生在显示调用init方法，或者第一次getConnection时
-		dataSource.setMaxActive(100);  			//最大连接池数量
+		dataSource.setInitialSize(10);			//初始化时建立物理连接的个数。初始化发生在显示调用init方法，或者第一次getConnection时
+		dataSource.setMaxActive(10);  			//最大连接池数量
 		dataSource.setMinIdle(0);	   			//最小连接池数量
 		dataSource.setMaxWait(60000);  			//[单位:毫秒]=>获取连接时最大等待时间。配置了maxWait之后，缺省启用公平锁，并发效率会有所下降，如果需要可以通过配置useUnfairLock属性为true使用非公平锁。
 

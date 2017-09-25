@@ -41,14 +41,23 @@ public class GetSql_test
 
         String sql;
         //sql = getSqlFromMap(map);
+
         sql= SqlGenerator.getSqlFromMap("",map);
         System.out.println("apche.dbutils.test.utils: " + sql);
+
         //System.out.println("paramers = " + Arrays.asList(SqlGenerator.getArryFromMap(map)));
         //getTableFromMap(map);
         //TableFormParams tableFormParams= SqlGenerator.getTableFormParams_FromMap_oracle(map,"USERS","pageNum","pageSize");
        // System.out.println("tableFormParams.getSql_add() = " + tableFormParams.getSql_add());
     }
 
+    @Test
+    public void test_properties(){
+        String str=new String("12453452176876145234521277856889");
+        String s2=str;
+        s2.replaceAll(" ","1");
+        System.out.println("s2 = " + s2);
+    }
 
 
 }

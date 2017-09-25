@@ -1,5 +1,4 @@
 
-
 # ******************************************************项目操作[GIT合并上传本地项目 ]
 #   先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull
 
@@ -24,15 +23,13 @@
 #     </configuration>
 # </plugin>
 
-# ******************************************************[ 项目目录 ]
-/.project
-.idea
-
-# ******************************************************[ Package Files ]
-zlcore.iml
-base/base.iml
-jdbc/jdbc.iml
+# IDEA[ 项目目录 ]
+# 项目配置文件
+.idea/*
+*.iml
 *.versionsBackup
+*.ipr
+*.iws
 *.class
 *.jar
 *.war
@@ -51,5 +48,14 @@ springdata/target
 springmvc/target
 
 
+# Eclipse[ 项目目录 ]
+.project
+.classpath
+.settings/
+
+
+# system ignore
+.DS_Store
+Thumbs.db
 
 
