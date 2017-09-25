@@ -37,7 +37,7 @@ import org.apache.ddlutils.model.TypeMap;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for the Microsoft SQL Server.
+ * The sql Builder for the Microsoft sql Server.
  * 
  * @version $Revision: 893917 $
  */
@@ -147,7 +147,7 @@ public class MSSqlBuilder extends SqlBuilder
             case Types.FLOAT:
             case Types.DOUBLE:
             case Types.DECIMAL:
-                // SQL Server does not want quotes around the value
+                // sql Server does not want quotes around the value
                 if (!(value instanceof String) && (getValueNumberFormat() != null))
                 {
                     result.append(getValueNumberFormat().format(value));
@@ -270,10 +270,10 @@ public class MSSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Returns the SQL to enable identity override mode.
+     * Returns the sql to enable identity override mode.
      * 
      * @param table The table to enable the mode for
-     * @return The SQL
+     * @return The sql
      */
     protected String getEnableIdentityOverrideSql(Table table)
     {
@@ -289,10 +289,10 @@ public class MSSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Returns the SQL to disable identity override mode.
+     * Returns the sql to disable identity override mode.
      * 
      * @param table The table to disable the mode for
-     * @return The SQL
+     * @return The sql
      */
     protected String getDisableIdentityOverrideSql(Table table)
     {
@@ -392,7 +392,7 @@ public class MSSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Generates the SQL to drop a column from a table.
+     * Generates the sql to drop a column from a table.
      * 
      * @param table  The table where to drop the column from
      * @param column The column to drop
@@ -412,7 +412,7 @@ public class MSSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL for dropping the primary key of the given table.
+     * Writes the sql for dropping the primary key of the given table.
      * 
      * @param table The table
      */
@@ -424,7 +424,7 @@ public class MSSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to recreate a column, e.g. using a different type or similar.
+     * Writes the sql to recreate a column, e.g. using a different type or similar.
      * 
      * @param table     The table
      * @param curColumn The current column definition
@@ -473,7 +473,7 @@ public class MSSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a constraint, e.g. a primary key or default value constraint.
+     * Writes the sql to drop a constraint, e.g. a primary key or default value constraint.
      * 
      * @param table          The table that the constraint is on
      * @param column         The column that the constraint is on; <code>null</code> for table-level

@@ -1142,3 +1142,152 @@ pwd = act
 ------------------------
 2017-09-25 10:01:17,138 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
 2017-09-25 10:01:17,139 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-25 10:17:03,030 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 10:17:03,034 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-25 10:17:03,034 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-25 10:17:03,036 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 10:17:03,037 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 10:17:03,037 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 10:17:03,037 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-25 10:18:19,980 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 10:18:19,984 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-25 10:18:19,984 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-25 10:18:19,986 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 10:18:19,986 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 10:18:19,986 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 10:18:19,987 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-25 15:35:40,215 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:35:40,222 [INFO ]  (DsProperties.java.<init>:48) - conf/db/
+2017-09-25 15:35:40,223 [INFO ]  (DsProperties.java.<init>:50) - conf/db/db
+2017-09-25 15:35:40,225 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:35:40,226 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:35:40,226 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:35:40,227 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-25 15:38:25,696 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:38:25,706 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:38:25,706 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:38:25,707 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:38:25,707 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-25 15:38:35,591 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:38:35,597 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:38:35,598 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:38:35,598 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:38:35,599 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - **	Read db.properties info ... 
+2017-09-25 15:44:05,836 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:44:05,842 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:44:05,842 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:44:05,842 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:44:05,843 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - 返回[ HikariDataSource  链接池]
+2017-09-25 15:44:48,564 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:44:48,570 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:44:48,570 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:44:48,570 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:44:48,571 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - 返回[ HikariDataSource  链接池]
+2017-09-25 15:44:48,812 [INFO ]  (HikariDataSource.java.getConnection:95) - HikariPool-1 - Starting...
+2017-09-25 15:44:49,648 [INFO ]  (HikariDataSource.java.getConnection:107) - HikariPool-1 - Start completed.
+2017-09-25 15:44:49,652 [INFO ]  (Test_DataSourceFactory.java.getFrist:71) - SELECT to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')	         as 当月最后一天 FROM dual 
+2017-09-25 15:44:49,653 [INFO ]  (Test_DataSourceFactory.java.getFrist:72) - SELECT to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 FROM dual 
+2017-09-25 15:44:49,653 [INFO ]  (Test_DataSourceFactory.java.getFrist:74) - 行>getConnection = HikariProxyConnection@1336735375 wrapping oracle.jdbc.driver.T4CConnection@7a187f14
+2017-09-25 15:44:50,006 [INFO ]  (Test_DataSourceFactory.java.getFrist:77) - 行>[2017-08-01, 2017-08-31]
+2017-09-25 15:44:50,008 [INFO ]  (Test_DataSourceFactory.java.getFrist:80) - 行>[2017-09-01, 2017-09-30]
+2017-09-25 15:46:23,482 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:46:23,489 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:46:23,490 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:46:23,490 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:46:23,490 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - 返回[ HikariDataSource  链接池]
+2017-09-25 15:46:37,031 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:46:37,036 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:46:37,037 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:46:37,037 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:46:37,037 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - 返回[ HikariDataSource  链接池]
+2017-09-25 15:46:37,263 [INFO ]  (HikariDataSource.java.getConnection:95) - HikariPool-1 - Starting...
+2017-09-25 15:46:38,118 [INFO ]  (HikariDataSource.java.getConnection:107) - HikariPool-1 - Start completed.
+2017-09-25 15:46:38,122 [INFO ]  (Test_DataSourceFactory.java.getFrist:71) - SELECT to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')	         as 当月最后一天 FROM dual 
+2017-09-25 15:46:38,123 [INFO ]  (Test_DataSourceFactory.java.getFrist:72) - SELECT to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 FROM dual 
+2017-09-25 15:48:44,890 [INFO ]  (DsFactory.java.<init>:48) - db
+2017-09-25 15:48:44,898 [INFO ]  (DsProperties.java.<init>:56) - [配置文件读取] = conf/db/db.properties
+2017-09-25 15:48:44,899 [INFO ]  (DsProperties.java.<init>:74) - 
+------------------------
+DataSourceName = HikariCp
+------------------------
+driverClassName = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@localhost:1521:orcl
+dbName = act
+pwd = act
+------------------------
+2017-09-25 15:48:44,899 [INFO ]  (DsFactory.java.<init>:51) - HikariCp
+2017-09-25 15:48:44,900 [INFO ]  (DsFactory_HikariCp.java.getDataSource:40) - 返回[ HikariDataSource  链接池]
+2017-09-25 15:48:45,151 [INFO ]  (HikariDataSource.java.getConnection:95) - HikariPool-1 - Starting...
+2017-09-25 15:48:45,939 [INFO ]  (HikariDataSource.java.getConnection:107) - HikariPool-1 - Start completed.

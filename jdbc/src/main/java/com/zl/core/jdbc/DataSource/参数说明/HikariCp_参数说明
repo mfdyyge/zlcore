@@ -208,9 +208,9 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 获取要被执行的SQL语句用来测试连接的有效性
-    * Get the SQL query to be executed to test the validity of connections.
+    * Get the sql query to be executed to test the validity of connections.
     *
-    * @return the SQL query string, or null
+    * @return the sql query string, or null
     */
    public String getConnectionTestQuery()
    {
@@ -219,12 +219,12 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 设置要被执行的SQL语句用来测试连接的有效性
-    * Set the SQL query to be executed to test the validity of connections. Using
+    * Set the sql query to be executed to test the validity of connections. Using
     * the JDBC4 <code>Connection.isValid()</code> method to test connection validity can
     * be more efficient on some databases and is recommended.  See
     * {@link HikariConfig#setJdbc4ConnectionTest(boolean)}.
     *
-    * @param connectionTestQuery a SQL query string
+    * @param connectionTestQuery a sql query string
     */
    public void setConnectionTestQuery(String connectionTestQuery)
    {
@@ -233,10 +233,10 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 在连接被创建的时候并且在连接加入到缓冲池之前,获取即将要被执行的SQL字符串
-    * Get the SQL string that will be executed on all new connections when they are
+    * Get the sql string that will be executed on all new connections when they are
     * created, before they are added to the pool.
     *
-    * @return the SQL to execute on new connections, or null
+    * @return the sql to execute on new connections, or null
     */
    public String getConnectionInitSql()
    {
@@ -245,11 +245,11 @@ public class HikariConfig implements HikariConfigMXBean
 
    /**
     * 在连接被创建的时候并且在连接加入到缓冲池之前,设置将要被执行的SQL字符串
-    * Set the SQL string that will be executed on all new connections when they are
+    * Set the sql string that will be executed on all new connections when they are
     * created, before they are added to the pool.  If this query fails, it will be
     * treated as a failed connection attempt.
     *
-    * @param connectionInitSql the SQL to execute on new connections
+    * @param connectionInitSql the sql to execute on new connections
     */
    public void setConnectionInitSql(String connectionInitSql)
    {

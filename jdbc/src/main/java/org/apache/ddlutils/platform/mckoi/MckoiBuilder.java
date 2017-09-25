@@ -29,7 +29,7 @@ import org.apache.ddlutils.model.Table;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for the Mckoi database.
+ * The sql Builder for the Mckoi database.
  * 
  * @version $Revision: 602807 $
  */
@@ -166,7 +166,7 @@ public class MckoiBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to recreate a table.
+     * Writes the sql to recreate a table.
      * 
      * @param model      The database model
      * @param table      The table to recreate

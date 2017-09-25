@@ -32,7 +32,7 @@ import org.apache.tools.ant.types.FileSet;
 /**
  * Task for performing operations on a live database. Sub tasks e.g. create the
  * schema in the database, drop database schemas, insert data into the database,
- * create DTDs for data files, or write the SQL for creating a schema to a file.
+ * create DTDs for data files, or write the sql for creating a schema to a file.
  * <br/>
  * Example:<br/>
  * <pre>

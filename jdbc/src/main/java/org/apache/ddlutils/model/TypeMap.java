@@ -26,7 +26,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * A class that maps SQL type names to their JDBC type ID found in
+ * A class that maps sql type names to their JDBC type ID found in
  * {@link java.sql.Types} and vice versa.
  *
  * @version $Revision: 630717 $

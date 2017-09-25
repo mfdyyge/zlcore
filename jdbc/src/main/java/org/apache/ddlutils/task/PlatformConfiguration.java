@@ -37,7 +37,7 @@ public class PlatformConfiguration
     private String _databaseType;
     /** The data source to use for accessing the database. */
     private BasicDataSource _dataSource;
-    /** Whether to use delimited SQL identifiers. */
+    /** Whether to use delimited sql identifiers. */
     private boolean _useDelimitedSqlIdentifiers;
     /** Whether read foreign keys shall be sorted. */
     private boolean _sortForeignKeys;
@@ -131,9 +131,9 @@ public class PlatformConfiguration
     }
 
     /**
-     * Determines whether delimited SQL identifiers shall be used (the default).
+     * Determines whether delimited sql identifiers shall be used (the default).
      *
-     * @return <code>true</code> if delimited SQL identifiers shall be used
+     * @return <code>true</code> if delimited sql identifiers shall be used
      */
     public boolean isUseDelimitedSqlIdentifiers()
     {
@@ -141,9 +141,9 @@ public class PlatformConfiguration
     }
 
     /**
-     * Specifies whether delimited SQL identifiers shall be used.
+     * Specifies whether delimited sql identifiers shall be used.
      *
-     * @param useDelimitedSqlIdentifiers <code>true</code> if delimited SQL identifiers shall be used
+     * @param useDelimitedSqlIdentifiers <code>true</code> if delimited sql identifiers shall be used
      */
     public void setUseDelimitedSqlIdentifiers(boolean useDelimitedSqlIdentifiers)
     {

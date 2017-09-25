@@ -25,7 +25,7 @@ import org.apache.ddlutils.Platform;
 import org.apache.ddlutils.model.Table;
 
 /**
- * The SQL Builder for MySQL version 5 and above.
+ * The sql Builder for MySQL version 5 and above.
  * 
  * @version $Revision: $
  */

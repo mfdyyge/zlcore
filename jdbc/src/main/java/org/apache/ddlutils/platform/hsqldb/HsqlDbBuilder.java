@@ -30,7 +30,7 @@ import org.apache.ddlutils.model.TypeMap;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for the HsqlDb database.
+ * The sql Builder for the HsqlDb database.
  * 
  * @version $Revision: 712002 $
  */
@@ -67,7 +67,7 @@ public class HsqlDbBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to add/insert a column.
+     * Writes the sql to add/insert a column.
      * 
      * @param table      The table
      * @param newColumn  The new column
@@ -90,7 +90,7 @@ public class HsqlDbBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop

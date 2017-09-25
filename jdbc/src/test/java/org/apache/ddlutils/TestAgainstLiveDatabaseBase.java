@@ -952,10 +952,10 @@ public abstract class TestAgainstLiveDatabaseBase extends TestPlatformBase
     }
 
     /**
-     * Returns the SQL for altering the live database so that it matches the given model.
+     * Returns the sql for altering the live database so that it matches the given model.
      * 
      * @param desiredModel The desired model
-     * @return The alteration SQL
+     * @return The alteration sql
      */
     protected String getAlterTablesSql(Database desiredModel)
     {

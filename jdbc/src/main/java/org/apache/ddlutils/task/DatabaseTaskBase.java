@@ -163,9 +163,9 @@ public abstract class DatabaseTaskBase extends Task
     }
 
     /**
-     * Determines whether delimited SQL identifiers shall be used (the default).
+     * Determines whether delimited sql identifiers shall be used (the default).
      *
-     * @return <code>true</code> if delimited SQL identifiers shall be used
+     * @return <code>true</code> if delimited sql identifiers shall be used
      */
     public boolean isUseDelimitedSqlIdentifiers()
     {
@@ -175,15 +175,15 @@ public abstract class DatabaseTaskBase extends Task
     /**
      * Specifies whether DdlUtils shall use delimited (quoted) identifiers (such as table and column
      * names). Most databases convert undelimited identifiers to uppercase and ignore the case of
-     * identifiers when performing any SQL command. Undelimited identifiers also cannot be reserved
+     * identifiers when performing any sql command. Undelimited identifiers also cannot be reserved
      * words and can only contain alphanumerical characters and the underscore.<br/>
      * These limitations do not exist for delimited identifiers where identifiers have to be enclosed
      * in double quotes. Delimited identifiers can contain unicode characters, and even reserved
      * words can be used as identifiers. Please be aware though, that they always have to enclosed
-     * in double quotes, and that the case of the identifier will be important in every SQL command
+     * in double quotes, and that the case of the identifier will be important in every sql command
      * executed against the database.
      *
-     * @param useDelimitedSqlIdentifiers <code>true</code> if delimited SQL identifiers shall be used
+     * @param useDelimitedSqlIdentifiers <code>true</code> if delimited sql identifiers shall be used
      * @ant.not-required Default is <code>false</code>.
      */
     public void setUseDelimitedSqlIdentifiers(boolean useDelimitedSqlIdentifiers)

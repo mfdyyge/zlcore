@@ -160,7 +160,7 @@ public class PostgreSqlPlatform extends PlatformImplBase
             }
             if (getLog().isDebugEnabled())
             {
-                getLog().debug("About to create database via "+baseDb+" using this SQL: "+sql.toString());
+                getLog().debug("About to create database via "+baseDb+" using this sql: "+sql.toString());
             }
             try
             {

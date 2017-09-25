@@ -26,7 +26,7 @@ import org.apache.ddlutils.model.Column;
  * A DynaProperty which maps to a persistent Column in a database.
  * The Column describes additional relational metadata 
  * for the property such as whether the property is a primary key column, 
- * an autoIncrement column and the SQL type etc.
+ * an autoIncrement column and the sql type etc.
  *
  * @version $Revision: 463757 $
  */

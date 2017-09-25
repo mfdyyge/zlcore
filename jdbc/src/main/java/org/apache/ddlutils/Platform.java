@@ -115,8 +115,8 @@ public interface Platform
     // runtime properties
 
     /**
-     * Determines whether script mode is on. This means that the generated SQL is not
-     * intended to be sent directly to the database but rather to be saved in a SQL
+     * Determines whether script mode is on. This means that the generated sql is not
+     * intended to be sent directly to the database but rather to be saved in a sql
      * script file. Per default, script mode is off.
      * 
      * @return <code>true</code> if script mode is on
@@ -124,8 +124,8 @@ public interface Platform
     public boolean isScriptModeOn();
 
     /**
-     * Specifies whether script mode is on. This means that the generated SQL is not
-     * intended to be sent directly to the database but rather to be saved in a SQL
+     * Specifies whether script mode is on. This means that the generated sql is not
+     * intended to be sent directly to the database but rather to be saved in a sql
      * script file.
      * 
      * @param scriptModeOn <code>true</code> if script mode is on
@@ -150,21 +150,21 @@ public interface Platform
     public void setDelimitedIdentifierModeOn(boolean delimitedIdentifierModeOn);
 
     /**
-     * Determines whether SQL comments are generated. 
+     * Determines whether sql comments are generated.
      * 
-     * @return <code>true</code> if SQL comments shall be generated
+     * @return <code>true</code> if sql comments shall be generated
      */
     public boolean isSqlCommentsOn();
 
     /**
-     * Specifies whether SQL comments shall be generated.
+     * Specifies whether sql comments shall be generated.
      * 
-     * @param sqlCommentsOn <code>true</code> if SQL comments shall be generated
+     * @param sqlCommentsOn <code>true</code> if sql comments shall be generated
      */
     public void setSqlCommentsOn(boolean sqlCommentsOn);
 
     /**
-     * Determines whether SQL insert statements can specify values for identity columns.
+     * Determines whether sql insert statements can specify values for identity columns.
      * This setting is only relevant if the database supports it
      * ({@link PlatformInfo#isIdentityOverrideAllowed()}). If this is off, then the
      * <code>insert</code> methods will ignore values for identity columns. 
@@ -174,7 +174,7 @@ public interface Platform
     public boolean isIdentityOverrideOn();
 
     /**
-     * Specifies whether SQL insert statements can specify values for identity columns.
+     * Specifies whether sql insert statements can specify values for identity columns.
      * This setting is only relevant if the database supports it
      * ({@link PlatformInfo#isIdentityOverrideAllowed()}). If this is off, then the
      * <code>insert</code> methods will ignore values for identity columns. 
@@ -367,24 +367,24 @@ public interface Platform
     public void createTables(Connection connection, Database model, CreationParameters params, boolean dropTablesFirst, boolean continueOnError) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for creating the tables defined in the database model.
+     * Returns the sql for creating the tables defined in the database model.
      * 
      * @param model           The database model
      * @param dropTablesFirst Whether to drop the tables prior to creating them (anew)
      * @param continueOnError Whether to continue executing the sql commands when an error occurred
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getCreateModelSql(Database, boolean, boolean)} instead.
      */
     public String getCreateTablesSql(Database model, boolean dropTablesFirst, boolean continueOnError);
 
     /**
-     * Returns the SQL for creating the tables defined in the database model.
+     * Returns the sql for creating the tables defined in the database model.
      * 
      * @param model           The database model
      * @param params          The parameters used in the creation
      * @param dropTablesFirst Whether to drop the tables prior to creating them (anew)
      * @param continueOnError Whether to continue executing the sql commands when an error occurred
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getCreateModelSql(Database, CreationParameters, boolean, boolean)} instead.
      */
     public String getCreateTablesSql(Database model, CreationParameters params, boolean dropTablesFirst, boolean continueOnError);
@@ -430,23 +430,23 @@ public interface Platform
     public void createModel(Connection connection, Database model, CreationParameters params, boolean dropTablesFirst, boolean continueOnError) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for creating the tables defined in the database model.
+     * Returns the sql for creating the tables defined in the database model.
      * 
      * @param model           The database model
      * @param dropTablesFirst Whether to drop the tables prior to creating them (anew)
      * @param continueOnError Whether to continue executing the sql commands when an error occurred
-     * @return The SQL statements
+     * @return The sql statements
      */
     public String getCreateModelSql(Database model, boolean dropTablesFirst, boolean continueOnError);
 
     /**
-     * Returns the SQL for creating the tables defined in the database model.
+     * Returns the sql for creating the tables defined in the database model.
      * 
      * @param model           The database model
      * @param params          The parameters used in the creation
      * @param dropTablesFirst Whether to drop the tables prior to creating them (anew)
      * @param continueOnError Whether to continue executing the sql commands when an error occurred
-     * @return The SQL statements
+     * @return The sql statements
      */
     public String getCreateModelSql(Database model, CreationParameters params, boolean dropTablesFirst, boolean continueOnError);
 
@@ -573,28 +573,28 @@ public interface Platform
     public void alterTables(Connection connection, String catalog, String schema, String[] tableTypes, Database desiredDb, CreationParameters params, boolean continueOnError) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param desiredDb The desired database schema
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database)} together with
      *             {@link #readModelFromDatabase(String)} instead.
      */
     public String getAlterTablesSql(Database desiredDb) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param desiredDb The desired database schema
      * @param params    The parameters used in the creation
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database, CreationParameters)} together with
      *             {@link #readModelFromDatabase(String)} instead.
      */
     public String getAlterTablesSql(Database desiredDb, CreationParameters params) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param catalog    The catalog in the existing database to read (can be a pattern);
      *                   use <code>null</code> for the platform-specific default value
@@ -603,14 +603,14 @@ public interface Platform
      * @param tableTypes The table types to read from the existing database;
      *                   use <code>null</code> or an empty array for the platform-specific default value
      * @param desiredDb  The desired database schema
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database)} together with
      *             {@link #readModelFromDatabase(String, String, String, String[])} instead.
      */
     public String getAlterTablesSql(String catalog, String schema, String[] tableTypes, Database desiredDb) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param catalog    The catalog in the existing database to read (can be a pattern);
      *                   use <code>null</code> for the platform-specific default value
@@ -620,37 +620,37 @@ public interface Platform
      *                   use <code>null</code> or an empty array for the platform-specific default value
      * @param desiredDb  The desired database schema
      * @param params     The parameters used in the creation
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database, CreationParameters)} together with
      *             {@link #readModelFromDatabase(String, String, String, String[])} instead.
      */
     public String getAlterTablesSql(String catalog, String schema, String[] tableTypes, Database desiredDb, CreationParameters params) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param connection A connection to the existing database that shall be modified
      * @param desiredDb  The desired database schema
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database)} together with
      *             {@link #readModelFromDatabase(Connection, String)} instead.
      */
     public String getAlterTablesSql(Connection connection, Database desiredDb) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param connection A connection to the existing database that shall be modified
      * @param desiredDb  The desired database schema
      * @param params     The parameters used in the creation
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database, CreationParameters)} together with
      *             {@link #readModelFromDatabase(Connection, String)} instead.
      */
     public String getAlterTablesSql(Connection connection, Database desiredDb, CreationParameters params) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param connection A connection to the existing database that shall be modified
      * @param catalog    The catalog in the existing database to read (can be a pattern);
@@ -660,14 +660,14 @@ public interface Platform
      * @param tableTypes The table types to read from the existing database;
      *                   use <code>null</code> or an empty array for the platform-specific default value
      * @param desiredDb  The desired database schema
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database)} together with
      *             {@link #readModelFromDatabase(Connection, String, String, String, String[])} instead.
      */
     public String getAlterTablesSql(Connection connection, String catalog, String schema, String[] tableTypes, Database desiredDb) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the database schema so that it match the given model.
+     * Returns the sql for altering the database schema so that it match the given model.
      *
      * @param connection A connection to the existing database that shall be modified
      * @param catalog    The catalog in the existing database to read (can be a pattern);
@@ -678,7 +678,7 @@ public interface Platform
      *                   use <code>null</code> or an empty array for the platform-specific default value
      * @param desiredDb  The desired database schema
      * @param params     The parameters used in the creation
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getAlterModelSql(Database, Database, CreationParameters)} together with
      *             {@link #readModelFromDatabase(Connection, String, String, String, String[])} instead.
      */
@@ -725,21 +725,21 @@ public interface Platform
     public void alterModel(Connection connection, Database currentModel, Database desiredModel, CreationParameters params, boolean continueOnError) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the given current model so that it match the desired model.
+     * Returns the sql for altering the given current model so that it match the desired model.
      *
      * @param currentModel The current database model
      * @param desiredModel The desired database model
-     * @return The SQL statements
+     * @return The sql statements
      */
     public String getAlterModelSql(Database currentModel, Database desiredModel) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for altering the given current model so that it match the desired model.
+     * Returns the sql for altering the given current model so that it match the desired model.
      *
      * @param currentModel The current database model
      * @param desiredModel The desired database model
      * @param params       The parameters used in the creation of tables etc.
-     * @return The SQL statements
+     * @return The sql statements
      */
     public String getAlterModelSql(Database currentModel, Database desiredModel, CreationParameters params) throws DatabaseOperationException;
 
@@ -753,12 +753,12 @@ public interface Platform
     public void dropTable(Database model, Table table, boolean continueOnError) throws DatabaseOperationException;
 
     /**
-     * Returns the SQL for dropping the given table and all foreign keys pointing to it.
+     * Returns the sql for dropping the given table and all foreign keys pointing to it.
      * 
      * @param model           The database model
      * @param table           The table to drop
      * @param continueOnError Whether to continue executing the sql commands when an error occurred
-     * @return The SQL statements
+     * @return The sql statements
      */
     public String getDropTableSql(Database model, Table table, boolean continueOnError);
 
@@ -773,11 +773,11 @@ public interface Platform
     public void dropTable(Connection connection, Database model, Table table, boolean continueOnError) throws DatabaseOperationException; 
 
     /**
-     * Returns the SQL for dropping the given model.
+     * Returns the sql for dropping the given model.
      * 
      * @param model           The database model
      * @param continueOnError Whether to continue executing the sql commands when an error occurred
-     * @return The SQL statements
+     * @return The sql statements
      * @deprecated Use {@link #getDropModelSql(Database)} instead.
      */
     public String getDropTablesSql(Database model, boolean continueOnError);
@@ -802,10 +802,10 @@ public interface Platform
     public void dropTables(Connection connection, Database model, boolean continueOnError) throws DatabaseOperationException; 
 
     /**
-     * Returns the SQL for dropping the given model.
+     * Returns the sql for dropping the given model.
      * 
      * @param model The database model
-     * @return The SQL statements
+     * @return The sql statements
      */
     public String getDropModelSql(Database model);
 
@@ -827,7 +827,7 @@ public interface Platform
     public void dropModel(Connection connection, Database model, boolean continueOnError) throws DatabaseOperationException; 
 
     /**
-     * Performs the given SQL query returning an iterator over the results.
+     * Performs the given sql query returning an iterator over the results.
      *
      * @param model The database model to use
      * @param sql   The sql query to perform
@@ -836,7 +836,7 @@ public interface Platform
     public Iterator query(Database model, String sql) throws DatabaseOperationException;
 
     /**
-     * Performs the given parameterized SQL query returning an iterator over the results.
+     * Performs the given parameterized sql query returning an iterator over the results.
      *
      * @param model      The database model to use
      * @param sql        The sql query to perform
@@ -846,7 +846,7 @@ public interface Platform
     public Iterator query(Database model, String sql, Collection parameters) throws DatabaseOperationException;
 
     /**
-     * Performs the given SQL query returning an iterator over the results.
+     * Performs the given sql query returning an iterator over the results.
      *
      * @param model      The database model to use
      * @param sql        The sql query to perform
@@ -856,7 +856,7 @@ public interface Platform
     public Iterator query(Database model, String sql, Table[] queryHints) throws DatabaseOperationException;
 
     /**
-     * Performs the given parameterized SQL query returning an iterator over the results.
+     * Performs the given parameterized sql query returning an iterator over the results.
      *
      * @param model      The database model to use
      * @param sql        The sql query to perform
@@ -1079,7 +1079,7 @@ public interface Platform
 
     /**
      * Returns the sql for updating the given bean in the database. Note that this method can not be used to
-     * generate SQL for updating primary key columns. 
+     * generate sql for updating primary key columns.
      * 
      * @param model    The database model to use
      * @param dynaBean The bean
@@ -1089,7 +1089,7 @@ public interface Platform
 
     /**
      * Returns the sql for updating the given bean in the database. Note that this method can not be used to
-     * generate SQL for updating primary key columns. 
+     * generate sql for updating primary key columns.
      * 
      * @param model       The database model to use
      * @param oldDynaBean The bean identifying the row to update

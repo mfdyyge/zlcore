@@ -31,7 +31,7 @@ import org.apache.ddlutils.model.TypeMap;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for DB2.
+ * The sql Builder for DB2.
  * 
  * @version $Revision: 711687 $
  */
@@ -80,7 +80,7 @@ public class Db2Builder extends SqlBuilder
     }
 
     /**
-     * Generates the SQL to drop a column from a table.
+     * Generates the sql to drop a column from a table.
      * 
      * @param table  The table where to drop the column from
      * @param column The column to drop
@@ -96,7 +96,7 @@ public class Db2Builder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL for dropping the primary key of the given table.
+     * Writes the sql for dropping the primary key of the given table.
      * 
      * @param table The table
      */

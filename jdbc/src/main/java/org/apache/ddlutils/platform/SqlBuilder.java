@@ -72,7 +72,7 @@ public abstract class SqlBuilder
     
     /** The platform that this builder belongs to. */
     private Platform _platform;
-    /** The current Writer used to output the SQL to. */
+    /** The current Writer used to output the sql to. */
     private Writer _writer;
     /** The indentation used to indent commands. */
     private String _indent = "    ";
@@ -154,7 +154,7 @@ public abstract class SqlBuilder
     }
 
     /** 
-     * Returns the string used to indent the SQL.
+     * Returns the string used to indent the sql.
      * 
      * @return The indentation string
      */
@@ -164,7 +164,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Sets the string used to indent the SQL.
+     * Sets the string used to indent the sql.
      * 
      * @param indent The indentation string
      */
@@ -716,7 +716,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Prints the SQL for adding a column to a table.
+     * Prints the sql for adding a column to a table.
      * 
      * @param model     The database model
      * @param table     The table
@@ -841,7 +841,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Creates the SQL for inserting an object into the specified table.
+     * Creates the sql for inserting an object into the specified table.
      * If values are given then a concrete insert statement is created, otherwise an
      * insert statement usable in a prepared statement is build.
      *  
@@ -910,7 +910,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Creates the SQL for updating an object in the specified table.
+     * Creates the sql for updating an object in the specified table.
      * If values are given then a concrete update statement is created, otherwise an
      * update statement usable in a prepared statement is build.
      * 
@@ -982,7 +982,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Creates the SQL for updating an object in the specified table.
+     * Creates the sql for updating an object in the specified table.
      * If values are given then a concrete update statement is created, otherwise an
      * update statement usable in a prepared statement is build.
      * 
@@ -1053,11 +1053,11 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Creates the SQL for deleting an object from the specified table. Depending on
-     * the value of <code>genPlaceholders</code>, the generated SQL will contain
+     * Creates the sql for deleting an object from the specified table. Depending on
+     * the value of <code>genPlaceholders</code>, the generated sql will contain
      * prepared statement place holders or concrete values. Only those primary key
      * columns wil be used that are present in the given map. If the map is null or
-     * completely empty, then the SQL will not have a WHERE clause. The SQL will contain
+     * completely empty, then the sql will not have a WHERE clause. The sql will contain
      * the columns in the order defined in the table.
      * 
      * @param table           The table
@@ -1182,7 +1182,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Generates the SQL for querying the id that was created in the last insertion
+     * Generates the sql for querying the id that was created in the last insertion
      * operation. This is obviously only useful for pk fields that are auto-incrementing.
      * A database that does not support this, will return <code>null</code>.
      * 
@@ -1385,11 +1385,11 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Returns the full SQL type specification (including size and precision/scale) for the
+     * Returns the full sql type specification (including size and precision/scale) for the
      * given column.
      * 
      * @param column The column
-     * @return The full SQL type string including the size
+     * @return The full sql type string including the size
      */
     protected String getSqlType(Column column)
     {
@@ -1397,12 +1397,12 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Returns the full SQL type specification (including size and precision/scale) for the
+     * Returns the full sql type specification (including size and precision/scale) for the
      * given column.
      * 
      * @param column     The column
      * @param nativeType Overrides the native type of the column; can include the size placeholder
-     * @return The full SQL type string including the size
+     * @return The full sql type string including the size
      */
     protected String getSqlType(Column column, String nativeType)
     {
@@ -2055,7 +2055,7 @@ public abstract class SqlBuilder
     //
 
     /**
-     * Prints an SQL comment to the current stream.
+     * Prints an sql comment to the current stream.
      * 
      * @param text The comment text
      */
@@ -2165,7 +2165,7 @@ public abstract class SqlBuilder
     }
 
     /**
-     * Prints the characters used to indent SQL.
+     * Prints the characters used to indent sql.
      */
     protected void printIndent() throws IOException
     {

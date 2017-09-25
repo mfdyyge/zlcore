@@ -33,7 +33,7 @@ import org.apache.ddlutils.platform.SqlBuilder;
 import org.apache.ddlutils.util.StringUtilsExt;
 
 /**
- * The SQL Builder for SapDB.
+ * The sql Builder for SapDB.
  * 
  * @version $Revision: 893941 $
  */
@@ -134,7 +134,7 @@ public class SapDbBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop
@@ -151,7 +151,7 @@ public class SapDbBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop the primary key of the given table.
+     * Writes the sql to drop the primary key of the given table.
      * 
      * @param table The table
      */
@@ -165,7 +165,7 @@ public class SapDbBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to set the required status of the given column.
+     * Writes the sql to set the required status of the given column.
      * 
      * @param table      The table
      * @param column     The column to change
@@ -190,7 +190,7 @@ public class SapDbBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to set the default value of the given column.
+     * Writes the sql to set the default value of the given column.
      * 
      * @param table           The table
      * @param column          The column to change

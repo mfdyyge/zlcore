@@ -33,7 +33,7 @@ import org.apache.ddlutils.model.TypeMap;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for the FireBird database.
+ * The sql Builder for the FireBird database.
  * 
  * @version $Revision: 231306 $
  */
@@ -230,7 +230,7 @@ public class FirebirdBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to add/insert a column.
+     * Writes the sql to add/insert a column.
      * 
      * @param model      The database model
      * @param table      The table
@@ -262,7 +262,7 @@ public class FirebirdBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop

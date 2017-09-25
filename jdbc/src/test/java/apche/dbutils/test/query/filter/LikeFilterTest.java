@@ -39,12 +39,12 @@ public class LikeFilterTest {
         assertEquals("Mysql JPA", "A LIKE B", filter.buildFilter(new org.dbtools.query.jpa.MysqlQueryBuilder()));
         assertEquals("Oracle JPA", "lower(A) LIKE b", filter.buildFilter(new org.dbtools.query.jpa.OracleQueryBuilder()));
         assertEquals("Postgresql JPA", "A ilike B", filter.buildFilter(new org.dbtools.query.jpa.PostgresqlQueryBuilder()));
-        assertEquals("SQL", "A LIKE B", filter.buildFilter(new SQLQueryBuilder()));
-        assertEquals("Derby SQL", "LOWER(A) LIKE LOWER(B)", filter.buildFilter(new org.dbtools.query.sql.DerbyQueryBuilder()));
-        assertEquals("Firebird SQL", "A containing B", filter.buildFilter(new org.dbtools.query.sql.FirebirdQueryBuilder()));
-        assertEquals("Mysql SQL", "A LIKE B", filter.buildFilter(new org.dbtools.query.sql.MysqlQueryBuilder()));
-        assertEquals("Oracle SQL", "REGEXP_LIKE(A, B, 'i')", filter.buildFilter(new org.dbtools.query.sql.OracleQueryBuilder()));
-        assertEquals("Postgresql SQL", "A ilike B", filter.buildFilter(new org.dbtools.query.sql.PostgresqlQueryBuilder()));
+        assertEquals("sql", "A LIKE B", filter.buildFilter(new SQLQueryBuilder()));
+        assertEquals("Derby sql", "LOWER(A) LIKE LOWER(B)", filter.buildFilter(new org.dbtools.query.sql.DerbyQueryBuilder()));
+        assertEquals("Firebird sql", "A containing B", filter.buildFilter(new org.dbtools.query.sql.FirebirdQueryBuilder()));
+        assertEquals("Mysql sql", "A LIKE B", filter.buildFilter(new org.dbtools.query.sql.MysqlQueryBuilder()));
+        assertEquals("Oracle sql", "REGEXP_LIKE(A, B, 'i')", filter.buildFilter(new org.dbtools.query.sql.OracleQueryBuilder()));
+        assertEquals("Postgresql sql", "A ilike B", filter.buildFilter(new org.dbtools.query.sql.PostgresqlQueryBuilder()));
 
         // IgnoreCase Explicit
         LikeFilter filter2 = LikeFilter.create("A", "B", true);

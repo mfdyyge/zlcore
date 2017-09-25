@@ -20,8 +20,8 @@ package org.apache.ddlutils.util;
  */
 
 /**
- * A statement tokenizer for SQL strings that splits only at delimiters that
- * are at the end of a line or the end of the SQL (row mode).  
+ * A statement tokenizer for sql strings that splits only at delimiters that
+ * are at the end of a line or the end of the sql (row mode).
  * 
  * TODO: Add awareness of strings, so that semicolons within strings are not parsed
  * 
@@ -29,7 +29,7 @@ package org.apache.ddlutils.util;
  */
 public class SqlTokenizer
 {
-    /** The SQL to tokenize. */
+    /** The sql to tokenize. */
     private String  _sql;
     /** The index of the last character in the string. */
     private int     _lastCharIdx;

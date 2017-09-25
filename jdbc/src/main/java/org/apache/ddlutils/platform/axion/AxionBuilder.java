@@ -28,7 +28,7 @@ import org.apache.ddlutils.model.Table;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for the Axion database.
+ * The sql Builder for the Axion database.
  * 
  * @version $Revision: 602807 $
  */

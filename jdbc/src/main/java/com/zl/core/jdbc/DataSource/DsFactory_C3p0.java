@@ -41,7 +41,7 @@ public class DsFactory_C3p0
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		logger.info("**\tRead db.properties info ... ");
+		logger.info("返回[ ComboPooledDataSource 链接池]");
 		dataSource = new ComboPooledDataSource();// C3P0数据库连接池
 		try
 		{

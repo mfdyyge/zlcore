@@ -24,7 +24,8 @@ import java.util.Map;
  * @version 	2017年8月7日
  *
  */
-public class QueryRunnerDao_SetConn {
+public class SqlDao_SetConn
+{
 
 	private static final QueryRunner runner=new QueryRunner() ;
 

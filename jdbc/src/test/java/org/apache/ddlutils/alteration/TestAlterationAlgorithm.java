@@ -56,7 +56,7 @@ public class TestAlterationAlgorithm extends TestBase
     }
 
     /**
-     * Returns the SQL for altering the first into the second database.
+     * Returns the sql for altering the first into the second database.
      * 
      * @param currentSchema The current schema XML 
      * @param desiredSchema The desired schema XML 

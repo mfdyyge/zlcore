@@ -33,7 +33,7 @@ import org.apache.ddlutils.model.Table;
 
 /**
  * Contains the configuration for converters, which convert between the Java data types
- * corresponding to SQL data, and string representations.
+ * corresponding to sql data, and string representations.
  * 
  * @version $Revision: 289996 $
  */

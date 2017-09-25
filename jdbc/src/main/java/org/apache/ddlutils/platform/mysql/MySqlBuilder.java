@@ -33,7 +33,7 @@ import org.apache.ddlutils.model.TypeMap;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for MySQL.
+ * The sql Builder for MySQL.
  * 
  * @version $Revision: 630717 $
  */
@@ -156,7 +156,7 @@ public class MySqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to add/insert a column.
+     * Writes the sql to add/insert a column.
      * 
      * @param table      The table
      * @param newColumn  The new column
@@ -183,7 +183,7 @@ public class MySqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop
@@ -199,7 +199,7 @@ public class MySqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop the primary key of the given table.
+     * Writes the sql to drop the primary key of the given table.
      * 
      * @param table The table
      */
@@ -213,7 +213,7 @@ public class MySqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to recreate a column, e.g. with a different type.  
+     * Writes the sql to recreate a column, e.g. with a different type.
      * 
      * @param table  The table
      * @param column The new column definition

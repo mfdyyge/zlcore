@@ -74,7 +74,7 @@ public class MySqlPlatform extends PlatformImplBase
         info.setSyntheticDefaultValueForRequiredReturned(true);
         info.setPrimaryKeyColumnAutomaticallyRequired(true);
         info.setCommentPrefix("#");
-        // Double quotes are only allowed for delimiting identifiers if the server SQL mode includes ANSI_QUOTES 
+        // Double quotes are only allowed for delimiting identifiers if the server sql mode includes ANSI_QUOTES
         info.setDelimiterToken("`");
         info.setSupportedOnUpdateActions(new CascadeActionEnum[] { CascadeActionEnum.NONE, CascadeActionEnum.RESTRICT,
                                                                    CascadeActionEnum.CASCADE, CascadeActionEnum.SET_NULL });

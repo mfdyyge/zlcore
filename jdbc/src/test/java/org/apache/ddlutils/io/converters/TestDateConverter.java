@@ -124,14 +124,14 @@ public class TestDateConverter extends TestCase
     }
 
     /**
-     * Tests converting with an invalid SQL type.
+     * Tests converting with an invalid sql type.
      */
     public void testConvertFromStringWithInvalidSqlType()
     {
         String textRep = "2005-12-19";
         Object result  = _dateConverter.convertFromString(textRep, Types.INTEGER);
 
-        // Make sure that the text representation is returned since SQL type was not a DATE
+        // Make sure that the text representation is returned since sql type was not a DATE
         assertNotNull(result);
         assertEquals(textRep, result);
     }

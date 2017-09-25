@@ -136,10 +136,10 @@ public class PlatformInfo
     /** Specifies the maximum length that a foreign key name can have for this database (-1 if there is no limit). */
     private int _maxForeignKeyNameLength = -1;
 
-    /** The string used for delimiting SQL identifiers, eg. table names, column names etc. */
+    /** The string used for delimiting sql identifiers, eg. table names, column names etc. */
     private String _delimiterToken = "\"";
 
-    /** The string used for escaping values when generating textual SQL statements. */
+    /** The string used for escaping values when generating textual sql statements. */
     private String _valueQuoteToken = "'";
 
     /** The string that starts a comment. */
@@ -616,7 +616,7 @@ public class PlatformInfo
     // other ddl properties
 
     /**
-     * Determines whether the database supports SQL comments.
+     * Determines whether the database supports sql comments.
      *
      * @return <code>true</code> if comments are supported
      */
@@ -626,7 +626,7 @@ public class PlatformInfo
     }
 
     /**
-     * Specifies whether SQL comments are supported by the database.
+     * Specifies whether sql comments are supported by the database.
      * 
      * @param commentsSupported <code>true</code> if comments are supported
      */

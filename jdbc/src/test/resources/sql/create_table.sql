@@ -498,7 +498,7 @@ select VC2,to_char(TS,'YYYY-MM-DD HH24:MI:SS.FF')  from TEST08 where to_timestam
 	"XXX" VARCHAR2(20 BYTE)
    ) ;
 --------------------------------------------------------
---SQL SErver 2005 stage table for the file STAGE_SS2K5_COLMNS.dat
+--sql SErver 2005 stage table for the file STAGE_SS2K5_COLMNS.dat
 --------------------------------------------------------
 CREATE TABLE "S_SS2K5_COLUMNS"
   (

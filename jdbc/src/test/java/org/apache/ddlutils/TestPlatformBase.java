@@ -82,7 +82,7 @@ public abstract class TestPlatformBase extends TestBase
     }
 
     /**
-     * Returns the SQL builder of the tested platform.
+     * Returns the sql builder of the tested platform.
      * 
      * @return The builder object
      */
@@ -109,10 +109,10 @@ public abstract class TestPlatformBase extends TestBase
     protected abstract String getDatabaseName();
 
     /**
-     * Returns the database creation SQL for the given database schema.
+     * Returns the database creation sql for the given database schema.
      * 
      * @param schema The database schema XML
-     * @return The SQL
+     * @return The sql
      */
     protected String getDatabaseCreationSql(String schema) throws IOException
     {
@@ -125,9 +125,9 @@ public abstract class TestPlatformBase extends TestBase
     }
 
     /**
-     * Returns the SQL to create the test database for the column tests.
+     * Returns the sql to create the test database for the column tests.
      * 
-     * @return The SQL
+     * @return The sql
      */
     protected String getColumnTestDatabaseCreationSql() throws IOException
     {
@@ -173,9 +173,9 @@ public abstract class TestPlatformBase extends TestBase
     }
 
     /**
-     * Returns the SQL to create the test database for the constraint tests.
+     * Returns the sql to create the test database for the constraint tests.
      * 
-     * @return The SQL
+     * @return The sql
      */
     protected String getConstraintTestDatabaseCreationSql() throws IOException
     {
@@ -196,9 +196,9 @@ public abstract class TestPlatformBase extends TestBase
     }
 
     /**
-     * Returns the SQL to create the test database for the table-level constraint tests.
+     * Returns the sql to create the test database for the table-level constraint tests.
      * 
-     * @return The SQL
+     * @return The sql
      */
     protected String getTableConstraintTestDatabaseCreationSql() throws IOException
     {
@@ -241,9 +241,9 @@ public abstract class TestPlatformBase extends TestBase
     }
 
     /**
-     * Returns the SQL to create the test database for testing character escaping.
+     * Returns the sql to create the test database for testing character escaping.
      * 
-     * @return The SQL
+     * @return The sql
      */
     protected String getCharEscapingTestDatabaseCreationSql() throws IOException
     {

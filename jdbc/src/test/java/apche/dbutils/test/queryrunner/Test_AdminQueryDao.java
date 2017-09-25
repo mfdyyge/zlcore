@@ -1,7 +1,7 @@
 package apche.dbutils.test.queryrunner;
 
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.apche.dbutils.dao.QueryRunnerDao;
+import com.zl.core.jdbc.apche.dbutils.dao.SqlDao;
 
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.*;
@@ -151,7 +151,7 @@ public class Test_AdminQueryDao
 
 		String sql = "select count(id) from jpa_persons"; // [13] list[13]
 		//int count = ((Long) query_apc.query(connection,apche.dbutils.test.utils, new ScalarHandler(1))).intValue();
-		int count= QueryRunnerDao.getCount(connection,sql);
+		int count= SqlDao.getCount(connection,sql);
 		System.out.println(count);
 	}
 }

@@ -34,7 +34,7 @@ import org.apache.ddlutils.platform.SqlBuilder;
 import org.apache.ddlutils.util.StringUtilsExt;
 
 /**
- * The SQL Builder for Sybase.
+ * The sql Builder for Sybase.
  * 
  * @version $Revision: 893917 $
  */
@@ -242,10 +242,10 @@ public class SybaseBuilder extends SqlBuilder
     }
 
     /**
-     * Returns the SQL to enable identity override mode.
+     * Returns the sql to enable identity override mode.
      * 
      * @param table The table to enable the mode for
-     * @return The SQL
+     * @return The sql
      */
     protected String getEnableIdentityOverrideSql(Table table)
     {
@@ -259,10 +259,10 @@ public class SybaseBuilder extends SqlBuilder
     }
 
     /**
-     * Returns the SQL to disable identity override mode.
+     * Returns the sql to disable identity override mode.
      * 
      * @param table The table to disable the mode for
-     * @return The SQL
+     * @return The sql
      */
     protected String getDisableIdentityOverrideSql(Table table)
     {
@@ -408,7 +408,7 @@ public class SybaseBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop
@@ -424,7 +424,7 @@ public class SybaseBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop the primary key of the given table.
+     * Writes the sql to drop the primary key of the given table.
      * 
      * @param table The table
      */
@@ -456,7 +456,7 @@ public class SybaseBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to set the default value of the given column.
+     * Writes the sql to set the default value of the given column.
      * 
      * @param table           The table
      * @param column          The column to change
@@ -482,7 +482,7 @@ public class SybaseBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to change the given column.
+     * Writes the sql to change the given column.
      * 
      * @param table     The table
      * @param column    The column to change

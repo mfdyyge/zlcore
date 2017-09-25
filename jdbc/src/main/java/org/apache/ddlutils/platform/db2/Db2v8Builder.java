@@ -26,7 +26,7 @@ import org.apache.ddlutils.model.Column;
 import org.apache.ddlutils.model.Table;
 
 /**
- * The SQL Builder for DB2 v8 and above.
+ * The sql Builder for DB2 v8 and above.
  * 
  * @version $Revision: $
  */
@@ -43,7 +43,7 @@ public class Db2v8Builder extends Db2Builder
     }
 
     /**
-     * Generates the SQL to drop a column from a table.
+     * Generates the sql to drop a column from a table.
      * 
      * @param table  The table where to drop the column from
      * @param column The column to drop

@@ -28,7 +28,7 @@ import org.apache.ddlutils.model.Table;
 import org.apache.ddlutils.platform.sapdb.SapDbBuilder;
 
 /**
- * The SQL Builder for MaxDB.
+ * The sql Builder for MaxDB.
  * 
  * @version $Revision: $
  */

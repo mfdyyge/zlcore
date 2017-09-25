@@ -37,7 +37,7 @@ public class DsFactory_HikariCp
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		logger.info("**\tRead db.properties info ... ");
+		logger.info("返回[ HikariDataSource  链接池]");
 
 		//config 		= new HikariConfig();//暂时没用
 		dataSource	= new HikariDataSource();

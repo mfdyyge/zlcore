@@ -26,7 +26,7 @@ import org.apache.ddlutils.TestPlatformBase;
 import org.apache.ddlutils.platform.mssql.MSSqlPlatform;
 
 /**
- * Tests the Microsoft SQL Server platform.
+ * Tests the Microsoft sql Server platform.
  * 
  * @version $Revision: 231110 $
  */
@@ -47,8 +47,8 @@ public class TestMSSqlPlatform extends TestPlatformBase
     {
         String sql = getColumnTestDatabaseCreationSql();
 
-        // Since we have no way of knowing the auto-generated variables in the SQL,
-        // we simply try to extract it from the SQL
+        // Since we have no way of knowing the auto-generated variables in the sql,
+        // we simply try to extract it from the sql
         Pattern declarePattern    = Pattern.compile("DECLARE @([\\S]+) [^@]+@([\\S]+)");
         Matcher matcher           = declarePattern.matcher(sql);
         String  tableNameVar      = "tablename";
@@ -125,8 +125,8 @@ public class TestMSSqlPlatform extends TestPlatformBase
     {
         String sql = getConstraintTestDatabaseCreationSql();
 
-        // Since we have no way of knowing the auto-generated variables in the SQL,
-        // we simply try to extract it from the SQL
+        // Since we have no way of knowing the auto-generated variables in the sql,
+        // we simply try to extract it from the sql
         Pattern declarePattern    = Pattern.compile("DECLARE @([\\S]+) [^@]+@([\\S]+)");
         Matcher matcher           = declarePattern.matcher(sql);
         String  tableNameVar      = "tablename";
@@ -137,7 +137,7 @@ public class TestMSSqlPlatform extends TestPlatformBase
             tableNameVar      = matcher.group(1);
             constraintNameVar = matcher.group(2);
         }
-        // Note that this is not valid SQL as a table can have only one identity column at most 
+        // Note that this is not valid sql as a table can have only one identity column at most
         assertEqualsIgnoringWhitespaces(
             "SET quoted_identifier on;\n"+
             "SET quoted_identifier on;\n"+
@@ -179,8 +179,8 @@ public class TestMSSqlPlatform extends TestPlatformBase
     {
         String sql = getTableConstraintTestDatabaseCreationSql();
 
-        // Since we have no way of knowing the auto-generated variables in the SQL,
-        // we simply try to extract it from the SQL
+        // Since we have no way of knowing the auto-generated variables in the sql,
+        // we simply try to extract it from the sql
         Pattern  declarePattern     = Pattern.compile("DECLARE @([\\S]+) [^@]+@([\\S]+)");
         Matcher  matcher            = declarePattern.matcher(sql);
         int      startPos           = 0;
@@ -294,8 +294,8 @@ public class TestMSSqlPlatform extends TestPlatformBase
     {
         String sql = getCharEscapingTestDatabaseCreationSql();
 
-        // Since we have no way of knowing the auto-generated variables in the SQL,
-        // we simply try to extract it from the SQL
+        // Since we have no way of knowing the auto-generated variables in the sql,
+        // we simply try to extract it from the sql
         Pattern declarePattern    = Pattern.compile("DECLARE @([\\S]+) [^@]+@([\\S]+)");
         Matcher matcher           = declarePattern.matcher(sql);
         String  tableNameVar      = "tablename";

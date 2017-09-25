@@ -87,7 +87,7 @@ public class TestMcKoiPlatform extends TestPlatformBase
      */
     public void testColumnConstraints() throws Exception
     {
-        // note that this is not valid SQL as obviously only one auto increment field
+        // note that this is not valid sql as obviously only one auto increment field
         // can be defined for each table
         assertEqualsIgnoringWhitespaces(
             "DROP TABLE IF EXISTS \"constraints\";\n"+

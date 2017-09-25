@@ -26,7 +26,7 @@ import org.apache.ddlutils.model.Column;
 import org.apache.ddlutils.model.Table;
 
 /**
- * The SQL builder for Oracle 10.
+ * The sql builder for Oracle 10.
  * 
  * @version $Revision: $
  */

@@ -31,7 +31,7 @@ import org.apache.ddlutils.model.Table;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for PostgresSql.
+ * The sql Builder for PostgresSql.
  * 
  * @version $Revision: 712002 $
  */
@@ -181,7 +181,7 @@ public class PostgreSqlBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop

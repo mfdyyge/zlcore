@@ -31,7 +31,7 @@ import org.apache.ddlutils.model.TypeMap;
 import org.apache.ddlutils.platform.cloudscape.CloudscapeBuilder;
 
 /**
- * The SQL Builder for Derby.
+ * The sql Builder for Derby.
  * 
  * @version $Revision: 279413 $
  */

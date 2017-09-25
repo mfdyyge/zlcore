@@ -35,7 +35,7 @@ public class DsFactory_TomcatJdbc
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		logger.info("**\tRead db.properties info ... ");
+		logger.info("返回[ tomcat.jdbc.pool.DataSource 链接池]");
 		poolProps = new PoolProperties();
 		dataSource=new org.apache.tomcat.jdbc.pool.DataSource();
 

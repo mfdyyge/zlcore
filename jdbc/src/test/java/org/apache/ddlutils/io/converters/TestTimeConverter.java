@@ -131,7 +131,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests converting with an invalid SQL type.
+     * Tests converting with an invalid sql type.
      */
     public void testConvertFromStringWithInvalidSqlType()
     {

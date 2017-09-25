@@ -21,7 +21,7 @@ public class JDBCAppender_getConnection extends JDBCAppender
     @Override
     protected Connection getConnection() throws SQLException
     {
-        Connection connection=new DsFactory("dblog").getConnection();
+        Connection connection=new DsFactory("dbjpa").getConnection();
 
         return connection;
 

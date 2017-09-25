@@ -46,7 +46,7 @@ import org.apache.ddlutils.platform.DefaultTableDefinitionChangesPredicate;
 import org.apache.ddlutils.platform.PlatformImplBase;
 
 /**
- * The platform implementation for the Microsoft SQL Server database.
+ * The platform implementation for the Microsoft sql Server database.
  * 
  * @version $Revision: 231306 $
  */
@@ -56,13 +56,13 @@ public class MSSqlPlatform extends PlatformImplBase
     public static final String DATABASENAME         = "MsSql";
     /** The standard SQLServer jdbc driver. */
     public static final String JDBC_DRIVER          = "com.microsoft.jdbc.sqlserver.SQLServerDriver";
-    /** The new SQLServer 2005 jdbc driver which can also be used for SQL Server 2000. */
+    /** The new SQLServer 2005 jdbc driver which can also be used for sql Server 2000. */
     public static final String JDBC_DRIVER_NEW      = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    /** The subprotocol used by the standard SQL Server driver. */
+    /** The subprotocol used by the standard sql Server driver. */
     public static final String JDBC_SUBPROTOCOL     = "microsoft:sqlserver";
-    /** The subprotocol recommended for the newer SQL Server 2005 driver. */
+    /** The subprotocol recommended for the newer sql Server 2005 driver. */
     public static final String JDBC_SUBPROTOCOL_NEW = "sqlserver";
-    /** The subprotocol internally returned by the newer SQL Server 2005 driver. */
+    /** The subprotocol internally returned by the newer sql Server 2005 driver. */
     public static final String JDBC_SUBPROTOCOL_INTERNAL = "sqljdbc";
 
     /**

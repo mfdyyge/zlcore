@@ -37,7 +37,7 @@ import org.apache.ddlutils.platform.SqlBuilder;
 import org.apache.ddlutils.util.StringUtilsExt;
 
 /**
- * The SQL Builder for Oracle.
+ * The sql Builder for Oracle.
  *
  * @version $Revision: 893917 $
  */
@@ -180,7 +180,7 @@ public class Oracle8Builder extends SqlBuilder
             print(getPlatformInfo().getSqlCommandDelimiter());
             print(" END");
             // It is important that there is a semicolon at the end of the statement (or more
-            // precisely, at the end of the PL/SQL block), and thus we put two semicolons here
+            // precisely, at the end of the PL/sql block), and thus we put two semicolons here
             // because the tokenizer will remove the one at the end
             print(getPlatformInfo().getSqlCommandDelimiter());
             printEndOfStatement();
@@ -368,7 +368,7 @@ public class Oracle8Builder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop
@@ -389,7 +389,7 @@ public class Oracle8Builder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop the primary key of the given table.
+     * Writes the sql to drop the primary key of the given table.
      * 
      * @param table The table
      */

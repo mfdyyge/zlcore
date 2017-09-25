@@ -5,14 +5,14 @@ import com.alibaba.druid.sql.ast.SQLObject;
 import com.alibaba.druid.sql.dialect.oracle.ast.OracleSQLObjectImpl;
 import com.alibaba.druid.sql.dialect.oracle.visitor.OracleASTVisitor;
 import com.zl.core.jdbc.DataSource.DsFactory;
-import com.zl.core.jdbc.apche.dbutils.dao.QueryRunnerDao;
+import com.zl.core.jdbc.apche.dbutils.dao.SqlDao;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Arrays;
+import java.util.ResourceBundle;
+
 /**
  * Created by 钢背猪☣ on 2017-8-7 0007.
  *
@@ -25,7 +25,7 @@ public class Test_DataSourceFactory
 {
     protected static Logger logger = Logger.getLogger(Test_DataSourceFactory.class);
 
-    private static DsFactory dsFactory;
+
     private StringBuffer msg;
 
 
@@ -33,9 +33,13 @@ public class Test_DataSourceFactory
     String sqlHint = null;
     static String getAllTypeTreeSql = "select parent_type, parent_type_owner, child_type, ATTR_NO, child_type_owner from ( select TYPE_NAME parent_type,  OWNER parent_type_owner,     ELEM_TYPE_NAME child_type, 0 ATTR_NO,     ELEM_TYPE_OWNER child_type_owner   from ALL_COLL_TYPES union   select TYPE_NAME parent_type, OWNER parent_type_owner,     ATTR_TYPE_NAME child_type, ATTR_NO,     ATTR_TYPE_OWNER child_type_owner   from ALL_TYPE_ATTRS ) start with parent_type  = ?  and parent_type_owner = ? connect by prior child_type = parent_type   and ( child_type_owner = parent_type_owner or child_type_owner is null )";
 
+
+    private static DsFactory dsFactory;
+    static ResourceBundle resourceBundle;
     static
     {
         dsFactory=new DsFactory();
+        resourceBundle=ResourceBundle.getBundle("sql/comlog.sql");
 
     }
 
@@ -44,7 +48,12 @@ public class Test_DataSourceFactory
     @Test
     public void  DsFactory_test()
     {
-        //logger.info("test error");
+/*        logger.error("DsFactoryTest()");
+        logger.debug("test error");*/
+
+        //logger.info(MDC.getContext());
+
+
     }
 
     //查找月的第一天,最后一天
@@ -61,6 +70,7 @@ public class Test_DataSourceFactory
                            "to_char(Trunc(SYSDATE, 'MONTH'), 'YYYY-MM-DD') as 后月第一天, "+
                            "to_char(LAST_DAY(Trunc(SYSDATE, 'MONTH')) + 1 - 1 / 86400, 'YYYY-MM-DD') as 后月最后一天 "+
                            "FROM dual ";
+        String log_insert="insert into log (LogName,UserName,Class,Mothod,createTime,LogLevel,MSG) values (?,?,?,?,?,?,?)";
 
 
         Object [] params = new Object[]{"%4%"};
@@ -68,16 +78,16 @@ public class Test_DataSourceFactory
 
         //System.out.println("getDataSource = " + DsFactory.getDataSource());
         Connection connection= dsFactory.getConnection();
-        logger.info(sql_a);
+/*        logger.info(sql_a);
         logger.info(sql_b);
 
         logger.info(new StringBuffer("行>getConnection = ").append(connection));
 
-        Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql_a);
+        Object result[]=SqlDao.getFirstRowArray(connection,sql_a);
         logger.info(new StringBuffer("行>").append(Arrays.asList(result)));
 
-        Object result_2[]=QueryRunnerDao.getFirstRowArray(connection,sql_b);
-        logger.info(new StringBuffer("行>").append(Arrays.asList(result_2)));
+        Object result_2[]=SqlDao.getFirstRowArray(connection,sql_b);
+        logger.info(new StringBuffer("行>").append(Arrays.asList(result_2)));*/
 
 
     }
@@ -94,7 +104,7 @@ public class Test_DataSourceFactory
         Connection connection= dsFactory.getConnection();
         logger.info(connection);
 
-        Object result[]=QueryRunnerDao.getFirstRowArray(connection,sql,params);
+        Object result[]= SqlDao.getFirstRowArray(connection,sql,params);
         logger.info(Arrays.asList(result));
 
     }
@@ -154,32 +164,5 @@ public class Test_DataSourceFactory
     }
 
 
-    /**
-     * SQL建立表
-     * @throws SQLException
-     */
-    @Test
-    public void createTable() throws SQLException
-    {
-        int COUNT = 800;
-        //Connection connection    =dsFactory.getConnection();
-
-        StringBuffer ddl = new StringBuffer();
-        ddl.append("CREATE TABLE t_big (FID INT AUTO_INCREMENT PRIMARY KEY ");
-        for (int i = 0; i < COUNT; ++i) {
-            ddl.append(", ");
-            ddl.append("F" + i);
-            ddl.append(" BIGINT NULL");
-        }
-        ddl.append(")");
-
-        Connection conn = dsFactory.getConnection();
-
-        Statement stmt = conn.createStatement();
-        stmt.execute(ddl.toString());
-        stmt.close();
-
-        conn.close();
-    }
 
 }

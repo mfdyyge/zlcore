@@ -1,5 +1,7 @@
 package apche.dbutils.test.queryrunner;
 
+import com.ibatis.common.jdbc.ScriptRunner;
+import com.ibatis.common.resources.Resources;
 import com.zl.core.base.utils.time;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.apche.dbutils.pojo.T_user;
@@ -11,6 +13,7 @@ import javax.sql.rowset.serial.SerialClob;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -25,6 +28,49 @@ import java.util.List;
  *
  */
 public class QueryRunnerCRUDTest {
+
+	private static DsFactory dsFactory;
+
+	static
+	{
+		dsFactory=new DsFactory();
+
+
+	}
+
+	/**
+	 * SQL建立表
+	 * @throws SQLException
+	 */
+	@Test
+	public void createTable() throws SQLException ,Exception
+	{
+		int COUNT = 800;
+		dsFactory.setAutoCommitFalse();
+		Connection connection    =dsFactory.getConnection();
+
+		StringBuffer ddl = new StringBuffer();
+		ddl.append("CREATE TABLE t_big (FID INT AUTO_INCREMENT PRIMARY KEY ");
+		String log_insert="insert into log (LogName,UserName,Class,Mothod,createTime,LogLevel,MSG) values (?,?,?,?,?,?,?)";
+
+/*
+	SqlRuan sqlRuan=new SqlRuan();
+		List<String> sqlList = sqlRuan.loadSql("sql/comlog.sql");
+		System.out.println("size:" + sqlList.size());
+		for (String sql : sqlList) {
+			System.out.println(sql);
+		}
+*/
+
+		ScriptRunner runner = new ScriptRunner();
+
+		runner.setErrorLogWriter(null);
+		runner.setLogWriter(null);
+		runner.runScript(connection, Resources.getResourceAsReader("sql/comlog.sql"));
+		//runner.runScript(connection,Resources.getResourceAsReader("ddl/mysql/jpetstore-mysql-dataload.sql"));
+
+	}
+/**********************************************************************************************************************/
 
 	@Test
 	public void add() throws SQLException {

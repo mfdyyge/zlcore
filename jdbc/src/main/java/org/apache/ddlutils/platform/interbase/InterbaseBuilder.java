@@ -31,7 +31,7 @@ import org.apache.ddlutils.model.Table;
 import org.apache.ddlutils.platform.SqlBuilder;
 
 /**
- * The SQL Builder for the Interbase database.
+ * The sql Builder for the Interbase database.
  * 
  * @version $Revision: 231306 $
  */
@@ -211,7 +211,7 @@ public class InterbaseBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to add/insert a column.
+     * Writes the sql to add/insert a column.
      * 
      * @param model      The database model
      * @param table      The table
@@ -248,7 +248,7 @@ public class InterbaseBuilder extends SqlBuilder
     }
 
     /**
-     * Writes the SQL to drop a column.
+     * Writes the sql to drop a column.
      * 
      * @param table  The table
      * @param column The column to drop

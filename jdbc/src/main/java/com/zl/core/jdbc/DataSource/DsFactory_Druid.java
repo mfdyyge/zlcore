@@ -37,7 +37,7 @@ public class DsFactory_Druid
 	 */
 	public static DataSource getDataSource(DsProperties dsProperties)
 	{
-		logger.info("**\tRead db.properties info ... ");
+		logger.info("返回[ DruidDataSource  链接池]");
 		dataSource= new DruidDataSource();// druid数据库连接池
 
 		dataSource.setDriverClassName(dsProperties.getDriverClassName());

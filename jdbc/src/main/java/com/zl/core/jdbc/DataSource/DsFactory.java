@@ -152,12 +152,9 @@ public class DsFactory
 	}
 
 	/**
-	 * @Method: startTransaction
-	 * @Description: 开启事务
-	 * @author: 钢背猪☣
-	 *
+	 * 不自动提交
 	 */
-	public  void startTransaction()
+	public  void setAutoCommitFalse()
 	{
 		try
 		{
@@ -167,7 +164,7 @@ public class DsFactory
 				conn = getConnection();
 				threadLocal.set(conn);
 			}
-			// 开启事务
+			// 事务不自动提交
 			conn.setAutoCommit(false);
 		}
 		catch (Exception e) {			throw new RuntimeException(e);		}

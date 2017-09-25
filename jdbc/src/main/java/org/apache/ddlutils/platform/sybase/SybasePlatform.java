@@ -471,7 +471,7 @@ public class SybasePlatform extends PlatformImplBase
         Column        newColumn     = change.getNewColumn();
         SybaseBuilder sqlBuilder    = (SybaseBuilder)getSqlBuilder();
 
-        // if we only change the default value, then we need to use different SQL
+        // if we only change the default value, then we need to use different sql
         if (!ColumnDefinitionChange.isTypeChanged(getPlatformInfo(), changedColumn, newColumn) &&
             !ColumnDefinitionChange.isSizeChanged(getPlatformInfo(), changedColumn, newColumn) &&
             !ColumnDefinitionChange.isRequiredStatusChanged(changedColumn, newColumn) &&
