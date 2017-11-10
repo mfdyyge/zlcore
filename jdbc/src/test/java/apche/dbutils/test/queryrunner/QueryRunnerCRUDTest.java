@@ -124,7 +124,7 @@ public class QueryRunnerCRUDTest {
 		List<T_user> userList = queryRunner.query(sql,
 				new ResultSetHandler<List<T_user>>() {
 					public List<T_user> handle(ResultSet rs) throws SQLException {
-						List<T_user> userList = new ArrayList<>();
+						List<T_user> userList = new ArrayList();
 						while (rs.next()) {
 							T_user user = new T_user();
 							user.setUser_id(rs.getInt(1));

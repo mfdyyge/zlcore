@@ -1,0 +1,27 @@
+ResultSetHandler接口 介绍
+
+        该接口用于处理 java.sql.ResultSet，将数据按要求转换为另一种形式。
+
+        ResultSetHandler 接口提供了一个单独的方法：Object handle (java.sql.ResultSet .rs)。
+
+
+
+10、ResultSetHandler 接口的实现类
+
+        (1) ArrayHandler( )：把结果集中的第一行数据转成对象数组。
+
+        (2) ArrayListHandler( )：把结果集中的每一行数据都转成一个数组，再存放到List中。
+
+        (3) BeanHandler(Class type) ：将结果集中的第一行数据封装到一个对应的JavaBean实例中。
+
+        (4) BeanListHandler(Class type) ：将结果集中的每一行数据都封装到一个对应的JavaBean实例中，存放到List里。
+
+        (5) ColumnListHandler(int columnIndex / String columnName)：将结果集中某一列的数据存放到List中。
+
+        (6) KeyedHandler( int columnIndex / String columnName )：将结果集中的每一行数据都封装到一个Map里，再把这些map再存到一个map里，并将其columnName的值作为指定的key。
+
+        (7) MapHandler( )：将结果集中的第一行数据封装到一个Map里，key是列名，value就是对应的值。
+
+        (8) MapListHandler( )：将结果集中的每一行数据都封装到一个Map里，然后再存放到List
+
+        (9)  ScalarHandler( )：将结果集中的某一列 装入到一个对象中。

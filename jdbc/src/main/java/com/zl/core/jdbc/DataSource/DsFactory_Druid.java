@@ -66,7 +66,7 @@ public class DsFactory_Druid
 
 		dataSource.setValidationQuery("SELECT to_char(Trunc(Trunc(SYSDATE, 'MONTH') - 1, 'MONTH'), 'YYYY-MM-DD')  as 当月第一天, to_char(Trunc(SYSDATE, 'MONTH') - 1 / 86400, 'YYYY-MM-DD')\t         as 当月最后一天 FROM dual");
 		dataSource.setTestOnBorrow(false);		//申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
-		dataSource.setTestWhileIdle(false);		//建议配置为true，不影响性能，并且保证安全性。申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。
+		dataSource.setTestWhileIdle(true);		//建议配置为true，不影响性能，并且保证安全性。申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。
 
 		dataSource.setMinEvictableIdleTimeMillis(100000);	//[单位:毫秒] 配置一个连接在池中最小生存的时间
 		dataSource.setTimeBetweenEvictionRunsMillis(60000); //[单位:毫秒] 60秒=> 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒

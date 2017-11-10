@@ -27,8 +27,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 /**
- * 
- * @author		周路
+ * @author mfdyyge
+ * @Description: TODO(批量更新-HQL方式->描述这个类的作用)
  * @日期 			First-TimeApp: 2011-05-14 14:29  Last-TimeApp: 2012-12-21 11:23
  * @version 	Version  	M2012.12.21
  * @see   		objpath： 	对象路径（此变量为String类型-例如："oa.system.User"）
@@ -36,6 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @see			obj： 		操作对象
  * @see			log:		日志 log=> LoggerFactory.getLogger(obj.Class)
  */
+//Spring 注解
 @Repository
 public class HbImp implements HbDao{
 	
@@ -58,15 +59,17 @@ public	String 	save(Object obj)
 					return "记录持久化完成";
 			}
 
-			/**
-			 * @author 批量更新-HQL方式
-			 * @param setName
-			 * @param setNameVal
-			 * @param whereName
-			 * @param whereVal
-			 * @param objpath 
-			 */
-@Override
+	/**
+	 * @author 批量更新-HQL方式
+	 * @param obj
+	 * @param objpath
+	 * @param named
+	 * @param nameVal
+	 * @param whereName
+	 * @param whereVal
+	 * @return
+	 */
+	@Override
 public	String 	updateHql(Object obj, String objpath,String named,String nameVal,String whereName,String whereVal) {
 		
 					String hqlUpdate ="update "+objpath+" as model set model."+named+" = :nameVal where model."+whereName+" =:whereval";
@@ -84,10 +87,12 @@ public	String	update(Object obj) {
 					String msgs=obj.toString()+"更新完成!";
 					return msgs;
 			}
+
 /**
  * @author 批量删除-HQL方式
- * @param String objpath
- * @param where   xxx='' and xxx=''
+ * @param objpath
+ * @param where
+ * @return
  */
 @Override
 public	String	deleteHql(String objpath,String where) {
@@ -97,6 +102,7 @@ public	String	deleteHql(String objpath,String where) {
 					String msgs=objpath+"批量删除完成!";
 					return msgs;
 			}
+
 @Override
 public	String	delete(Object obj) {
 					getSession() .delete(obj);
@@ -115,8 +121,13 @@ public	Object 	findById(String objpath,Integer id) {
 					return instance;
 			}
 
-
-@Override
+	/**
+	 *
+	 * @param obj
+	 * @param id
+	 * @return
+	 */
+	@Override
 public	Object 	findById(Class obj,Integer id) {
 					Object instance= (Object)getSession() .get(obj,id);
 					return instance;

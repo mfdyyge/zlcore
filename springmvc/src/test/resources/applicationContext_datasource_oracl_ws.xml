@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:jee="http://www.springframework.org/schema/jee"
+           xmlns:tx="http://www.springframework.org/schema/tx" 
+           xmlns:aop="http://www.springframework.org/schema/aop"
+           xmlns:p="http://www.springframework.org/schema/p" 
+           xmlns:util="http://www.springframework.org/schema/util"
+           xmlns:tool="http://www.springframework.org/schema/tool" 
+           xmlns:context="http://www.springframework.org/schema/context"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans
+					           http://www.springframework.org/schema/beans/spring-beans.xsd
+					           http://www.springframework.org/schema/tx
+					           http://www.springframework.org/schema/tx/spring-tx.xsd
+					           http://www.springframework.org/schema/aop
+					           http://www.springframework.org/schema/aop/spring-aop.xsd
+					           http://www.springframework.org/schema/jee
+					           http://www.springframework.org/schema/jee/spring-jee.xsd
+					           http://www.springframework.org/schema/context
+					           http://www.springframework.org/schema/context/spring-context.xsd
+					           http://www.springframework.org/schema/util
+					           http://www.springframework.org/schema/util/spring-util.xsd
+					           http://www.springframework.org/schema/tool
+					           http://www.springframework.org/schema/tool/spring-tool.xsd">
+
+	<!-- 1.数据库链接 -->
+<bean id="dataSource_oracl_ws" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+
+		<property name="driverClass"	value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="jdbcUrl"		value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+		<property name="user" 			value="ws"/>
+		<property name="password"		value="ws"/>
+
+		<property name="autoCommitOnClose" value="true"/>
+        <!--连接池中保留的最小连接数。-->
+        	<property name="minPoolSize" value="5"/>
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        	<property name="maxPoolSize" value="30"/>
+        <!--初始化时获取的连接数，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+       	 	<property name="initialPoolSize" value="10"/>
+        <!--最大空闲时间,60秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        	<property name="maxIdleTime" value="60"/>
+        <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+        	<property name="acquireIncrement" value="5"/>
+        <!--JDBC的标准参数，用以控制数据源内加载的PreparedStatements数量。但由于预缓存的statements
+		       属于单个connection而不是整个连接池。所以设置这个参数需要考虑到多方面的因素。
+		       如果maxStatements与maxStatementsPerConnection均为0，则缓存被关闭。Default: 0-->
+        	<property name="maxStatements" value="0"/>
+        <!--每60秒检查所有连接池中的空闲连接。Default: 0 -->
+        	<property name="idleConnectionTestPeriod" value="60"/>
+        <!--定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
+        	<property name="acquireRetryAttempts" value="30"/>
+        <!--	获取连接失败将会引起所有等待连接池来获取连接的线程抛出异常。但是数据源仍有效
+		 保留，并在下次调用getConnection()的时候继续尝试获取连接。如果设为true，那么在尝试
+		 获取连接失败后该数据源将申明已断开并永久关闭。Default: false-->
+        	<property name="breakAfterAcquireFailure" value="false"/>
+        <!--	      因性能消耗大请只在需要的时候使用它。如果设为true那么在每个connection提交的
+		  时候都将校验其有效性。建议使用idleConnectionTestPeriod或automaticTestTable
+		等方法来提升连接测试的性能。Default: false -->
+        	<property name="testConnectionOnCheckout" value="false"/>
+</bean>
+
+	<!-- 2.Hibernate 注入数据库链接 -->
+<bean id="localsessionFactory_ws" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<property name="dataSource"	ref="dataSource_oracl_ws" />
+	<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<!--<prop key="hibernate.dialect">org.hibernate.dialect.Oracle9iDialect</prop>-->
+		       <!-- <prop key="hibernate.hbm2ddl.auto">update</prop>-->
+				<prop key="hibernate.autoReconnect">true</prop>
+
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
+			</props>
+	</property>
+
+	<property name="packagesToScan">
+		<list>
+			<value>ws.pojo</value>
+			<value>ws.wthz</value>
+		</list>
+	</property>
+
+	<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:ws/pojo/sys</value>	<!-- 测试用 -->
+			</list>
+	</property>
+</bean>
+
+
+<!-- hibernate4必须配置为开启事务 否则 getCurrentSession()获取不到 -->
+<bean id="HibernateTransactionManager_oracl" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="localsessionFactory_ws"></property>
+</bean>
+
+
+	<!--  配置事务（声明方式）-->
+	<!--	事物注解方式: @Transactional
+
+        当标于类前时，标示类中所有方法都进行事物处理，
+        以下代码在service层进行事务处理（给Service层配置事务是比较好的方式，
+        因为一个Service层方法操作可以关联到多个DAO的操作。
+        在Service层执行这些Dao操作，多DAO操作有失败全部回滚，成功则全部提交。）-->
+<tx:annotation-driven transaction-manager="HibernateTransactionManager_oracl" />
+
+
+
+
+
+
+
+	<!--
+    1.配置事务
+    2.使用-声明型事务控制-TransactionInterceptor
+    -->
+<bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+	<property name="transactionManager" ref="HibernateTransactionManager_oracl" />
+	<property name="transactionAttributes">
+		<props>
+			<!--
+						 <prop key="get*"	>PROPAGATION_REQUIRED,readOnly</prop>
+						 <prop key="find*"	>PROPAGATION_REQUIRED,readOnly</prop>
+						 <prop key="select*">PROPAGATION_REQUIRED,readOnly</prop>
+						 <prop key="query*"	>PROPAGATION_REQUIRED,readOnly</prop>
+
+						 <prop key="sync*"	>PROPAGATION_REQUIRED</prop>
+						 <prop key="finish*">PROPAGATION_REQUIRED</prop>
+						 <prop key="add*"	>PROPAGATION_REQUIRED</prop>
+						 <prop key="insert*">PROPAGATION_REQUIRED</prop>
+						 <prop key="edit*"	>PROPAGATION_REQUIRED</prop>
+						 <prop key="upd*"	>PROPAGATION_REQUIRED</prop>
+						 <prop key="save*"	>PROPAGATION_REQUIRED</prop>
+						 <prop key="rem*"	>PROPAGATION_REQUIRED</prop>
+						 <prop key="del*"	>PROPAGATION_REQUIRED</prop>
+			-->
+			<prop key="*">PROPAGATION_REQUIRED</prop>
+		</props>
+	</property>
+</bean>
+
+<!--
+	自动创建事务代理
+-->
+<!-- 定义按名称创建自动代理 -->
+<bean  class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<!-- 1.自动代理的实体类 -->
+		<property name="beanNames">
+			<list>
+				<value>*Imp</value>
+				<value>*Service</value>
+			</list>
+		</property>
+		<!-- 2. 事务拦截器 -->
+		<property name="interceptorNames">
+			<list>
+				<value>transactionInterceptor</value>
+			</list>
+		</property>
+</bean>
+</beans>

@@ -22,8 +22,9 @@ import org.apache.commons.dbutils.handlers.ScalarHandler;
 public class test
 {
 
-@SuppressWarnings("unchecked")
-public static void main(String[] args) throws ClassNotFoundException {
+
+public static void main(String[] args)
+{
 
         McUserField userField =new McUserField();
 
@@ -83,15 +84,14 @@ public static void main(String[] args) throws ClassNotFoundException {
 
         // 以下部分代码采用BeanHandler存储方式查询
                 System.out.println("***Using BeanHandler***");
-                userField = (McUserField) qRunner.query(conn,"select * from mc_user_field where id = ?",new BeanHandler(Class.forName("cn.lining.test.UserField")),new Object[] { "5" });
+                userField = (McUserField) qRunner.query(conn,"select * from mc_user_field where id = ?",new BeanHandler(userField.getClass()),new Object[] { "5" });
                 System.out.println("id ------------- name ");
                 System.out.println(userField.getId() +"  ------------- " + userField.getName());
 
         // 以下部分代码采用BeanListHandler存储方式查询
                 System.out.println("***Using BeanListHandler***");
                 List lBean = (List) qRunner.query(conn,
-                "select * from mc_user_field", new BeanListHandler(Class
-                .forName("cn.lining.test.UserField")));
+                "select * from mc_user_field", new BeanListHandler(userField.getClass()));
                 System.out.println("id ------------- name ");
                 for (int i =0; i < lBean.size(); i++) {
                 userField = (McUserField) lBean.get(i);
@@ -171,5 +171,5 @@ public static void main(String[] args) throws ClassNotFoundException {
         DbUtils.closeQuietly(conn);
         }
 
-        }
-        }
+   }
+}

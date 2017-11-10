@@ -17,14 +17,16 @@ public interface HbDao {
 	public	String 	save(Object obj);
 
 	/**
-	 * @author 批量更新-HQL方式
-	 * @param setName
-	 * @param setNameVal
+	 * @author mfdyyge
+	 * @Description: TODO(批量更新-HQL方式->描述这个类的作用)
+	 * @param obj
+	 * @param objpath
+	 * @param named
+	 * @param nameVal
 	 * @param whereName
 	 * @param whereVal
-	 * @param objpath 
+	 * @return
 	 */
-	
 	public	String 	updateHql(Object obj, String objpath, String named, String nameVal, String whereName, String whereVal) ;
 	
 	public	String	update(Object obj);
@@ -35,7 +37,7 @@ public interface HbDao {
 	/**
 	 * @获取指定Id号的记录
 	 * @param id
-	 * @param String objpath
+	 * @param objpath
 	 * @return
 	 */
 
@@ -63,7 +65,7 @@ public interface HbDao {
 	 * @author 需要排序
 	 * QBC-Criterion cri=Restrictions.eq(x,x)||like(X.X)||ilike(X.X)		
 	 * @param objcls 
-	 * @param 	order_propertyName:排序字段
+	 * @param 	order_propertyName_val:排序字段
 	 * @return  List
 	 */
 	public	List	findNamed_resultlist(Class objcls, Criterion criterion, Order order_propertyName_val);

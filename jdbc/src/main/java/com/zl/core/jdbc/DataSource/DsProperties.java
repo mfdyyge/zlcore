@@ -3,7 +3,9 @@ package com.zl.core.jdbc.DataSource;
 
 import org.apache.log4j.Logger;
 
+import java.io.FileInputStream;
 import java.util.MissingResourceException;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 /**
@@ -28,7 +30,7 @@ public class DsProperties
     /**
      *  db.properties=>链接池名字
      */
-    private  	String 					dataSourceName="";
+    private  	String 					dataSourceName=null;
 
     private  	String 					driverClassName;//数据库驱动类型
     private  	String 					jdbcUrl;        //数据库链接地址
@@ -36,17 +38,26 @@ public class DsProperties
     private  	String 					pwd;
 
     private static  ResourceBundle  rbundle;
-    private static  StringBuffer    dbPropertiesPath=new StringBuffer("conf/db/");//配置文件路径
+
+    /**
+     * 普通类测试-配置文件路径
+     */
+    private static  StringBuffer    dbPropertiesPath=new StringBuffer("conf/db/");
+
+    /**
+     * Web-配置文件路径
+     */
+    private static  StringBuffer    dbPropertiesPath_web_inf=new StringBuffer("WEB-INF/conf/db/");
 
 
     /**
      *
-     * @param db_properties_filename:数据库配置文件名字
+     * @param filename:数据库配置文件名字
      */
-    public DsProperties(String db_properties_filename)
+    public DsProperties(String filename)
     {
         logger.info(dbPropertiesPath);
-        dbPropertiesPath.append(db_properties_filename);
+        dbPropertiesPath.append(filename);
         logger.info(dbPropertiesPath);
 
         if(null==rbundle)
@@ -71,7 +82,35 @@ public class DsProperties
         }catch (MissingResourceException ex){
             logger.error("异常:配置文件中找不到对应字段>[MissingResourceException] = "+ex.getMessage());
         }
-        logger.info(new StringBuffer("\n------------------------\nDataSourceName = ").append(dataSourceName).append("\n------------------------").append("\ndriverClassName = ").append(driverClassName).append("\njdbcUrl = ").append(jdbcUrl).append("\ndbName = ").append(dbName).append("\npwd = ").append(pwd).append("\n------------------------"));
+        logger.info(new StringBuffer("DataSourceName = "+dataSourceName).append("\n------------------------").append("\ndriverClassName = ").append(driverClassName).append("\njdbcUrl = ").append(jdbcUrl).append("\ndbName = ").append(dbName).append("\npwd = ").append(pwd).append("\n------------------------"));
+    }
+
+
+    /**
+     * Web项目->用这个方法读取配置文件
+     * @param filename
+     * @return
+     */
+    private Properties readWeb_inf_properties(String filename)
+    {
+
+        dbPropertiesPath_web_inf.append(filename).append(".properties");
+        System.out.println("当前配置文件路径 = " + dbPropertiesPath_web_inf);
+        try{
+            String url = this.getClass().getResource("").getPath().replaceAll("%20", " ");
+
+            //String path = url.substring(0, url.indexOf("WEB-INF")) + "WEB-INF/url/url.properties";
+            String path = url.substring(0, url.indexOf("WEB-INF")) +dbPropertiesPath_web_inf;
+                            System.out.println("当前配置文件路径 path = " + path);
+            Properties properties = new Properties();
+            properties.load(new FileInputStream(path));
+
+            return properties;
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
 

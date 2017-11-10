@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017/9/24.
- */
 
 import java.util.Random;
 public class StrBuilder_Test {

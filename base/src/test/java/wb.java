@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017/9/8.
- */
 
 
 import java.io.BufferedReader;
@@ -10,6 +7,9 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+/**
+ * Created by Administrator on 2017/9/8.
+ */
 public class wb {
 
     private static String fileInPath = "D:/old2.txt";

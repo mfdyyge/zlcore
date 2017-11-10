@@ -340,7 +340,7 @@ public class SqlDao
 
 	/**
 	 * 得到查询记录的条数
-	 * @param 	connection
+	 * @param 	conn
 	 * @param 	sql
 	 * @param	params
 	 * @return 	查询记录条数
@@ -348,7 +348,7 @@ public class SqlDao
 	public static int getCount(Connection conn, String sql, Object... params) {
 		try {
 			// ScalarHandler 将ResultSet的一个列到一个对象
-			Object value = new QueryRunner().query(conn, sql, new ScalarHandler<>(), params);
+			Object value = new QueryRunner().query(conn, sql, new ScalarHandler(), params);
 			return objectToInteger(value);
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -366,7 +366,7 @@ public class SqlDao
 	public static int getCount(Connection connection, String sql) {
 		try {
 			// ScalarHandler 将ResultSet的一个列到一个对象
-			Object value = new QueryRunner().query(connection, sql, new ScalarHandler<>());
+			Object value = new QueryRunner().query(connection, sql, new ScalarHandler());
 			return objectToInteger(value);
 		} catch (Exception ex) {
 			ex.printStackTrace();

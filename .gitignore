@@ -22,6 +22,16 @@
 #     </configuration>
 # </plugin>
 
+# Eclipse[ 项目目录 ]
+.project
+.classpath
+.settings/
+
+
+# system ignore
+.DS_Store
+Thumbs.db
+
 # IDEA[ 项目目录 ]
 # 项目配置文件
 /.idea/
@@ -34,39 +44,11 @@
 *.ear
 
 # ******************************************************[ 编译目录 ]
-ActiveMQ/target
-Freemarker/target
-activity/target
-base/target
-hibernate/target
-jdbc/target
-redis/target
-shiro/target
-springdata/target
-springmvc/target
+*/target
 
+# iml Idea配置文件
+*/*.iml
 
-# Eclipse[ 项目目录 ]
-.project
-.classpath
-.settings/
+*/log
+log/
 
-
-# system ignore
-.DS_Store
-Thumbs.db
-
-/jdbc/jdbc.iml
-/ActiveMQ/ActiveMQ.iml
-/activity/activity.iml
-/base/base.iml
-/Freemarker/Freemarker.iml
-/ftp/ftp.iml
-/ftpServer/ftpServer.iml
-/hibernate/hibernate.iml
-/redis/redis.iml
-/shiro/shiro.iml
-/springdata/springdata.iml
-/springmvc/springmvc.iml
-/zlcore.iml
-/jdbc/log/

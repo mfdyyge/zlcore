@@ -2,7 +2,7 @@ package com.zl.core.jdbc.DataSource;
 
 
 
-import com.zl.core.jdbc.DataSource.spring.DsSpring_Factory;
+import com.zl.core.jdbc.DataSource.spring.DsFactorySpringAop;
 import org.apache.log4j.Logger;
 
 import javax.sql.DataSource;
@@ -49,23 +49,22 @@ public class DsFactory
 		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
 		String 			DataSourceName	=dsProperties.getDataSourceName();
 		logger.info(DataSourceName);
-		switch (DataSourceName)
-		{
-			case HikariCp_NAME:
-				dataSource =  DsFactory_HikariCp.getDataSource(dsProperties);
-				break;
-			case druid_NAME:
-				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
-				break;
-			case TomcatJdbc_NAME:
-				dataSource =  DsFactory_TomcatJdbc.getDataSource(dsProperties);
-				break;
-			case c3p0_NAME:
-				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
-				break;
-			default:
-				logger.info(new StringBuffer("加载[配置文件]=>conf/db/db.properties >>> DataSourceName = " ).append(DataSourceName));
-				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
+
+		if (DsProperties.HikariCp_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_HikariCp.getDataSource(dsProperties);
+
+		} else if (DsProperties.druid_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_Druid.getDataSource(dsProperties);
+
+		} else if (DsProperties.TomcatJdbc_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_TomcatJdbc.getDataSource(dsProperties);
+
+		} else if (DsProperties.c3p0_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_C3p0.getDataSource(dsProperties);
+
+		}else {
+			logger.info("加载[配置文件]中=>conf/db/db.properties >>> 属性:DataSourceName = null");
+			dataSource = DsFactory_Druid.getDataSource(dsProperties);
 		}
 	}
 
@@ -86,20 +85,22 @@ public class DsFactory
 		DsProperties 	dsProperties	=new DsProperties(db_properties_filename);
 		String 			DataSourceName	=dsProperties.getDataSourceName();
 
-		switch (DataSourceName)
-		{
-			case HikariCp_NAME:
-				dataSource =  DsFactory_HikariCp.getDataSource(dsProperties);
-				break;
-			case druid_NAME:
-				dataSource =  DsFactory_Druid.getDataSource(dsProperties);
-				break;
-			case TomcatJdbc_NAME:
-				dataSource =  DsFactory_TomcatJdbc.getDataSource(dsProperties);
-				break;
-			case c3p0_NAME:
-				dataSource =  DsFactory_C3p0.getDataSource(dsProperties);
-				break;
+
+		if (DsProperties.HikariCp_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_HikariCp.getDataSource(dsProperties);
+
+		} else if (DsProperties.druid_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_Druid.getDataSource(dsProperties);
+
+		} else if (DsProperties.TomcatJdbc_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_TomcatJdbc.getDataSource(dsProperties);
+
+		} else if (DsProperties.c3p0_NAME.equals(DataSourceName)) {
+			dataSource = DsFactory_C3p0.getDataSource(dsProperties);
+
+		}else {
+			logger.info("加载[配置文件]中=>conf/db/db.properties >>> 属性:DataSourceName = null");
+			dataSource = DsFactory_Druid.getDataSource(dsProperties);
 		}
 	}
 
@@ -110,9 +111,9 @@ public class DsFactory
 	 * @author: 钢背猪☣
 	 * @return DataSource
 	 */
-	public  DataSource getDataSource()
+	public  DataSource getDataSource(int ds)
 	{
-		DataSource dataSource_DsSpring= DsSpring_Factory.getDataSource();
+		DataSource dataSource_DsSpring= new DsFactorySpringAop().getDataSource()[ds];
 		if( null != dataSource_DsSpring)
 		{
 			logger.info(new StringBuffer("当前使用Spring配置的dataSource_dataSource_DsSpring.getClass() = ").append(dataSource_DsSpring.getClass()));
@@ -122,7 +123,30 @@ public class DsFactory
 
 	}
 
+	/**
+	 * @Method: getDataSource
+	 * @Description: 获取数据源 默认获取第一个
+	 * @author: 钢背猪☣
+	 * @return DataSource
+	 */
+	public  DataSource getDataSource()
+	{
+		DataSource dataSource_DsSpring=null;
+		if(null !=new DsFactorySpringAop().getDataSource())
+		{
+			dataSource_DsSpring = (new DsFactorySpringAop().getDataSource())[0];
+		}
+		else {
+			logger.info("dataSource_DsSpring = "+ dataSource_DsSpring);
+		}
 
+		if( null != dataSource_DsSpring)
+		{
+			logger.info(new StringBuffer("当前使用Spring配置的dataSource_dataSource_DsSpring.getClass() = ").append(dataSource_DsSpring.getClass()));
+			return dataSource_DsSpring;
+		}
+		return DsFactory.dataSource;
+	}
 
 	/**
 	 * @Method: getConnection
