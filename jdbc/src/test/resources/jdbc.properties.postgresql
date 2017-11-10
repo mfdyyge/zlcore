@@ -34,7 +34,7 @@ datasource.username=ddlutils
 datasource.password=ddlutils
 
 #
-# PostgreSQL comes with its own apche.dbutils.test.DataSource implementations which can be configured like this:
+# PostgreSQL comes with its own DataSource implementations which can be configured like this:
 #
 
 #datasource.class=org.postgresql.ds.PGSimpleDataSource

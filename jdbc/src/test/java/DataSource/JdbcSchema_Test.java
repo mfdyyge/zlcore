@@ -1,4 +1,4 @@
-package apche.dbutils.test.DataSource;
+package DataSource;
 
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.sqldeveloper.JdbcSchema;
@@ -14,7 +14,7 @@ import java.util.Arrays;
 /**
  * Created by 钢背猪☣ on 2017-8-30 0030.
  *
- * @ClassName: apche.dbutils.test.DataSource
+ * @ClassName: DataSource
  * @Description: 描述:474752515@qq.com
  * @author: 钢背猪☣
  * @date: 2017-8-30 0030

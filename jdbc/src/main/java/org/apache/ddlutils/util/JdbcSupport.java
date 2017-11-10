@@ -65,7 +65,7 @@ public abstract class JdbcSupport
     }
 
     /**
-     * Sets the apche.dbutils.test.DataSource used for communicating with the database.
+     * Sets the DataSource used for communicating with the database.
      * 
      * @param dataSource The data source
      */

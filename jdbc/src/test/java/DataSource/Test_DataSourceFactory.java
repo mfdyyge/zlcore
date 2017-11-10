@@ -1,4 +1,4 @@
-package apche.dbutils.test.DataSource;
+package DataSource;
 
 import com.alibaba.druid.sql.SQLUtils;
 import com.alibaba.druid.sql.ast.SQLObject;
@@ -11,7 +11,6 @@ import org.junit.Test;
 
 import java.sql.Connection;
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**

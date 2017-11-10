@@ -1,6 +1,5 @@
 package apche.dbutils.test.queryrunner;
 
-import apche.dbutils.test.DataSource.Test_DataSourceFactory;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.apche.dbutils.dao.SqlDao;
 import org.apache.commons.dbutils.QueryRunner;
