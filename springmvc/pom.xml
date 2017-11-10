@@ -17,123 +17,135 @@
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>4.3.6.RELEASE</spring.version><!-- spring版本号 -->
+
+
+    <spring.4.3x.version>4.3.6.RELEASE</spring.4.3x.version><!-- spring版本号 -->
+    <spring.5.0x.version>5.0.1.RELEASE</spring.5.0x.version>
+
+    <jackson.core>2.6.1</jackson.core>
+    <jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
 </properties>
 
     <!--********************************************************************************************-->
     <!--Jar包-->
 <dependencies>
+
     <dependency>
-            <groupId>com.zl.core</groupId>
-            <artifactId>ActiveMQ</artifactId>
-            <version>2.0.0.0904</version>
-    </dependency>
+                <groupId>com.zl.core</groupId>
+                <artifactId>ActiveMQ</artifactId>
+                <version>2.0.0.0904</version>
+                </dependency>
     <dependency>
-        <groupId>com.zl.core</groupId>
-        <artifactId>Hibernate</artifactId>
-        <version>2.0.0.0904</version>
-    </dependency>
-        <!-- spring核心包 -->
-        <!--****************************************************************************************************************8  -->
-    <!-- Spring -->
+                <groupId>com.zl.core</groupId>
+                <artifactId>Hibernate</artifactId>
+                <version>2.0.0.0904</version>
+                </dependency>
+
+
+    <dependency>
+                <groupId>com.zl.core</groupId>
+                <artifactId>base</artifactId>
+                <version>2.0.0.0904</version>
+                </dependency>
+
+    <dependency>
+                <groupId>com.zl.core</groupId>
+                <artifactId>jdbc</artifactId>
+                <version>2.0.0.0904</version>
+                </dependency>
+
+
+    <!--****************************************************************************************************************8  -->
+    <!-- spring核心包 -->
+    <!--****************************************************************************************************************8  -->
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-beans</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
 
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-orm</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-tx</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
 
     <!-- Spring框架下的单元测试方法 -->
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-test</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-        <version>${spring.version}</version>
-    </dependency>
+
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-expression</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
 
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
-        <version>${spring.version}</version>
+        <version>${spring.4.3x.version}</version>
     </dependency>
 
+    <!-- spring jdbc  -->
+    <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.4.3x.version}</version>
+            </dependency>
 
     <!-- Jackson JSON Mapper -->
         <!-- SpringMVC的@ResponseBody需要使用 -->
         <!-- spring.jackson>>> json数据所需要-【Jar包】 -->
         <!--****************************************************************************************************************8  -->
         <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
-        </dependency>
+                    <groupId>org.codehaus.jackson</groupId>
+                    <artifactId>jackson-mapper-asl</artifactId>
+                    <version>${jackson-mapper-asl.version}</version>
+                    </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>2.6.1</version>
-        </dependency>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                    <version>${jackson.core}</version>
+                    </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.6.1</version>
-        </dependency>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-core</artifactId>
+                    <version>${jackson.core}</version>
+                    </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.6.1</version>
-        </dependency>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                    <version>${jackson.core}</version>
+                    </dependency>
 
-
-    <dependency>
-        <groupId>com.zl.core</groupId>
-        <artifactId>base</artifactId>
-        <version>${project.parent.version}</version>
-    </dependency>
-
-    <dependency>
-        <groupId>com.zl.core</groupId>
-        <artifactId>jdbc</artifactId>
-        <version>${project.parent.version}</version>
-    </dependency>
 
 
 </dependencies>

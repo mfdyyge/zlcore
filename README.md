@@ -117,35 +117,35 @@ $ git push origin :branch-name          //2.推到远程【必须推送到远程
 ------------------------------------------------------------------------------------------------------------------------
 Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
 $ git checkout origin 2.0.0
-error: pathspec '2.0.0' did not match any file(s) known to git.
+                    error: pathspec '2.0.0' did not match any file(s) known to git.
 
 Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
 $ git branch -a
-* (no branch, rebasing 2.0.0)    //出现这个[ no branch]
-  2.0.0
-  master
-  temp
-  remotes/origin/1.0.0.20170808
-  remotes/origin/2.0.0
-  remotes/origin/2.0.0.0904
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+                * (no branch, rebasing 2.0.0)    //出现这个[ no branch]
+                  2.0.0
+                  master
+                  temp
+                  remotes/origin/1.0.0.20170808
+                  remotes/origin/2.0.0
+                  remotes/origin/2.0.0.0904
+                  remotes/origin/HEAD -> origin/master
+                  remotes/origin/master
 
 Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
 $ git checkout -b test2.0.0    //建立本地分支
-Switched to a new branch 'test2.0.0'
+                            Switched to a new branch 'test2.0.0'
 
 Administrator@USER-20161224NA MINGW64 /h/Idea_namespase/GIT/zlcore (2.0.0|REBASE 1/1)
 $ git branch -a
-  2.0.0
-  master
-  temp
-* test2.0.0
-  remotes/origin/1.0.0.20170808
-  remotes/origin/2.0.0
-  remotes/origin/2.0.0.0904
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+              2.0.0
+              master
+              temp
+            * test2.0.0
+              remotes/origin/1.0.0.20170808
+              remotes/origin/2.0.0
+              remotes/origin/2.0.0.0904
+              remotes/origin/HEAD -> origin/master
+              remotes/origin/master
 
 -----------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------ 项目操作[切换远程版本]
@@ -158,57 +158,58 @@ $ git commit -am"切换版本前提交本地更改"
 2》
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
 $ git checkout -b 2.0.0 origin/2.0.0
-
-Checking out files: 100% (667/667), done.
-Switched to a new branch '2.0.0'
-Branch 2.0.0 set up to track remote branch 2.0.0 from origin.
+                                    
+                                    Checking out files: 100% (667/667), done.
+                                    Switched to a new branch '2.0.0'
+                                    Branch 2.0.0 set up to track remote branch 2.0.0 from origin.
 
 3》
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git remote -v
-
-origin  https://git.oschina.net/mfdyyge-zl/zlcore.git (fetch)
-origin  https://git.oschina.net/mfdyyge-zl/zlcore.git (push)
+                
+                origin  https://git.oschina.net/mfdyyge-zl/zlcore.git (fetch)
+                origin  https://git.oschina.net/mfdyyge-zl/zlcore.git (push)
 
 4》
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git branch -a
-
-* 2.0.0
-  master
-  remotes/origin/1.0.0.20170808
-  remotes/origin/2.0.0
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+                
+                * 2.0.0
+                  master
+                  remotes/origin/1.0.0.20170808
+                  remotes/origin/2.0.0
+                  remotes/origin/HEAD -> origin/master
+                  remotes/origin/master
 
 -----------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------ 项目操作[提交本地更改 | 推送]
 -----------------------------------------------------------------------------------------------------------------
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git add -A
-warning: LF will be replaced by CRLF in .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2.xml.
-The file will have its original line endings in your working directory.
-warning: LF will be replaced by CRLF in .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348.xml.
-The file will have its original line endings in your working directory.
+            warning: LF will be replaced by CRLF in .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2.xml.
+            The file will have its original line endings in your working directory.
+            warning: LF will be replaced by CRLF in .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348.xml.
+            The file will have its original line endings in your working directory.
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git commit -m"GIT命令文件：更新项目操作命令"
-[2.0.0 01cc4ff] GIT命令文件：更新项目操作命令
- 9 files changed, 2837 insertions(+), 481 deletions(-)
- create mode 100644 .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2.xml
- create mode 100644 .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2/storage.xml
- create mode 100644 .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348.xml
- create mode 100644 .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348/storage.xml
+                [2.0.0 01cc4ff] GIT命令文件：更新项目操作命令
+                 9 files changed, 2837 insertions(+), 481 deletions(-)
+                 create mode 100644 .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2.xml
+                 create mode 100644 .idea/dataSources/e7b1bd0a-45cc-4121-bd41-3e5025c6eed2/storage.xml
+                 create mode 100644 .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348.xml
+                 create mode 100644 .idea/dataSources/ef9a5553-2f4c-4be1-88ce-1ddb8f89b348/storage.xml
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git push origin 2.0.0
-Counting objects: 14, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (13/13), done.
-Writing objects: 100% (14/14), 13.21 KiB | 0 bytes/s, done.
-Total 14 (delta 6), reused 0 (delta 0)
-To https://git.oschina.net/mfdyyge-zl/zlcore.git
-   e52c2c0..01cc4ff  2.0.0 -> 2.0.0
+
+    Counting objects: 14, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (13/13), done.
+    Writing objects: 100% (14/14), 13.21 KiB | 0 bytes/s, done.
+    Total 14 (delta 6), reused 0 (delta 0)
+    To https://git.oschina.net/mfdyyge-zl/zlcore.git
+       e52c2c0..01cc4ff  2.0.0 -> 2.0.0
 
 
 
@@ -221,36 +222,78 @@ $ git branch 2.0.0.0904
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git branch -a
-* 2.0.0
-  2.0.0.0904
-  master
-  temp
-  remotes/origin/1.0.0.20170808
-  remotes/origin/2.0.0
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+                * 2.0.0
+                  2.0.0.0904
+                  master
+                  temp
+                  remotes/origin/1.0.0.20170808
+                  remotes/origin/2.0.0
+                  remotes/origin/HEAD -> origin/master
+                  remotes/origin/master
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git push origin 2.0.0.0904
-Total 0 (delta 0), reused 0 (delta 0)
-To https://git.oschina.net/mfdyyge-zl/zlcore.git
- * [new branch]      2.0.0.0904 -> 2.0.0.0904
+                            Total 0 (delta 0), reused 0 (delta 0)
+                            To https://git.oschina.net/mfdyyge-zl/zlcore.git
+                             * [new branch]      2.0.0.0904 -> 2.0.0.0904
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 $ git branch -a
-* 2.0.0
-  2.0.0.0904
-  master
-  temp
-  remotes/origin/1.0.0.20170808
-  remotes/origin/2.0.0
-  remotes/origin/2.0.0.0904
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+            * 2.0.0
+              2.0.0.0904
+              master
+              temp
+              remotes/origin/1.0.0.20170808
+              remotes/origin/2.0.0
+              remotes/origin/2.0.0.0904
+              remotes/origin/HEAD -> origin/master
+              remotes/origin/master
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 
 
+-----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ 项目操作[GIT合并上传本地项目到{ GitHub | OscChina } ]
+-----------------------------------------------------------------------------------------------------------------
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
+$ git remote -v
+                GIT     https://github.com/mfdyyge/zlcore.git (fetch)
+                GIT     https://github.com/mfdyyge/zlcore.git (push)
+                OSC     https://git.oschina.net/mfdyyge-zl/zlcore.git (fetch)
+                OSC     https://git.oschina.net/mfdyyge-zl/zlcore.git (push)
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
+$ git fetch GIT master:temp
+                            From https://github.com/mfdyyge/zlcore
+                             * [new branch]      master     -> temp
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
+$ git merge temp
+                Already up-to-date.
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
+$ git push GIT master
+                    Counting objects: 2383, done.
+                    Delta compression using up to 8 threads.
+                    Compressing objects: 100% (1673/1673), done.
+                    Writing objects: 100% (2383/2383), 2.74 MiB | 74.00 KiB/s, done.
+                    Total 2383 (delta 1126), reused 824 (delta 435)
+                    remote: Resolving deltas: 100% (1126/1126), completed with 76 local objects.
+                    To https://github.com/mfdyyge/zlcore.git
+                       891f205..ee59e1c  master -> master
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
+$ git push OSC master
+                    Counting objects: 260, done.
+                    Delta compression using up to 8 threads.
+                    Compressing objects: 100% (235/235), done.
+                    Writing objects: 100% (260/260), 216.02 KiB | 0 bytes/s, done.
+                    Total 260 (delta 76), reused 6 (delta 0)
+                    To https://git.oschina.net/mfdyyge-zl/zlcore.git
+                       ef0488f..ee59e1c  master -> master
+
+Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (master)
+$
 
 -----------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------ 项目操作[GIT合并上传本地项目 ]
@@ -269,21 +312,25 @@ Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/zlcore (2.0.0)
 --------------------------------------------------------------------------------------------------
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/代码生成工具/zlGenerator (master|REBASE 2/2)
 $ git pull origin master --allow-unrelated-histories
-
-From https://git.oschina.net/mfdyyge-zl/zlGenerator
- * branch            master     -> FETCH_HEAD
-Merge made by the 'recursive' strategy.
- LICENSE | 191 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 1 file changed, 191 insertions(+)
- create mode 100644 LICENSE
+                        
+                        From https://git.oschina.net/mfdyyge-zl/zlGenerator
+                         * branch            master     -> FETCH_HEAD
+                        Merge made by the 'recursive' strategy.
+                         LICENSE | 191 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                         1 file changed, 191 insertions(+)
+                         create mode 100644 LICENSE
 
 
 Administrator@ThinkPad-W530 MINGW64 /z/IdeaProjects/GIT/代码生成工具/zlGenerator (master|REBASE 2/2)
 $ git push origin master
+                        
+                        Counting objects: 534, done.
+                        Delta compression using up to 8 threads.
+                        Compressing objects: 100% (515/515), done.
+                        Writing objects: 100% (534/534), 328.63 KiB | 0 bytes/s, done.
+                        Total 534 (delta 308), reused 0 (delta 0)
+                        To https://git.oschina.net/mfdyyge-zl/zlGenerator.git
 
-Counting objects: 534, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (515/515), done.
-Writing objects: 100% (534/534), 328.63 KiB | 0 bytes/s, done.
-Total 534 (delta 308), reused 0 (delta 0)
-To https://git.oschina.net/mfdyyge-zl/zlGenerator.git
+
+
+
