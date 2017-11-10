@@ -163,13 +163,15 @@
         </dependency>
 
         <!--加载本地Jar包例子-->
-        <!--    <dependency>
-                <groupId>org.eclipse</groupId>
-                <artifactId>jface</artifactId>
-                <version>3.7.0.v20110928-1505</version>
-                <scope>system</scope>
-                <systemPath>${basedir}/lib/org.eclipse.jface_3.7.0.v20110928-1505.jar</systemPath>
-            </dependency>-->
+        <!--
+        <dependency>
+                    <groupId>org.eclipse</groupId>
+                    <artifactId>jface</artifactId>
+                    <version>3.7.0.v20110928-1505</version>
+                    <scope>system</scope>
+                    <systemPath>${basedir}/lib/org.eclipse.jface_3.7.0.v20110928-1505.jar</systemPath>
+                    </dependency>
+            -->
     </dependencies>
 
 </project>

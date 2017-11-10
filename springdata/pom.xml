@@ -15,280 +15,106 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Spring -->
+        <spring.4.3x.version>4.3.6.RELEASE</spring.4.3x.version><!-- spring版本号 -->
+        <spring.5.0x.version>5.0.1.RELEASE</spring.5.0x.version>
+
+        <!-- spring-data-commons -->
+        <spring-data-commons.1.6.x.version>1.6.5.RELEASE</spring-data-commons.1.6.x.version>
+
+        <!-- Spring Data Jpa -->
+        <spring-data-jpa.1.4.x.verion>1.4.5.RELEASE</spring-data-jpa.1.4.x.verion>
+        <spring-data-jpa.1.5.x.verion>1.5.3.RELEASE</spring-data-jpa.1.5.x.verion>
+        <spring-data-jpa.1.6.x.verion>1.6.6.RELEASE</spring-data-jpa.1.6.x.verion>
+        <spring-data-jpa.1.7.x.verion>1.7.4.RELEASE</spring-data-jpa.1.7.x.verion>
+        <spring-data-jpa.1.8.x.verion>1.8.2.RELEASE</spring-data-jpa.1.8.x.verion>
+        <spring-data-jpa.1.9.x.verion>1.9.6.RELEASE</spring-data-jpa.1.9.x.verion>
+        <spring-data-jpa.1.10.x.verion>1.10.11.RELEASE</spring-data-jpa.1.10.x.verion>
+        <spring-data-jpa.1.11.x.verion>1.11.8.RELEASE</spring-data-jpa.1.11.x.verion>
+        <spring-data-jpa.2.0.x.verion>2.0.1.RELEASE</spring-data-jpa.2.0.x.verion>
+
+
+        <jackson.core>2.6.1</jackson.core>
+        <jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
+
+        <!-- Hibernate -->
+        <hibernate.4.1.x.version>4.1.12.Final</hibernate.4.1.x.version>
+        <hibernate.4.2.x.version>4.2.21.Final</hibernate.4.2.x.version>
+        <hibernate.4.3.x.version>4.3.11.Final</hibernate.4.3.x.version>
+        <hibernate.5.0.x.version>5.0.12.Final</hibernate.5.0.x.version>
+        <hibernate.5.1.x.version>5.1.10.Final</hibernate.5.1.x.version>
+        <hibernate.5.2.x.version>5.2.12.Final</hibernate.5.2.x.version>
+
+        <hibernate-validator.5.2.x.version>5.2.4.Final</hibernate-validator.5.2.x.version>
     </properties>
 
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.zl.core</groupId>
+            <artifactId>dataSource</artifactId>
+            <version>2.0.0.0904</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zl.core</groupId>
+            <artifactId>hibernate</artifactId>
+            <version>2.0.0.0904</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zl.core</groupId>
+            <artifactId>spring</artifactId>
+            <version>2.0.0.0904</version>
+        </dependency>
+
         <!--单元测试   ****************************************************************-->
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
             <version>1.3</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library -->
+
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-library</artifactId>
             <version>1.3</version>
         </dependency>
 
-        <!--数据库链接池 ****************************************************************-->
-        <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.2.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.mchange/mchange-commons-java -->
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>mchange-commons-java</artifactId>
-            <version>0.2.11</version>
-        </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.28</version>
-        </dependency>
-
-        <!--数据库- 驱动 ********-->
-        <dependency>
-            <groupId>com.oracle.jdbc</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.4</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.17</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-        <!--数据库链接池 ****************************************************************-->
-
-        <!-- 实体类ID生成  ****************************************************************-->
-        <dependency>
-            <groupId>jug</groupId>
-            <artifactId>jug</artifactId>
-            <version>1.1.2</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <!--spring  ****************************************************************-->
-        <!-- https://mvnrepository.com/artifact/net.sourceforge.cglib/com.springsource.net.sf.cglib -->
-        <dependency>
-            <groupId>net.sourceforge.cglib</groupId>
-            <artifactId>com.springsource.net.sf.cglib</artifactId>
-            <version>2.2.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.aopalliance/com.springsource.org.aopalliance -->
-        <dependency>
-            <groupId>org.aopalliance</groupId>
-            <artifactId>com.springsource.org.aopalliance</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.aspectj/com.springsource.org.aspectj.weaver -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>com.springsource.org.aspectj.weaver</artifactId>
-            <version>1.6.12.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.1.3</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
-        <!--
-            <dependency>
-              <groupId>org.dom4j</groupId>
-              <artifactId>dom4j</artifactId>
-              <version>2.0.0</version>
-            </dependency>
-        -->
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-c3p0</artifactId>
-            <version>4.2.4.Final</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
-        <dependency>
-            <groupId>org.hibernate.common</groupId>
-            <artifactId>hibernate-commons-annotations</artifactId>
-            <version>4.0.2.Final</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>4.2.4.Final</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>4.2.4.Final</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
-        <dependency>
-            <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <version>1.0.1.Final</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
-        <dependency>
-            <groupId>org.javassist</groupId>
-            <artifactId>javassist</artifactId>
-            <version>3.15.0-GA</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.jboss.logging/jboss-logging -->
+        <!--****************************************************************************************************************8  -->
+        <!-- jboss -->
+        <!--****************************************************************************************************************8  -->
         <dependency>
             <groupId>org.jboss.logging</groupId>
             <artifactId>jboss-logging</artifactId>
             <version>3.1.0.GA</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec -->
+
         <dependency>
             <groupId>org.jboss.spec.javax.transaction</groupId>
             <artifactId>jboss-transaction-api_1.1_spec</artifactId>
             <version>1.0.1.Final</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-        <!--      <dependency>
-                  <groupId>org.aspectj</groupId>
-                  <artifactId>aspectjweaver</artifactId>
-                  <version>1.8.0.M1</version>
-              </dependency>-->
 
 
-        <!--Spring MVC　IOC　×××××××××××××××××××××××××-->
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
-            <version>4.0.0.RELEASE</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
-            <version>1.6.2.RELEASE</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>1.4.2.RELEASE</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-expression</artifactId>
-            <version>4.0.0.RELEASE</version>
-        </dependency>
-
-
-        <!--Spring ＷＥＢ　ＪＤＢＣ　×××××××××××××××××××××××××-->
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>4.0.0.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>4.0.0.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>4.0.0.Release</version>
-        </dependency>
+        <!--****************************************************************************************************************8  -->
+        <!-- jacoco-maven-plugin -->
+        <!--****************************************************************************************************************8  -->
         <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
         <dependency>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.7.9</version>
-        </dependency>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.7.9</version>
+                    </dependency>
 
     </dependencies>
 
