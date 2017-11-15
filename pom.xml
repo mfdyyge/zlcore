@@ -9,11 +9,18 @@
     <description>说明:周路的Java工具</description>
     <groupId>com.zl.core</groupId>
     <artifactId>zlcore</artifactId>
-    <version>2.0.0.0904</version> <!--    <version>1.0.0-SNAPSHOT</version>--> <!-- 改变版本命令: versions:set -DnewVersion=1.0.0-SNAPSHOT-->
+    <version>2.0.2017.1115</version>
+    <!--  MVN 常用命令  -->
+    <!-- 1.更换版本号: versions:set -DnewVersion=1.0.0-SNAPSHOT
+          versions:set -DnewVersion=2.0.2017.1115
 
+          2.打包跳过测试: clean install   -DskipTests
+                        compile package -DskipTests
 
+          3.打包所有依赖Jar: assembly:assembly -DskipTests
 
-
+          4.发布: deploy  -DskipTests
+     -->
 
 <modules>
     <!--1.编译-->

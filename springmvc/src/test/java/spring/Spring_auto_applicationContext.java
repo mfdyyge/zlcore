@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
+import java.sql.SQLException;
 
 
 /**
@@ -22,16 +23,21 @@ public class Spring_auto_applicationContext
 {
 
     @Autowired
-    private DataSource dataSource_act;
+    private DataSource ds_Hikari,ds_druid_act;
 
-    public void setDataSource_act(DataSource dataSource_act)
-    {
-        this.dataSource_act = dataSource_act;
+    public void setDs_Hikari(DataSource ds_Hikari) {
+        this.ds_Hikari = ds_Hikari;
+
+      }
+
+    public void setDs_druid_act(DataSource ds_druid_act) {
+        this.ds_druid_act = ds_druid_act;
+
     }
 
     @Test
-    public void getListTest(){
-        System.out.println("dataSource_act = " + dataSource_act);
+    public void getListTest() throws SQLException {
+        System.out.println("ds_Hikari = " + ds_Hikari.getConnection());
     }
 }
 

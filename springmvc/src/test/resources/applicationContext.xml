@@ -75,7 +75,7 @@
 
 
     <!-- Hikari Datasource -->
-    <bean id="dataSourceHikari" class="com.zaxxer.hikari.HikariDataSource"   destroy-method="close">
+    <bean id="ds_Hikari" class="com.zaxxer.hikari.HikariDataSource"   destroy-method="close">
         <property name="driverClassName" value="${DriverClassName}" />
         <property name="jdbcUrl" value="${JdbcUrl}" />
         <property name="username" value="jpa" />
@@ -100,7 +100,7 @@
 
 
     <bean id="localsessionFactory_ws" class="spring.Spring_auto_applicationContext">
-            <property name="dataSource_act"	ref="ds_druid_act" />
+            <property name="ds_Hikari"	ref="ds_Hikari" />
     </bean>
 
 
