@@ -53,3 +53,7 @@ Thumbs.db
 log/
 
 
+!/.idea/dataSources/
+!/.idea/dataSources.local.xml
+!/.idea/libraries/
+!/.idea/dataSources.xml

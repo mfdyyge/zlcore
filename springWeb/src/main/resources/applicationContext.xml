@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+
+
+<!--
+    <context:component-scan base-package="com.web.dao"/>
+-->
+    <!-- 加载数据源属性文件 -->
+
+    <context:property-placeholder location="classpath:db/db.properties"/>
+
+    <!-- 1.Web服务器jndi 数据源注入Spring -->
+    <!--
+        <bean id="dataSource"
+              class="org.springframework.jndi.JndiObjectFactoryBean">
+            <property name="jndiName" value="java:comp/env/jdbc/mbr" />
+        </bean>
+
+    -->
+
+    <!-- 2.项目数据源 -->
+    <bean id="ds_druid_act" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${DriverClassName}"/>
+        <property name="url" value="${JdbcUrl}"/>
+
+        <property name="username" value="act"/>
+        <property name="password" value="act"/>
+
+        <property name="filters" value="stat"/>
+
+        <property name="maxActive" value="20"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxWait" value="60000"/>
+        <property name="minIdle" value="1"/>
+
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+
+        <property name="validationQuery" value="SELECT 1 FROM dual"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+    </bean>
+
+    <bean id="ds_druid_jpa" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${DriverClassName}"/>
+        <property name="url" value="${JdbcUrl}"/>
+
+        <property name="username" value="jpa"/>
+        <property name="password" value="jpa"/>
+
+        <property name="filters" value="stat"/>
+
+        <property name="maxActive" value="20"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxWait" value="60000"/>
+        <property name="minIdle" value="1"/>
+
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+
+        <property name="validationQuery" value="SELECT 1 FROM dual"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+    </bean>
+
+
+    <!-- Hikari Datasource -->
+    <bean id="ds_Hikari" class="com.zaxxer.hikari.HikariDataSource"   destroy-method="close">
+        <property name="driverClassName" value="${DriverClassName}" />
+        <property name="jdbcUrl" value="${JdbcUrl}" />
+        <property name="username" value="jpa" />
+        <property name="password" value="jpa" />
+        <!-- 连接只读数据库时配置为true， 保证安全 -->
+        <property name="readOnly" value="false" />
+        <!-- 等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 缺省:30秒 -->
+        <property name="connectionTimeout" value="30000" />
+        <!-- 一个连接idle状态的最大时长（毫秒），超时则被释放（retired），缺省:10分钟 -->
+        <property name="idleTimeout" value="600000" />
+        <!-- 一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒，参考MySQL
+            wait_timeout参数（show variables like '%timeout%';） -->
+        <property name="maxLifetime" value="1800000" />
+        <!-- 连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count) -->
+        <property name="maximumPoolSize" value="60" />
+        <property name="minimumIdle" value="10" />
+    </bean>
+
+
+
+<!--
+
+
+
+    <bean id="localsessionFactory_ws" class="spring.Spring_auto_applicationContext">
+        <property name="ds_Hikari"	ref="ds_Hikari" />
+    </bean>
+-->
+
+
+</beans>
