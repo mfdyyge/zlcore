@@ -48,7 +48,7 @@ Thumbs.db
 
 # iml Idea配置文件
 */*.iml
-
+/zlcore.iml
 */log
 log/
 
@@ -57,3 +57,4 @@ log/
 !/.idea/dataSources.local.xml
 !/.idea/libraries/
 !/.idea/dataSources.xml
+
