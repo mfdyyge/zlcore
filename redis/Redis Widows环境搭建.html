@@ -1,0 +1,144 @@
+
+
+使用Eclipse在Windows下搭建Redis项目+简单测试
+原创 2017年04月28日 06:03:25
+
+标签：
+eclipse /
+数据库 /
+redis /
+java /
+nosql
+
+Redis是运行在内存中数据库，采用Key-Value的结构储存数据。Redis的官方版本是不支持Windows的，但微软的开放技术小组发布了Win64版的Redis，这样我们就能在Windows下使用Redis了。今天在Eclipse下尝试了搭建第一个Redis项目，现在总结一下：
+下载Redis
+
+Windos版下载地址：https://github.com/MSOpenTech/redis/releases
+
+下载
+
+我下载的是压缩包，下载完成后无需安装，解压即可
+
+目录
+
+解压后，我们可以看到有可执行文件、配置文件、文档说明等等
+配置并运行Redis
+
+配置文件我只修改了密码：打开redis.windows.conf 这个配置文件，
+搜索 masterauth，找到# masterauth <master-password>，去掉注释并把<master-password>改为你的密码
+
+    masterauth 123456
+
+    1
+
+    配置文件修改完成后，在Redis目录下按住Shift+鼠标右键，点击“在此处打开命令窗口”打开cmd，使用以下命令运行Redis服务器
+
+    redis-server  redis.windows.conf
+
+    1
+
+    命令行
+
+    成功运行的话，你将看到一个大大的Redis logo
+    下载Jar包
+
+    commons-pool2-2.4.2.jar
+    jedis-2.9.0.jar
+
+    1
+    2
+
+    Jar包下载：
+    http://pan.baidu.com/s/1hsbwcNa
+
+    你没有看错，因为是Java开发包，所以取名为jedis
+    切记，commons-pool2-2.4.2.jar这个包必不可少
+    创建工程
+
+    创建工程
+
+    创建普通Java工程，并导入两个jar包即可
+    测试
+
+    在测试前，请确保你的Redis服务器正在运行
+
+    [ RedisTest.java ]
+
+    package com.yorichan.test;
+
+    import org.junit.Before;
+    import org.junit.Test;
+    import redis.clients.jedis.Jedis;
+    import redis.clients.jedis.JedisPool;
+    import redis.clients.jedis.JedisPoolConfig;
+
+    public class RedisTest {
+
+    JedisPool pool;
+    Jedis jedis;
+
+    @Before
+    public void start() {
+
+    // 初始化Redis连接池
+    pool = new JedisPool(new JedisPoolConfig(), "127.0.0.1");
+    // 从Redis连接池中获取一个连接
+    jedis = pool.getResource();
+    // Redis的密码，对应redis.windows.conf中的masterauth
+    jedis.auth("123456");
+
+    }
+
+    /**
+    * 添加测试
+    */
+    @Test
+    public void putTest() {
+
+    jedis.set("user", "YoriChan");
+    System.out.println(jedis.get("user"));
+
+    // 输出结果：YoriChan
+
+    }
+
+    /**
+    * 覆盖测试
+    */
+    @Test
+    public void overWriteTest() {
+
+    jedis.set("user", "chanyulin");
+    System.out.println(jedis.get("user"));
+
+    // 输出结果：chanyulin
+
+    }
+
+    /**
+    * 追加测试
+    */
+    @Test
+    public void appendTest() {
+
+    jedis.append("user", "陈昱霖");
+    System.out.println(jedis.get("user"));
+
+    // 输出结果：chanyulin陈昱霖
+
+    }
+
+    /**
+    * 删除测试
+    */
+    @Test
+    public void deleteTest() {
+
+    jedis.del("user");
+    System.out.println(jedis.get("user"));
+
+    // 输出结果：null
+
+    }
+
+    }

@@ -50,45 +50,45 @@ public class DsFactorySpringAop
 /**********************************************************************************************************************/
 	public DsFactorySpringAop() {	}
 
-	public void setDataSource(DataSource... dataSource) {
+	public void 		setDataSource(DataSource... dataSource) {
 		this.dataSource = dataSource;
 	}
 	public DataSource[] getDataSource() {		return dataSource;	}
 
-	public String[] getMappingResources() {		return mappingResources;	}
-	public void setMappingResources(String[] mappingResources) {		this.mappingResources = mappingResources;	}
+	public String[] 	getMappingResources() {		return mappingResources;	}
+	public void 		setMappingResources(String[] mappingResources) {		this.mappingResources = mappingResources;	}
 
 
 
-	public Properties getDsFactoryProperties()
-	{
-		if (this.DsFactoryProperties == null) {
-			this.DsFactoryProperties = new Properties();
-		}
+	public Properties 	getDsFactoryProperties()
+						{
+							if (this.DsFactoryProperties == null) {
+								this.DsFactoryProperties = new Properties();
+							}
 
-		return this.DsFactoryProperties;
-	}
+							return this.DsFactoryProperties;
+						}
 
-	public void setDsFactoryProperties(Properties dsFactoryProperties) {
+	public void 		setDsFactoryProperties(Properties dsFactoryProperties) {
 		DsFactoryProperties = dsFactoryProperties;
 	}
 
 
-	public void setAnnotatedClasses(Class... annotatedClasses) {
+	public void 		setAnnotatedClasses(Class... annotatedClasses) {
 		this.annotatedClasses = annotatedClasses;
 	}
-	public Class<?>[] getAnnotatedClasses() {		return annotatedClasses;	}
+	public Class<?>[] 	getAnnotatedClasses() {		return annotatedClasses;	}
 
 
-	public void setAnnotatedPackages(String... annotatedPackages) {
+	public void 		setAnnotatedPackages(String... annotatedPackages) {
 		this.annotatedPackages = annotatedPackages;
 	}
-	public String[] getAnnotatedPackages() {		return annotatedPackages;	}
+	public String[] 	getAnnotatedPackages() {		return annotatedPackages;	}
 
-	public void setPackagesToScan(String... packagesToScan) {
+	public void 		setPackagesToScan(String... packagesToScan) {
 		this.packagesToScan = packagesToScan;
 	}
-	public String[] getPackagesToScan() {		return packagesToScan;	}
+	public String[] 	getPackagesToScan() {		return packagesToScan;	}
 
 	public boolean isSingleton() {
 		return true;

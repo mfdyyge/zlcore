@@ -27,12 +27,8 @@
             <version>4.12</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
-        </dependency>
+
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
@@ -41,22 +37,41 @@
             <scope>compile</scope>
         </dependency>
 
-<!--        <dependency>
-            <groupId>commons-pool</groupId>
-            <artifactId>commons-pool</artifactId>
-            <version>1.5.4</version>
-        </dependency>-->
-<!---->
         <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
-<!--
-
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-            <version>2.1.0</version>
+            <version>2.9.0</version>
         </dependency>
 
+
+<!--
+jedis,spring-redis-data 整合使用，版本不匹配的时候经常会报一些异常，例如
+
+1： java.lang.NoClassDefFoundError: org/springframework/data/geo/Metric
+
+2：java.lang.NoSuchMethodError: redis.clients.jedis.JedisCluster.set([B[B)Ljava/lang/String
+
+3：jedis.exceptions.JedisConnectionException: Unknown reply: 3
+
+
+都是jedis,spring-redis-data，spring-data-common等包版本匹配引起的。
+
+
+最佳解决办法，以spring-redis-data包为中心，引用与之相匹配的jedis或spring-data-common
 -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>1.8.4.RELEASE</version>
+        </dependency>
+        <!--spring-data-redisr-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.8.4.RELEASE</version>
+        </dependency>
+
 <!--
 http://blog.csdn.net/ljz9425/article/details/50478757
         <bean id="jedisPoolConfig"  class="redis.clients.jedis.JedisPoolConfig">

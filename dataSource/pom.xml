@@ -15,7 +15,7 @@
 
     <properties>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <jdbc.version>11.2.0.4</jdbc.version>
+            <ojdbc.version>11.2.0.4</ojdbc.version>
             <mysql.version>5.1.40</mysql.version>
 
 
@@ -46,7 +46,7 @@
         <dependency>
                     <groupId>com.zaxxer</groupId>
                     <artifactId>HikariCP-java9ea</artifactId>
-                    <version>2.6.1</version>
+                    <version>${HikariCP.java9ea.version}</version>
                     </dependency>-->
 
         <!--Java 8  :HikariCP光连接池 -->
@@ -54,14 +54,14 @@
         <dependency>
                     <groupId>com.zaxxer</groupId>
                     <artifactId>HikariCP</artifactId>
-                    <version>2.7.2</version>
+                    <version>${HikariCP.java8.version}</version>
                 </dependency>-->
 
         <!--Java 7  :HikariCP光连接池-->
         <dependency>
                     <groupId>com.zaxxer</groupId>
                     <artifactId>HikariCP-java7</artifactId>
-                    <version>2.4.13</version>
+                    <version>${HikariCP.java7.version}</version>
                     </dependency>
 
         <!--Java 6  :HikariCP光连接池-->
@@ -69,7 +69,7 @@
         <dependency>
                     <groupId>com.zaxxer</groupId>
                     <artifactId>HikariCP-java6</artifactId>
-                    <version>2.3.13</version>
+                    <version>${HikariCP.java6.version}</version>
                     </dependency>
             -->
 
@@ -110,12 +110,12 @@
 
 
         <!-- ***********************************************************************************************************8  -->
-        <!-- [JDBC 驱动] -->
+        <!-- [Oracle 驱动] -->
         <!-- ***********************************************************************************************************8  -->
         <dependency>
                     <groupId>com.oracle.jdbc</groupId>
                     <artifactId>ojdbc6</artifactId>
-                    <version>11.2.0.4</version>
+                    <version>${ojdbc.version}</version>
                     </dependency>
         <!--
         <dependency>
@@ -129,7 +129,7 @@
         <dependency>
                     <groupId>mysql</groupId>
                     <artifactId>mysql-connector-java</artifactId><!-- 导入Mysql数据库驱动包 -->
-                    <version>5.1.40</version>
+                    <version>${mysql.version}</version>
                     </dependency>
 
         <!--

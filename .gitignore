@@ -1,60 +1,24 @@
-# ******************************************************项目操作[GIT合并上传本地项目 ]
-#   先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull
-
-#   因为他们是两个不同的项目，要把两个不同的项目合并，git需要添加一句代码，在git pull，这句代码是在git 2.9.2版本发生的，
-#   最新的版本需要添加:[ --allow-unrelated-histories ]
-
-#   假如我们的源是origin，分支是master，
-#   需要这样写:$ git pull origin master --allow-unrelated-histories
-#   需要知道，我们的源可以是本地的路径
-# ******************************************************END
-
-#/.idea/compiler.xml 项目编译JDK级别
-#由pom.xml中的maven-compiler-plugin 插件指定
-# <plugin>
-#     <groupId>org.apache.maven.plugins</groupId>
-#     <artifactId>maven-compiler-plugin</artifactId>
-#     <version>3.3</version>
-#     <configuration>
-#         <source>1.8</source>
-#         <target>1.8</target>
-#         <encoding>utf-8</encoding>
-#     </configuration>
-# </plugin>
-
 # Eclipse[ 项目目录 ]
 .project
 .classpath
 .settings/
 
 
-# system ignore
-.DS_Store
-Thumbs.db
-
 # IDEA[ 项目目录 ]
-# 项目配置文件
-/.idea/
-*.versionsBackup
-*.ipr
-*.iws
-*.class
-*.jar
-*.war
-*.ear
-
-# ******************************************************[ 编译目录 ]
-*/target
-
-# iml Idea配置文件
-*/*.iml
-/zlcore.iml
+target
+*.iml
+.idea
+.settings
+*~
+local-test
+out
+lib
+bin
+dependency-reduced-pom.xml
+hotspot.log
+.directory
 */log
 log/
 
 
-!/.idea/dataSources/
-!/.idea/dataSources.local.xml
-!/.idea/libraries/
-!/.idea/dataSources.xml
 

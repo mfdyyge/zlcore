@@ -40,6 +40,8 @@
     <module>zlcore-all</module>
     <module>dataSource</module>
     <module>spring</module>
+    <module>htmlUnit</module>
+
 </modules>
 
 
