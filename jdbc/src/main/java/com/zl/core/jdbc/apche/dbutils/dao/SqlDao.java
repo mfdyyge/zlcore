@@ -55,7 +55,7 @@ public class SqlDao
 	 * @param params
 	 * @return
 	 */
-	public static int update(Connection connection, String sql, Object... params) {
+	public static int addOrUp(Connection connection, String sql, Object... params) {
 		try {
 			new QueryRunner().update(connection, sql, params);
 		} catch (Exception ex) {

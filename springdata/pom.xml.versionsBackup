@@ -1,0 +1,123 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>zlcore</artifactId>
+        <groupId>com.zl.core</groupId>
+        <version>2.0.0.0904</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springdata</artifactId>
+    <packaging>jar</packaging>
+
+    <name>springdata</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Spring -->
+        <spring.4.3x.version>4.3.6.RELEASE</spring.4.3x.version><!-- spring版本号 -->
+        <spring.5.0x.version>5.0.1.RELEASE</spring.5.0x.version>
+
+        <!-- spring-data-commons -->
+        <spring-data-commons.1.6.x.version>1.6.5.RELEASE</spring-data-commons.1.6.x.version>
+
+        <!-- Spring Data Jpa -->
+        <spring-data-jpa.1.4.x.verion>1.4.5.RELEASE</spring-data-jpa.1.4.x.verion>
+        <spring-data-jpa.1.5.x.verion>1.5.3.RELEASE</spring-data-jpa.1.5.x.verion>
+        <spring-data-jpa.1.6.x.verion>1.6.6.RELEASE</spring-data-jpa.1.6.x.verion>
+        <spring-data-jpa.1.7.x.verion>1.7.4.RELEASE</spring-data-jpa.1.7.x.verion>
+        <spring-data-jpa.1.8.x.verion>1.8.2.RELEASE</spring-data-jpa.1.8.x.verion>
+        <spring-data-jpa.1.9.x.verion>1.9.6.RELEASE</spring-data-jpa.1.9.x.verion>
+        <spring-data-jpa.1.10.x.verion>1.10.11.RELEASE</spring-data-jpa.1.10.x.verion>
+        <spring-data-jpa.1.11.x.verion>1.11.8.RELEASE</spring-data-jpa.1.11.x.verion>
+        <spring-data-jpa.2.0.x.verion>2.0.1.RELEASE</spring-data-jpa.2.0.x.verion>
+
+
+        <jackson.core>2.6.1</jackson.core>
+        <jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
+
+        <!-- Hibernate -->
+        <hibernate.4.1.x.version>4.1.12.Final</hibernate.4.1.x.version>
+        <hibernate.4.2.x.version>4.2.21.Final</hibernate.4.2.x.version>
+        <hibernate.4.3.x.version>4.3.11.Final</hibernate.4.3.x.version>
+        <hibernate.5.0.x.version>5.0.12.Final</hibernate.5.0.x.version>
+        <hibernate.5.1.x.version>5.1.10.Final</hibernate.5.1.x.version>
+        <hibernate.5.2.x.version>5.2.12.Final</hibernate.5.2.x.version>
+
+        <hibernate-validator.5.2.x.version>5.2.4.Final</hibernate-validator.5.2.x.version>
+    </properties>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.zl.core</groupId>
+            <artifactId>dataSource</artifactId>
+            <version>2.0.0.0904</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zl.core</groupId>
+            <artifactId>hibernate</artifactId>
+            <version>2.0.0.0904</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zl.core</groupId>
+            <artifactId>spring</artifactId>
+            <version>2.0.0.0904</version>
+        </dependency>
+
+        <!--单元测试   ****************************************************************-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.3</version>
+        </dependency>
+
+
+        <!--****************************************************************************************************************8  -->
+        <!-- jboss -->
+        <!--****************************************************************************************************************8  -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.1.0.GA</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+            <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+
+
+
+        <!--****************************************************************************************************************8  -->
+        <!-- jacoco-maven-plugin -->
+        <!--****************************************************************************************************************8  -->
+        <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+        <dependency>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.7.9</version>
+                    </dependency>
+
+    </dependencies>
+
+
+
+</project>

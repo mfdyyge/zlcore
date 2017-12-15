@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>zlcore</artifactId>
+        <groupId>com.zl.core</groupId>
+        <version>2.0.0.0904</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>redis</artifactId>
+    <packaging>jar</packaging>
+
+    <name>redis</name>
+    <url>http://maven.apache.org</url>
+    <description>分布式缓存服务：Redis</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--单元测试   ****************************************************************-->
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.4.2</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+
+<!--        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.5.4</version>
+        </dependency>-->
+<!---->
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+<!--
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+-->
+<!--
+http://blog.csdn.net/ljz9425/article/details/50478757
+        <bean id="jedisPoolConfig"  class="redis.clients.jedis.JedisPoolConfig">
+                <propertyname="maxIdle"         value="${redis.pool.maxIdle}"/>
+                <propertyname="maxTotal"        value="${redis.pool.maxActive}"/>
+                <propertyname="maxWaitMillis"   value="${redis.pool.maxWait}"/>
+                <propertyname="testOnBorrow"    value="${redis.pool.testOnBorrow}"/>
+                <propertyname="testOnReturn"    value="${redis.pool.testOnReturn}"/>
+        </bean>
+-->
+
+</dependencies>
+
+
+</project>

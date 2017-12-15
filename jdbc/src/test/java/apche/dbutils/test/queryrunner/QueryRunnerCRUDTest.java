@@ -33,7 +33,7 @@ public class QueryRunnerCRUDTest {
 
 	static
 	{
-		dsFactory=new DsFactory();
+		dsFactory=new DsFactory("dbtt");
 
 
 	}
@@ -75,7 +75,7 @@ public class QueryRunnerCRUDTest {
 	@Test
 	public void add() throws SQLException {
 		// 将数据源传递给QueryRunner，QueryRunner内部通过数据源获取数据库连接
-		QueryRunner qr = new QueryRunner(new DsFactory("dbjpa").getDataSource());
+		QueryRunner qr = new QueryRunner(new DsFactory("dbtt").getDataSource());
 		String sql = "insert into users(id,name) values(?,?)";
 		Object params[] = {time.getTimeLongHm(),"钢背猪☣", };
 		qr.update(sql, params);

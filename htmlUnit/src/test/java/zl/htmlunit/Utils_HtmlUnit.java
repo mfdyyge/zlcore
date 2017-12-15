@@ -1,5 +1,7 @@
 package zl.htmlunit;
 
+import com.gargoylesoftware.htmlunit.WebResponse;
+import com.gargoylesoftware.htmlunit.WebWindow;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlTable;
@@ -11,7 +13,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetHtml {
+public class Utils_HtmlUnit {
+
 
     /**
      *
@@ -90,6 +93,8 @@ public class GetHtml {
         * */
         List<HtmlAnchor> achList=htmlpage.getAnchors();// 获取页面所有链接
         String url="";
+        HtmlPage html;//打开的页面
+
         for(HtmlAnchor ach:achList)
         {
             url=ach.getHrefAttribute().trim();
@@ -98,17 +103,14 @@ public class GetHtml {
             {
 
                 System.out.println("找到:"+inURL);//http://data.eastmoney.com/dxf/detail/603660.html#2017-12-01
-            /*
-                HtmlPage p = ach.click();
-                //遍历 打开的网页内容
-                System.out.println("遍历 打开的网页内容 = ");
-                System.out.println(p.getFullyQualifiedUrl("ID=953"));
-                break;
-            */
+
+                HtmlPage p = ach.click();//打开链接
+                System.out.println(p.getElementById("Div10").asText());
+
                 /*HtmlPage htmlPage_qyxx = ach.click();
                 System.out.println("htmlPage_qyxx.getUrl().toString() = " + htmlPage_qyxx.getUrl().toString());*/
                 //getTable_contain(htmlPage_qyxx,"");
-                break;
+                break;//测试时找到指定的一个链接就退出
             }
         }
 

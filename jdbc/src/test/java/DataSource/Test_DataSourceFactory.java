@@ -47,7 +47,14 @@ public class Test_DataSourceFactory
     @Test
     public void  DsFactory_test()
     {
+        Dfcf_jjqy_mx        jjqy_mx=new Dfcf_jjqy_mx();//解禁明细表对象
+        jjqy_mx.setXh1("001896");
+        Object [] params = new Object[]{"001896","967.74"};
 
+
+        Connection connection= dsFactory.getConnection();
+        String insert="insert into DFCF_JJQY_MX(xh1,XZKSSGF4) values(?,?)";
+        SqlDao.addOrUp(connection,insert,params);
     }
     //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
