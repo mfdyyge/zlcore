@@ -85,7 +85,7 @@ public class Utils_HtmlUnit {
      * @return
      * @throws IOException
      */
-    public void getAnchors_contain(HtmlPage htmlpage, String inURL) throws IOException
+    public void getAnchors_contain(HtmlPage htmlpage, String inURL,String  print) throws IOException
     {
                 /*
         * 获取页中所有的链接
@@ -101,8 +101,10 @@ public class Utils_HtmlUnit {
             //System.out.println("url:"+url);//http://data.eastmoney.com/dxf/detail/603660.html#2017-12-01
             if(url.contains(inURL))
             {
-
-                System.out.println("找到:"+inURL);//http://data.eastmoney.com/dxf/detail/603660.html#2017-12-01
+                if ("yes".equals(print))
+                {
+                    System.out.println("找到:"+inURL);//http://data.eastmoney.com/dxf/detail/603660.html#2017-12-01
+                }
 
                 HtmlPage p = ach.click();//打开链接
                 System.out.println(p.getElementById("Div10").asText());

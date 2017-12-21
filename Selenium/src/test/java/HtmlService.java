@@ -1,10 +1,6 @@
-package zl.htmlunit;
 
-import act.Dfcf_jjqy_mx;
 import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlTable;
-import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.apche.dbutils.dao.SqlDao;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,7 +11,6 @@ import org.junit.Test;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -31,8 +26,7 @@ public class HtmlService{
     @Test
     public void  DsFactory_test()
     {
-        Dfcf_jjqy_mx        jjqy_mx=new Dfcf_jjqy_mx();//解禁明细表对象
-        jjqy_mx.setXh1("001896");
+
         Object [] params = new Object[]{"001896","967.74"};
 
         int zt=SqlDao.addOrUp(connection,insert,params);
@@ -42,17 +36,12 @@ public class HtmlService{
     /**
      * 功能: 处理Table 行
      * @param tables
-     * @param xh        //代号
-     * @param qymc      //企业名称
      */
     public final   void getTable_trList_Jsoup(Elements tables,String print_yes_no,Connection connection)
     {
 
         Elements tr_list_class_eve;//行class=list_eve 属性
         Elements tr_list_class_odd;//行class=list_odd 属性
-
-        List<Dfcf_jjqy_mx>  jjqy_mx_list=new ArrayList<Dfcf_jjqy_mx>();
-        Dfcf_jjqy_mx        jjqy_mx=new Dfcf_jjqy_mx();//解禁明细表对象
 
         Object [] params ;
         String XH1;

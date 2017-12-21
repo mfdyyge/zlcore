@@ -1,17 +1,17 @@
-package zl.htmlunit;
-
 import com.gargoylesoftware.htmlunit.BrowserVersion;
-import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.*;
+import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.HtmlSelect;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import org.jsoup.select.Elements;
+import zl.html.SeleniumUtils;
 
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.List;
 
-public class Html_main
+public class htmlunit_main
 {
 /*
 <select onchange="redirectpage(this.value)" id="seleyear" value="2018年">
@@ -28,7 +28,8 @@ public class Html_main
 	<option value="2008年">10</option>
 </select>
 * */
-static int year=2,month=3;
+static int year=3;
+static String month="";
 
 private static DsFactory dsFactory;
 private static Connection connection;
@@ -39,7 +40,7 @@ static
 }
 
 
-public static void main(String[] month) throws IOException
+public static void main(String[] as) throws IOException
 {
         //谷歌
         //WebClient webclient = new WebClient(BrowserVersion.CHROME);
@@ -85,56 +86,79 @@ public static void main(String[] month) throws IOException
          List<HtmlAnchor> achList= htmlpage_year.getAnchors();//选择年份=>获取刷新后的页面=>获取页面全部链接=>
         //htmlpage_root.getFullyQualifiedUrl("ID=953")
         String anchor_id="";
-        int i=1;
+        Integer month_i=1;
 
         for(HtmlAnchor ach:achList)//选择年份=>获取刷新后的页面=>获取页面全部链接=>
         {
             anchor_id=ach.getId();
             //1.选择年份=>2.获取刷新后的页面=>3.获取页面全部链接=>4.过滤[id]包含"month_"月份<a>标签
             //if(anchor_id.contains("month_12"))
-            if(anchor_id.equals("month_5"))//1.选择年份=>2.获取刷新后的页面=>3.获取页面全部链接=>4.过滤[id]包含"month_"月份<a>标签
+            month="month_"+month_i;
+
+            if(anchor_id.equals(month))//1.选择年份=>2.获取刷新后的页面=>3.获取页面全部链接=>4.过滤[id]包含"month_"月份<a>标签
+            //if(anchor_id.equals("month_2"))
             {
 
-                System.out.println("-----------------------------------------------------------------点击月份="+ach.asText());//
+                System.out.println("-----------------------------------------------------------------点击月份="+month);//
                 System.out.println("anchor_id="+anchor_id);
 
                 //1.选择年份=>2.获取刷新后的页面=>3.获取页面全部链接=>4.过滤[id]包含"month_"月份<a>标签=>5.点击月份-获取=>6.刷新后的页面
                 HtmlPage htmlpage_month = ach.click();
 
                 String table_jjqy_list_str=htmlpage_month.getElementById("table_listcontent").getFirstElementChild().asText();//获取=>解禁企业列表
-                System.out.println("= " +table_jjqy_list_str );//打印=>解禁企业列表
+                //System.out.println("= " +table_jjqy_list_str );//打印=>解禁企业列表
 
                 System.out.println("解禁详细数据,保存中......." );
-                System.out.println("title = " + htmlpage_month.getTitleText());
+                //System.out.println("title = " + htmlpage_month.getTitleText());
 
                 //5.点击月份-获取=>6.刷新后的页面=>7.过滤链接(解禁详细)
                 //打印=>解禁详细链接
                 //utils_Html_jsoup.printHtmlAnchor_containsXXX_AsText(htmlpage_month,"/dxf/detail/300217");
                 //5.点击月份-获取=>6.刷新后的页面=>7.过滤链接(解禁详细)=>8. 获取解禁详细链接
-                List<HtmlAnchor>    jjxqUrlList= Utils_Html.getUrlList_HtmlAnchor(htmlpage_month,"/dxf/detail/");
+                List<HtmlAnchor>    jjxqUrlList= Utils_Html.getUrlList_HtmlAnchor(htmlpage_month,"/dxf/detail/","");
                 //** ***********************************************************************//5.点击月份-获取=>6.刷新后的页面=>7.过滤链接(解禁详细)=>8. 获取解禁详细链接
+                int js=1;
                 for (HtmlAnchor jjxqurl:jjxqUrlList)
                 {
                     System.out.println(" 开始打开页面: "+jjxqurl);
+                    String jjmx_url=jjxqurl.getHrefAttribute();
 
-                    HtmlPage htmlpage_jjmx=jjxqurl.click();//5.点击月份-获取=>6.刷新后的页面=>7.过滤链接(解禁详细)=>8. 获取解禁详细链接=>9.点击解禁详细-获取解禁详细页面
-                    //Utils_Html.printTable_containClass_AsText(htmlpage_jjmx,".tab1");
-                   // webclient.waitForBackgroundJavaScript(0);
-                    String html=htmlpage_jjmx.asXml();
+                    System.out.println("jjmx_url = " + jjmx_url);
+                    String html="http://data.eastmoney.com";
 
-                    Elements elements= new HtmlService().getTable_JsoupTable(html,".tab1","");//9.点击解禁详细-获取解禁详细页面=>10.获取解禁表格
+                    //打印
+                    //SeleniumUtils.printHtml(html+jjmx_url);
+                    //SeleniumUtils.getHtml(html+jjmx_url,"no");
+                    //必须用完关闭
+                    //SeleniumUtils.close();
+
+                    //1.获取页面
+                    //HtmlPage htmlpage_jjmx=jjxqurl.click();//5.点击月份-获取=>6.刷新后的页面=>7.过滤链接(解禁详细)=>8. 获取解禁详细链接=>9.点击解禁详细-获取解禁详细页面
+                    //2.获取页面-html
+                    //String html=htmlpage_jjmx.asXml();
 
                     HtmlService htmlService=new HtmlService();
-                    htmlService.getTable_trList_Jsoup(elements,"no",connection);
 
-                    System.out.println("-----------------------------------------------------------------完成 " + jjxqurl+" 详细列表的[数据抓取]"+i++);
+                    try {
+                        Elements elements= htmlService.getTable_JsoupTable(SeleniumUtils.getHtml(html+jjmx_url,"no"),".tab1","");//9.点击解禁详细-获取解禁详细页面=>10.获取解禁表格
+                        htmlService.getTable_trList_Jsoup(elements,"no",connection);
+                        System.out.println("-----------------------------------------------------------------完成 " + jjxqurl+" 详细列表的[数据抓取]"+js++);
+                    }
+                    catch (NullPointerException e)
+                    {
+                        System.out.println("*****************************************************************出现服务器错误无法访问 => "+html+jjmx_url);
+                       // e.printStackTrace();
+                    } finally {                        continue;                    }
+
+
                 }
-               /* i++;
-                if(i==4)*/
-                break;//控制月份[ 1月-12月 ]
+                month_i++;
+                System.out.println("month = " + month);
+                if(month_i==13)  break;//控制月份[ 1月-12月 ]
             }
         }
-       // webclient.close();//关闭窗口
+        SeleniumUtils.quit();
+        webclient.close();//关闭窗口
 }
 
 }
