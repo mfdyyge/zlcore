@@ -1,17 +1,17 @@
-package zl.browser.WebDriver;
+package selenium;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import zl.browser.WebDriver.driver.BrowserDriver;
+import zl.selenium.Drivers;
+import zl.selenium.Utils_Selenium;
 
 import java.util.List;
 
-public class htmlTest {
+public class SeleniumTest {
 
 
 
@@ -20,7 +20,7 @@ public class htmlTest {
 @Test
 public  void  testChrome()
 {
-    /*
+/*
 <select onchange="redirectpage(this.value)" id="seleyear" value="2018年">
 	<option value="2018年">0</option>
 	<option value="2017年" >1</option>
@@ -36,7 +36,7 @@ public  void  testChrome()
 </select>
 * */
 
-        WebDriver WEB_DRIVER=new BrowserDriver().getDriver_chrome();
+        WebDriver WEB_DRIVER=new Drivers().getDriver_chrome();
         //指定chromedriver的路径
 
 /*        //chrome没有安装在默认路径时，指定chrome.exe的路径
@@ -121,9 +121,10 @@ public  void  testChrome()
 
         //System.setProperty("webdriver.firefox.marionette", "false");
 
-        WebDriver   dr = new FirefoxDriver();
+        selenium   dr = new FirefoxDriver();
 */
-        WebDriver   dr =new BrowserDriver().getDriver_firefox();
+        WebDriver   dr =new Drivers().getDriver_firefox();
+/*
                     dr.get("http://www.baidu.com");
 
 
@@ -131,15 +132,18 @@ public  void  testChrome()
         element.sendKeys("webdriver");
         element.submit();
 
+*/
 
 
-        String contains="http://www.baidu.com/link";
-        try {
+        String contains="http://www.baidu.com";
+        new Utils_Selenium(dr).printHtml(contains);
+
+/*        try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("page title is:"+dr.getTitle());
+        System.out.println("page title is:"+dr.getTitle());*/
     }
 
 }

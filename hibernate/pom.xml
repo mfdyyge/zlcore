@@ -10,7 +10,7 @@
     <description>Hibernate-ORM封装</description>
 
     <parent>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>zlcore</artifactId>
         <version>2.0.2017.12.19</version>
         </parent>
@@ -138,7 +138,7 @@
     <!--Spring 注入-->
 
     <dependency>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>spring</artifactId>
         <version>2.0.2017.12.19</version>
     </dependency>

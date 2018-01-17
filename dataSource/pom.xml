@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>zlcore</artifactId>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <version>2.0.2017.12.19</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -73,7 +73,7 @@
                     </dependency>
             -->
 
-        <!-- 阿里巴巴-Druid  -->
+        <!-- 阿里巴巴-Druid***********************************************************************************************************  -->
         <dependency>
                     <groupId>com.alibaba</groupId>
                     <artifactId>druid</artifactId>
@@ -112,11 +112,24 @@
         <!-- ***********************************************************************************************************8  -->
         <!-- [Oracle 驱动] -->
         <!-- ***********************************************************************************************************8  -->
+<!--
         <dependency>
                     <groupId>com.oracle.jdbc</groupId>
                     <artifactId>ojdbc6</artifactId>
                     <version>${ojdbc.version}</version>
                     </dependency>
+-->
+
+
+        <!--加载本地Jar包例子******************************************************************************************-->
+        <dependency>
+            <groupId>oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ojdbc6-11.2.0.1.0.jar</systemPath>
+        </dependency>
+
         <!--
         <dependency>
                     <groupId>com.oracle.jdbc</groupId>
@@ -138,6 +151,13 @@
                     <artifactId>mysql-connector-java</artifactId>
                     <version>8.0.7-dmr</version>
                     </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
 
     </dependencies>
 </project>

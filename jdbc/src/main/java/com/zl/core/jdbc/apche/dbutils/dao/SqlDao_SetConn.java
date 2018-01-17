@@ -115,7 +115,7 @@ public class SqlDao_SetConn
 	{
 		T result = null;
 		try {
-			if (MapUtil.isNotEmpty(map)) {
+			if (MapUtil.isNotNull(map)) {
 				result = runner.query(conn, sql,
 						new BeanHandler<T>(cls, new BasicRowProcessor(new BeanProcessor(map))), params);
 			} else {
@@ -141,7 +141,7 @@ public class SqlDao_SetConn
 	{
 		List<T> result = null;
 		try {
-			if (MapUtil.isNotEmpty(map)) {
+			if (MapUtil.isNotNull(map)) {
 				result = runner.query(conn, sql, new BeanListHandler<T>(cls, new BasicRowProcessor(new BeanProcessor(map))), params);
 			} else {
 				result = runner.query(conn, sql, new BeanListHandler<T>(cls), params);

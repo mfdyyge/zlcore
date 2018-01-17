@@ -10,7 +10,7 @@
     <description>SpringMvc 相关Jar集合</description>
 
     <parent>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>zlcore</artifactId>
         <version>2.0.2017.12.19</version>
     </parent>
@@ -25,31 +25,31 @@
 <dependencies>
 
     <dependency>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>ActiveMQ</artifactId>
         <version>2.0.2017.12.19</version>
     </dependency>
     <dependency>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>Hibernate</artifactId>
-        <version>2.0.2017.1115</version>
+        <version>2.0.2017.12.19</version>
     </dependency>
 
 
     <dependency>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>base</artifactId>
         <version>2.0.2017.12.19</version>
     </dependency>
 
     <dependency>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>jdbc</artifactId>
         <version>2.0.2017.12.19</version>
     </dependency>
 
     <dependency>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <artifactId>spring</artifactId>
         <version>2.0.2017.12.19</version>
     </dependency>

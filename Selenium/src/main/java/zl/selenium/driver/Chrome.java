@@ -1,17 +1,7 @@
-package zl.browser.WebDriver.driver;
+package zl.selenium.driver;
 
 
-import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 //操作DOM:  http://m.blog.csdn.net/smilings/article/details/7395509   [WebDriver使用指南- 操作DOM（完整篇）]

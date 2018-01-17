@@ -8,7 +8,7 @@ import java.security.PrivilegedAction;
 import java.util.ArrayList;
 import java.util.Vector;
 
-public final class Strings
+public class Strings
 {
     private static class StringListImpl extends ArrayList
             implements StringList

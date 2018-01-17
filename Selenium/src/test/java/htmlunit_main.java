@@ -5,7 +5,9 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.html.HtmlSelect;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import org.jsoup.select.Elements;
-import zl.html.SeleniumUtils;
+import org.openqa.selenium.WebDriver;
+import zl.selenium.Drivers;
+import zl.selenium.Utils_Selenium;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -46,6 +48,7 @@ public static void main(String[] as) throws IOException
         //WebClient webclient = new WebClient(BrowserVersion.CHROME);
         //火狐
         final WebClient webclient = new WebClient(BrowserVersion.FIREFOX_52);
+        WebDriver dr =new Drivers().getDriver_firefox();
 
         // 这里是配置一下不加载css和javaScript,配置起来很简单，是不是
 
@@ -98,7 +101,6 @@ public static void main(String[] as) throws IOException
             if(anchor_id.equals(month))//1.选择年份=>2.获取刷新后的页面=>3.获取页面全部链接=>4.过滤[id]包含"month_"月份<a>标签
             //if(anchor_id.equals("month_2"))
             {
-
                 System.out.println("-----------------------------------------------------------------点击月份="+month);//
                 System.out.println("anchor_id="+anchor_id);
 
@@ -127,10 +129,10 @@ public static void main(String[] as) throws IOException
                     String html="http://data.eastmoney.com";
 
                     //打印
-                    //SeleniumUtils.printHtml(html+jjmx_url);
-                    //SeleniumUtils.getHtml(html+jjmx_url,"no");
+                    //Utils_Selenium.printHtml(html+jjmx_url);
+                    //Utils_Selenium.getHtml(html+jjmx_url,"no");
                     //必须用完关闭
-                    //SeleniumUtils.close();
+                    //Utils_Selenium.close();
 
                     //1.获取页面
                     //HtmlPage htmlpage_jjmx=jjxqurl.click();//5.点击月份-获取=>6.刷新后的页面=>7.过滤链接(解禁详细)=>8. 获取解禁详细链接=>9.点击解禁详细-获取解禁详细页面
@@ -140,7 +142,7 @@ public static void main(String[] as) throws IOException
                     HtmlService htmlService=new HtmlService();
 
                     try {
-                        Elements elements= htmlService.getTable_JsoupTable(SeleniumUtils.getHtml(html+jjmx_url,"no"),".tab1","");//9.点击解禁详细-获取解禁详细页面=>10.获取解禁表格
+                        Elements elements= htmlService.getTable_JsoupTable(new Utils_Selenium(dr).getHtml(html+jjmx_url,"no"),".tab1","");//9.点击解禁详细-获取解禁详细页面=>10.获取解禁表格
                         htmlService.getTable_trList_Jsoup(elements,"no",connection);
                         System.out.println("-----------------------------------------------------------------完成 " + jjxqurl+" 详细列表的[数据抓取]"+js++);
                     }
@@ -157,7 +159,7 @@ public static void main(String[] as) throws IOException
                 if(month_i==13)  break;//控制月份[ 1月-12月 ]
             }
         }
-        SeleniumUtils.quit();
+        //Utils_Selenium.quit();
         webclient.close();//关闭窗口
 }
 

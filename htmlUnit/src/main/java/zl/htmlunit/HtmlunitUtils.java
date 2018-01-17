@@ -10,7 +10,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlTextInput;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-public class HtmlGet {
+public class HtmlunitUtils {
     public static void main(String[] args) {
         // 得到浏览器对象，直接New一个就能得到，现在就好比说你得到了一个浏览器了
         WebClient webclient = new WebClient();

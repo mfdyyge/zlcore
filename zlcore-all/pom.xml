@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>zlcore</artifactId>
-        <groupId>com.zl.core</groupId>
+        <groupId>zl.core</groupId>
         <version>2.0.2017.12.19</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -20,53 +20,53 @@
 <dependencies>
         <!-- b , J -->
         <dependency>
-                    <groupId>com.zl.core</groupId>
+                    <groupId>zl.core</groupId>
                     <artifactId>base</artifactId>
                     <version>${project.parent.version}</version>
                     </dependency>
         <dependency>
-                    <groupId>com.zl.core</groupId>
+                    <groupId>zl.core</groupId>
                     <artifactId>dataSource</artifactId>
                     <version>${project.parent.version}</version>
                     </dependency>
         <dependency>
-                    <groupId>com.zl.core</groupId>
+                    <groupId>zl.core</groupId>
                     <artifactId>jdbc</artifactId>
                     <version>${project.parent.version}</version>
                     </dependency>
 
         <!--A-->
         <dependency>
-                    <groupId>com.zl.core</groupId>
+                    <groupId>zl.core</groupId>
                     <artifactId>ActiveMQ</artifactId>
                     <version>${project.parent.version}</version>
                     </dependency>
         <dependency>
-                    <groupId>com.zl.core</groupId>
+                    <groupId>zl.core</groupId>
                     <artifactId>activity</artifactId>
                     <version>${project.parent.version}</version>
                     </dependency>
 
         <!--F-->
         <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>Freemarker</artifactId>
             <version>${project.parent.version}</version>
             </dependency>
             <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>ftp</artifactId>
             <version>${project.parent.version}</version>
             </dependency>
             <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>ftpServer</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 
         <!--H-->
         <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>hibernate</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
@@ -74,23 +74,23 @@
 
         <!--R-->
         <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>redis</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <!--S-->
         <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>shiro</artifactId>
             <version>${project.parent.version}</version>
             </dependency>
             <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>springdata</artifactId>
             <version>${project.parent.version}</version>
             </dependency>
             <dependency>
-            <groupId>com.zl.core</groupId>
+            <groupId>zl.core</groupId>
             <artifactId>springmvc</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

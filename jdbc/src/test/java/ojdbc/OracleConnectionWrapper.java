@@ -555,10 +555,6 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   }
 
-  @Override
-  public void unregisterDatabaseChangeNotification(long l, String s) throws SQLException {
-
-  }
 
   public void setHoldability(int holdability) throws SQLException {
     connection.setHoldability(holdability);
@@ -716,10 +712,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
     return connection.createARRAY(typeName, elements);
   }
 
-  @Override
-  public Array createOracleArray(String s, Object o) throws SQLException {
-    return null;
-  }
+
 
   /**
    * Creates a BINARY_DOUBLE that has the given value.

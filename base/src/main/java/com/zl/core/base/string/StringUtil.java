@@ -9,7 +9,7 @@ package com.zl.core.base.string;
  * @see [相关类/方法]
  * @since [产品/模块版本]
  */
-public class StringUtil
+public class StringUtil extends Strings
 {
     /**
      * 驼峰命名
@@ -57,5 +57,42 @@ public class StringUtil
             sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
         }
         return sb.toString();
+    }
+
+    /**
+     * 参数为Null时返回:true
+     * @param str
+     * @return
+     */
+    public static boolean isNull(String str)
+    {
+
+        if("".equals(str) || null==str )
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    /**
+     * 参数不为Null时返回:true
+     * @param str
+     * @return
+     */
+    public static boolean isNotNull(String str)
+    {
+        if("".equals(str) || null==str )
+        {
+            return false;
+        }
+        else
+            {
+            return true;
+        }
+
+
     }
 }
