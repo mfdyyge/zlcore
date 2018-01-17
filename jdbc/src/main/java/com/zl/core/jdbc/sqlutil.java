@@ -1,6 +1,7 @@
 package com.zl.core.jdbc;
 
 import com.zl.core.base.map.MapUtil;
+import com.zl.core.base.string.StringUtil;
 import com.zl.core.jdbc.sql.pojo.TableFormParams;
 
 import java.util.*;
@@ -13,10 +14,10 @@ public class sqlutil {
     private  static     ThreadLocal<TableFormParams> tableFormParamsThreadLocal=new ThreadLocal<TableFormParams>();
     private             com.zl.core.jdbc.sql.pojo.TableFormParams tableformParams;
 
-    private  static     String sql_add;    //添加SQL=> insert into 表名称(name,password,email,birthday) values(?,?,?,?)
-    private  static     String sql_del;    //删除SQL=> delete from 表名称 where ids=5  (删除此行)---where后面跟一个条件
-    private  static     String sql_up;     //更新SQL=> update 表名称 set +列名称='p006 ',列名称='p002' where ids=6-----用逗号隔开可以修改多列
-    private  static     String sql_query;  //查询SQL=>
+    private  static     String sql_insert="";    //添加SQL=> insert into 表名称(name,password,email,birthday) values(?,?,?,?)
+    private  static     String sql_delete="";    //删除SQL=> delete from 表名称 where ids=5  (删除此行)---where后面跟一个条件
+    private  static     String sql_update="";     //更新SQL=> update 表名称 set +列名称='p006 ',列名称='p002' where ids=6-----用逗号隔开可以修改多列
+    private  static     String sql_select="";  //查询SQL=>
 
     private Map mapTable=new HashMap();
     static
@@ -24,9 +25,36 @@ public class sqlutil {
 
     }
 
+    public static String getSql_Insert(String table,Map map)
+    {
+        String key=MapUtil.getKey_toString(map);
+
+        Object[] values_array=MapUtil.getValues(map);
+
+        //String values=MapUtil.getValues_toString(map);
+        String values2= StringUtil.toString_insert_values(values_array);
+
+        sql_insert="insert into "+table+"("+key+") values("+values2+")";
+
+        return sql_insert;
+    }
+
+    public static String getSql_Delte(Map map){
 
 
+        return sql_delete;
+    }
 
+    public static String getSql_Update(Map map){
+
+        return sql_update;
+    }
+
+
+    public static String getSql_select(Map map){
+
+        return sql_select;
+    }
     /*******************************************************************************************************************
      * 通过map取得sql语句
      * @param table_name  表名

@@ -42,18 +42,11 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 		//map.values().toArray();
 		//MapUtil.isNull(mapTable);
 
-		System.out.println("map = " + map);
-		MapUtil.removeNullValue(map);
-		System.out.println("map = " + map);
-		Set<String> set = map.keySet();//Keys
-		//Collection<String> params=map.values();//values
-		Object[] params_array=set.toArray();
+		MapUtil.removeNull(map);
+				Set<String> keySet = map.keySet();//Keys
+				Object[] key_array=keySet.toArray();
 
-
-
-
-
-		return params_array;
+		return key_array;
 	}
 
 	/**
@@ -61,14 +54,52 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 	 * @param   map
 	 * @return  Object[] 数组
 	 */
-	public static Object[] getKeyValues(Map<String, String> map)
+	public static Object[] getValues(Map<String, String> map)
 	{
-
 		//map.values().toArray();
 		//Set<String> set = map.keySet();//Keys
-		Collection<String> params=map.values();//values
-		Object[] params_array=params.toArray();
-		return params_array;
+
+		MapUtil.removeNull(map);
+				Collection<String> values_collection=map.values();//values
+				Object[] values_array=values_collection.toArray();
+
+
+		return values_array;
+	}
+
+
+	//******************************************************************************************************************
+	//******************************************************************************************************************
+	//******************************************************************************************************************
+
+	/**
+	 *  获取:Map 中的 Key[Array]=> Object params[] = { "钢背猪☣", "123", "gacl@sina.com", new Date() };
+	 * @param   map
+	 * @return  Object[] 数组
+	 */
+	public static String getKey_toString(Map<String, Object> map)
+	{
+		//map.keySet().toArray();
+		//map.values().toArray();
+		//MapUtil.isNull(mapTable);
+
+		MapUtil.removeNull(map);
+		Set<String> key_set = map.keySet();//Keys
+		Object[] key_array=key_set.toArray();
+
+		return StringUtil.toString(key_array);
+	}
+
+
+
+	public static String getValues_toString(Map<String, String> map)
+	{
+		//map.values().toArray();
+		MapUtil.removeNull(map);
+		Collection<String> values_collection=map.values();//values
+		Object[] values_array=values_collection.toArray();
+
+		return StringUtil.toString(values_array);
 
 	}
 
@@ -81,7 +112,7 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 	 * 移除map中空key或者value空值
 	 * @param map
 	 */
-	public static void removeNullEntry(Map map){
+	public static void removeNull(Map map){
 		removeNullKey(map);
 		removeNullValue(map);
 	}

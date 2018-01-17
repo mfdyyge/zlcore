@@ -20,13 +20,9 @@ public class GetSql_test
     //protected static Logger logger = Logger.getLogger();
 
     private String tableName = "emp";
+    static Map map = new HashMap();
+    static {
 
-
-
-    @Test
-    public  void getsql()
-    {
-        Map map = new HashMap();
         map.put("TG.TG_NO", "1155");
 
         map.put("TG.ORG_NO", null);
@@ -38,6 +34,36 @@ public class GetSql_test
         map.put("pageNum","3");
         map.put("pageSize","5");
 
+
+    }
+
+@Test
+public void  get_add_sql()
+{
+    String values=sqlutil.getSql_Insert("user",map);
+    System.out.println("values = " + values);;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Test
+    public  void getsql()
+    {
 
         //initMap();
 
