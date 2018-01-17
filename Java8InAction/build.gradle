@@ -1,0 +1,35 @@
+group 'zl.gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+
+    mavenLocal()
+    maven { url "http://localhost:10099/nexus/content/groups/public/"}
+
+    maven {
+        url 'http://localhost:10099/nexus/content/repositories/releases/'
+        credentials {
+            username = "admin"
+            password = "admin123"
+        }
+    }
+    maven {
+        url 'http://localhost:10099/nexus/content/repositories/snapshots/'
+        credentials {
+            username = "admin"
+            password = "admin123"
+        }
+    }
+
+
+}
+
+dependencies {
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'zl.core:jdbc:2.0.2017.12.19'
+}
