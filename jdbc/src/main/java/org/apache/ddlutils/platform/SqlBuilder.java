@@ -80,7 +80,7 @@ public abstract class SqlBuilder
     private String _valueLocale;
     /** The date formatter. */
     private DateFormat _valueDateFormat;
-    /** The date time formatter. */
+    /** The date timeUtil formatter. */
     private DateFormat _valueTimeFormat;
     /** The number formatter. */
     private NumberFormat _valueNumberFormat;
@@ -270,7 +270,7 @@ public abstract class SqlBuilder
     /**
      * Returns the format object for formatting times in the specified locale.
      * 
-     * @return The time format object or null if no locale is set
+     * @return The timeUtil format object or null if no locale is set
      */
     protected DateFormat getValueTimeFormat()
     {
@@ -280,7 +280,7 @@ public abstract class SqlBuilder
     /**
      * Sets the date format object for formatting times in the specified locale.
      * 
-     * @param format The time format object
+     * @param format The timeUtil format object
      */
     protected void setValueTimeFormat(DateFormat format)
     {
@@ -1547,7 +1547,7 @@ public abstract class SqlBuilder
             {
                 throw new ModelException("The platform does not support default values for LONGVARCHAR or LONGVARBINARY columns");
             }
-            // we write empty default value strings only if the type is not a numeric or date/time type
+            // we write empty default value strings only if the type is not a numeric or date/timeUtil type
             if (isValidDefaultValue(column.getDefaultValue(), column.getTypeCode()))
             {
                 print(" DEFAULT ");

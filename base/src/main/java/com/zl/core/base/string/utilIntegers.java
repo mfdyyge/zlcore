@@ -5,10 +5,10 @@
 package com.zl.core.base.string;
 
 
-public class Integers
+public class utilIntegers
 {
 
-    public Integers()
+    public utilIntegers()
     {
     }
 

@@ -130,7 +130,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
             if(temp.size() != 0)
             {
                 temp.copyInto(ColumnNames);
-                // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
+                // System.out.println(">>>> (columns)= " + utilArrays.asList(columns));
             }
 
             rs.close();
@@ -149,7 +149,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
         if(this._columns == null) {
             this._columns = this.createColumns();
         }
-        //System.out.println(">>>> (columns)= " + Arrays.asList(_columns));
+        //System.out.println(">>>> (columns)= " + utilArrays.asList(_columns));
         return this._columns;
     }
 
@@ -275,7 +275,7 @@ public class JdbcTable extends Table implements DataDescriptorProvider
             if(temp.size() != 0)
             {
                 temp.copyInto(columns);
-                // System.out.println(">>>> (columns)= " + Arrays.asList(columns));
+                // System.out.println(">>>> (columns)= " + utilArrays.asList(columns));
             }
 
             rs.close();

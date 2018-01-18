@@ -16,7 +16,7 @@
     <properties>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
             <ojdbc.version>11.2.0.4</ojdbc.version>
-            <mysql.version>5.1.40</mysql.version>
+            <mysql.version>5.1.45</mysql.version>
 
 
             <!--链接池-->
@@ -152,12 +152,6 @@
                     <version>8.0.7-dmr</version>
                     </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.4.5</version>
-        </dependency>
 
     </dependencies>
 </project>

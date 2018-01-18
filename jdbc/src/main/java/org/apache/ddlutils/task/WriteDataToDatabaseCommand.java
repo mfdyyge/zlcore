@@ -112,7 +112,7 @@ public class WriteDataToDatabaseCommand extends ConvertingDatabaseCommand
      * for the same table are bundled together and executed as one statement. This can be a lot faster
      * than single insert statements but is not supported by all JDBC drivers/databases. To achieve the
      * highest performance, you should group the data in the XML file according to the tables. This is
-     * because a batch insert only works for one table at a time. Thus when the table changes in an
+     * because a batch insert only works for one table at a timeUtil. Thus when the table changes in an
      * entry in the XML file, the batch is committed and then a new one is started.
      *
      * @param useBatchMode <code>true</code> if batch mode shall be used

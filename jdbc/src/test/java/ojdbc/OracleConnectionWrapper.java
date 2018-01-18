@@ -776,7 +776,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a DATE that has the given value. The value is interpreted as being in the
-   * time zone represented by cal.
+   * timeUtil zone represented by cal.
    *
    * @param value the value that the new object should repreesnt
    * @param cal   the timezone in which the value is interpreted
@@ -791,7 +791,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a DATE that has the given value. The value is interpreted as being in the
-   * time zone represented by cal.
+   * timeUtil zone represented by cal.
    *
    * @param value the value that the new object should repreesnt
    * @param cal   the timezone in which the value is interpreted
@@ -806,7 +806,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a DATE that has the given value. The value is interpreted as being in the
-   * time zone represented by cal.
+   * timeUtil zone represented by cal.
    *
    * @param value the value that the new object should repreesnt
    * @param cal   the timezone in which the value is interpreted
@@ -1052,7 +1052,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1080,7 +1080,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1108,7 +1108,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1136,7 +1136,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1160,7 +1160,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPLTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1176,7 +1176,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPLTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1192,7 +1192,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPLTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1208,7 +1208,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPLTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value
@@ -1224,7 +1224,7 @@ public class OracleConnectionWrapper implements oracle.jdbc.OracleConnection {
 
   /**
    * Creates a new TIMESTAMPLTZ with the given value. The value is interpreted in the
-   * time zone of the calendar.
+   * timeUtil zone of the calendar.
    *
    * @param value the value that the new object should represent
    * @param cal   the timezone of the value

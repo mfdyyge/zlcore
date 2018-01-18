@@ -47,7 +47,7 @@ public class Db2ModelReader extends JdbcModelReader
 {
 	/** Known system tables that Db2 creates (e.g. automatic maintenance). */
 	private static final String[] KNOWN_SYSTEM_TABLES = { "STMG_DBSIZE_INFO", "HMON_ATM_INFO", "HMON_COLLECTION", "POLICY" };
-	/** The regular expression pattern for the time values that Db2 returns. */
+	/** The regular expression pattern for the timeUtil values that Db2 returns. */
 	private Pattern _db2TimePattern;
 	/** The regular expression pattern for the timestamp values that Db2 returns. */
 	private Pattern _db2TimestampPattern;

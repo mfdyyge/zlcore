@@ -44,7 +44,7 @@ import oracle.jdbc.pool.OracleDataSource;
  *
  *  Inactivitytimeout
  *  default to -1, means this feature is not in effect.
- *  It sets the maximum time a PooledConnection can remain idle
+ *  It sets the maximum timeUtil a PooledConnection can remain idle
  *  in a connection cache. An idle connection is one that is
  *  not active and does not have a logical handle associated with
  *  it. When this timout expires, the underlying pooledConnection
@@ -52,7 +52,7 @@ import oracle.jdbc.pool.OracleDataSource;
  *
  *  TimeToLiveTimeout
  *  default to -1, means this feature is not enabled
- *  It sets the maximum time slice, in seconds, a logical connection
+ *  It sets the maximum timeUtil slice, in seconds, a logical connection
  *  is given. When this tiemout expires, the logical connection is
  *  unconditionally closed, the relevant statement handles canceled,
  *  and the underlying PooledConnection is returned to the cache for
@@ -63,7 +63,7 @@ import oracle.jdbc.pool.OracleDataSource;
  *  This is similar to Inactivitytimeout, but on a logical connection.
  *  When set, JDBC monitors SQL database activity on this logical
  *  connection. If a connection has been inactive for the specified
- *  amount of time, the underlying PooledConnection is reclaimed
+ *  amount of timeUtil, the underlying PooledConnection is reclaimed
  *  and returned to the cache for reuse.
  *
  *  MinLimit

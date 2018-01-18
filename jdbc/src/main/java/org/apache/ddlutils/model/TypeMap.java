@@ -221,7 +221,7 @@ public abstract class TypeMap
 
     /**
      * Determines whether the given jdbc type (one of the {@link java.sql.Types} constants)
-     * is a date/time type.
+     * is a date/timeUtil type.
      * 
      * @param jdbcTypeCode The type code
      * @return <code>true</code> if the type is a numeric one

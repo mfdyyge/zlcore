@@ -73,7 +73,7 @@ class ImplicitCache04 extends Thread
 
 
   /**
-   * This demos how to set a clear response time for connection
+   * This demos how to set a clear response utilTime for connection
    * retrieving to avoid indefinite waiting. 
    **/
   private void ConnectionWaitTimeout() throws Exception
@@ -96,7 +96,7 @@ class ImplicitCache04 extends Thread
     prop.setProperty("MaxLimit", "10"); // at most 10 PooledConnections in cache
 
     // set ConnectionWaitTimeout attribute to give user a
-    // clear reponse time on connection retrieval
+    // clear reponse utilTime on connection retrieval
     prop.setProperty("ConnectionWaitTimeout", "8"); // wait for 8 seconds
 
     // set PropertyCheckInterval to 5 second for testing

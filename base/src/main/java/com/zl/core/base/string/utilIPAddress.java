@@ -5,10 +5,10 @@
 package com.zl.core.base.string;
 
 
-public class IPAddress
+public class utilIPAddress
 {
 
-    public IPAddress()
+    public utilIPAddress()
     {
     }
 

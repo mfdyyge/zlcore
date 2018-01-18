@@ -28,13 +28,13 @@
 		// 列表
 		"${_staticPath}/custom/jquery.table.min.js?v=" + Math.random(),
 		// 时间
-		"${_staticPath}/assets/js/date-time/bootstrap-timepicker.js",
+		"${_staticPath}/assets/js/date-utilTime/bootstrap-timepicker.js",
 		// 时间支持
-		"${_staticPath}/assets/js/date-time/moment.js",
+		"${_staticPath}/assets/js/date-utilTime/moment.js",
 		// 时间支持
-		"${_staticPath}/assets/js/date-time/i18n/moment.zh-CN.js",
+		"${_staticPath}/assets/js/date-utilTime/i18n/moment.zh-CN.js",
 		// 日期范围
-		"${_staticPath}/assets/js/date-time/daterangepicker.js",
+		"${_staticPath}/assets/js/date-utilTime/daterangepicker.js",
 		// 确认框
 		"${_staticPath}/assets/js/bootbox.js",
 		"${_staticPath}/custom/assets/bootbox.custom.js",

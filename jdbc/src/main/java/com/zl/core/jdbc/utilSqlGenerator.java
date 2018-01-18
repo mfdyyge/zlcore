@@ -1,43 +1,74 @@
 package com.zl.core.jdbc;
 
-
+import com.zl.core.base.map.utilMap;
+import com.zl.core.base.string.utilStringSql;
+import com.zl.core.jdbc.DataSource.DsFactory;
+import com.zl.core.jdbc.apche.dbutils.page.Page;
 import com.zl.core.jdbc.sql.pojo.TableFormParams;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.*;
-import java.util.Collection;
 
-/**
- * Created by Administrator on 2017/8/12. 通过map取得sql语句
- * @author   刚背猪
- *
- */
-public class SqlGenerator
-{
+public class utilSqlGenerator {
+
+
     //protected static Logger logger = Logger.getLogger();
 
-    private  static  ThreadLocal<TableFormParams> tableFormParamsThreadLocal=new ThreadLocal<TableFormParams>();
+    private  static     ThreadLocal<TableFormParams> tableFormParamsThreadLocal=new ThreadLocal<TableFormParams>();
+    private             com.zl.core.jdbc.sql.pojo.TableFormParams tableformParams;
+
+    private  static     String sql_insert="";    //添加SQL=> insert into 表名称(name,password,email,birthday) values(?,?,?,?)
+    private  static     String sql_delete="";    //删除SQL=> delete from 表名称 where ids=5  (删除此行)---where后面跟一个条件
+    private  static     String sql_update="";    //更新SQL=> update 表名称 set +列名称='p006 ',列名称='p002' where ids=6-----用逗号隔开可以修改多列
+    private  static     String sql_select="";    //查询SQL=>
+
+    private static Object[] key_arr={};
+    private static Object[] values_arr={};
+
+    private Map mapTable=new HashMap();
+
 
     static
     {
-        ;
+
     }
 
-    /**
-     * 获取sql
-     * @return
-     */
-    public  static String getQueryPageSql_oracle()
+    public static String getSql_Insert(String table,Map map)
     {
-        com.zl.core.jdbc.sql.pojo.TableFormParams tableformParams;
-        String sql_add="insert into "+"tableName";    //添加SQL -//"insert into users(name,password,email,birthday) values(?,?,?,?)"
-        String sql_del;    //删除SQL
-        String sql_up;     //更新SQL
-        String sql_query;  //查询SQL
-        return "";
+        key_arr= utilMap.getKey(map);
+        values_arr= utilMap.getValues(map);
+
+        String key=utilStringSql.toString_insert_key(key_arr);
+        String values= utilStringSql.toString_insert_keyValues(values_arr);
+
+        sql_insert="insert into "+table+"("+key+") values("+values+")";
+
+        return sql_insert;
+    }
+
+    public static String getSql_Delte(Map map){
+
+
+        return sql_delete;
+    }
+
+    public static String getSql_Update(Map map)
+    {
+        // update 表名称 set +列名称='p006 ',列名称='p002' where ids=6
+        return sql_update;
     }
 
 
-    /**
+    public static String getSql_select(Map map)
+    {
+       // String pageSql = "SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
+
+        return sql_select;
+    }
+    /*******************************************************************************************************************
      * 通过map取得sql语句
      * @param table_name  表名
      * @param MapTableProperties 表字段
@@ -68,25 +99,7 @@ public class SqlGenerator
         }
 
         return sql.toString();
-
     }
-
-    /**
-     * 通过map取得sql语句对应的参数:Object params[] = { "钢背猪☣", "123", "gacl@sina.com", new Date() };
-     * @param   map
-     * @return  Object[]=>
-     */
-    public static Object[] getArryFromMap(Map<String, String> map)
-    {
-
-        String sql = "select * from emp where 1=1 ";
-        Set<String> set = map.keySet();//Keys
-        Collection<String> params=map.values();//values
-        Object[] params_array=params.toArray();
-        return params_array;
-
-    }
-
 
     /**
      * 获取表单参数对象map =>                       <br/>
@@ -156,7 +169,58 @@ public class SqlGenerator
     }
 
 
+
+
+    public static List<Object> queryPage_oracle(String sql, Page page, Object[] params, Class<?> clss)
+    {
+
+        Connection connection=new DsFactory().getConnection();
+        QueryRunner runner = new QueryRunner();
+
+        List<Object> list = null;
+        try {
+            sql = sql.toUpperCase();
+            if (null == page) {
+                list = (List<Object>) runner.query(connection,sql, new BeanListHandler(clss.newInstance().getClass()), params);
+            }
+            else {
+                if (null == params) {
+                    params = new Object[]{};
+                }
+                String pageSql = "SELECT * FROM (SELECT A.*,ROWNUM RN " + "FROM (" + sql + ") A WHERE ROWNUM <=? )  WHERE RN >=?";
+
+                // 查询总数
+/*
+                String totalSql = "SELECT COUNT(*) FROM (" + sql + ")";
+                BigDecimal count = runner.query(totalSql,new ScalarHandler<BigDecimal>(),params);
+                page.setTotalSize(count.intValue());
+                */
+                page.init();
+
+                Object[] pageParams = new Object[params.length + 2];
+                System.arraycopy(params, 0, pageParams, 0, params.length);
+
+                pageParams[params.length] = page.getPageEnd();
+                pageParams[params.length + 1] = page.getPageBegin();
+
+
+
+
+                list = (List<Object>) runner.query(pageSql, new BeanListHandler(clss.newInstance().getClass()), pageParams);
+            }
+        }
+        catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch (InstantiationException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch (IllegalAccessException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return list;
+    }
 }
-
-
-

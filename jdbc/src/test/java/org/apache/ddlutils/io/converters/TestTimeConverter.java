@@ -32,7 +32,7 @@ import junit.framework.TestCase;
  */
 public class TestTimeConverter extends TestCase
 {
-	/** The tested time converter. */
+	/** The tested utilTime converter. */
     private TimeConverter _timeConverter;
 
     /**
@@ -54,7 +54,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests a normal time string.
+     * Tests a normal utilTime string.
      */
     public void testNormalConvertFromHoursMinutesSecondsTimeString()
     {
@@ -74,7 +74,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests a time string without seconds.
+     * Tests a utilTime string without seconds.
      */
     public void testNormalConvertFromHoursMinutesTimeString()
     {
@@ -93,7 +93,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests a time string with only an hour value.
+     * Tests a utilTime string with only an hour value.
      */
     public void testNormalConvertFromHoursTimeString()
     {
@@ -154,7 +154,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests converting an invalid time string.
+     * Tests converting an invalid utilTime string.
      */
     public void testConvertFromStringWithInvalidTextRep()
     {
@@ -172,7 +172,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests converting an invalid time string containing not only numbers.
+     * Tests converting an invalid utilTime string containing not only numbers.
      */
     public void testConvertFromStringWithAlphaTextRep()
     {
@@ -190,7 +190,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests converting a normal time to a string.
+     * Tests converting a normal utilTime to a string.
      */
     public void testNormalConvertToString()
     {
@@ -210,7 +210,7 @@ public class TestTimeConverter extends TestCase
     }
 
     /**
-     * Tests converting a null time.
+     * Tests converting a null utilTime.
      */
     public void testConvertToStringWithNullTime()
     {

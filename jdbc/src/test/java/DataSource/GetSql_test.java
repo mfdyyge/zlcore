@@ -1,12 +1,12 @@
 package DataSource;
 
-import com.zl.core.base.map.MapUtil;
-import com.zl.core.base.string.StringUtil;
-import com.zl.core.jdbc.sqlutil;
+import com.zl.core.base.map.utilMap;
+import com.zl.core.base.string.utilString;
+import com.zl.core.jdbc.sql.pojo.TableFormParams;
+import com.zl.core.jdbc.utilSqlGenerator;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -40,25 +40,11 @@ public class GetSql_test
 @Test
 public void  get_add_sql()
 {
-    String values=sqlutil.getSql_Insert("user",map);
-    System.out.println("values = " + values);;
+    String values= utilSqlGenerator.getSql_Insert("user",map);
+    System.out.println("insert = " + values);
+   // beanutils;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Test
@@ -68,31 +54,31 @@ public void  get_add_sql()
         //initMap();
 
         String sql;
-        Object[] keys =  MapUtil.getKey(map);
+        Object[] keys =  utilMap.getKey(map);
 
         String name=null,name1="",name2,name3="a";
 
-        System.out.println(" name= " + StringUtil.isNull(name) );
-        System.out.println("name1 = " + StringUtil.isNull(name1));
-        //System.out.println("name2 = " + StringUtil.isNull(name2));
-        System.out.println("name3 = " + StringUtil.isNull(name3));
-        System.out.println("name3 = " + StringUtil.isNotNull(name3));
+        System.out.println(" name= " + utilString.isNull(name) );
+        System.out.println("name1 = " + utilString.isNull(name1));
+        //System.out.println("name2 = " + utilString.isNull(name2));
+        System.out.println("name3 = " + utilString.isNull(name3));
+        System.out.println("name3 = " + utilString.isNotNull(name3));
 
         System.out.println("map.entrySet().toArray().toString() = " + map.entrySet().toString());;
 
 
         System.out.println("map = " + map);
-        MapUtil.removeNullValue(map);
+        utilMap.removeNullValue(map);
         System.out.println(map);
 
         //sql= SqlGenerator.getSqlFromMap("",map);
         System.out.println("apche.dbutils.test.utils: " + Arrays.asList(map.keySet().toArray()));
         System.out.println("apche.dbutils.test.utils: " + Arrays.asList(map.values().toArray()));
 
-        //System.out.println("paramers = " + Arrays.asList(SqlGenerator.getArryFromMap(map)));
+        //System.out.println("paramers = " + utilArrays.asList(SqlGenerator.getArryFromMap(map)));
         //getTableFromMap(map);
-        //TableFormParams tableFormParams= SqlGenerator.getTableFormParams_FromMap_oracle(map,"USERS","pageNum","pageSize");
-       // System.out.println("tableFormParams.getSql_add() = " + tableFormParams.getSql_add());
+        TableFormParams tableFormParams= utilSqlGenerator.getTableFormParams_FromMap_oracle("USERS",map,"pageNum","pageSize");
+        System.out.println("tableFormParams.getSql_add() = " + tableFormParams.getSql_add());
     }
 
     @Test
@@ -101,8 +87,8 @@ public void  get_add_sql()
         String s2=str;
         s2.replaceAll(" ","1");
         System.out.println("s2 = " + s2);
-        System.out.println("StringUtil.isNotNull(str) = " + StringUtil.isNull(str));
-        System.out.println("StringUtil.isNotNull(str) = " + StringUtil.isNotNull(str));
+        System.out.println("utilString.isNotNull(str) = " + utilString.isNull(str));
+        System.out.println("utilString.isNotNull(str) = " + utilString.isNotNull(str));
     }
 
 
@@ -123,11 +109,11 @@ public void  get_add_sql()
 
         System.out.println(map);
 
-        MapUtil.removeNullKey(map);
+        utilMap.removeNullKey(map);
         System.out.println();
         System.out.println(map);
 
-        MapUtil.removeNullValue(map);
+        utilMap.removeNullValue(map);
         System.out.println();
         System.out.println(map);
     }

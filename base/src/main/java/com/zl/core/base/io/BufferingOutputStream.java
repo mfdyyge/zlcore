@@ -4,7 +4,7 @@
 
 package com.zl.core.base.io;
 
-import com.zl.core.base.string.Arrays;
+import com.zl.core.base.string.utilArrays;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -65,7 +65,7 @@ public class BufferingOutputStream extends OutputStream
     {
         other.write(buf, 0, bufOff);
         bufOff = 0;
-        Arrays.fill(buf, (byte)0);
+        utilArrays.fill(buf, (byte)0);
     }
 
     public void close()

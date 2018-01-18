@@ -3,7 +3,7 @@ package com.zl.core.base.utils;
 
 import java.util.UUID;
 
-public class Random {
+public class utilRandom {
 
 
     private Data intarray[]; 
@@ -13,7 +13,7 @@ public class Random {
     private StringBuffer s2; 
     private StringBuffer s3;// 保存产生的数字和字母组合密码 
 
-    public Random() 
+    public utilRandom()
     {
         intarray 	= new Data[10]; 
         intarray_dc = new Data[10]; 
@@ -175,47 +175,47 @@ class Data {
 
     public String getSlhm(String date_type_str,int pwd_rand_length)
     {
-    	 Random s1 = new Random(); 
+    	 utilRandom s1 = new utilRandom();
          StringBuffer str_sum=new StringBuffer();
          str_sum.append(s1.GeneratePassworrd(pwd_rand_length));
          
         System.out.println(str_sum.toString());
-         	//System.out.println(time.gettime("yyyyMMdd")+s.GeneratePassworrd2(2)); 
-/*         Random s2 = new Random();
+         	//System.out.println(utilTime.gettime("yyyyMMdd")+s.GeneratePassworrd2(2));
+/*         utilRandom s2 = new utilRandom();
          str_sum.append(s2.GeneratePassworrd1(1));
          	//System.out.println(str_sum.toString()); 
-         Random s3 = new Random(); 
+         utilRandom s3 = new utilRandom();
          str_sum.append(s3.GeneratePassworrd3(3));*/
-    	return time.gettime(date_type_str)+str_sum.toString();
+    	return utilTime.gettime(date_type_str)+str_sum.toString();
     }
 
 
     public static void main(String[] args)
     {
-/*        Random s1 = new Random();
+/*        utilRandom s1 = new utilRandom();
         StringBuffer str_sum=new StringBuffer();
         str_sum.append(s1.GeneratePassworrd3(1));
 
         	//System.out.println(str_sum.toString());
-        	//System.out.println(time.gettime("yyyyMMdd")+s.GeneratePassworrd2(2));
-        Random s2 = new Random();
+        	//System.out.println(utilTime.gettime("yyyyMMdd")+s.GeneratePassworrd2(2));
+        utilRandom s2 = new utilRandom();
         str_sum.append(s2.GeneratePassworrd1(1));
         	//System.out.println(str_sum.toString());
-        Random s3 = new Random();
+        utilRandom s3 = new utilRandom();
         str_sum.append(s3.GeneratePassworrd3(1));
-        	System.out.println(time.gettime("yyyyMMdd")+str_sum.toString()); */
+        	System.out.println(utilTime.gettime("yyyyMMdd")+str_sum.toString()); */
 
-        Random rd=new Random();
-        Random s1 = new Random();
+        utilRandom rd=new utilRandom();
+        utilRandom s1 = new utilRandom();
         StringBuffer str_sum=new StringBuffer();
         str_sum.append(s1.GeneratePassworrd(4));
 
         System.out.println(str_sum.toString());
         System.out.println(rd.getSlhm("yyMMdd",5));
-/*         Random s2 = new Random();
+/*         utilRandom s2 = new utilRandom();
          str_sum.append(s2.GeneratePassworrd1(1));
          	//System.out.println(str_sum.toString());
-         Random s3 = new Random();
+         utilRandom s3 = new utilRandom();
          str_sum.append(s3.GeneratePassworrd3(3));*/
 
     }

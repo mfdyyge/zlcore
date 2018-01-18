@@ -1,17 +1,24 @@
 package com.zl.core.base.map;
 
-import com.zl.core.base.string.StringUtil;
+import com.zl.core.base.string.utilString;
 import org.apache.commons.collections4.BidiMap;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.collections4.OrderedMap;
 import org.apache.commons.collections4.bidimap.TreeBidiMap;
 import org.apache.commons.collections4.map.LinkedMap;
+import org.junit.Test;
 
+import java.beans.BeanInfo;
+import java.beans.Introspector;
+import java.beans.PropertyDescriptor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.*;
 
 
-public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
+public class utilMap extends com.xiaoleilu.hutool.util.MapUtil {
 
 
 
@@ -40,9 +47,9 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 	{
 		//map.keySet().toArray();
 		//map.values().toArray();
-		//MapUtil.isNull(mapTable);
+		//utilMap.isNull(mapTable);
 
-		MapUtil.removeNull(map);
+		utilMap.removeNull(map);
 				Set<String> keySet = map.keySet();//Keys
 				Object[] key_array=keySet.toArray();
 
@@ -59,7 +66,7 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 		//map.values().toArray();
 		//Set<String> set = map.keySet();//Keys
 
-		MapUtil.removeNull(map);
+		utilMap.removeNull(map);
 				Collection<String> values_collection=map.values();//values
 				Object[] values_array=values_collection.toArray();
 
@@ -71,37 +78,6 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 	//******************************************************************************************************************
 	//******************************************************************************************************************
 	//******************************************************************************************************************
-
-	/**
-	 *  获取:Map 中的 Key[Array]=> Object params[] = { "钢背猪☣", "123", "gacl@sina.com", new Date() };
-	 * @param   map
-	 * @return  Object[] 数组
-	 */
-	public static String getKey_toString(Map<String, Object> map)
-	{
-		//map.keySet().toArray();
-		//map.values().toArray();
-		//MapUtil.isNull(mapTable);
-
-		MapUtil.removeNull(map);
-		Set<String> key_set = map.keySet();//Keys
-		Object[] key_array=key_set.toArray();
-
-		return StringUtil.toString(key_array);
-	}
-
-
-
-	public static String getValues_toString(Map<String, String> map)
-	{
-		//map.values().toArray();
-		MapUtil.removeNull(map);
-		Collection<String> values_collection=map.values();//values
-		Object[] values_array=values_collection.toArray();
-
-		return StringUtil.toString(values_array);
-
-	}
 
 	//******************************************************************************************************************
 	//******************************************************************************************************************
@@ -156,7 +132,7 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 	private static void remove(Object obj,Iterator iterator){
 		if(obj instanceof String){
 			String str = (String)obj;
-			if(StringUtil.isNull(str)){
+			if(utilString.isNull(str)){
 				iterator.remove();
 			}
 		}else if(obj instanceof Collection){
@@ -183,8 +159,118 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 		}
 	}
 
-//对Map中为Null的Key & Values 操作
-	public static void main(String[] args) {
+
+
+
+	/** ****************************************************************************************************************
+	 * 使用org.apache.commons.beanutils进行转换
+	 */
+	public static Object mapToObject(Map<String, Object> map, Class<?> beanClass) throws Exception {
+		if (map == null)
+			return null;
+
+		Object obj = beanClass.newInstance();
+
+		org.apache.commons.beanutils.BeanUtils.populate(obj, map);
+
+		return obj;
+	}
+
+	public static Map<?, ?> objectToMap(Object obj) {
+		if(obj == null)
+			return null;
+
+		return new org.apache.commons.beanutils.BeanMap(obj);
+	}
+
+
+	/** ****************************************************************************************************************
+	 * 使用 Introspector 进行转换
+	 */
+	public static Object mapToObject_Introspector(Map<String, Object> map, Class<?> beanClass) throws Exception {
+		if (map == null)
+			return null;
+
+		Object obj = beanClass.newInstance();
+
+		BeanInfo beanInfo = Introspector.getBeanInfo(obj.getClass());
+		PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
+		for (PropertyDescriptor property : propertyDescriptors) {
+			Method setter = property.getWriteMethod();
+			if (setter != null) {
+				setter.invoke(obj, map.get(property.getName()));
+			}
+		}
+
+		return obj;
+	}
+
+	public static Map<String, Object> objectToMap_Introspector(Object obj) throws Exception {
+		if(obj == null)
+			return null;
+
+		Map<String, Object> map = new HashMap<String, Object>();
+
+		BeanInfo beanInfo = Introspector.getBeanInfo(obj.getClass());
+		PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
+		for (PropertyDescriptor property : propertyDescriptors) {
+			String key = property.getName();
+			if (key.compareToIgnoreCase("class") == 0) {
+				continue;
+			}
+			Method getter = property.getReadMethod();
+			Object value = getter!=null ? getter.invoke(obj) : null;
+			map.put(key, value);
+		}
+
+		return map;
+	}
+
+	/** ****************************************************************************************************************
+	 * 使用 reflect 进行转换
+	 */
+	public static Object mapToObject_reflect(Map<String, Object> map, Class<?> beanClass) throws Exception
+	{
+		if (map == null)
+			return null;
+
+		Object obj = beanClass.newInstance();
+
+		Field[] fields = obj.getClass().getDeclaredFields();
+		for (Field field : fields) {
+			int mod = field.getModifiers();
+			if(Modifier.isStatic(mod) || Modifier.isFinal(mod)){
+				continue;
+			}
+
+			field.setAccessible(true);
+			field.set(obj, map.get(field.getName()));
+		}
+
+		return obj;
+	}
+
+	public static Map<String, Object> objectToMap_reflect(Object obj) throws Exception
+	{
+		if(obj == null){
+			return null;
+		}
+
+		Map<String, Object> map = new HashMap<String, Object>();
+
+		Field[] declaredFields = obj.getClass().getDeclaredFields();
+		for (Field field : declaredFields) {
+			field.setAccessible(true);
+			map.put(field.getName(), field.get(obj));
+		}
+
+		return map;
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//对Map中为Null的Key & Values 操作
+	@Test
+	public  void main_1() {
 		Map map = new HashMap();
 		map.put(1, "第一个值是数字");
 		map.put("2", "第2个值是字符串");
@@ -197,26 +283,25 @@ public class MapUtil extends com.xiaoleilu.hutool.util.MapUtil {
 		map.put("8", "  ");
 		System.out.println(map);
 
-		MapUtil.removeNullKey(map);
+		utilMap.removeNullKey(map);
 		System.out.println();
 		System.out.println(map);
 
-		MapUtil.removeNullValue(map);
+		utilMap.removeNullValue(map);
 		System.out.println();
 		System.out.println(map);
 	}
-}
 
-/**
- * 有序map
- commons-collections为maps提供了一个新的接口，
- orderedmap，这个接口是有顺序的，但是并没有进行排序。
- linkedmap和listorderedmap(封装器)是这个接口的两种实现。
- 这个接口支持map迭代，同时允许对map进行前向迭代和反向迭代。
- */
-class MapTest {
 
-	public static void main(String[] args) {
+	/**
+	 * 有序map
+	 commons-collections为maps提供了一个新的接口，
+	 orderedmap，这个接口是有顺序的，但是并没有进行排序。
+	 linkedmap和listorderedmap(封装器)是这个接口的两种实现。
+	 这个接口支持map迭代，同时允许对map进行前向迭代和反向迭代。
+	 */
+	@Test
+	public  void main_2() {
 		/**
 		 * 得到集合里按顺序存放的key之后的某一Key
 		 */
@@ -259,4 +344,9 @@ class MapTest {
 	}
 
 }
+
+
+
+
+
 

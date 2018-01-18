@@ -94,7 +94,7 @@ public class TestDynaSqlQueries extends TestAgainstLiveDatabaseBase
                                                                                           new Table[] { getModel().getTable(0) });
 
         assertTrue(it.hasNext());
-        // we call the method a second time to assert that the result set does not get advanced twice
+        // we call the method a second timeUtil to assert that the result set does not get advanced twice
         assertTrue(it.hasNext());
 
         DynaBean bean = (DynaBean)it.next();

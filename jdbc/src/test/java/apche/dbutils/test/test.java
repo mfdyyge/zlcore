@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-import com.zl.core.base.utils.Random;
+import com.zl.core.base.utils.utilRandom;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.ArrayHandler;
@@ -39,7 +39,7 @@ public static void main(String[] args)
         QueryRunner qRunner =new QueryRunner();
 
         // 以下部分代码插入一条数据
-                Random s1 = new Random();
+                utilRandom s1 = new utilRandom();
                Integer rdsj=new Integer(s1.GeneratePassworrd(4));
                 System.out.println("***Insert begin*** rdsj="+rdsj);
 

@@ -42,7 +42,7 @@ public class TimeConverter implements SqlTypeConverter
 	private Calendar _calendar;
 
 	/**
-	 * Creates a new time converter object.
+	 * Creates a new utilTime converter object.
 	 */
 	public TimeConverter()
 	{
@@ -95,7 +95,7 @@ public class TimeConverter implements SqlTypeConverter
                 }
                 catch (NumberFormatException ex)
                 {
-                    throw new ConversionException("Not a valid time : " + textRep, ex);
+                    throw new ConversionException("Not a valid utilTime : " + textRep, ex);
                 }
                 _calendar.clear();
                 try
@@ -107,12 +107,12 @@ public class TimeConverter implements SqlTypeConverter
                 }
                 catch (IllegalArgumentException ex)
                 {
-                    throw new ConversionException("Not a valid time : " + textRep, ex);
+                    throw new ConversionException("Not a valid utilTime : " + textRep, ex);
                 }
             }
             else
             {
-                throw new ConversionException("Not a valid time : " + textRep);
+                throw new ConversionException("Not a valid utilTime : " + textRep);
             }
         }
         else

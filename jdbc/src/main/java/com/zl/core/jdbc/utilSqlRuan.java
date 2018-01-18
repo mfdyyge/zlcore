@@ -23,7 +23,7 @@ import java.util.List;
  * 读取 sql 脚本并执行
  * @author Unmi
  */
-public class SqlRuan {
+public class utilSqlRuan {
 
     /**
      * 读取 sql 文件，获取 sql 语句
@@ -107,7 +107,7 @@ public class SqlRuan {
 
     public static void main(String[] args) throws Exception
     {
-        List<String> sqlList = new SqlRuan().loadSql(args[0]);
+        List<String> sqlList = new utilSqlRuan().loadSql(args[0]);
         System.out.println("size:" + sqlList.size());
         for (String sql : sqlList) {
             System.out.println(sql);

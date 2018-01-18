@@ -31,6 +31,7 @@ public class Page {
     public Page() {
     }
 
+
     public void init() {
         // pageSize 默认为5
         if (pageSize <= 0) {

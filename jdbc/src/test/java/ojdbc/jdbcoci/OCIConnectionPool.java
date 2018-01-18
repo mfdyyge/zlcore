@@ -8,7 +8,7 @@ package ojdbc.jdbcoci;/*
  *       conn2 from above instance, and do some operations
  *       to the database.
  *    3. reconfigures the OracleOCIConnectionPool to let
- *       many users to get connected at the same time
+ *       many users to get connected at the same timeUtil
  *
  * Please use jdk1.2 or later version
  */
@@ -84,7 +84,7 @@ class OCIConnectionPool
 
     // Reconfigure the OracleOCIConnectionPool in case the performance
     // is too bad. This might happen when many users are trying to connect
-    // at the same time. In this case, increase MAX_LIMIT to some larger
+    // at the same timeUtil. In this case, increase MAX_LIMIT to some larger
     // number, and also increase INCREMENT to a positive number.
 
     Properties p  = new Properties();

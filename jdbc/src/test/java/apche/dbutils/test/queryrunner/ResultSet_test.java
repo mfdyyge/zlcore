@@ -89,7 +89,7 @@ public class ResultSet_test
         //Object result[] = (Object[]) runner.query(sql_a,1, new ArrayHandler());
         Object result[] = (Object[]) runner.query(sql,"20170925183217017", new ArrayHandler());
 
-        System.out.println("Arrays.asList(result)) = " + Arrays.asList(result));
+        System.out.println("utilArrays.asList(result)) = " + Arrays.asList(result));
         //System.out.println(result[0]);
         //System.out.println(result[1]);
     }

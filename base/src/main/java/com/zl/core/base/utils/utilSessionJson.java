@@ -17,7 +17,7 @@ import java.util.List;
  * @category
  * @version		2012/03/06  第4次修定 = 2012/03/30  第5次修定
  */
-public class SessionJson {
+public class utilSessionJson {
 
 		private static Writer write;
 		private static PrintWriter printWriter;
@@ -74,5 +74,5 @@ public static void JsonpWrite(Object obj ,HttpServletResponse response)
 public Writer getWrite() {return write;}
 public JSON getJson() {return json;}
 public  void setJson(JSON json) {
-	SessionJson.json = json;}
+	utilSessionJson.json = json;}
 }

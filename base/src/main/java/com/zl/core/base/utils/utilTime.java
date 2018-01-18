@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 import java.util.Random;
 
 
-public class time {
+public class utilTime extends Times{
 	private static String time;
 	private static String name;
 
@@ -54,7 +54,7 @@ Timestamp t ;
 	 *//*
 	  SimpleDateFormat smp_format = new SimpleDateFormat("yyyy-MM-dd");
 	     
-	     long time_long=util.time.get_mdy_int("MM/dd/yyyy", "12/01/1900");
+	     long time_long=util.utilTime.get_mdy_int("MM/dd/yyyy", "12/01/1900");
 	     
 	     //new Date("12/01/1900").getTime(); 用下面这句代替
 
@@ -97,7 +97,7 @@ try{
 	Date d = new Date();
 	
 	time=formattedFileName.format(d).toString();//格式化时间-（String）
-//System.out.println(time);
+//System.out.println(utilTime);
 }
 catch(Exception o){
 	
@@ -119,7 +119,7 @@ try{
 	
 	time=formattedFileName.format(d).toString();//格式化时间-（String）
 	time=time.replaceAll(" ", "");
-//System.out.println(time);
+//System.out.println(utilTime);
 }catch(Exception o){
 	
 	o.printStackTrace();//System.out.println("X  获取当前时间字符串出错！");
@@ -208,7 +208,7 @@ return Long.valueOf(time);
 	/**
 	 * @author 获取当前时间
 	 * yyyy-MM
-	 * @return time(String) / null
+	 * @return utilTime(String) / null
 	 */
 	public static String gettime(String datestr){
 	
@@ -240,7 +240,7 @@ return Long.valueOf(time);
 	    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 	    Date date1=null;
 		try {
-			date1 = format.parse(new time().gettime("yyyy-MM-dd HH:mm:ss"));
+			date1 = format.parse(new utilTime().gettime("yyyy-MM-dd HH:mm:ss"));
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -291,7 +291,7 @@ return Long.valueOf(time);
 	    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 	    Date date1=null;
 		try {
-			date1 = format.parse(new time().gettime("yyyy-MM-dd HH:mm:ss"));
+			date1 = format.parse(new utilTime().gettime("yyyy-MM-dd HH:mm:ss"));
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -316,7 +316,7 @@ return Long.valueOf(time);
 	    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 	    Date date1=null;
 		try {
-			date1 = format.parse(new time().gettime("yyyy-MM-dd HH:mm:ss"));
+			date1 = format.parse(new utilTime().gettime("yyyy-MM-dd HH:mm:ss"));
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -388,18 +388,18 @@ return Long.valueOf(time);
 	 */
 	public static void main(String[] a) throws ParseException
 	{
-		Long tm=new time().getTimeLong();
+		Long tm=new utilTime().getTimeLong();
 		Long t=(long) 20120418103239L;
 		
 		
-		//System.out.println(util.time.get_mdy_int("MM/dd/yyyy", "12/01/1900"));
+		//System.out.println(util.utilTime.get_mdy_int("MM/dd/yyyy", "12/01/1900"));
 		
 	/*	Calendar cal  = Calendar.getInstance();
 	    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd  HH:mm:ss");
 	    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 	    Date date1=null;
 		try {
-			date1 = format.parse(util.time.time.gettime("yyyy-MM-dd HH:mm:ss"));
+			date1 = format.parse(util.utilTime.utilTime.gettime("yyyy-MM-dd HH:mm:ss"));
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -418,7 +418,7 @@ return Long.valueOf(time);
 
 	     Date smp_format_ymd_date=smp_format.parse("12/01/1900");
 	     
-	    // long time_long=util.time.get_mdy_int("MM/dd/yyyy", "12/01/1900");
+	    // long time_long=util.utilTime.get_mdy_int("MM/dd/yyyy", "12/01/1900");
 	     java.getSql.Timestamp tsp=new java.getSql.Timestamp(smp_format_ymd_date.getTime());
 	    
 	     
@@ -430,14 +430,14 @@ return Long.valueOf(time);
 
 
 		;
-/*		System.out.println("毫秒: " +util.time.time.gettime("yyMMddHHmm sss"));
+/*		System.out.println("毫秒: " +util.utilTime.utilTime.gettime("yyMMddHHmm sss"));
 
-		System.out.println("毫秒: " +util.time.time.gettime("yyMMddHHmm sss"));
+		System.out.println("毫秒: " +util.utilTime.utilTime.gettime("yyMMddHHmm sss"));
 
-		System.out.println("毫秒: " +util.time.time.gettime("yyMMddHHmm sss"));
-		System.out.println("毫秒: " +util.time.time.gettime("yyMMddHHmm sss"));
-		System.out.println("毫秒: " +util.time.time.gettime("yyMMddHHmm sss"));
-		System.out.println("毫秒: " +util.time.time.gettime("yyMMddHHmm sss"));*/
+		System.out.println("毫秒: " +util.utilTime.utilTime.gettime("yyMMddHHmm sss"));
+		System.out.println("毫秒: " +util.utilTime.utilTime.gettime("yyMMddHHmm sss"));
+		System.out.println("毫秒: " +util.utilTime.utilTime.gettime("yyMMddHHmm sss"));
+		System.out.println("毫秒: " +util.utilTime.utilTime.gettime("yyMMddHHmm sss"));*/
 	    // System.out.println(da_str);
 	
 		//System.out.println(t);
@@ -459,7 +459,7 @@ return Long.valueOf(time);
 		MILLISECOND		get 和 set 的字段数字，指示一秒中的毫秒
 		*/
 		int month=calendar.get(Calendar.MONDAY)+1;
-		System.out.println("时间: " + new time().gettime("yy")+month + calendar.get(Calendar.DATE)+ calendar.get(Calendar.HOUR_OF_DAY)+ calendar.get(Calendar.MINUTE)+ calendar.get(Calendar.MILLISECOND));
+		System.out.println("时间: " + new utilTime().gettime("yy")+month + calendar.get(Calendar.DATE)+ calendar.get(Calendar.HOUR_OF_DAY)+ calendar.get(Calendar.MINUTE)+ calendar.get(Calendar.MILLISECOND));
 		System.out.println("时间: " + calendar.get(Calendar.YEAR)+month + calendar.get(Calendar.DATE)+ calendar.get(Calendar.HOUR_OF_DAY)+ calendar.get(Calendar.MINUTE)+ calendar.get(Calendar.MILLISECOND));
 		System.out.println("时间: " + calendar.get(Calendar.YEAR)+month + calendar.get(Calendar.DATE)+ calendar.get(Calendar.HOUR_OF_DAY)+ calendar.get(Calendar.MINUTE)+ calendar.get(Calendar.MILLISECOND));
 		System.out.println("时间: " + calendar.get(Calendar.YEAR)+month + calendar.get(Calendar.DATE)+ calendar.get(Calendar.HOUR_OF_DAY)+ calendar.get(Calendar.MINUTE)+ calendar.get(Calendar.MILLISECOND));
@@ -472,9 +472,9 @@ return Long.valueOf(time);
 		System.out.println("r1 = " + r1);
 		System.out.println("r3 = " + r2);
 		System.out.println("r2 = " + r3);
-		/*util.time.time.testNoSeed();
-		util.time.time.testSeed1();
-		util.time.time.testSeed1();*/
+		/*util.utilTime.utilTime.testNoSeed();
+		util.utilTime.utilTime.testSeed1();
+		util.utilTime.utilTime.testSeed1();*/
 
 		}
 

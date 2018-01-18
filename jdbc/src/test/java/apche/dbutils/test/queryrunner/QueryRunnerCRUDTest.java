@@ -2,7 +2,7 @@ package apche.dbutils.test.queryrunner;
 
 import com.ibatis.common.jdbc.ScriptRunner;
 import com.ibatis.common.resources.Resources;
-import com.zl.core.base.utils.time;
+import com.zl.core.base.utils.utilTime;
 import com.zl.core.jdbc.DataSource.DsFactory;
 import com.zl.core.jdbc.apche.dbutils.pojo.T_user;
 import org.apache.commons.dbutils.QueryRunner;
@@ -54,7 +54,7 @@ public class QueryRunnerCRUDTest {
 		String log_insert="insert into log (LogName,UserName,Class,Mothod,createTime,LogLevel,MSG) values (?,?,?,?,?,?,?)";
 
 /*
-	SqlRuan sqlRuan=new SqlRuan();
+	utilSqlRuan sqlRuan=new utilSqlRuan();
 		List<String> sqlList = sqlRuan.loadSql("sql/comlog.sql");
 		System.out.println("size:" + sqlList.size());
 		for (String sql : sqlList) {
@@ -77,7 +77,7 @@ public class QueryRunnerCRUDTest {
 		// 将数据源传递给QueryRunner，QueryRunner内部通过数据源获取数据库连接
 		QueryRunner qr = new QueryRunner(new DsFactory("dbtt").getDataSource());
 		String sql = "insert into users(id,name) values(?,?)";
-		Object params[] = {time.getTimeLongHm(),"钢背猪☣", };
+		Object params[] = {utilTime.getTimeLongHm(),"钢背猪☣", };
 		qr.update(sql, params);
 	}
 

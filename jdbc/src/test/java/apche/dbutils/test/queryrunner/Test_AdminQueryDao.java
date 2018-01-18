@@ -44,7 +44,7 @@ public class Test_AdminQueryDao
 		Object [] params = new Object[]{"43","98"};
 
 		Object result[] = (Object[]) AdminQueryDao.queryArray(apche.dbutils.test.utils,params);
-		System.out.println(Arrays.asList(result));
+		System.out.println(utilArrays.asList(result));
 		*/
 
 		String sql = "select * from jpa_persons where id like ? ";

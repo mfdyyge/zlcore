@@ -89,7 +89,7 @@ public class JdbcMTSample extends Thread
           threadList[i].start();
       }
     
-      // Start everyone at the same time
+      // Start everyone at the same timeUtil
       setGreenLight ();
 
       // wait for all threads to end

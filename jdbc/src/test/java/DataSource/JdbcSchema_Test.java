@@ -77,7 +77,7 @@ public class JdbcSchema_Test
     {
         JdbcDatabase database= new JdbcDatabase(connection);
         String[] dbName=database.getSchemaNames();
-        System.out.println("Arrays.asList(dbName) = " + Arrays.asList(dbName));
+        System.out.println("utilArrays.asList(dbName) = " + Arrays.asList(dbName));
 
         JdbcSchema jdbcSchema=new JdbcSchema(connection,database,"tt");
         System.out.println("数据库用户>all> jdbcSchema.getTableCount = " + jdbcSchema.getTableCount());
@@ -104,12 +104,12 @@ public class JdbcSchema_Test
         System.out.println("数据库表对象> jdbcSchema.getColumnCount = " + jdbcTable.getColumnCount());
 
         Column[]            A_columns=jdbcTable.getColumns();
-        System.out.println("Arrays.asList(jdbcTable.getColumnNames()) = " + Arrays.asList(jdbcTable.getColumnNames()));
+        System.out.println("utilArrays.asList(jdbcTable.getColumnNames()) = " + Arrays.asList(jdbcTable.getColumnNames()));
 
 /*        System.out.println("A_columns[0].toString() = " + A_columns[0].toString());
         System.out.println(" 字段类型 = " +  A_columns[0].getDataType());
         System.out.println(">>>> (columns)= " + A_columns[0].getName());*/
-       // System.out.println("数据库表对象> j Arrays.asList(columns)= " + Arrays.asList(columns));
+       // System.out.println("数据库表对象> j utilArrays.asList(columns)= " + utilArrays.asList(columns));
 
     }
 

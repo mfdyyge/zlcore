@@ -304,7 +304,7 @@ public class PlatformInfo
     }
 
     /**
-     * Determines whether primary key can contain identity and non-identity columns at the same time.
+     * Determines whether primary key can contain identity and non-identity columns at the same timeUtil.
      * 
      * @return <code>true</code> if idenity and non-identity columns can be mixed in the pk
      */
@@ -314,7 +314,7 @@ public class PlatformInfo
     }
 
     /**
-     * Specifies whether primary key can contain identity and non-identity columns at the same time.
+     * Specifies whether primary key can contain identity and non-identity columns at the same timeUtil.
      * 
      * @param mixingIdentityAndNormalPrimaryKeyColumnsSupported Whether idenity and non-identity columns
      *                                                          can be mixed in the pk

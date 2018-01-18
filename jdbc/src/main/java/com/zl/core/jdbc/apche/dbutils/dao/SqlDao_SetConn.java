@@ -1,6 +1,6 @@
 package com.zl.core.jdbc.apche.dbutils.dao;
 
-import com.zl.core.base.map.MapUtil;
+import com.zl.core.base.map.utilMap;
 import org.apache.commons.dbutils.BasicRowProcessor;
 import org.apache.commons.dbutils.BeanProcessor;
 import org.apache.commons.dbutils.QueryRunner;
@@ -115,7 +115,7 @@ public class SqlDao_SetConn
 	{
 		T result = null;
 		try {
-			if (MapUtil.isNotNull(map)) {
+			if (utilMap.isNotNull(map)) {
 				result = runner.query(conn, sql,
 						new BeanHandler<T>(cls, new BasicRowProcessor(new BeanProcessor(map))), params);
 			} else {
@@ -141,7 +141,7 @@ public class SqlDao_SetConn
 	{
 		List<T> result = null;
 		try {
-			if (MapUtil.isNotNull(map)) {
+			if (utilMap.isNotNull(map)) {
 				result = runner.query(conn, sql, new BeanListHandler<T>(cls, new BasicRowProcessor(new BeanProcessor(map))), params);
 			} else {
 				result = runner.query(conn, sql, new BeanListHandler<T>(cls), params);

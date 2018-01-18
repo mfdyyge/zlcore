@@ -1,7 +1,7 @@
 package apche.dbutils.test;
 
-import com.zl.core.base.utils.Random;
-import com.zl.core.base.utils.time;
+import com.zl.core.base.utils.utilRandom;
+import com.zl.core.base.utils.utilTime;
 /*import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,13 +18,13 @@ import javax.persistence.Table;*/
 public class McUserField implements java.io.Serializable {
 
 	// Fields
-	time tt=new time();
+	utilTime tt=new utilTime();
 
 	private Integer id;
-	private String name=new Random().GeneratePassworrd3(5);
-	private String sortOrder=new Random().GeneratePassworrd3(5);
-	private String required=new Random().GeneratePassworrd3(5);
-	private String visible=new Random().GeneratePassworrd3(5);
+	private String name=new utilRandom().GeneratePassworrd3(5);
+	private String sortOrder=new utilRandom().GeneratePassworrd3(5);
+	private String required=new utilRandom().GeneratePassworrd3(5);
+	private String visible=new utilRandom().GeneratePassworrd3(5);
 
 	// Constructors
 

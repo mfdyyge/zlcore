@@ -2,10 +2,10 @@
 // Jad home page: http://www.kpdus.com/jad.html
 // Decompiler options: packimports(3) 
 
-package com.zl.core.base.string;
+package com.zl.core.base.utils;
 
 
-public final class Times
+public  class Times
 {
 
     public Times()

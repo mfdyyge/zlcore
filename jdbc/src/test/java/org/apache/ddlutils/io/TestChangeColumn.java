@@ -3107,7 +3107,7 @@ public class TestChangeColumn extends TestAgainstLiveDatabaseBase
         Object    value = isSybase ? (Object)new BigDecimal("0") : new Integer(0);
         Timestamp time  = new Timestamp(new Date().getTime());
 
-        // to avoid problems with the database's time resolution
+        // to avoid problems with the database's timeUtil resolution
         time.setNanos(0);
 
         insertRow("roundtrip", new Object[] { new Integer(1), value, time });
@@ -3292,7 +3292,7 @@ public class TestChangeColumn extends TestAgainstLiveDatabaseBase
 
         Timestamp time  = new Timestamp(new Date().getTime());
 
-        // to avoid problems with the database's time resolution
+        // to avoid problems with the database's timeUtil resolution
         time.setNanos(0);
 
         insertRow("roundtrip", new Object[] { new Integer(1), null, time });

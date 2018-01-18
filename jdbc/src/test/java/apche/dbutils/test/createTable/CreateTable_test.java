@@ -37,7 +37,7 @@ public class CreateTable_test {
         String log_insert = "insert into log (LogName,UserName,Class,Mothod,createTime,LogLevel,MSG) values (?,?,?,?,?,?,?)";
 
 /*
-	SqlRuan sqlRuan=new SqlRuan();
+	utilSqlRuan sqlRuan=new utilSqlRuan();
 		List<String> sqlList = sqlRuan.loadSql("sql/comlog.sql");
 		System.out.println("size:" + sqlList.size());
 		for (String sql : sqlList) {

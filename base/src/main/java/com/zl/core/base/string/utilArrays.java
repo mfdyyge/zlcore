@@ -7,7 +7,7 @@ package com.zl.core.base.string;
 import java.math.BigInteger;
 import java.util.NoSuchElementException;
 
-public final class Arrays
+public final class utilArrays
 {
     public static class Iterator
         implements java.util.Iterator
@@ -42,7 +42,7 @@ public final class Arrays
     }
 
 
-    private Arrays()
+    private utilArrays()
     {
     }
 

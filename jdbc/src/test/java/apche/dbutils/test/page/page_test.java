@@ -1,7 +1,7 @@
 package apche.dbutils.test.page;
 
 import com.zl.core.jdbc.apche.dbutils.page.Page;
-import com.zl.core.jdbc.apche.dbutils.page.QueryRemote;
+import com.zl.core.jdbc.utilSqlGenerator;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import apche.dbutils.test.pojo.Product;
@@ -35,7 +35,7 @@ public class page_test
 
         List<Product> offerTypes = new ArrayList<Product>();
         String sql = "select * from Product where id > ?";
-        List<Object> list = QueryRemote.query(sql, page, params, Product.class);
+        List<Object> list = utilSqlGenerator.queryPage_oracle(sql, page, params, Product.class);
 
 
         for (int i = 0; i < list.size(); i++)

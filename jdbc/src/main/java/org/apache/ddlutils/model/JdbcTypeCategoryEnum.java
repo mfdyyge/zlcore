@@ -34,7 +34,7 @@ public class JdbcTypeCategoryEnum extends ValuedEnum
 {
     /** The integer value for the enum value for numeric jdbc types. */
     public static final int VALUE_NUMERIC  = 1;
-    /** The integer value for the enum value for date/time jdbc types. */
+    /** The integer value for the enum value for date/timeUtil jdbc types. */
     public static final int VALUE_DATETIME = 2;
     /** The integer value for the enum value for textual jdbc types. */
     public static final int VALUE_TEXTUAL  = 3;
@@ -47,7 +47,7 @@ public class JdbcTypeCategoryEnum extends ValuedEnum
 
     /** The enum value for numeric jdbc types. */
     public static final JdbcTypeCategoryEnum NUMERIC  = new JdbcTypeCategoryEnum("numeric",  VALUE_NUMERIC);
-    /** The enum value for date/time jdbc types. */
+    /** The enum value for date/timeUtil jdbc types. */
     public static final JdbcTypeCategoryEnum DATETIME = new JdbcTypeCategoryEnum("datetime", VALUE_DATETIME);
     /** The enum value for textual jdbc types. */
     public static final JdbcTypeCategoryEnum TEXTUAL  = new JdbcTypeCategoryEnum("textual",  VALUE_TEXTUAL);
