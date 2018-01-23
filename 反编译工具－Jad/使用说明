@@ -1,5 +1,0 @@
-cd E:\jad158g.win
-E:\jad158g.win>
-jad -o -r -sjava -dsrc dbui4/**/*.class
-
-jad -o -r -sjava -dsrc pdfbox-app-2.0.0/**/*.class
